@@ -12,7 +12,7 @@ public class Fingerprinting{
      * given in the RabinHashFunction32 class. 
      * In this case, one chunk is represented as an array of ints, where each int contains 4 packet bytes.
      */
-    public static int fingerprint(int[] chunk){
+    public static int fingerprint(byte[] chunk){
 
 	return RabinHashFunction32.DEFAULT_HASH_FUNCTION.hash(chunk);	
 
