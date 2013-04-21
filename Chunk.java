@@ -7,6 +7,15 @@ public final class Chunk {
 	private final int size; // the size of the chunk
 	private final byte[] data; // the raw data of the chunk
 
+	// creates a chunnk with data full with zeroes
+	public Chunk(int size) {
+		this.size = size;
+		this.data = new byte[size];
+		for (int i = 0; i < size; i++) {
+			this.data[i] = 0;
+		}
+	}
+
 	public Chunk(int size, byte[] data) {
 		this.size = size;
 		this.data = new byte[data.length];
