@@ -24,7 +24,7 @@
 
 int opensock(char *host);
 
-void get(char *h, char *p, char *url, int);
+void get(char *h, char *p, int);
 
 int main( int argc, char *argv[] ){
 	/* Variable Declarations */
@@ -70,54 +70,30 @@ int main( int argc, char *argv[] ){
 		&client_addr_size);
 	  if( cfd <= 0)
 	    handle_error("accept"); 
+	  /*receive GET request from client */
           received= recv(cfd, pcBuf, MAXBUF, 0);
+          int recc= recv(cfd, pcBuf+received, MAXBUF, 0);
       	  if(received == -1)
 	    fprintf(stderr, "recv: failed");		
-	  if(write(1, pcBuf, received) == -1){
+	  /*print received GET request on server terminal*/
+	  if(write(1, pcBuf, received+recc) == -1){
 	    handle_error("write");
 	  }
 	  /* echo what was received from the client */
 	  if((sent = send(cfd,pcBuf, received, 0)) <0)
 	    handle_error("send");
 	  
-   	  char *c =
-  	  "GET http://www.google.com:80/index.html/ HTTP/1.0\r\nContent-Length:"
-   	  " 80\r\nIf-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT\r\n\r\n";
 	  int len = strlen(pcBuf);
-	  len = strlen(c);
-	  write(1,c,len);
-	  strcat(pcBuf, "\r\n\r\n");
 	  struct ParsedRequest *req = ParsedRequest_create();
-	  if(ParsedRequest_parse(req, c, len) <0) {
+	  if(ParsedRequest_parse(req, pcBuf, len) <0) {
 	    printf("parse failed\n");
 	    return -1;
 	  }
 
-	  printf("Method:%s\n", req->method);
-	  printf("Host:%s\n", req->host);
-	  printf("path:%s\n", req->path);
-
 	  char *h = req->host;
 	  char *p = req->path;
-	  int rlen = ParsedRequest_totalLen(req);
-	  char *b = (char *)malloc(rlen+1); 
-	  if (ParsedRequest_unparse(req,b,rlen)<0){
-	    printf("unparse failed\n");
-	    return -1;
-	  } 
-	  b[rlen]='\0';
 
-	  struct ParsedHeader *r = ParsedHeader_get(req, "If-Modified-Since");
-	  printf("Modified value: %s\n", r->value);
-	  int i=0;
-	  for(i=0; i<=rlen; i++){
-	    printf("%c", *(b+i));
-	  }
-	  ParsedRequest_destroy(req);
-
-	  char *dummyURL= "http://www.cs.cornell.edu/courses/cs4410/2010sp/queue.pdf";
-	  char *dumURL= "http://www.google.com/index.html";
-	  get(h, p, dumURL, cfd);	
+	  get(h, p, cfd);	
 	  
 	  close(cfd);
   	}/* end infinite loop */
@@ -137,49 +113,41 @@ int opensock(char *host){
 	return fileDesc;
 }
 
-void get(char *h, char *p, char *url, int cfd){
-	char *start=url+7;
-        char *path=strchr(start, '/');
-        char *hostname=(char*)malloc(path-start);
-        int j=0;
-        while(j<path-start){
-                hostname[j]=start[j];
-                j=j+1;
-        }
-        hostname[j]='\0';
+void get(char *h, char *p, int cfd){
 
         int sock;
-        sock=opensock(hostname);        //get connected to socket
+        sock=opensock(h);        //get connected to socket
 
 	char *buffer = malloc(1024);
 	
 	printf("\n");	
         sprintf(buffer, "GET %s HTTP/1.0\r\n\r\n", p);
-	printf("BEFORE %s hostname %s\n", buffer, h);
-        sprintf(buffer, "GET %s HTTP/1.0\r\n\r\n", path);
-	printf("AFTER %s hostname %s\n", buffer, hostname);
-	
+
 	/*buffer = orig;*/
         int ret=0;
         int sent=0;
 
+	/* Send request to web server */
 	do{
 	       ret=send(sock, buffer+sent, strlen(buffer+sent), 0);
-                sent=sent+ret;
+               sent=sent+ret;
         } while(sent<strlen(buffer));
 
         int ret1=0;
         int bufsize=100000;
         int received=0;
         char *buffer1=malloc(bufsize);
+
+	/* Receive content from web server*/
 	do{
 		ret1=recv(sock, buffer1+received, bufsize-received, 0);
 		received = received + ret1;
 	}while(ret1!=0);	
+
+	/* Send content to client */
 	send(cfd, buffer1, received, 0);
 	
         free(buffer);
         free(buffer1);
-        free(hostname);
 }
 
