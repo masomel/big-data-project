@@ -55,5 +55,13 @@ Idea for Simulator:
 
 
 My prototype of the cache:
+1. SimpleCache:
+FP -> chunk cache
+matches existing fp and outputs entire web content in byte array (either from data from cache, or newly received data)
+2. Cache:
+URL -> chunk arraylist cache
+matches url, checks new chunks with chunks in cache on a one-on-one basis and outputs the entire web content in byte array.
 
 Proxy update:
+1. Telnet testing passes!
+telnet from client to proxy, using a GET method, and receive the html back.
