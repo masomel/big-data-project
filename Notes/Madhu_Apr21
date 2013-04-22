@@ -1,0 +1,59 @@
+Author: Madhu
+Notes/Questions/Thoughts for meeting on April 22:
+
+Chunking: 
+1. Filename and # of bytes in a chunk are hardcoded.. we should experiment with # of bytes so this could be a param.
+
+2. Filename: it only accepts one file..all our data comes from one file or is it one file per website?
+
+3. How do we know when to stop calling GetNextChunk()? User doesn't know since this corresponds to the number of bytes in the webpage.
+
+4. Shouldn't chunks overlap? 
+	Example:
+	Chunk1 = byte 1 - byte 10
+	Chunk2 = byte 2 - byte 11
+	Chunk3 = byte 3 - byte 12
+	....
+	# of chunks will correspond to number of bytes in the webpage
+
+
+5. Chunk constructor with one parameter: byte[] data and no size.. infer size from size of byte array
+
+6. Can't getData() simply return the array, instead of copying it over to a different array?
+
+7. Can we add the FingerPrint field to each Chunk class?
+
+
+
+Fingerprinting:
+1. FingerPrinting should probably accept chunk object, and then retreive the byte array from the chunks... instead of accepting the byte array
+	- turn it into a class with a constructor that accepts the chunk object
+
+2. Should set FP field in Chunk object
+
+
+General:
+1. need url class?: field = array/arraylist of chunks? method: chunk array -> fp array, fp array -> chunk array. 
+2. add a field to chunk corresponding to its url?
+3. how are we dealing with headers?
+4. why not a webcrawler?? (then, if we just want the bytes, we can do the xxd command)
+5. Need a method chunkToFP and an inverse method FPtoChunk
+6. Right now in the cache: just a one-to-one comparison of new chunks and chunks in the cache
+	a. implementing a hashtable inside another hashtable method for more comparisons?
+7. Right now in the cache: only check redundancy within the same webpage
+	a. checking redundancy within multiple webpages? --> different setup of cache.
+
+
+Idea for Simulator:
+	Assume single file containing all data
+	Create Chunking instance
+	Iterate and call getNextChunk store returned chunks in ArrayList of chunks? (need to know when to stop)
+	Get fingerprint of each chunk (fp class will automatically associate the fp with the chunk)
+	Create Cache object
+	Call GetWebContent with url and the chunks.
+	get: full webpage + statistics on how much we were able to obtain from the cache.
+
+
+My prototype of the cache:
+
+Proxy update:

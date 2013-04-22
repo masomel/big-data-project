@@ -1,29 +1,32 @@
+
  /*
  *@author Madhuvanthi Jayakumar
  */
-public class Cache{
+public class SimpleCache{
 
 /* Sample: Prototype deduplication with relatively small amounts of data
 	small enough to be stored in main memory.
 	Main purpose: Simulate caching and determine content overlap 
 	within a website as well as between websites 
-	MODEL:  |--------------------------------------------|
-			|URL1 | chunk1 -> chunk2 -> chunk3 -> chunk4 |  
-			|-----|--------------------------------------|
-			|URL2 | chunk1 -> chunk2 -> chunk3 -> chunk4 | 
-			|--------------------------------------------|*/
+	MODEL:  |-------------|
+			|FP1 | chunk1 |  
+			|----|--------|
+			|FP2 | chunk2 | 
+			|----|--------|
+			|FP3 | chunk3 | 
+			|-------------|*/
 
 	private HashTable cache;
 	private double missrate;
 
 	public Cache(){
-		cache = new HashTable()<String,ArrayList>;
+		cache = new HashTable()<String,Chunk>;
 		missrate=0;
 
 	}
 
 	public double getMissRate(){
-		return missrate;
+		return hitrate;
 	}
 
 	public HashTable getCache(){
@@ -39,27 +42,20 @@ public class Cache{
 		Else Replace and use content.
 		Sets hitrate equal to the percent of matches
 	     */
-	public byte[] getWebContent(String url, Chunk[] content){
-		missrate=0;
-		if(!cache.containsKey(url)){
-			setValue(url,content);
-			missrate+=content.length;
-			return reconstructData(cache.get(url));
-		}
-		ArrayList diff = new ArrayList();	//output page (comb of old data and new data)
-		int len = cache.get(url).size();	//number of items in arraylist of chunks
-		ArrayList chunks = cache.get(url);	//arraylist of chunk objects:
-		while(int i= 0; i<len; i++){	//go through each of the chunks
-			diff.add(chunk.get(i).fingerprint);	//always add fp
-			if(chunk.get(i).fingerprint != content[i].fingerprint){} //fingerprint not yet implemented.(?)
-				chunk.put(i, content[i]); //does put overwrite? We've overwritten cache with new chunk
+	public byte[] getWebContent(Chunk[] content){
+		hitrate=0;
+		ArrayList diff = new ArrayList();
+		while(int i= 0; i<len; i++){
+			diff.add(content[i].fingerprint);	
+			if(!cache.containsKey(content[i].fingerprint)){
+				cache.put(i, content[i].fingerprint)
 				missrate+=1;
 			}
+		}
 		missrate = missrate/content.length;
 		Chunk[] chunksOfWebpage = FPArrayListToChunkArray(diff);
 		return reconstructData(chunksOfWebpage);
-		}
-		//...
+		//set size of cache, LRU? FIFO? LIFO?
 	}
 
 	/** COULD BE IN URL CLASS? */
@@ -86,20 +82,6 @@ public class Cache{
 			}
 		}
 		return webcontent; //returns entirety of everything in chunks, constructing a full webpage..
-	}
-
-	/** */
-
-
-	/** @param: url that is not found in cache 
-		Procedure:
-		Sets value of url equal to an arraylist containing contents */
-	private void setValue(String url, Chunk[] content){
-		ArrayList data = new ArrayList();	//VALUE in cache = ArrayList of Chunks
-		for(int i=0; i<content.length; i++){
-			data.add(content[i]);
-		}
-		cache.put(url,data);
 	}
 
 }

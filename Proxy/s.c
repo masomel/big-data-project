@@ -10,12 +10,14 @@
 #include <stdlib.h>
 #include "proxy_parse.h"
 
-/* Server: capable of receiving text messages
- * from clients over TCP sockets. 
- * Prints messages to stdout
- * Data from client received from port known to clients
- * Handle conections sequentially
- * Accept connections from multiple clients*/
+/* Proxy
+ * To run: ./s <port> 
+ * Expects to receive something of format:
+ * <METHOD> <Host> HTTP/1.0 \r\n
+ * <optional headers and other info \r\n\r\n
+ * Manipulates Header info and sends request to server
+ * Gets response from server and forwards data to client
+ */
 
 #define MAXBUF 4096
 #define LISTEN_BACKLOG 50
@@ -27,7 +29,6 @@ int opensock(char *host);
 void get(char *h, char *p, int);
 
 int main( int argc, char *argv[] ){
-	/* Variable Declarations */
 	int sockfd, cfd, rec, s, wr=0, sent, lenn;
 	int start = 0;
 	char pcBuf[MAXBUF];
@@ -38,6 +39,7 @@ int main( int argc, char *argv[] ){
 	struct addrinfo *res;
 	socklen_t client_addr_size;
 
+	/******************* Connect to Client *******************/
 	/* struct setup*/
 	hints.ai_family = AF_INET;
 	hints.ai_socktype = SOCK_STREAM;
@@ -83,6 +85,7 @@ int main( int argc, char *argv[] ){
 	  if((sent = send(cfd,pcBuf, received, 0)) <0)
 	    handle_error("send");
 	  
+	  /******************* Parse Request From Client *******************/
 	  int len = strlen(pcBuf);
 	  struct ParsedRequest *req = ParsedRequest_create();
 	  if(ParsedRequest_parse(req, pcBuf, len) <0) {
@@ -102,6 +105,7 @@ int main( int argc, char *argv[] ){
         return 0;
 } /* end main */
 
+/* Connect to server given by param, host */
 int opensock(char *host){
 	struct addrinfo *r;
 	const char* PORT = "80";
@@ -113,6 +117,8 @@ int opensock(char *host){
 	return fileDesc;
 }
 
+/* Given host and port, send request to server, receive response
+   and send data back to client */
 void get(char *h, char *p, int cfd){
 
         int sock;
