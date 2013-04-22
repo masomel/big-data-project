@@ -6,6 +6,7 @@ public final class Chunk {
 
 	private final int size; // the size of the chunk
 	private final byte[] data; // the raw data of the chunk
+	private String url; //the URL associated with the chunk
 
 	// creates a chunnk with data full with zeroes
 	public Chunk(int size) {
@@ -16,8 +17,9 @@ public final class Chunk {
 		}
 	}
 
-	public Chunk(int size, byte[] data) {
+	public Chunk(int size, byte[] data, String u) {
 		this.size = size;
+		this.url = u;
 		this.data = new byte[data.length];
 		for (int i = 0; i < size; i++) {
 			this.data[i] = data[i];
@@ -29,11 +31,11 @@ public final class Chunk {
 	}
 
 	public byte[] getData() {
-		byte[] result = new byte[data.length];
-		for (int i = 0; i < result.length; i++) {
-			result[i] = this.data[i];
-		}
-		return result;
+		return data;
+	}
+	
+	public String getUrl(){
+		return url;
 	}
 
 	@Override
