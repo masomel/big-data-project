@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Hashtable;
+
 
  /*
  *@author Madhuvanthi Jayakumar
@@ -6,7 +9,7 @@ public class SimpleCache{
 
 /* Sample: Prototype deduplication with relatively small amounts of data
 	small enough to be stored in main memory.
-	Main purpose: Simulate caching and determine content overlap 
+	Main purpose: Simulate Proxy caching and determine content overlap 
 	within a website as well as between websites 
 	MODEL:  |-------------|
 			|FP1 | chunk1 |  
@@ -14,74 +17,98 @@ public class SimpleCache{
 			|FP2 | chunk2 | 
 			|----|--------|
 			|FP3 | chunk3 | 
-			|-------------|*/
+			|-------------|
+			
+ * What we want to be able to model soon:
+ * 	    Given entire webpage from Web Server (in chunked format),
+	    1. Determine FP of chunks
+	    2. If FP IS NOT in cache: 
+	    	a. add FP and chunk to cache.
+	    	b. add chunk to diff. 
+	    3. If FP IS in cache: 
+	    	a. If FP IS NOT in phone FP:
+	    		i. add chunk to diff.
+	    	b. If FP IS in phone FP:
+	    		ii. add FP to diff.
+ */
 
-	private HashTable cache;
+	private Hashtable cache;
 	private double missrate;
 
-	public Cache(){
-		cache = new HashTable()<String,Chunk>;
+	public SimpleCache(){
+		cache = new Hashtable<Integer,Chunk>();
 		missrate=0;
 
 	}
 
 	public double getMissRate(){
-		return hitrate;
+		return missrate;
 	}
 
-	public HashTable getCache(){
+	public Hashtable getCache(){
 		return cache;
 	}
+	
+	public Chunk get(int fp){
+		return (Chunk)(cache.get(fp));
+	}
+	
+	public void set(int fp, Chunk c){
+		cache.put(new Integer(fp), c);
+	}
 
-	/** @params: url, chunked content of the webpage in byte array
-	    @return: int array with content or fingerprint 
-	    Procedure: 
-	    At <Key = url> in the cache, iterate through 
-	    array list to determine overlap
-		If fingerprints match, use fingerprint
-		Else Replace and use content.
-		Sets hitrate equal to the percent of matches
+	/** @params: chunked content of the webpage in byte array
+	    @return: int array with content
+	    Simulating PROXY CACHE: 
+	 	In this SIMPLIFIED IMPLEMENTATION, purpose: gather statistics
+	 	Given entire webpage from Web Server (in chunked format),
+	    1. Determine FP of chunks
+	    2. If FP IS NOT in cache:
+	    	a. add FP and chunk to cache.
+	    	b. add FP to diff.
+	    	c. increment missrate
+	    	d. consider eviction?
+	    3. If FP IS in cache:
+	    	a. add FP to diff
 	     */
-	public byte[] getWebContent(Chunk[] content){
-		hitrate=0;
-		ArrayList diff = new ArrayList();
-		while(int i= 0; i<len; i++){
-			diff.add(content[i].fingerprint);	
-			if(!cache.containsKey(content[i].fingerprint)){
-				cache.put(i, content[i].fingerprint)
+	public ArrayList getWebContent(Chunk[] content){
+		missrate=0;
+		int len = content.length;
+		ArrayList<Integer> diff = new ArrayList<Integer>();
+		int fp;
+		for(int i= 0; i<len; i++){
+			fp = FingerPrinting.fingerprint(content[i].getData());
+			diff.add(fp);	
+			if(!cache.containsKey(fp)){
+				cache.put(fp, content[i]);
 				missrate+=1;
 			}
 		}
 		missrate = missrate/content.length;
-		Chunk[] chunksOfWebpage = FPArrayListToChunkArray(diff);
-		return reconstructData(chunksOfWebpage);
+		return diff;
+		
+		//set size of cache, LRU? FIFO? LIFO?
+	}
+	
+	/** Overloading with Arraylist of Chunks instead of Array of Chunks */
+	public ArrayList getWebContent(ArrayList content){
+		missrate=0;
+		int len = content.size();
+		ArrayList<Integer> diff = new ArrayList<Integer>();
+		int fp;
+		for(int i= 0; i<len; i++){
+			fp = FingerPrinting.fingerprint(content.get(i).getData());
+			diff.add(fp);	
+			if(!cache.containsKey(fp)){
+				cache.put(fp, content.get(i));
+				missrate+=1;
+			}
+		}
+		missrate = missrate/content.length;
+		return diff;
+		
 		//set size of cache, LRU? FIFO? LIFO?
 	}
 
-	/** COULD BE IN URL CLASS? */
-	private Chunk[] FPArrayListToChunkArray(ArrayList fp){
-		int len = fp.size();
-		Chunk[] chunk = new Chunk[len];
-		for(int i=0; i<len; i++){
-			chunk[i] = fp.get(i);
-		}
-
-	}
-
-	/** COULD BE IN URL CLASS? */
-	/** Given array of Chunk objects, reconstruct the full web content 
-		in the form of a byte array using the data from the chunks*/ 
-	private byte[] reconstructData(Chunk[] chunk){
-		int len = chunk.length*10;
-		byte[] webcontent = new byte[len]; //ten hardcoded (size of each chunk) ?changelater
-		byte[] chunkData = new byte[10]; //hardcoded, change later
-		for(int i=0; i<len; i++){
-			chunkData = chunk.getData(i);
-			for(int j=0; j<10; j++){
-				webcontent[i] = chunkData[j];
-			}
-		}
-		return webcontent; //returns entirety of everything in chunks, constructing a full webpage..
-	}
 
 }
