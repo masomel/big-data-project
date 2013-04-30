@@ -1,12 +1,14 @@
+package chunking;
+
 import java.util.Arrays;
 
-public class Chunk {
+public final class Chunk {
 
 	private final int size; // the size of the chunk
 	private final byte[] data; // the raw data of the chunk
 	private String url; //the URL associated with the chunk
 
-	// creates a chunk with data full with zeroes
+	// creates a chunnk with data full with zeroes
 	public Chunk(int size) {
 		this.size = size;
 		this.data = new byte[size];
@@ -15,9 +17,9 @@ public class Chunk {
 		}
 	}
 
-	public Chunk(int size, byte[] data) {
+	public Chunk(int size, byte[] data, String u) {
 		this.size = size;
-		//this.url = u;
+		this.url = u;
 		this.data = new byte[data.length];
 		for (int i = 0; i < size; i++) {
 			this.data[i] = data[i];
