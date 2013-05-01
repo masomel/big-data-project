@@ -8,8 +8,6 @@ public class Simulator{
 
     private static SimpleCache proxyCache = new SimpleCache();
 
-    private static SimpleCache mobCache = new SimpleCache(1024); // Mobile cache holds 10KB or 1024 chunks
-
     public static void main(String args[]) throws IOException{
 	
 	ArrayList<Chunk> chunks = new ArrayList<Chunk>();

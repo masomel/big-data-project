@@ -130,10 +130,8 @@ public class SimpleCache{
 	3. If FP IS in cache:
 	a. add FP to diff
     */
-    public ArrayList<Integer> processWebContent(ArrayList<Chunk> content){
+    public int processWebContentProxy(ArrayList<Chunk> content){
 	int misses = 0;
-
-	ArrayList<Integer> diff = new ArrayList<Integer>();
 
 	for(Chunk chunk : content){
 	    int fp = Fingerprinting.fingerprint(chunk.getData());
@@ -144,32 +142,50 @@ public class SimpleCache{
 		capacity--;
 	    }
 	    else{
-		diff.add(fp);
+		// Need to deal with eviction!!
 	    }
+
 	}
 	missrate = misses/content.size();
-	return diff;
+
+	return missrate;
 	
 	//set size of cache, LRU? FIFO? LIFO?
     }
 
-    public ArrayList<Integer> findRedundantFps(ArrayList<Integer> fps){
-	int misses = 0;
-
-	ArrayList<Integer> diff = new ArrayList<Integer>();
-
-	for(Integer fp : fps){
-
-	    if(!cache.containsKey(fp)){
-		diff.add(fp);
-		misses++;
-	    }
-	 
-	}
-	missrate = misses/content.size();
-	return diff;
+    /** Given the list of all web data chunks and the list of the needed fingerprints,
+     * create a list of chunks to be sent over to the mobile device. A null entry indicates that
+     * the mobile device already has this chunk in its cache.
+     */
+    public ArrayList<Chunk> prepareData(ArrayList<Chunk> content, ArrayList<Integer> neededFps){
 	
-	//set size of cache, LRU? FIFO? LIFO?
-    }
+	ArrayList<Chunk> prepData = new ArrayList<Chunk>();
+
+	if(content.size() != neededFps.size()){
+	    System.out.println("Content and neededFps are not of the same length!");
+	    return null;
+	}
+
+	for(int i = 0; i < content.size(); i++){
+
+	    int curFp = neededFps.get(i);
+	    
+	     // check first to see if mobile device needs this chunk
+	    if(curFp == null){
+		prepData.add(null);
+	    }
+	    // check to see if we already have this chunk in our cache and if the mobile device needs it
+	    else if(cache.containsKey(curFp)){
+		prepData.add(cache.get(curFp));
+	    }
+	    else if(!cache.containsKey(curFp)){
+		prepData.add(content.get(i));
+	    }
+	    
+	}
+
+	return prepData;
+
+    } //ends prepareData()
     
 }
