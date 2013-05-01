@@ -1,16 +1,23 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
+/** Simulates the interactions between a proxy server, and a mobile device */
 public class Simulator{
 
     private static Chunking webData = new Chunking("./packet_bytes/amazon1.txt");
 
-    private static SimpleCache cache = new SimpleCache();
+    private static SimpleCache proxyCache = new SimpleCache();
+
+    private static SimpleCache mobCache = new SimpleCache(1024); // Mobile cache holds 10KB or 1024 chunks
 
     public static void main(String args[]) throws IOException{
 	
 	ArrayList<Chunk> chunks = new ArrayList<Chunk>();
 	
+	System.out.println("Proxy server grabs all the web data for a requested webpage");
+
+	System.out.println("Proxy server partitions the received data into fixed-size chunks");
+
 	// read next chunks while the end of the file has not been reached
 	while(!webData.isEOF()){		
 	    Chunk c = webData.getNextChunk();
@@ -23,7 +30,19 @@ public class Simulator{
 	    chunks.add(c);
 	}
 	
-	ArrayList<Integer> redundant = cache.getWebContent(chunks); 
+	System.out.println("Proxy server is computing the fingerprints for all received chunks.");
+
+	// Proxy computes the fingerprints of all the chunks it received
+	ArrayList<Integer> fps = getFingerprints(chunks);
+
+	System.out.println("Proxy server is sending the computed fingerprints to the mobile device.");
+
+	System.out.println("Mobile device is checking its cache for the fingerprints it received from the proxy server.");
+
+	// Mobile device checks its cache for the fps it received from the proxy
+	ArrayList<Integer> mobRed = mobCache.getRedundantFps(fps);
+
+	System.out.println("Mobile device sends back a list of fingerprints of the chunks it does not have in its cache.");
 	
 	System.out.println("Number of chunks inspected: "+chunks.size());
 	System.out.println("Number of redundant chunks: "+redundant.size());
@@ -60,5 +79,20 @@ public class Simulator{
       }
       return webcontent; //returns entirety of everything in chunks, constructing a full webpage..
       }*/
+
+     /** Given a list of chunks, get the fingerprint of each chunk. This will be used to send
+     * the fingerprints to the mobile cache, so the mobile device can check its cache for the
+     * pages.
+     */
+    private ArrayList<Integer> getFingerprints(ArrayList<Chunk> content){
+	ArrayList<Integer> fps = new ArrayList<Integer>();
+
+	for(Chunk chunk : content){
+	    int fp = Fingerprinting.fingerprint(chunk.getData());
+	    fps.add(fp);
+	}
+
+	return fps;
+    }
     
 }

@@ -34,8 +34,9 @@ public class SimpleCache{
 
     private Hashtable cache;
     private double missrate;
+    private final int size; // Note: in number of chunks!
 
-    // Need global size limit to make more like realistic cache
+    // Need global size limit for Proxy cache to make more like realistic cache
     private static final int CACHE_SIZE_BYTES = 524288; //0.5MB
     private static final int CACHE_SIZE_CHUNKS = CACHE_SIZE_BYTES/Chunking.getChunkSize();
 
@@ -44,7 +45,15 @@ public class SimpleCache{
     public SimpleCache(){
 	cache = new Hashtable<Integer,Chunk>();
 	capacity = CACHE_SIZE_CHUNKS;
+	size = capacity;
 	missrate=0;
+    }
+
+    public SimpleCache(int s){
+	cache = new Hashtable<Integer,Chunk>();
+	capacity = s;
+	size = s;
+	missrate = 0;
     }
     
     public double getMissRate(){
@@ -89,7 +98,7 @@ public class SimpleCache{
 	3. If FP IS in cache:
 	a. add FP to diff
     */
-    public ArrayList getWebContent(Chunk[] content){
+    public ArrayList<Integer> getWebContent(Chunk[] content){
 	missrate=0;
 	int len = content.length;
 	ArrayList<Integer> diff = new ArrayList<Integer>();
@@ -121,7 +130,7 @@ public class SimpleCache{
 	3. If FP IS in cache:
 	a. add FP to diff
     */
-    public ArrayList<Integer> getWebContent(ArrayList<Chunk> content){
+    public ArrayList<Integer> processWebContent(ArrayList<Chunk> content){
 	int misses = 0;
 
 	ArrayList<Integer> diff = new ArrayList<Integer>();
@@ -137,6 +146,25 @@ public class SimpleCache{
 	    else{
 		diff.add(fp);
 	    }
+	}
+	missrate = misses/content.size();
+	return diff;
+	
+	//set size of cache, LRU? FIFO? LIFO?
+    }
+
+    public ArrayList<Integer> findRedundantFps(ArrayList<Integer> fps){
+	int misses = 0;
+
+	ArrayList<Integer> diff = new ArrayList<Integer>();
+
+	for(Integer fp : fps){
+
+	    if(!cache.containsKey(fp)){
+		diff.add(fp);
+		misses++;
+	    }
+	 
 	}
 	missrate = misses/content.size();
 	return diff;
