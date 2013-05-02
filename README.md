@@ -5,6 +5,7 @@ Minimizing the required bandwidth for mobile web browsing
 ================
 
 TODO:
+
 1. Create Proxy class and move marked functions.
 
 2. Make cache sizes arguments to the Simulator when running.
