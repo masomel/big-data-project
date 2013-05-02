@@ -1,9 +1,7 @@
-import java.util.ArrayList;
-import java.util.Hashtable;
-
+import java.util.*;
 
  /*
- *@author Madhuvanthi Jayakumar
+ *@author Madhuvanthi Jayakumar, Marcela Melara
  */
 public class SimpleCache{
 
@@ -40,13 +38,16 @@ public class SimpleCache{
     private static final int CACHE_SIZE_BYTES = 524288; //0.5MB
     private static final int CACHE_SIZE_CHUNKS = CACHE_SIZE_BYTES/Chunking.getChunkSize();
 
-    private static int capacity; // Needed for evictions
+    private int capacity; // Needed for evictions
+
+    private int MRU; // Most recently used item in cache
 
     public SimpleCache(){
 	cache = new Hashtable<Integer,Chunk>();
 	capacity = CACHE_SIZE_CHUNKS;
 	size = capacity;
 	missrate=0;
+	MRU = -1;
     }
 
     public SimpleCache(int s){
@@ -83,76 +84,63 @@ public class SimpleCache{
     public void set(int fp, Chunk c){
 	cache.put(new Integer(fp), c);
     }
-    
-    /** @params: chunked content of the webpage in byte array
-	@return: int array with content
-	Simulating PROXY CACHE: 
-	In this SIMPLIFIED IMPLEMENTATION, purpose: gather statistics
-	Given entire webpage from Web Server (in chunked format),
-	1. Determine FP of chunks
-	2. If FP IS NOT in cache:
-	a. add FP and chunk to cache.
-	b. add FP to diff.
-	c. increment missrate
-	d. consider eviction?
-	3. If FP IS in cache:
-	a. add FP to diff
-    */
-    public ArrayList<Integer> getWebContent(Chunk[] content){
-	missrate=0;
-	int len = content.length;
-	ArrayList<Integer> diff = new ArrayList<Integer>();
-	int fp;
-	for(int i = 0; i<len; i++){
-	    fp = Fingerprinting.fingerprint(content[i].getData());
-	    diff.add(fp);	
-	    if(!cache.containsKey(fp)){
-		cache.put(fp, content[i]);
-		missrate+=1;
-	    }
-	}
-	missrate = missrate/content.length;
-	return diff;
-	
-	//set size of cache, LRU? FIFO? LIFO?
-    }
-    
+        
     /** @params Chunked content of the webpage in ArrayList of chunks
-	@return ArrayList of ints containing the fingerprints of the redundant chunks
-	Simulating PROXY CACHE: 
+	@return the missrate
+	Simulating CACHE: 
 	In this SIMPLIFIED IMPLEMENTATION, purpose: gather statistics
-	Given entire webpage from Web Server (in chunked format),
+	Given webpage content from a Web Server (in chunked format),
 	1. Determine FP of chunks
 	2. If FP IS NOT in cache:
 	a. add FP and chunk to cache.
 	b. increment missrate
-	c. consider eviction?
 	3. If FP IS in cache:
-	a. add FP to diff
+	a. evict some chunk
+	b. add FP and chunk to cache
     */
-    public int processWebContentProxy(ArrayList<Chunk> content){
+    public void processWebContent(ArrayList<Chunk> content){
 	int misses = 0;
+	int hits = 0;
 
+	// For each chunk in the list, check to see if it's in the cache
 	for(Chunk chunk : content){
+	    if(chunk == null){
+		continue; // Don't even consider chunk when it is null
+	    }
+
 	    int fp = Fingerprinting.fingerprint(chunk.getData());
-	   	
+
+	    // Not in cache. If we have capacity, simply add, otherwise, evict.
 	    if(!cache.containsKey(fp)){
-		cache.put(fp, chunk);
-		misses++;
-		capacity--;
+		if(capacity > 0){
+		    cache.put(fp, chunk);
+		    misses++;
+		    capacity--;
+		}	    
+		else{
+		    //Evict most recently used item
+		    cache.remove(MRU);		    
+		    cache.put(fp, chunk);
+		    misses++;
+		}
 	    }
 	    else{
-		// Need to deal with eviction!!
+		hits++;
+		MRU = fp;
 	    }
 
 	}
-	missrate = misses/content.size();
 
-	return missrate;
+	int size = content.size();
+
+	if(size != 0){
+	    missrate = ((double)misses/(double)size)*100;
+	}
 	
 	//set size of cache, LRU? FIFO? LIFO?
     }
 
+    // TODO: move to Proxy class
     /** Given the list of all web data chunks and the list of the needed fingerprints,
      * create a list of chunks to be sent over to the mobile device. A null entry indicates that
      * the mobile device already has this chunk in its cache.
@@ -167,20 +155,22 @@ public class SimpleCache{
 	}
 
 	for(int i = 0; i < content.size(); i++){
-
-	    int curFp = neededFps.get(i);
 	    
 	     // check first to see if mobile device needs this chunk
-	    if(curFp == null){
+	    if(neededFps.get(i) == null){
 		prepData.add(null);
 	    }
-	    // check to see if we already have this chunk in our cache and if the mobile device needs it
-	    else if(cache.containsKey(curFp)){
-		prepData.add(cache.get(curFp));
+	    else{
+		int curFp = neededFps.get(i);
+		// check to see if we already have this chunk in our cache and if the mobile device needs it
+		if(cache.containsKey(curFp)){
+		    prepData.add((Chunk)cache.get(curFp));
+		}
+		else if(!cache.containsKey(curFp)){
+		    prepData.add((Chunk)content.get(i));
+		}
 	    }
-	    else if(!cache.containsKey(curFp)){
-		prepData.add(content.get(i));
-	    }
+	   
 	    
 	}
 

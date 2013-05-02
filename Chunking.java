@@ -10,13 +10,27 @@ public class Chunking {
     private static int chunk_size;
     private static String filename;
     private static boolean EOF; // flag to mark when the end of a file has been reached
-    
+
     public static Chunking getInstance() {
 	return null;
     }
 
-    public static void setFilename(String f){
+    /** Resets the chunker to work with a new input file */
+    public static void reset(String f){
+	EOF = false; 
 	filename = f;
+	try {
+	    stream = new FileInputStream(filename);
+	    in = new Scanner(stream);
+	}
+	catch (IOException e) {
+	    System.err.println("Cannot open file " + filename);
+	    e.printStackTrace();
+	}
+    }
+
+    public static String getFilename(){
+	return filename;
     }
 
     public static int getChunkSize(){
@@ -33,7 +47,6 @@ public class Chunking {
 	if(in.hasNext()){
 	    EOF = false;
 
-	    /* if (stream.available() > 0) { */
 	    byte[] data = new byte[chunk_size];
 	    
 	    // loop counter to keep track of position in buffer
@@ -41,17 +54,16 @@ public class Chunking {
 
 	    // read up to chunk_size tokens while possible
 	    while(in.hasNext() && f < chunk_size){
+	
 		try{
 		    String num = in.next();
-		    data[f] = (byte) Integer.parseInt(num.substring(2,num.length()), 16);
+		    data[f] = (byte) Integer.parseInt(num.substring(2, num.length()), 16);
 		    f++;
 		}
 		catch(NumberFormatException e){
 		    System.out.println("Oops");
 		}
 	    }
-
-	    /* int f = stream.read(data, 0, chunk_size);*/
 
 	    if (f == chunk_size){
 		return new Chunk(chunk_size, data);
@@ -74,9 +86,9 @@ public class Chunking {
     /** Constructor with param: Needed since we don't want to hardcode in specific
      * filenames in here!
      */
-    public Chunking(String f) {
+    public Chunking(String f, int size) {
 	// specify the chunk size here
-	chunk_size = 10;
+	chunk_size = size;
 	EOF = false;
 	// specify the input file here
 	filename = f;
