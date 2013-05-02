@@ -11,7 +11,7 @@ public class SimulatorV1{
 	int chunk_size = 0;
 
 	if(args.length != 1){
-	    System.out.println("Format: java Simulator [postive int: chunk_size]");
+	    System.out.println("Format: java SimulatorV1 [postive int: chunk_size]");
 	    System.exit(-1);
 	}
 

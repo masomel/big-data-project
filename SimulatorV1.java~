@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.text.*;
 
 /** Simulates the interactions between a proxy server, and a mobile device */
-public class Simulator{
+public class SimulatorV1{
 
     public static void main(String args[]) throws IOException{
 
