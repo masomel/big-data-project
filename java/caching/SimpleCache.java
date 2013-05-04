@@ -1,4 +1,10 @@
-import java.util.*;
+package caching;
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+import chunking.Chunk;
+import chunking.Chunking;
+import fingerprinting.Fingerprinting;
 
  /*
  *@author Madhuvanthi Jayakumar, Marcela Melara

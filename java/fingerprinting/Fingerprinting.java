@@ -1,3 +1,4 @@
+package fingerprinting;
 import com.planetj.math.rabinhash.*;
 
 /** Takes in a single packet chunk and creates the fingerprints of the chunk.

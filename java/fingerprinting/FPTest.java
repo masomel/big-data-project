@@ -1,3 +1,4 @@
+package fingerprinting;
 /** Simple test function for the Fingerprinting class.
  *@author Marcela S. Melara
  *@since 14 April 2013
