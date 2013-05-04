@@ -6,7 +6,7 @@ Minimizing the required bandwidth for mobile web browsing
 
 TODO:
 
-1. Create Proxy class and move marked functions.
+DONE - 1. Create Proxy class and move marked functions.
 
 2. Make cache sizes arguments to the Simulator when running.
 
@@ -16,7 +16,7 @@ TODO:
 
 5. Experiments with 1 and multiple mobile devices and repeat task 4.
 
-6. Make networked simulator \[SimulatorV3\].
+STARTED - 6. Make networked simulator \[SimulatorV3\].
 
 7. Make Demo.
 
