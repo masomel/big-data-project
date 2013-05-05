@@ -103,8 +103,6 @@ public class SimulatorV1 implements ISimulator {
 		    try {
 		    	byte[] webdata = mobile.reconstructData();
 		    	mobile.outputData(webdata, path, website, i);
-		    	this.path = path;
-				this.website = website;
 		    } catch (FileNotFoundException fnfe) {
 		    	fnfe.printStackTrace();
 		    }
