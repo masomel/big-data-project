@@ -101,7 +101,8 @@ public class SimulatorV1 implements ISimulator {
 		    
 		    // System.out.println("Mobile device reconstructs the web data of the requested webpage.");
 		    try {
-		    	mobile.reconstructData();
+		    	byte[] webdata = mobile.reconstructData();
+		    	mobile.outputData(webdata, path, website, i);
 		    } catch (FileNotFoundException fnfe) {
 		    	fnfe.printStackTrace();
 		    }
