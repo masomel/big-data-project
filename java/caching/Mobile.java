@@ -13,8 +13,8 @@ public class Mobile{
     private ArrayList<Chunk> neededChunks;
     private byte[] webcontent;
 
-    public Mobile(){
-	cache = new SimpleCache(2048); // Mobile cache holds 20KB or 2048 chunks
+    public Mobile(int size){
+	cache = new SimpleCache(size); // Mobile cache holds size chunks
 	allFps = new ArrayList<Integer>();
 	neededFps = new ArrayList<Integer>();
 	neededChunks = new ArrayList<Chunk>();
@@ -34,7 +34,7 @@ public class Mobile{
 	neededChunks = chunks;
     }
 
-    public SimpleCache getMobCache(){
+    public SimpleCache getCache(){
 	return cache;
     }
 

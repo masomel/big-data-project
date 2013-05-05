@@ -4,8 +4,10 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+import simulation.*;
 import caching.Mobile;
 import caching.SimpleCache;
+import javaproxy.ProxyServer;
 import chunking.Chunk;
 import chunking.Chunking;
 import fingerprinting.Fingerprinting;
@@ -30,11 +32,11 @@ public class SimulatorV1 implements ISimulator {
 		// The Chunking Facility
 		Chunking chunking = new Chunking(path + "/packet_bytes/amazon1.txt", chunk_size);
 
-		// TODO: move to Proxy class
-		SimpleCache proxyCache = new SimpleCache();
+		// A proxy server
+		ProxyServer proxy = new ProxyServer(chunk_size*2000); //holds 2000 chunks; TODO: this should be an argument
 
 		// A mobile device; Could imagine simulating multiple devices
-		Mobile mobile = new Mobile();
+		Mobile mobile = new Mobile(chunk_size*500); //holds 500 chunks; TODO: this should be an argument
 
 		// Used to calculated the average missrates
 		double proxySum = 0;
@@ -69,7 +71,7 @@ public class SimulatorV1 implements ISimulator {
 		    // System.out.println("Proxy server is computing the fingerprints for all received chunks.");
 
 		    // Proxy computes the fingerprints of all the chunks it received
-		    ArrayList<Integer> fps = getFingerprints(chunks);
+		    ArrayList<Integer> fps = proxy.sendAllFps(chunks);
 		    
 		    // System.out.println("Proxy server is sending the computed fingerprints to the mobile device.");
 
@@ -84,7 +86,9 @@ public class SimulatorV1 implements ISimulator {
 		    
 		    // System.out.println("Mobile device sends back a list of fingerprints of the chunks it does not have in its cache.");
 
-		    ArrayList<Chunk> neededChunks = proxyCache.prepareData(chunks, mobNeeded);
+		    proxy.receivedNeededFps(mobNeeded);
+
+		    ArrayList<Chunk> neededChunks = proxy.sendNeededChunks();
 		    
 		    // System.out.println("Proxy sends back a list of chunks according to the needed fingerprints.");		    
 		    // System.out.println("Mobile device caches the received content.");
@@ -101,16 +105,16 @@ public class SimulatorV1 implements ISimulator {
 		    System.out.println("----------------------");
 		    
 		    System.out.println("Number of chunks inspected: "+chunks.size());	
-		    System.out.println("Remaining proxy cache capacity: "+proxyCache.getCapacity());
+		    System.out.println("Remaining proxy cache capacity: "+proxy.getCache().getCapacity());
 		    System.out.print("Proxy missrate: ");
-		    customFormat("##.####", proxyCache.getMissRate());
-		    System.out.println("Remaining mobile cache capacity: "+mobile.getMobCache().getCapacity());
+		    customFormat("##.####", proxy.getCache().getMissRate());
+		    System.out.println("Remaining mobile cache capacity: "+mobile.getCache().getCapacity());
 		    System.out.print("Mobile missrate: ");
-		    customFormat("##.####", mobile.getMobCache().getMissRate());
+		    customFormat("##.####", mobile.getCache().getMissRate());
 		    System.out.println();
 
-		    proxySum += proxyCache.getMissRate();
-		    mobSum += mobile.getMobCache().getMissRate();		
+		    proxySum += proxy.getCache().getMissRate();
+		    mobSum += mobile.getCache().getMissRate();		
 			// Hardcoded number of sites!
 			System.out.print("Avg proxy missrate over all inspected sites: ");
 			customFormat("##.####", proxySum/8);
@@ -127,22 +131,6 @@ public class SimulatorV1 implements ISimulator {
 	}
 	return chunks;
 	
-    }
-
-    // TODO: move to Proxy class
-     /** Given a list of chunks, get the fingerprint of each chunk. This will be used to send
-     * the fingerprints to the mobile cache, so the mobile device can check its cache for the
-     * pages.
-     */
-    private static ArrayList<Integer> getFingerprints(ArrayList<Chunk> content){
-	ArrayList<Integer> fps = new ArrayList<Integer>();
-
-	for(Chunk chunk : content){
-	    int fp = Fingerprinting.fingerprint(chunk.getData());
-	    fps.add(fp);
-	}
-
-	return fps;
     }
 
     /** Helper function:
