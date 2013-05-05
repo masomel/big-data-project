@@ -1,5 +1,4 @@
 package simulation;
-import simulation.*;
 
 /**
  * Interface defining the functionality provided by a simulator.

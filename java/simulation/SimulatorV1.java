@@ -4,13 +4,11 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-import simulation.*;
+import javaproxy.ProxyServer;
 import caching.Mobile;
 import caching.SimpleCache;
-import javaproxy.ProxyServer;
 import chunking.Chunk;
 import chunking.Chunking;
-import fingerprinting.Fingerprinting;
 
 /**
  * Class representing the first version of the simulator.

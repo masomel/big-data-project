@@ -1,6 +1,5 @@
 package simulation;
 
-import simulation.*;
 
 public class Main {
 
