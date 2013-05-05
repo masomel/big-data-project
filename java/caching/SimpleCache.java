@@ -129,44 +129,5 @@ public class SimpleCache implements ICache {
 	}
 
 	//set size of cache, LRU? FIFO? LIFO?
-    }
-
-    // TODO: move to Proxy class
-    /** Given the list of all web data chunks and the list of the needed fingerprints,
-     * create a list of chunks to be sent over to the mobile device. A null entry indicates that
-     * the mobile device already has this chunk in its cache.
-     */
-    public ArrayList<Chunk> prepareData(ArrayList<Chunk> content, ArrayList<Integer> neededFps){
-
-	ArrayList<Chunk> prepData = new ArrayList<Chunk>();
-
-	if(content.size() != neededFps.size()){
-	    System.out.println("Content and neededFps are not of the same length!");
-	    return null;
-	}
-
-	for(int i = 0; i < content.size(); i++) {
-
-	     // check first to see if mobile device needs this chunk
-	    if(neededFps.get(i) == null){
-		prepData.add(null);
-	    }
-	    else{
-		int curFp = neededFps.get(i);
-		// check to see if we already have this chunk in our cache and if the mobile device needs it
-		if(cache.containsKey(curFp)){
-		    prepData.add((Chunk)cache.get(curFp));
-		}
-		else if(!cache.containsKey(curFp)){
-		    prepData.add((Chunk)content.get(i));
-		}
-	    }
-	   
-	    
-	}
-
-	return prepData;
-
-    } //ends prepareData()
-    
+    }   
 }
