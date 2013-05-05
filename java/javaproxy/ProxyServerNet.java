@@ -1,5 +1,14 @@
+package javaproxy;
 import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Scanner;
+
+import caching.SimpleCache;
+import chunking.Chunk;
+import fingerprinting.Fingerprinting;
 
 public class ProxyServerNet{
     
@@ -9,7 +18,7 @@ public class ProxyServerNet{
     private ArrayList<Integer> neededFps;
     private byte[] webcontent;
 
-    public ProxyServer(int size){
+    public ProxyServerNet(int size){
 	cache = new SimpleCache(size); // Server cache holds size chunks
 	allChunks = new ArrayList<Chunk>();
 	allFps = new ArrayList<Integer>();
@@ -181,7 +190,7 @@ public class ProxyServerNet{
 		
 		//check if connection request protocol has been implemented
 		if(!protocol.equals("HTTP/1.1")){			
-		    sendError(out, BAD_REQUEST);
+		    //sendError(out, BAD_REQUEST);
 		    return;
 		}
 		
@@ -191,8 +200,9 @@ public class ProxyServerNet{
 		    // actually go to the real web server of the requested URL and get the content
 		    Socket proxyClientSocket = new Socket(urlStr, PORT);
 
-		    PrintStream out = new PrintStream(proxyClientSocket.getOutputStream());
+		    out = new PrintStream(proxyClientSocket.getOutputStream());
 		    
+		    URL url = new URL(urlStr);
 		    //send GET request to web server
 		    out.println("GET /" +urlStr+ " HTTP/1.1"); 
 		    out.println("Host: " +url.getHost());
@@ -201,10 +211,10 @@ public class ProxyServerNet{
 		    System.out.println("Proxy Message: Sent GET request to web server.");
 
 		    //stream to receive messages from server
-		    InputStream in =  proxyClientSocket.getInputStream();
+		    InputStream in1 =  proxyClientSocket.getInputStream();
 		    
 		    // partition incoming webpage into Chunks
-		    while(in.available() > 0){
+		    while(in1.available() > 0){
 			// TODO: need to make networked version of Chunking, i.e. using Inputstream from
 			// Socket instead of File
 		    }

@@ -1,5 +1,9 @@
+package javaproxy;
 import java.io.*;
 import java.util.ArrayList;
+import caching.SimpleCache;
+import chunking.Chunk;
+import fingerprinting.Fingerprinting;
 
 public class ProxyServer{
     
