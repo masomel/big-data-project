@@ -130,7 +130,7 @@ public class Mobile{
     		output = hex;
     	    }
 
-    	    out.println(output);
+    	    out.println("0x" + output);
     	}
 
     	out.flush();
