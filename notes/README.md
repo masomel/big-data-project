@@ -20,7 +20,7 @@ Execution:
 	b. simulate()
 2. SimulatorV1
 	a. Call Chunking with filename: open file
-	b. Create proxyCache instance					TODO: proxy cache v. phone cache.
+	b. Create proxyCache instance				TODO: proxy cache v. phone cache.
 	c. Create mobile instance
 	d. Loop over files of given website: 			TODO: eliminate hardcoded name
 	e. For each file: create an arraylist of chunks
