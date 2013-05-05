@@ -79,14 +79,15 @@ public class SimulatorV1 implements ISimulator {
 
 		    // System.out.println("Mobile device is checking its cache for the fingerprints it received from the proxy server.");
 
-		    proxyCache.processWebContent(chunks);
+		   // proxyCache.processWebContent(chunks);
+		//    proxy.prepareData(chunks);
 		    
 		    // Mobile device checks its cache for the fps it received from the proxy
 		    ArrayList<Integer> mobNeeded = mobile.sendNeededFps();
 		    
 		    // System.out.println("Mobile device sends back a list of fingerprints of the chunks it does not have in its cache.");
 
-		    proxy.receivedNeededFps(mobNeeded);
+		    proxy.receiveNeededFps(mobNeeded);
 
 		    ArrayList<Chunk> neededChunks = proxy.sendNeededChunks();
 		    

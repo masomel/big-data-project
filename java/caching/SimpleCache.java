@@ -1,20 +1,18 @@
 package caching;
 import java.util.ArrayList;
-import java.util.Hashtable;
+import java.util.HashMap;
+import java.util.Map;
 
 import chunking.Chunk;
-import chunking.Chunking;
 import fingerprinting.Fingerprinting;
 
- /*
- *@author Madhuvanthi Jayakumar, Marcela Melara
- */
-public class SimpleCache{
-
-/* Sample: Prototype deduplication with relatively small amounts of data
+ /**
+  * Sample: Prototype deduplication with relatively small amounts of data
 	small enough to be stored in main memory.
-	Main purpose: Simulate Proxy caching and determine content overlap 
+	
+  *	Main purpose: Simulate Proxy caching and determine content overlap 
 	within a website as well as between websites 
+	
 	MODEL:  |-------------|
 			|FP1 | chunk1 |  
 			|----|--------|
@@ -23,8 +21,8 @@ public class SimpleCache{
 			|FP3 | chunk3 | 
 			|-------------|
 			
- * What we want to be able to model soon:
- * 	    Given entire webpage from Web Server (in chunked format),
+  * What we want to be able to model soon:
+   	    Given entire webpage from Web Server (in chunked format),
 	    1. Determine FP of chunks
 	    2. If FP IS NOT in cache: 
 	    	a. add FP and chunk to cache.
@@ -34,59 +32,50 @@ public class SimpleCache{
 	    		i. add chunk to diff.
 	    	b. If FP IS in phone FP:
 	    		ii. add FP to diff.
+
+ * @author Madhuvanthi Jayakumar, Marcela Melara, Nayden Nedev
  */
+public class SimpleCache implements ICache {
 
-    private Hashtable cache;
-    private double missrate;
     private final int size; // Note: in number of chunks!
-
     private int capacity; // Needed for evictions
-
     private int MRU; // Most recently used item in cache
+    private double missrate;
 
-    public SimpleCache(){
-	cache = new Hashtable<Integer,Chunk>();
-	capacity = CACHE_SIZE_CHUNKS;
-	size = capacity;
-	missrate=0;
-	MRU = -1;
-    }
+    private Map<Integer, Chunk> cache;
 
-    public SimpleCache(int s){
-	cache = new Hashtable<Integer,Chunk>();
-	capacity = s;
-	size = s;
-	missrate = 0;
-    }
-    
-    public double getMissRate(){
-	return missrate;
-    }
-    
-    public Hashtable getCache(){
-	return cache;
-    }
-    
-    public int getCacheSize(){
-	return CACHE_SIZE_BYTES;
+    public SimpleCache(int capacity) {
+        this.cache = new HashMap<Integer,Chunk>();
+        this.capacity = capacity;
+        this.size = capacity;
+        this.missrate = 0;
     }
 
-    public int getCacheSizeChunks(){
-	return CACHE_SIZE_CHUNKS;
+    @Override
+    public double getMissRate() {
+        return missrate;
     }
 
-    public int getCapacity(){
-	return capacity;
+    @Override
+    public int getSize(){
+        return size;
     }
-    
-    public Chunk get(int fp){
-	return (Chunk)(cache.get(fp));
+
+    @Override
+    public int getCapacity() {
+        return capacity;
     }
-    
-    public void set(int fp, Chunk c){
-	cache.put(new Integer(fp), c);
+
+    @Override
+    public Chunk get(int fp) {
+        return cache.get(fp);
     }
-        
+
+    @Override
+    public void put(int fp, Chunk c) {
+        cache.put(fp, c);
+    }
+
     /** @params Chunked content of the webpage in ArrayList of chunks
 	@return the missrate
 	Simulating CACHE: 
@@ -133,13 +122,51 @@ public class SimpleCache{
 
 	}
 
-	int size = content.size();
+	int tsize = content.size();
 
-	if(size != 0){
-	    missrate = ((double)misses/(double)size)*100;
+	if(tsize != 0){
+	    missrate = ((double)misses/(double)tsize)*100;
 	}
-	
+
 	//set size of cache, LRU? FIFO? LIFO?
     }
+
+    // TODO: move to Proxy class
+    /** Given the list of all web data chunks and the list of the needed fingerprints,
+     * create a list of chunks to be sent over to the mobile device. A null entry indicates that
+     * the mobile device already has this chunk in its cache.
+     */
+    public ArrayList<Chunk> prepareData(ArrayList<Chunk> content, ArrayList<Integer> neededFps){
+
+	ArrayList<Chunk> prepData = new ArrayList<Chunk>();
+
+	if(content.size() != neededFps.size()){
+	    System.out.println("Content and neededFps are not of the same length!");
+	    return null;
+	}
+
+	for(int i = 0; i < content.size(); i++) {
+
+	     // check first to see if mobile device needs this chunk
+	    if(neededFps.get(i) == null){
+		prepData.add(null);
+	    }
+	    else{
+		int curFp = neededFps.get(i);
+		// check to see if we already have this chunk in our cache and if the mobile device needs it
+		if(cache.containsKey(curFp)){
+		    prepData.add((Chunk)cache.get(curFp));
+		}
+		else if(!cache.containsKey(curFp)){
+		    prepData.add((Chunk)content.get(i));
+		}
+	    }
+	   
+	    
+	}
+
+	return prepData;
+
+    } //ends prepareData()
     
 }

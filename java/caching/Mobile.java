@@ -49,7 +49,7 @@ public class Mobile{
 
 	for(Integer fp : fps){
 
-	    if(!cache.getCache().containsKey(fp)){
+	    if(cache.get(fp) == null){
 		diff.add(fp);
 	    }
 	    else{

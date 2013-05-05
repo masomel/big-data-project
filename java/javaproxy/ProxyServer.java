@@ -78,10 +78,10 @@ public class ProxyServer{
 	    else{
 		int curFp = neededFps.get(i);
 		// check to see if we already have this chunk in our cache and if the mobile device needs it
-		if(cache.getCache().containsKey(curFp)){
+		if(cache.get(curFp) != null){
 		    prepData.add((Chunk)cache.get(curFp));
 		}
-		else if(!cache.getCache().containsKey(curFp)){
+		else if(cache.get(curFp) == null){
 		    prepData.add((Chunk)allChunks.get(i));
 		}
 	    }	    
