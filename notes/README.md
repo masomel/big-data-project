@@ -52,8 +52,6 @@ TODO:
 	Mobile:
 	webcontent = new byte[1]; //dummy array for now
 
-
-
 TODO:
 
 DONE - 1. Create Proxy class and move marked functions.
@@ -75,5 +73,3 @@ STARTED - 6. Make networked simulator \[SimulatorV3\].
 7. Make Demo.
 
 8. Write paper.
-
-Order subject to change.
