@@ -20,9 +20,9 @@ Execution:
 	b. simulate()
 2. SimulatorV1
 	a. Call Chunking with filename: open file
-	b. Create proxyCache instance				TODO: proxy cache v. phone cache.
+	b. Create proxyCache instance		
 	c. Create mobile instance
-	d. Loop over files of given website: 			TODO: eliminate hardcoded name
+	d. Loop over files of given website: 
 	e. For each file: create an arraylist of chunks
 	f. Create fingerprints of all chunks
 	g. send fingerprints to mobile
@@ -52,9 +52,13 @@ TODO:
 
 DONE - 1. Create Proxy class and move marked functions.
 
-2. Make cache sizes arguments to the Simulator when running.
+DONE - 2. Make cache sizes arguments to the Simulator when running.
 
-3. Automate how sites are inspected (right now hardcoded for-loop): Want to be able to give specific sites as arguments and how many of them to compare \[SimulatorV2\].
+DONE - 3. Automate how sites are inspected (right now hardcoded for-loop): Want to be able to give specific sites as arguments and how many of them to compare.
+
+3a. Make version that compares multiple different websites with one mobile device.
+3b. Make version of simulator that compares one website with multiple mobile devices.
+3c. Make version of simulator that compares multiple websites with multiple mobile devices.
 
 4. Experiments with different cache sizes and chunk sizes (holding one fixed and changing the other param).
 

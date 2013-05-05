@@ -1,0 +1,6 @@
+Future Work
+
+- Better caching (take expiration into account in proxy cache, more realistic cache data structure, better implementations of eviction algorithms) --> only difference having expiration makes is in the amount of data that is sent between the proxy server and the actual web server.
+- Networked simulator --> take away headers of packets, use real-time http traffic instead of static packet bytes collected from wireshark, can better simulate multiple mobile devices, and do better latency measurements.
+- Actual implementation of this system: using publicly available server, reconstruct chunked data to actual browser-readable data and/or store it in mobile phone's web cache.
+- Look at mobile app http traffic besides browsing http traffic.
