@@ -4,6 +4,50 @@ big-data-project
 Minimizing the required bandwidth for mobile web browsing
 ================
 
+ARGUMENTS:
+1. Path to data folder
+2. Name of website
+3. Number of files
+4. # of bytes per chunk
+5. size of mobile cache
+6. size of proxy cache
+
+
+
+Execution:
+1. Execution starts at Main: 
+	a. Accepts two arguments: PATH-to-data and #bytes-per-chunk
+	b. simulate()
+2. SimulatorV1
+	a. Call Chunking with filename: open file
+	b. Create proxyCache instance					TODO: proxy cache v. phone cache.
+	c. Create mobile instance
+	d. Loop over files of given website: 			TODO: eliminate hardcoded name
+	e. For each file: create an arraylist of chunks
+	f. Create fingerprints of all chunks
+	g. send fingerprints to mobile
+	h. send chunks to proxyCache
+	i. mobile sends an arraylist of needed fingerprints
+	j. proxycache prepares arraylist of chunks
+	k. mobile receives needed chunks
+	l. mobile reconstructs data
+	m. print stats
+
+Code Structure:
+
+
+Questions: 
+Proxy cache and mobile cache capacities?
+prepareData() doesn't need chunks as parameter
+we don't want to make mobile calculate fps? computation heavy?
+
+
+TODO:
+	Mobile:
+	webcontent = new byte[1]; //dummy array for now
+
+
+
 TODO:
 
 DONE - 1. Create Proxy class and move marked functions.
