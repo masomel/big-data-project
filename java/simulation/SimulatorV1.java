@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-import javaproxy.ProxyServer;
-import caching.Mobile;
+import devices.ProxyServer;
+import devices.Mobile;
 import caching.SimpleCache;
 import chunking.Chunk;
 import chunking.Chunking;
