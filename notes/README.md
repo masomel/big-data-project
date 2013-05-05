@@ -12,6 +12,12 @@ ARGUMENTS:
 5. size of mobile cache
 6. size of proxy cache
 
+Output:
+Creates Folder in given-path/ReconstructedBytes/ and stores reconstructed content inside that folder
+
+My path:
+/Users/madhuvanthijayakumar/Dropbox/EclipseWorkspace/BigData/big-data-project/data amazon 10 50000 2048 8
+
 
 
 Execution:
