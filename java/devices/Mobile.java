@@ -1,5 +1,7 @@
 package devices;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import caching.SimpleCache;
@@ -66,7 +68,7 @@ public class Mobile{
     /** Given an Arraylist of Chunk objects, and a list of all fingerprints, for the webpage
      *reconstruct the full web content in the form of a byte array using the data from the chunks
      */
-    public void reconstructData() throws FileNotFoundException{
+    public byte[] reconstructData() throws FileNotFoundException{
 	
 	// the length of the entire webpage
 	int len = neededChunks.size()*Chunking.getChunkSize(); 
@@ -104,7 +106,41 @@ public class Mobile{
 	}
 
 	cache.processWebContent(neededChunks);
+	return webcontent;
+    } //ends reconstructData()
+    
+    public void outputData(byte[] webcontent, String path, String filename, int webNum){
+    	PrintWriter out;
+		try {
+			File dir = new File(path + "/ReconstructedBytes/");
+			dir.mkdir();
+			out = new PrintWriter(path + "/ReconstructedBytes/" + filename + webNum + "-recon.txt");
+    	int len = webcontent.length;
+    	for(int i = 0; i < len; i++){
+    	    String hex = Integer.toHexString((int)webcontent[i]);
+    	    String output = "";
 
+    	    if(hex.length() > 2){
+    		output = hex.substring(hex.length()-2, hex.length());
+    	    }
+    	    else if(hex.length() < 2){
+    		output = "0"+hex;
+    	    }
+    	    else{
+    		output = hex;
+    	    }
+
+    	    out.println(output);
+    	}
+
+    	out.flush();
+    	out.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+} //ends Mobile class
 
 	/* FOR DEBUGGING!
 	PrintWriter out = new PrintWriter("./amazon1-recon.txt");
@@ -130,7 +166,3 @@ public class Mobile{
 	out.close();
 	*/
 	// return webcontent; //returns entirety of everything in chunks, constructing a full webpage.
-
-    } //ends reconstructData()
-
-} //ends Mobile class
