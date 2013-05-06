@@ -4,11 +4,11 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-import devices.ProxyServer;
-import devices.Mobile;
-import caching.SimpleCache;
+import caching.ICache;
 import chunking.Chunk;
 import chunking.Chunking;
+import devices.Mobile;
+import devices.ProxyServer;
 
 /**
  * Class representing the first version of the simulator.
@@ -112,14 +112,14 @@ public class SimulatorV1 implements ISimulator {
 		    System.out.println("Number of chunks inspected: "+chunks.size());	
 		    System.out.println("Remaining proxy cache capacity: "+proxy.getCache().getCapacity());
 		    System.out.print("Proxy missrate: ");
-		    customFormat("##.####", proxy.getCache().getMissRate());
+		    customFormat("##.####", proxy.getProcessor().getMissRate());
 		    System.out.println("Remaining mobile cache capacity: "+mobile.getCache().getCapacity());
 		    System.out.print("Mobile missrate: ");
-		    customFormat("##.####", mobile.getCache().getMissRate());
+		    customFormat("##.####", mobile.getProcessor().getMissRate());
 		    System.out.println();
 
-		    proxySum += proxy.getCache().getMissRate();
-		    mobSum += mobile.getCache().getMissRate();		
+		    proxySum += proxy.getProcessor().getMissRate();
+		    mobSum += mobile.getProcessor().getMissRate();		
 			// Hardcoded number of sites!
 			System.out.print("Avg proxy missrate over all inspected sites: ");
 			customFormat("##.####", proxySum/numIters);
@@ -128,7 +128,7 @@ public class SimulatorV1 implements ISimulator {
 		} 
 	}
         
-    private static Chunk[] FPArrayListToChunkArray(ArrayList<Integer> fp, SimpleCache cache){
+    private static Chunk[] FPArrayListToChunkArray(ArrayList<Integer> fp, ICache cache){
 	int len = fp.size();
 	Chunk[] chunks = new Chunk[len];
 	for(int i=0; i<len; i++){

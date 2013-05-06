@@ -35,10 +35,4 @@ public interface ICache {
      * @return an integer representing the current size of the cache
      */
     public int getSize();
-
-    /**
-     * Gets the current missrate of the cache.
-     * @return an integer representing the current missrate of the cache
-     */
-    public double getMissRate();
 }

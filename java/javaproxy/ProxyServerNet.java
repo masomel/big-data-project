@@ -1,25 +1,33 @@
 package javaproxy;
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import caching.SimpleCache;
+import processing.IProcessor;
+import processing.SimpleProcessor;
+
+import caching.ICache;
+import caching.MRUCache;
 import chunking.Chunk;
 import fingerprinting.Fingerprinting;
 
 public class ProxyServerNet{
     
-    private SimpleCache cache;
+	private IProcessor proc;
+    private ICache cache;
     private ArrayList<Chunk> allChunks;
     private ArrayList<Integer> allFps;
     private ArrayList<Integer> neededFps;
     private byte[] webcontent;
 
     public ProxyServerNet(int size){
-	cache = new SimpleCache(size); // Server cache holds size chunks
+	cache = new MRUCache(size); // Server cache holds size chunks
+	proc = new SimpleProcessor();
 	allChunks = new ArrayList<Chunk>();
 	allFps = new ArrayList<Integer>();
 	neededFps = new ArrayList<Integer>();
@@ -39,7 +47,7 @@ public class ProxyServerNet{
 	return prepareData(neededFps);
     }
 
-    public SimpleCache getCache(){
+    public ICache getCache(){
 	return cache;
     }
 
@@ -65,7 +73,7 @@ public class ProxyServerNet{
     private ArrayList<Chunk> prepareData(ArrayList<Integer> neededFps){
 	
 	// Update cache before preparing the data for the mobile device
-	cache.processWebContent(allChunks);
+	proc.processWebContent(allChunks, cache);
 	
 	ArrayList<Chunk> prepData = new ArrayList<Chunk>();
 	

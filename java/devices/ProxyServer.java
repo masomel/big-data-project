@@ -1,20 +1,26 @@
 package devices;
-import java.io.*;
 import java.util.ArrayList;
-import caching.SimpleCache;
+
+import processing.IProcessor;
+import processing.SimpleProcessor;
+
+import caching.ICache;
+import caching.MRUCache;
 import chunking.Chunk;
 import fingerprinting.Fingerprinting;
 
 public class ProxyServer{
     
-    private SimpleCache cache;
+	private IProcessor proc;
+    private ICache cache;
     private ArrayList<Chunk> allChunks;
     private ArrayList<Integer> allFps;
     private ArrayList<Integer> neededFps;
     private byte[] webcontent;
 
     public ProxyServer(int size){
-	cache = new SimpleCache(size); // Server cache holds size chunks
+	cache = new MRUCache(size); // Server cache holds size chunks
+	proc = new SimpleProcessor();
 	allChunks = new ArrayList<Chunk>();
 	allFps = new ArrayList<Integer>();
 	neededFps = new ArrayList<Integer>();
@@ -34,8 +40,12 @@ public class ProxyServer{
 	return prepareData(neededFps);
     }
 
-    public SimpleCache getCache(){
+    public ICache getCache(){
 	return cache;
+    }
+
+    public IProcessor getProcessor() {
+    	return proc;
     }
 
     /** Given a list of chunks, get the fingerprint of each chunk. This will be used to send
@@ -60,7 +70,7 @@ public class ProxyServer{
     private ArrayList<Chunk> prepareData(ArrayList<Integer> neededFps){
 	
 	// Update cache before preparing the data for the mobile device
-	cache.processWebContent(allChunks);
+	proc.processWebContent(allChunks, cache);
 	
 	ArrayList<Chunk> prepData = new ArrayList<Chunk>();
 	

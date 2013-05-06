@@ -4,20 +4,26 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import caching.SimpleCache;
+import processing.IProcessor;
+import processing.SimpleProcessor;
+
+import caching.ICache;
+import caching.MRUCache;
 import chunking.Chunk;
 import chunking.Chunking;
 
 public class Mobile{
     
-    private SimpleCache cache;
+	private IProcessor proc;
+    private ICache cache;
     private ArrayList<Integer> allFps;
     private ArrayList<Integer> neededFps;
     private ArrayList<Chunk> neededChunks;
     private byte[] webcontent;
 
     public Mobile(int size){
-	cache = new SimpleCache(size); // Mobile cache holds size chunks
+	cache = new MRUCache(size); // Mobile cache holds size chunks
+	proc = new SimpleProcessor();
 	allFps = new ArrayList<Integer>();
 	neededFps = new ArrayList<Integer>();
 	neededChunks = new ArrayList<Chunk>();
@@ -37,7 +43,7 @@ public class Mobile{
 	neededChunks = chunks;
     }
 
-    public SimpleCache getCache(){
+    public ICache getCache(){
 	return cache;
     }
 
@@ -105,10 +111,14 @@ public class Mobile{
 
 	}
 
-	cache.processWebContent(neededChunks);
+	proc.processWebContent(neededChunks, cache);
 	return webcontent;
     } //ends reconstructData()
     
+    public IProcessor getProcessor() {
+    	return proc;
+    }
+
     public void outputData(byte[] webcontent, String path, String filename, int webNum){
     	PrintWriter out;
 		try {
