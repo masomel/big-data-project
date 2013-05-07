@@ -1,4 +1,5 @@
 package devices;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import processing.IProcessor;
@@ -7,6 +8,7 @@ import processing.SimpleProcessor;
 import caching.ICache;
 import caching.MRUCache;
 import chunking.Chunk;
+import chunking.Chunking;
 import fingerprinting.Fingerprinting;
 
 public class ProxyServer{
@@ -48,6 +50,28 @@ public class ProxyServer{
     	return proc;
     }
 
+    public ArrayList<Chunk> chunkWebData(String path, int chunkSize){
+    	ArrayList<Chunk> chunks = new ArrayList<Chunk>();
+    	Chunking.setFile(path);
+    	Chunking.setChunkSize(chunkSize);
+	    // read next chunks while the end of the file has not been reached
+	    while(!Chunking.isEOF()) {
+	    	try {
+	    		Chunk c = Chunking.getNextChunk();
+
+                // ensure that we don't add empty chunk to our list
+                if(Chunking.isEOF()){
+                    break;
+                }
+                chunks.add(c);
+	    	} catch (IOException ioe) {
+	    		ioe.printStackTrace();
+	    	}
+	    }
+	    return chunks;
+    }
+    
+    
     /** Given a list of chunks, get the fingerprint of each chunk. This will be used to send
      * the fingerprints to the mobile cache, so the mobile device can check its cache for the
      * pages.
