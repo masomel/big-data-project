@@ -36,7 +36,6 @@ public class SimulatorV1 implements ISimulator {
 	@Override
 	public void simulate() {
 		// The Chunking Facility
-		Chunking chunking = new Chunking(path+"/packet_bytes/"+website+"1.txt", chunk_size); //assume that we always want to start analyzing at 1st page
 
 		// A proxy server
 		ProxyServer proxy = new ProxyServer(proxyCacheSize); //holds 2000 chunks; TODO: this should be an argument
@@ -50,29 +49,16 @@ public class SimulatorV1 implements ISimulator {
 
 		// loop over all files of a given website and look at stats
 		for(int i = 1; i <= numIters; i++) { // Caution: Hardcoded!
-		    chunking.reset(path +"/packet_bytes/" + website + i + ".txt");
+			
+			ArrayList<Chunk> chunks = new ArrayList<Chunk>();
+			chunks = proxy.chunkWebData(path +"/packet_bytes/" + website + i + ".txt", chunk_size);
 
-		    System.out.println("Processing file: " + chunking.getFilename());
-
-		    ArrayList<Chunk> chunks = new ArrayList<Chunk>();
+		    System.out.println("Processing file: " + Chunking.getFilename());
 
 		    // System.out.println("Proxy server grabs all the web data for a requested webpage");		    
 		    // System.out.println("Proxy server partitions the received data into fixed-size chunks");
 
-		    // read next chunks while the end of the file has not been reached
-		    while(!chunking.isEOF()) {
-		    	try {
-		    		Chunk c = chunking.getNextChunk();
 
-                    // ensure that we don't add empty chunk to our list
-                    if(chunking.isEOF()){
-                        break;
-                    }
-                    chunks.add(c);
-		    	} catch (IOException ioe) {
-		    		ioe.printStackTrace();
-		    	}
-		    }
 		    
 		    // System.out.println("Proxy server is computing the fingerprints for all received chunks.");
 

@@ -16,20 +16,6 @@ public class Chunking {
 	return null;
     }
 
-    /** Resets the chunker to work with a new input file */
-    public static void reset(String f){
-	EOF = false; 
-	filename = f;
-	try {
-	    stream = new FileInputStream(filename);
-	    in = new Scanner(stream);
-	}
-	catch (IOException e) {
-	    System.err.println("Cannot open file " + filename);
-	    e.printStackTrace();
-	}
-    }
-
     public static String getFilename(){
 	return filename;
     }
@@ -40,6 +26,28 @@ public class Chunking {
 
     public static boolean isEOF(){
 	return EOF;
+    }
+    
+    public static void setChunkSize(int size){
+    	chunk_size=size;
+    }
+    
+    /**  param: Needed since we don't want to hardcode in specific
+     * filenames in here!
+     */
+    public static void setFile(String f) {
+	// specify the chunk size here
+	EOF = false;
+	// specify the input file here
+	filename = f;
+	try {
+	    stream = new FileInputStream(filename);
+	    in = new Scanner(stream);
+	}
+	catch (IOException e) {
+	    System.err.println("Cannot open file " + filename);
+	    e.printStackTrace();
+	}
     }
     
     public static Chunk getNextChunk() throws IOException {
@@ -84,22 +92,6 @@ public class Chunking {
 	}
     }
     
-    /** Constructor with param: Needed since we don't want to hardcode in specific
-     * filenames in here!
-     */
-    public Chunking(String f, int size) {
-	// specify the chunk size here
-	chunk_size = size;
-	EOF = false;
-	// specify the input file here
-	filename = f;
-	try {
-	    stream = new FileInputStream(filename);
-	    in = new Scanner(stream);
-	}
-	catch (IOException e) {
-	    System.err.println("Cannot open file " + filename);
-	    e.printStackTrace();
-	}
-    }
+    
+
 }
