@@ -40,46 +40,56 @@ public class MRUCache implements ICache {
 
     private final int size; // Note: in number of chunks!
     private int capacity; // Needed for evictions
+    private boolean isMiss; //Needed for statistical purposes
     private int MRU; // Most recently used item in cache
 
     private Map<Integer, Chunk> cache;
-
+    
     public MRUCache(int capacity) {
         this.cache = new HashMap<Integer,Chunk>();
         this.capacity = capacity;
         this.size = capacity;
+	this.isMiss = false;
     }
-
+    
     @Override
-    public int getSize(){
+	public int getSize(){
         return size;
     }
-
+    
     @Override
-    public int getCapacity() {
+	public int getCapacity() {
         return capacity;
     }
-
+    
     @Override
-    public Chunk get(int fp) {
+	public Chunk get(int fp) {
         return cache.get(fp);
     }
-
+    
     @Override
-    public void put(int fp, Chunk c) {
+	public boolean isMiss(){
+	return isMiss;
+    }
+    
+    @Override
+	public void put(int fp, Chunk c) {
+	isMiss = false;
+	
         if (!cache.containsKey(fp)) {
-        	if (capacity > 0) {
+	    if (capacity > 0) {
                 cache.put(fp, c);
-                capacity--;  		
-        	}
-        	else {
-                // Evict most recently used item
-                cache.remove(MRU);
-                cache.put(fp, c);
-        	}
+		capacity--;  		
+	    }
+	    else {
+		// Evict most recently used item
+		cache.remove(MRU);
+		cache.put(fp, c);
+	    }
+	    isMiss = true;
         }
         else {
             MRU = fp;        	
-        }
+        }	
     }
 }
