@@ -182,29 +182,44 @@ public class ProxyServerNet{
 		    //send GET request with proper user-agent to web server
 		    sendGetRequest(proxyClientOut, url);
 
-		    System.out.println("Proxy Message: Sent GET request to web server.");
+		    System.out.println("Proxy Message: Sent GET request for "+url+".");
 
 		    //stream to receive messages from server
-		    InputStream proxyClientIn =  proxyClientSocket.getInputStream();
+		    InputStream proxyClientIn = proxyClientSocket.getInputStream();
 
-		    // This is needed in order to disregard the HTTP response header
-		    String s = "";
-		    while(!s.contains("Connection: close")){
-			// all responses have this last line
-			if(s.contains("Connection: close")){
-			    proxyClientIn.read();
+		    Scanner webResp = new Scanner(proxyClientIn);
+
+		    // since header is variable length use array list instead of array
+		    ArrayList<String> header = new ArrayList<String>();
+		    
+		    // get the HTTP response header from the web server
+		    while(webResp.hasNext()){
+			String line = webResp.nextLine();
+			if(line.isEmpty()){
 			    break;
 			}
-
-			// Need to convert each incoming byte to a string since input is coming as text
-			byte[] b = new byte[1];
-			int f = proxyClientIn.read(b, 0, 1);
-			s = s+new String(b);
+			else{
+			    //System.out.println(line);
+			    header.add(line);
+			}			
 		    }
-		    		    
+
+		    // now get the actual content of the received webpage
+		    String content = "";	    
+		    while(webResp.hasNext()){
+			content = content+webResp.next();
+		    }
+
+		    System.out.println(content);
+
+		    //System.out.println("content size: "+content.length());
+
+		    // This is necessary so that the chunking facility can read web content as bytes
+		    ByteArrayInputStream contentStream = new ByteArrayInputStream(content.getBytes());
+
 		    // partition incoming webpage into Chunks
-		    if(proxyClientIn.available() > 0){
-			allChunks = chunkWebData(proxyClientIn, chunkSize);    
+		    if(contentStream.available() > 0){
+			allChunks = chunkWebData(contentStream, chunkSize);    
 		    }
 
 		    System.out.println("Proxy Message: Finished chunking all the web server response.");
@@ -212,6 +227,7 @@ public class ProxyServerNet{
 		    contentLen = allChunks.size();
 
 		    proxyClientIn.close();
+		    contentStream.close();
 
 		}
 		else{
@@ -286,7 +302,7 @@ public class ProxyServerNet{
 		in.close();
 		out.close();
 
-		System.out.println("Proxy Message: Success! Finished transaction with mobile client.");
+		System.out.println("Proxy Message: Success! Finished request for mobile client for "+url+".");
 		
 	    }
 	    catch(IOException e){
@@ -302,7 +318,7 @@ public class ProxyServerNet{
 	 * @param chunkSize the number of bytes each chunk contains
 	 * @return a list of all the chunked data
 	 */
-	private ArrayList<Chunk> chunkWebData(InputStream in, int chunkSize){
+	private synchronized ArrayList<Chunk> chunkWebData(InputStream in, int chunkSize){
 	    ArrayList<Chunk> chunks = new ArrayList<Chunk>();
 	    ChunkingNet.setStream(in);
 	    ChunkingNet.setChunkSize(chunkSize);
@@ -342,7 +358,7 @@ public class ProxyServerNet{
 	 * create a list of chunks to be sent over to the mobile device. A null entry indicates that
 	 * the mobile device already has this chunk in its cache.
 	 */
-	private ArrayList<Chunk> prepareData(ArrayList<Integer> neededFps){
+	private synchronized ArrayList<Chunk> prepareData(ArrayList<Integer> neededFps){
 	
 	    // Update cache before preparing the data for the mobile device
 	    proc.processWebContent(allChunks, cache);

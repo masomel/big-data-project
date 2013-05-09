@@ -129,6 +129,8 @@ public class MobileNet{
 	    
 	    String content = new String(webcontent);
 
+	    content = content.substring(content.indexOf('<'), content.length());
+
 	    out.println(content.trim());
 	   
 	    out.flush();
