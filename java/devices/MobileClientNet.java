@@ -200,7 +200,7 @@ public class MobileClientNet {
 
 	    mobile.reconstructData();
 
-	    mobile.outputData(".",web);
+	    mobile.outputData(".",web.toString());
 	    
 	    in.close();
 	    out.close();
