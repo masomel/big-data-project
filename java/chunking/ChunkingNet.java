@@ -63,7 +63,6 @@ public class ChunkingNet {
 	// if the stream has at least one more byte, process
 	if(stream.available() > 0){
 	    EOF = false;
-
 	   
 	    byte[] data = new byte[chunk_size];
 	    

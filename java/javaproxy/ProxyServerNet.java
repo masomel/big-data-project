@@ -21,20 +21,6 @@ public class ProxyServerNet{
     private static ArrayList<Integer> allFps;
     private static ArrayList<Integer> neededFps;
     private static int chunkSize;
-    private static byte[] webcontent;
-
-    private static void initialize(int size, int cSize){
-	chunkSize = cSize;
-	cache = new MRUCache(size); // Server cache holds size chunks
-	proc = new SimpleProcessor();
-	allChunks = new ArrayList<Chunk>();
-	allFps = new ArrayList<Integer>();
-	neededFps = new ArrayList<Integer>();
-    }
-
-    private static ArrayList<Chunk> sendNeededChunks(){
-	return prepareData(neededFps);
-    }
 
     public static ICache getCache(){
 	return cache;
@@ -44,6 +30,24 @@ public class ProxyServerNet{
     	return proc;
     }
 
+    /** Initializes the Proxy server. Since there is only one proxy server, it can be static.
+     * @param size the size of the proxy cache in number of chunks
+     * @param cSize the number of bytes each chunk contains
+     */
+    private static void initialize(int size, int cSize){
+	chunkSize = cSize;
+	cache = new MRUCache(size); // Server cache holds size chunks
+	proc = new SimpleProcessor();
+	allChunks = new ArrayList<Chunk>();
+	allFps = new ArrayList<Integer>();
+	neededFps = new ArrayList<Integer>();
+    }
+
+    /** Given an inputstream and a chunk size, generates chunks of the incoming data.
+     * @param in the InputStream which is sending the incoming data
+     * @param chunkSize the number of bytes each chunk contains
+     * @return a list of all the chunked data
+     */
     private static ArrayList<Chunk> chunkWebData(InputStream in, int chunkSize){
     	ArrayList<Chunk> chunks = new ArrayList<Chunk>();
     	ChunkingNet.setStream(in);
@@ -53,13 +57,13 @@ public class ProxyServerNet{
 	    	try {
 	    		Chunk c = ChunkingNet.getNextChunk();
 
-                // ensure that we don't add empty chunk to our list
-                if(ChunkingNet.isEOF()){
-                    break;
-                }
-                chunks.add(c);
+			// ensure that we don't add empty chunk to our list
+			if(ChunkingNet.isEOF()){
+			    break;
+			}
+			chunks.add(c);
 	    	} catch (IOException ioe) {
-	    		ioe.printStackTrace();
+		    ioe.printStackTrace();
 	    	}
 	    }
 	    return chunks;
@@ -78,7 +82,7 @@ public class ProxyServerNet{
 	}
 
 	return fps;
-    }
+    } //ends getFingerprints()
 
     /** Given the list of all web data chunks and the list of the needed fingerprints,
      * create a list of chunks to be sent over to the mobile device. A null entry indicates that
@@ -119,6 +123,56 @@ public class ProxyServerNet{
 	
     } //ends prepareData()
 
+    /** Sends an http GET request through the given outputstream to the given URL
+     * @param o the outpustream through which to send the GET request
+     * @param u the URL to reach with the request
+     */
+    private static void sendGetRequest(PrintStream o, URL u){
+	o.println("GET " +u+ " HTTP/1.1"); 
+	o.println("Host: " +u.getHost());
+	o.println("User-Agent: Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; GT-I9100 Build/GRH78) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1");
+	o.println("Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+	o.println("Accept-Language: en-US,en;q=0.5");
+	o.println("Connection: keep-alive");
+	o.println();
+	o.flush();
+    } //ends sendGetRequest()
+
+    private static void sendAllFps(PrintStream w, URL url){
+	w.println("ALL FPS "+url);
+	w.println(allFps.size());
+	
+	for(Integer i : allFps){
+	    w.println(i+"");
+	}
+	w.println();
+	w.flush();
+
+    } //ends sendAllFps()
+
+    /** Sends the needed chunks data to the mobile client
+     * @param o the outputstream through which to send the chunk data
+     * @param u the url of the webpage the chunks belong to
+     */
+    private static void sendNeededChunks(ArrayList<Chunk> needed, OutputStream o, URL u)
+    throws IOException {
+	String header = "NEEDED CHUNKS "+u;
+	o.write(header.getBytes());
+
+	for(Chunk c : needed){
+	    if(c == null){
+		byte [] nullByte = new byte[ChunkingNet.getChunkSize()];
+		o.write(nullByte);
+	    }
+	    else{
+		byte[] data = c.getData();
+		o.write(c.getData());
+	    }
+	}
+	o.write((int)'\n');
+	o.flush();
+    }
+
     /** MAIN
      * @param args the command-line arguments:
      * 			1. the port number for the server to listen at (must be >= 1024) 
@@ -134,18 +188,19 @@ public class ProxyServerNet{
 	    System.exit(-1);
 	}
 	
-	int port = 0, cacheSize = 0, chunk_size = 0;
+	int port = 0, cacheSize = 0, chunk_size = 0; // for args
 	
 	try{
 	    port = Integer.parseInt(args[0]); //the port number at which the server is listening
-	    cacheSize = Integer.parseInt(args[1]);
-	    chunk_size = Integer.parseInt(args[2]);
+	    cacheSize = Integer.parseInt(args[1]); //the server's cache size in number of chunks
+	    chunk_size = Integer.parseInt(args[2]); //the chunk size in number of bytes per chunk
 	}
 	catch(NumberFormatException e){
 	    System.err.println("Arguments need to be positive ints!");
 	    System.exit(-1);
 	}
 
+	// initialize the proxy server
 	initialize(cacheSize, chunk_size);
 
 	if(port < 1024){
@@ -212,17 +267,18 @@ public class ProxyServerNet{
 	public void run(){
 	    
 	    //attempt connection to the client
-	    try{
+	    try{			
 		InputStream in = clientSocket.getInputStream();
 		OutputStream out = clientSocket.getOutputStream();
-		
-		Scanner read = new Scanner(in); //scanner to read in from request
+
+		Scanner read =  new Scanner(in); //scanner to read in from request
 		
 		String method = read.next(); //connection request method
-		System.out.println("Method: " +method);
+		//System.out.println("Method: " +method);
 		
 		String urlStr = read.next(); //url of requested file
 		String protocol = read.next(); //connection request protocol
+		read.nextLine(); //get the empty line after the protocol
 
 		URL url = null;
 
@@ -230,84 +286,134 @@ public class ProxyServerNet{
 		    url = new URL(urlStr);
 		} catch (MalformedURLException e1) {
 		    System.err.println("Wrong URL format.");
-		    System.exit(-1);
+		    return;
 		}
 		
-		System.out.println("urlStr: " +urlStr);
+		//System.out.println("urlStr: " +urlStr);
 		
 		//check if connection request protocol has been implemented
 		if(!protocol.equals("HTTP/1.1")){
 		    System.out.println("bad request");
 		    return;
 		}
+
+		int contentLen = 0; // the length of the web content in number of chunks
 		
 		//check if connection request method has been implemented
 		if(method.equals("GET")){
 
 		    // actually go to the real web server of the requested URL and get the content
-		    Socket proxyClientSocket = new Socket(url.getHost(), PORT);		   
-
-		    PrintStream out1 = new PrintStream(proxyClientSocket.getOutputStream());
+		    Socket proxyClientSocket = new Socket(url.getHost(), PORT);
+		    PrintStream proxyClientOut = new PrintStream(proxyClientSocket.getOutputStream());
 		    
 		    //send GET request with proper user-agent to web server
-		    out1.println("GET " +url+ " HTTP/1.1"); 
-		    out1.println("Host: " +url.getHost());
-		    out1.println("User-Agent: Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; GT-I9100 Build/GRH78) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1");
-		    out1.println("Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-		    out1.println("Accept-Language: en-US,en;q=0.5");
-		    out1.println("Connection: keep-alive");
-		    out1.println();
+		    sendGetRequest(proxyClientOut, url);
 
 		    System.out.println("Proxy Message: Sent GET request to web server.");
 
 		    //stream to receive messages from server
-		    BufferedInputStream in1 =  new BufferedInputStream(proxyClientSocket.getInputStream());
+		    InputStream proxyClientIn =  proxyClientSocket.getInputStream();
 
 		    // This is needed in order to disregard the HTTP response header
 		    String s = "";
 		    while(!s.contains("Connection: close")){
 			// all responses have this last line
 			if(s.contains("Connection: close")){
-			    in1.read();
+			    proxyClientIn.read();
 			    break;
 			}
 
 			// Need to convert each incoming byte to a string since input is coming as text
 			byte[] b = new byte[1];
-			int f = in1.read(b, 0, 1);
+			int f = proxyClientIn.read(b, 0, 1);
 			s = s+new String(b);
-			//System.out.println(s);
 		    }
 		    		    
-		    if(in1.available() > 0){
-			// partition incoming webpage into Chunks
-			allChunks = chunkWebData(in1, chunkSize);    
+		    // partition incoming webpage into Chunks
+		    if(proxyClientIn.available() > 0){
+			allChunks = chunkWebData(proxyClientIn, chunkSize);    
 		    }
 
 		    System.out.println("Proxy Message: Finished chunking all the web server response.");
-		    
-		    // compute the fingerprints for all received chunks
-		    allFps = getFingerprints(allChunks);
 
-		    System.out.println("Proxy Message: Finished computign fingerprints for all chunks.");
-		    
-		    // send the computed fingerprints to the mobile client
-		    // TODO: need to convert array list of fingerprints to some sort of buffer that can be 
-		    //             sent via network
-		  
-		    // receive needed fingerprints from mobile
-		    // TODO: convert received data to ArrayList of fingerprints again
+		    contentLen = allChunks.size();
 
-		    // get the needed chunks
-
-		    // send the needed chunks to mobile client
-		    // TODO: convert chunks to array of bytes or some sort of buffer
+		    proxyClientIn.close();
 
 		}
 		else{
 		    System.out.println("Received bad request from mobile client.");
-		    System.exit(-1);
+		    return;
 		}
+		    
+		// compute the fingerprints for all received chunks
+		allFps = getFingerprints(allChunks);
+		
+		System.out.println("Proxy Message: Finished computing fingerprints for all chunks.");
+		
+		PrintStream write = new PrintStream(out);
+		
+		// send the computed fingerprints to the mobile client
+		sendAllFps(write, url);
+		
+		System.out.println("Proxy Message: Sent "+contentLen+" fingerprints to mobile device."); 
+		
+		System.out.println("Proxy Message: Waiting to receive needed fingerprints from mobile device.");
+
+		String mobHeader = read.nextLine();
+		mobHeader = read.nextLine();
+
+		// receive needed fingerprints from mobile if the mobile device has sent the proper header line
+		if(mobHeader.equals("NEEDED FPS "+url)){
+		
+		    try{
+			int len = Integer.parseInt(read.nextLine());
+
+			// check to see that the lengths are still in agreement
+			if(len != contentLen){
+			    System.err.println("Some error occurred when receiving needed fps from mobile.");
+			    out.close();
+			    in.close();
+			    return;
+			}
+		    
+			// get all the needed fingerprints
+			for(int i = 0; i < contentLen; i++){		   
+			    int fp = Integer.parseInt(read.nextLine());
+			    if(fp == 0){
+				neededFps.add(null);
+			    }
+			    else{
+				neededFps.add(fp);		
+			    }
+			}
+			
+		    }
+		    catch(NumberFormatException e){
+			System.err.println("Fingerprints from mobile in wrong format!");
+			out.close();
+			in.close();
+			return;
+		    }
+		}
+		else{
+		    System.err.println("Some error occurred when receiving needed fps from mobile.");
+		    out.close();
+		    in.close();
+		    return;
+		}
+		
+		System.out.println("Proxy Message: Finding the needed chunk data for the mobile device.");
+
+		System.out.println("Proxy Message: Sending the needed chunk data to the mobile device.");
+		
+		// send the needed chunks to mobile client
+		sendNeededChunks(prepareData(neededFps), out, url);
+
+		in.close();
+		out.close();
+
+		System.out.println("Proxy Message: Success! Finished transaction with mobile client.");
 		
 	    }
 	    catch(IOException e){
