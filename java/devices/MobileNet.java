@@ -52,6 +52,12 @@ public class MobileNet{
 	neededChunks.add(c);
     }
 
+    public void resetLists(){
+	allFps = new ArrayList<Integer>();
+	neededFps = new ArrayList<Integer>();
+	neededChunks = new ArrayList<Chunk>();
+    }
+
     /** Given an array of fingerprints, find the redundant fingerprints, and
      * return a list of the fingerprints needed to reconstruct the web content.
      *@param fps the list of fingerprints to check.

@@ -207,10 +207,10 @@ public class ProxyServerNet{
 		    // now get the actual content of the received webpage
 		    String content = "";	    
 		    while(webResp.hasNext()){
-			content = content+webResp.next();
+			content = content+webResp.nextLine();
 		    }
 
-		    System.out.println(content);
+		    //System.out.println(content);
 
 		    //System.out.println("content size: "+content.length());
 
@@ -255,8 +255,12 @@ public class ProxyServerNet{
 		// receive needed fingerprints from mobile if the mobile device has sent the proper header line
 		if(mobHeader.equals("NEEDED FPS "+url)){
 		
+		    String fpStr = "";
 		    try{
 			int len = Integer.parseInt(read.nextLine());
+
+			System.out.println(len);
+			System.out.println(contentLen);
 
 			// check to see that the lengths are still in agreement
 			if(len != contentLen){
@@ -267,18 +271,20 @@ public class ProxyServerNet{
 			}
 		    
 			// get all the needed fingerprints
-			for(int i = 0; i < contentLen; i++){		   
-			    int fp = Integer.parseInt(read.nextLine());
-			    if(fp == 0){
+			for(int i = 0; i < contentLen; i++){
+			    fpStr = read.nextLine();
+			    if(fpStr.equals("null")){
 				neededFps.add(null);
 			    }
 			    else{
+				int fp = Integer.parseInt(fpStr);
 				neededFps.add(fp);		
 			    }
 			}
 			
 		    }
-		    catch(NumberFormatException e){
+		    catch(NumberFormatException e){			
+			System.out.println(fpStr);
 			System.err.println("Fingerprints from mobile in wrong format!");
 			out.close();
 			in.close();
@@ -366,8 +372,6 @@ public class ProxyServerNet{
 	    ArrayList<Chunk> prepData = new ArrayList<Chunk>();
 	    
 	    if(allChunks.size() != neededFps.size()){
-		System.out.println(allChunks.size());
-		System.out.println(neededFps.size());
 		System.out.println("Content and neededFps are not of the same length!");
 		return null;
 	    }
@@ -376,6 +380,7 @@ public class ProxyServerNet{
 		
 		// check first to see if mobile device needs this chunk
 		if(neededFps.get(i) == null){
+		    //System.out.println(i);
 		    prepData.add(null);
 		}
 		else{

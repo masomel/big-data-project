@@ -27,31 +27,18 @@ public class MobileClientNet {
 
     /** Initializes the mobile client
      */
-    private static void initialize(String[] args){
+    public static void initialize(URL pLoc, int p, int cacheSize, int chunk_size){
 
-	//attempt creating the new URL, or exit program if format is wrong
-	try {
-	    proxyLocation = new URL(args[0]);
-	} catch (MalformedURLException e1) {
-	    System.err.println("Wrong URL format.");
-	    System.exit(-1);
-	}	
-
-	int cacheSize = 0;
-
-	try{
-	    port = Integer.parseInt(args[2]);
-	    cacheSize = Integer.parseInt(args[3]);
-	    chunkSize = Integer.parseInt(args[4]);
-	}
-	catch(NumberFormatException e){
-	    System.err.println("Port number or cache size in wrong format.");
-	    System.exit(-1);
-	}
-
+	proxyLocation = pLoc;	
+	port = p;
+	chunkSize = chunk_size;
 	mobile = new MobileNet(cacheSize, chunkSize);
 
     } //ends initialize()
+
+    public static MobileNet getMobile(){
+	return mobile;
+    }
 
     /** Sends the given list of needed chunks to the proxy server
      *
@@ -68,44 +55,15 @@ public class MobileClientNet {
 	w.flush();
     } //ends sendNeededFps()
 
-    /** MAIN
-     * @param args the command-line arguments: 
-     * 			1. URL to the web file (only http allowed)
-     * 			2. port number corresponding WebServer listens at (must be over 1024)
-     */
-    public static void main(String[] args){
-	
-	//check that correct number of command-line arguments has been entered
-	if(args.length < 5){
-	    System.err.println("Wrong format.");
-	    System.err.println("Format: java MobileClientNet <full URL of proxy> <full URL of web server> <port number> <cache size> <chunk size>");
-	    System.exit(-1);
-	}
-	
-	// initialize the mobile client
-	initialize(args);
-	
-	// get the url of the requested website
-	URL web = null;
-	try{
-	    web = new URL(args[1]);
-	}
-	catch(MalformedURLException e){
-	    System.err.println("Wrong URL format. Needs to include http://");
-	    System.exit(-1);
-	}
-	
-	//check that URL argument is HTTP
-	if(web!=null && !web.getProtocol().equals("http")){
-	    System.err.println("Wrong protocol.");
-	    System.err.println("Protocol: http");
-	    System.exit(-1);			
-	}	
+    public static void performRequestProtocol(URL web){
 
+	// This is needed so each iteration works for the individual page
+	mobile.resetLists();
+	
 	//attempt connection to proxy server
 	try{
 	    //socket to the proxy server
-	    Socket socket = new Socket(/*proxy locatoin*/proxyLocation.getHost(), /*port number*/port);
+	    Socket socket = new Socket(/*proxy location*/proxyLocation.getHost(), /*port number*/port);
 	    
 	    //stream to send requests to proxy server
 	    PrintStream out = new PrintStream(socket.getOutputStream());
@@ -115,7 +73,7 @@ public class MobileClientNet {
 	    out.println();
 	    out.flush();
 	    
-	    System.out.println("Client Message: Sent GET request to proxy server.");
+	    System.out.println("Client Message: Sent GET request to proxy server for "+web+".");
 	    
 	    //stream to receive messages from server
 	    InputStream in =  socket.getInputStream();
@@ -172,7 +130,6 @@ public class MobileClientNet {
 
 		// all needed chunks responses have this header line
 		if(s.contains("NEEDED CHUNKS "+web)){
-		    in.read();
 		    break;
 		}
 	    }
@@ -189,8 +146,17 @@ public class MobileClientNet {
 		    System.exit(-1);
 		}
 		else{
-		    Chunk chunk = new Chunk(f, data);
-		    mobile.receiveNeededChunks(chunk);
+		    String str = new String(data);
+
+		    if(str.contains('\00'+"") && (i != contentLen-1 ||
+						  (i == contentLen -1 && str.indexOf('\00') == 0))){
+			//System.out.println(i);
+			mobile.receiveNeededChunks(null);
+		    }
+		    else{
+			Chunk chunk = new Chunk(f, data);
+			mobile.receiveNeededChunks(chunk);
+		    }
 		}
 	    }
 
@@ -200,18 +166,17 @@ public class MobileClientNet {
 
 	    mobile.reconstructData();
 
-	    mobile.outputData(".",web.toString());
+	    mobile.outputData(".",web.getHost());
 	    
 	    in.close();
 	    out.close();
-	    System.out.println("Client Message: Success! Finished transaction with proxy server.");
+	    System.out.println("Client Message: Success! Request for "+web+" was finished proxy server.");
 	}
 	catch(IOException e){
 	    System.err.println("Some error occured when trying to connect to Server.");
 	    e.printStackTrace();
 	    System.exit(-1);
 	}
-	
-    } //ends main()
+    } //ends performRequestProtocol()
     
 } //ends MobileClientNet class
