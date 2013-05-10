@@ -38,7 +38,9 @@ public class LRUCache implements ICache {
 				capacity--;
 			}
 			else {
-				cache.remove(getLRU());
+				int rm = getLRU();
+				usage.remove(rm);
+				cache.remove(rm);
 				cache.put(fingerprint, chunk);
 			}
 			isMiss = true;
