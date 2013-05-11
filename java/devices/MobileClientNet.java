@@ -105,8 +105,8 @@ public class MobileClientNet {
 		}
 	    }
 	    else{
-		System.err.println("Some error occurred when receiving fingerprints from proxy.");
-		System.exit(-1);
+		System.out.println("Client Message: Proxy could not serve request because: "+proxyHeader);
+		return;
 	    }
 	     
 	    System.out.println("Client Message: Received "+contentLen+" fingerprints from the proxy server.");
@@ -166,7 +166,7 @@ public class MobileClientNet {
 
 	    mobile.reconstructData();
 
-	    mobile.outputData(".",web.getHost());
+	    mobile.outputData(".", web.getHost()+(web.getPath().replaceAll("/", "-")));
 	    
 	    in.close();
 	    out.close();

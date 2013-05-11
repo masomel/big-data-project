@@ -131,11 +131,9 @@ public class MobileNet{
 	try {
 	    File dir = new File(path + "/ReconstructedData/");
 	    dir.mkdir();
-	    out = new PrintWriter(path + "/ReconstructedData/" + filename + "-recon.html");
+	    out = new PrintWriter(path + "/ReconstructedData/" + filename + "recon.html");
 	    
 	    String content = new String(webcontent);
-
-	    content = content.substring(content.indexOf('<'), content.length());
 
 	    out.println(content.trim());
 	   

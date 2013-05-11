@@ -12,6 +12,7 @@ import caching.MRUCache;
 import chunking.Chunk;
 import chunking.ChunkingNet;
 import fingerprinting.Fingerprinting;
+import simulation.SimulatorV3;
 
 public class ProxyServerNet{
     
@@ -144,7 +145,8 @@ public class ProxyServerNet{
 		InputStream in = clientSocket.getInputStream();
 		OutputStream out = clientSocket.getOutputStream();
 
-		Scanner read =  new Scanner(in); //scanner to read in from request
+		Scanner read =  new Scanner(in); //scanner to read in from request			
+		PrintStream write = new PrintStream(out);
 		
 		String method = read.next(); //connection request method
 		//System.out.println("Method: " +method);
@@ -191,7 +193,7 @@ public class ProxyServerNet{
 
 		    // since header is variable length use array list instead of array
 		    ArrayList<String> header = new ArrayList<String>();
-		    
+      	    
 		    // get the HTTP response header from the web server
 		    while(webResp.hasNext()){
 			String line = webResp.nextLine();
@@ -204,34 +206,50 @@ public class ProxyServerNet{
 			}			
 		    }
 
-		    // now get the actual content of the received webpage
-		    String content = "";	    
-		    while(webResp.hasNext()){
-			content = content+webResp.nextLine();
+		    String responseCode = header.get(0);
+
+		    if(responseCode.contains("200 OK") || responseCode.contains("40")){
+			
+			// now get the actual content of the received webpage
+			String content = "";	    
+			while(webResp.hasNext()){
+			    content = content+webResp.nextLine();
+			}
+			
+			//System.out.println(content);
+			
+			//System.out.println("content size: "+content.length());
+			
+			// This is necessary so that the chunking facility can read web content as bytes
+			ByteArrayInputStream contentStream = new ByteArrayInputStream(content.getBytes());
+			
+			// partition incoming webpage into Chunks
+			if(contentStream.available() > 0){
+			    allChunks = chunkWebData(contentStream, chunkSize);    
+			}
+			
+			System.out.println("Proxy Message: Finished chunking all the web server response.");
+			
+			contentLen = allChunks.size();
+			
+			proxyClientIn.close();
+			contentStream.close();
+			
 		    }
-
-		    //System.out.println(content);
-
-		    //System.out.println("content size: "+content.length());
-
-		    // This is necessary so that the chunking facility can read web content as bytes
-		    ByteArrayInputStream contentStream = new ByteArrayInputStream(content.getBytes());
-
-		    // partition incoming webpage into Chunks
-		    if(contentStream.available() > 0){
-			allChunks = chunkWebData(contentStream, chunkSize);    
+		    else{
+			System.out.println("Proxy Message: Could not finish request because: "+responseCode);
+			write.println(responseCode);
+			in.close();
+			out.close();
+			return;
 		    }
-
-		    System.out.println("Proxy Message: Finished chunking all the web server response.");
-
-		    contentLen = allChunks.size();
-
-		    proxyClientIn.close();
-		    contentStream.close();
+		
 
 		}
 		else{
 		    System.out.println("Received bad request from mobile client.");
+		    in.close();
+		    out.close();
 		    return;
 		}
 		    
@@ -239,8 +257,6 @@ public class ProxyServerNet{
 		allFps = getFingerprints(allChunks);
 		
 		System.out.println("Proxy Message: Finished computing fingerprints for all chunks.");
-		
-		PrintStream write = new PrintStream(out);
 		
 		// send the computed fingerprints to the mobile client
 		sendAllFps(write, url);
@@ -258,9 +274,6 @@ public class ProxyServerNet{
 		    String fpStr = "";
 		    try{
 			int len = Integer.parseInt(read.nextLine());
-
-			System.out.println(len);
-			System.out.println(contentLen);
 
 			// check to see that the lengths are still in agreement
 			if(len != contentLen){
@@ -309,6 +322,13 @@ public class ProxyServerNet{
 		out.close();
 
 		System.out.println("Proxy Message: Success! Finished request for mobile client for "+url+".");
+		
+		System.out.println("----------------------");
+
+		System.out.println("Remaining proxy cache capacity: "+getCache().getCapacity());
+		System.out.print("Proxy missrate: ");
+		SimulatorV3.customFormat("##.####", getProcessor().getMissRate());
+		System.out.println();
 		
 	    }
 	    catch(IOException e){
