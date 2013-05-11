@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Georgia;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue111;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 - fix url cache\
+- add lru to old code\
+\
+\
+\
+
+\b demo:
+\b0 \
+networked\
+	cnn links\
+	figure out how to film screem\
+\
+\
+
+\b 2. within the same webpage (morning, afternoon, evening):\
+
+\b0 1. cnn\
+2. weather\
+3. princeton\
+4. \
+\
+currency, weather, Facebook, cnn,  \
+princeton cs homepage, other universities\
+can vs other news websites\
+\
+stock\
+\
+outline of paper\
+presentation\
+\
+fps misrate vs chunk/byte missrate\
+1. different chunk sizes\
+\
+multiple mobiles\
+\
+find actual cache size for mobile phone\
+\
+\
+
+\b Notes:
+\b0 \
+
+\b Data deduplication
+\b0  is a data compression technique that eliminates duplicate copies of repeating data; it can be applied to network data transfers to reduce the number of bytes that must be sent. This is done by identifying and storing unique chunks of data, and replacing a redundant chunk with a small reference that identifies the redundant chunk.\
+\pard\pardeftab720\sl380
+
+\fs26 \cf0 -For that to happen, each chunk of data is assigned an identification, calculated by the software, typically using cryptographic hash functions.\
+- If the software either assumes that a given identification already exists in the deduplication namespace or actually verifies the identity of the two blocks of data, depending on the implementation, then it will replace that duplicate chunk with a link\
+
+\fs24 - 
+\fs26 upon read back of the file, wherever a link is found, the system simply replaces that link with the referenced data chunk\
+\
+\
+
+\b Weakness: 
+\b0 \
+The most intelligent (but CPU intensive) method to chunking is generally considered to be sliding-block. In sliding block, a window is passed along the file stream to seek out more naturally occurring internal file boundaries.
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\pard\pardeftab720\sl380\sa100
+
+\b\fs34 \cf0 Source versus target deduplication \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 we decided on target reduplication:\
+1. computationally heavy load on mobile phone\
+\
+\
+weakness:\
+\pard\pardeftab720\sl380
+
+\fs26 \cf0  1. First, data deduplication requires overhead to discover and remove the duplicate data. In primary storage systems, this overhead may impact performance.\
+2. integrity of data - collision\
+\
+Deduplication achieves better efficiency against smaller data chunks, whereas compression achieves better efficiency against larger chunks. The goal of encryption is to eliminate any discernible patterns in the data. Thus encrypted data cannot be deduplicated, even though the underlying data may be redundant.\
+
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+
+\b Wan Optimization 
+\b0 \
+\pard\pardeftab720\sl380
+
+\fs26 \cf0  In 2008, the WAN optimization market was estimated to be $1 billion,{\field{\*\fldinst{HYPERLINK "http://en.wikipedia.org/wiki/WAN_optimization#cite_note-1"}}{\fldrslt 
+\fs20 \cf2 [1]}} and it will grow to $4.4 billion by 2014 according to Gartner,{\field{\*\fldinst{HYPERLINK "http://en.wikipedia.org/wiki/WAN_optimization#cite_note-2"}}{\fldrslt 
+\fs20 \cf2 [2]}} a technology research firm.\
+\
+hroughput, bandwidth requirements, latency, protocol optimization, and congestion\
+\
+Delta Encoding:\
+Many HTTP (Hypertext Transport Protocol) requests cause the retrieval of slightly modified instances of resources for which the client already has a cache entry. Research has shown that such modifying updates are frequent, and that the modifications are typically much smaller than the actual entity. In such cases, HTTP would make more efficient use of network bandwidth if it could transfer a minimal description of the changes, rather than the entire new instance of the resource\
+
+\fs24 \
+\
+forbes:\
+\pard\pardeftab720\sl480\sa300
+
+\f1\b\fs36 \cf0 2) Global mobile traffic now represents roughly 13% of Internet traffic.
+\b0 \
+Just three years ago, in 2009, that statistic was at a measly 1%. It edged up to 4% in 2010, and it hit 13% in November 2012, according to StatCounter Global Stats.\
+\pard\pardeftab720\sl380
+
+\f0\fs24 \cf0 \
+\pard\pardeftab720\sl480
+
+\f1\b\fs36 \cf0 There are 5 billion mobile phone users in the world, but only 1 billion 
+\i smartphone
+\i0  users.. its only getting started\
+\pard\pardeftab720\sl480
+
+\b0 \cf0 The number smartphone users is growing by 42% a year, globally, according to research from Morgan Stanley,\
+\
+\
+\pard\pardeftab720\sa240
+
+\f2\fs26 \cf0 We used two different traces in our study, made at busy Internet connection points for two large corporations. One of the traces was obtained by instrumenting a proxy; the other was made by capturing raw network packets and reconstruct- ing the data stream.
+\fs24 \
+\pard\pardeftab720\sl480
+
+\f0 \cf0 \
+\
+\pard\pardeftab720\sa240
+
+\f2\fs26 \cf0 Because the two traces represent different protocol levels, time scales, user communities, and criteria for pre-filtering the trace, they give us several views of \'91\'91real life\'92\'92 reference streams, although certainly not of all possible environments.
+\fs24 \
+\pard\pardeftab720\sl480
+
+\f0 \cf0 \
+\pard\pardeftab720\sa240
+
+\f2\fs26 \cf0 ll packets between internal users and TCP port 80
+\fs24 \
+\pard\pardeftab720\sl480
+
+\f0 \cf0 \
+\pard\pardeftab720\sa240
+
+\f2\fs26 \cf0 These streams were then split into files representing the body of each successful request and a log containing information about URLs, time- stamps, and request and response headers.
+\fs24 \
+\pard\pardeftab720\sl480
+
+\f0 \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+}
