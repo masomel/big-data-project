@@ -1,0 +1,149 @@
+\section{Design of Mininet Clustering}
+
+In order to add the capability to support clustering, we needed to make two
+major changes to the original Mininet design:
+
+\begin{enumerate}
+ \item Add support for GRE tunneling.
+ \item Add functionality for automatically splitting a network topology across machines in the cluster.
+\end{enumerate}
+
+To best illustrate what changed in Mininet Clustering, it is useful to contrast
+our design decisions with the original Mininet design.
+
+\subsection{GRE Tunneling}
+
+Since Mininet was originally designed to only be run on a single laptop or
+desktop computer, all of its features exploit local features, more specifically
+processes, and virtual Ethernet pairs in network namespaces in Linux. Mininet
+Clustering still leverages these Linux features on each laptop to facilitate
+portability from Mininet to our work.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{mininet-comps}
+ \caption{The components and their connections in a simple two-host Mininet network.} 
+ \label{fig:mininet-comps}
+\end{figure}
+
+A Mininet network has four components: Links, Hosts, Switches, and Controllers.
+Each link between a node is a virtual Ethernet (veth) pair which acts like a
+wire connecting two virtual interfaces. These appear as fully functional
+Ethernet ports to all system and application software.  The hosts in Mininet
+are shell processes which are each located within their own network namespace,
+so that each host can have its own set of virtual Ethernet interfaces, as well
+as a pipe to a parent Mininet process. Mininet uses OpenFlow \cite{openflow}
+switches and controllers to best emulate the packet delivery semantics of
+hardware switches. Note that Mininet already supports remote controllers with
+the requirement that the machine running the switches has IP-level connectivity
+to the controller. Figure \ref{fig:mininet-comps} shows how the various
+components of a simple network with two virtual hosts network are laid out and
+interact with each other on a single machine.
+
+In Mininet Clustering, we adopted the host, switch, and controller design of the
+original Mininet. Each of our switches is an Open vSwitch \cite{ovs} and we use
+OpenFlow controllers as well. However, the link design was not sufficient for
+our purposes. Thus, to allow for communication over a physical network
+connecting both machines, Mininet Clustering requires an additional type of
+link which will support this functionality; we chose GRE tunneling.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.2\textwidth]{GRE-packet}
+ \caption{The GRE protocol encapsulates the payload packet both with a GRE header and then the header of the delivery protocol.} 
+ \label{fig:GRE-packet-img}
+\end{figure}
+
+The Generic Routing Encapsulation (GRE) protocol is broadly speaking a protocol
+for performing encapsulation of an arbitrary network layer protocol over
+another arbitrary network layer protocol \cite{hanks}. Thus, when a system has
+a packet that needs to be encapsulated and routed, a two-step process occurs.
+First, the packet to be sent, the ``payload packet'', is encapsulated in a GRE
+packet. In the second step of the encapsulation process, the GRE packet is then
+encapsulated in another protocol, the ``delivery protocol'', which then manages
+the actual forwarding of the packet. Figure \ref{fig:GRE-packet-img} is a
+visual of an encapsulated payload packet. A major advantage of this protocol is
+that delivery layer packets and delivery layer-encapsulated GRE packets will
+look the same when forwarded at the delivery layer. 
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{simple-topo}
+ \caption{How GRE tunneling is implemented in Mininet Clustering in the example of a simple two-switch topology. } 
+ \label{fig:simple-topo}
+\end{figure}
+
+We use GRE to create a virtual ethernet pair across across two machines with the \texttt{iproute} tool: 
+
+\begin{lstlisting}
+ip link add [interfaceName] type gretap remote [remoteIP] local [localIP] key [number]
+\end{lstlisting}
+
+In this case, the GRE protocol is running over IP (the delivery protocol) to deliver ethernet packets (the payload). 
+
+Each machine in the cluster runs one instance of Mininet Clustering. Each
+instance will determine how many GRE links are required and what machines those
+links should point to. Once the topology is distributed, Mininet Clustering
+will assign a name for each GRE interface. If more than one GRE link exists for
+a given pair of machines (i.e., machine A and B have two virtual links between
+them), the \texttt{key} value is used to create multiple GRE links which can be
+demultiplexed by the OS.
+
+An example with a simple topology distributed on two machines will best illustrate GRE tunneling in Mininet Clustering. Take a simple 
+two-switch topology running on two machines as in Figure \ref{fig:simple-topo}, each switch having two hosts; each half of the topology resides on a separate machine each running an instance
+of Mininet Clustering. To simulate the connection between the two switches, the original Mininet would just create a veth pair between the two nodes. This, however, does not allow links across two machines.
+
+Instead, Mininet Clustering creates 
+a GRE link between the two machines encapsulating an Ethernet connection in an IP connection, while the virtual hosts still treat the link between the two switches as a normal ethernet pair. 
+
+For
+this small topology, the \texttt{key} value can be omitted since there is only one single connection between the two machines. 
+However, this value is useful for more complex topologies, such as 
+Figure~\ref{treetopo}. In this case, one pair of machines (red and blue in this case) has multiple virtual links crossing the machine boundary. Each of these links needs to have logically separate traffic, so Mininet clustering assigns each of the links a different \texttt{key} value.
+
+\subsection{Automatic Topology Cutting}
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{democolors}
+ \caption{A simple two-switch colored topology with four virtual
+   hosts. From the perspective of the first machine's Mininet
+   instance, there are only two hosts and a single switch, with a GRE link.} 
+ \label{fig:colored-net}
+\end{figure}
+
+In the original Mininet, each instance of Mininet is an isolated network emulation.
+However, adding remote links which use GRE tunnels to cross machine boundaries allows emulated networks to be distributed across multiple machines. By running separate instances of Mininet on each machine, topologies can be hand-configured such that each machine manages a portion of a larger topology and the remote links required to connect to the rest of the cluster. This process of hand-configuration, however, is overly tedious, error-prone, and not very user-friendly, especially because it limits the interactivity of the system.
+
+For this reason, our design for Mininet Clustering includes an
+algorithm for automatically cutting any topology and distributing it
+amongst the members of the cluster. We chose METIS \cite{karypis}, a
+set of programs for partitioning graphs which implement a faster
+version of the Kernighan-Lin partitioning algorithm
+\cite{kernighan}. METIS can perform k-way graph partitioning, which we
+can conveniently use to cut a topology and distribute it amongst $k$
+machines. The normal version of this algorithm attempts to minimize
+the number of edges which cross this partition.
+
+The algorithm METIS uses to solve this problem is a multilevel graph bisection algorithm with three phases:
+\begin{enumerate}
+\item \textbf{Coarsening Phase:} The graph $G_0$ is transformed into a sequence of smaller graphs $G_1, G_2, ... , G_m$ such that $|V_0| > |V_1| > |V_2| > ... > |V_m|$.
+\item \textbf{Partitioning Phase:} A 2-way partition $P_m$ of the graph $G_m$ = ($V_m$ , $E_m$) is computed that partitions $V_m$ into two parts, each containing half the vertices of $G_0$.
+\item \textbf{Uncoarsening Phase:} The partition $P_m$ of $G_m$ is projected back to $G_0$ by going through intermediate partitions $P_m - 1$, $P_m - 2$, ... , $P_1$, $P_0$.
+\end{enumerate}
+
+A topology in Mininet Clustering supports a \texttt{color} attribute
+for each node. This attribute indicates which member of the cluster
+each node will run on. Mininet Clustering defines a
+\texttt{make\_distributed} function, which uses methods in METIS and a
+configuration file describing the cluster 
+to apply apply a coloring to the graph.
+
+Using our previous example of the simple two-switch topology in Figure
+\ref{fig:simple-topo}, the \texttt{color} attribute of all nodes
+handled by Machine A are red, and those of Machine B
+are blue. The launched network would only appear to be a single switch
+and two hosts to the first machine. However, the switch would forward
+and receive traffic over a GRE link (what happens on the other side of
+that link is not Machine A's concern.)

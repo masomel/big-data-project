@@ -1,0 +1,96 @@
+\section{Evaluation}
+
+Our evaluations measure the difference in latency between running a
+Mininet topology on one computer versus splitting it across
+two. Figure~\ref{latencyalgorithm} is what we used to measure the
+latency. While each ping is taking place, there is no other traffic on
+the network. This experiment, while not demonstrating the full effects
+of distributing a topology which once only resided locally, serves as a demonstration
+that the system is capable of automatically partitioning and executing
+network topologies, even when multiple links between machines exist.
+
+\begin{figure}
+\begin{lstlisting}[language=Python]
+results = []
+for from_host in allHosts:
+  for to_host in allHosts:   
+    if to_host == from_host:
+      continue
+    time = fromHost.median_ping(toHost, count = 5)
+    results.append(time)
+\end{lstlisting}
+\caption{The algorithm used to measure latency.}
+\label{latencyalgorithm}
+\end{figure}
+
+We chose to run the experiment on what Mininet was originally designed
+for: a laptop. Instead of running Mininet natively, however, we
+decided to run it on VirtualBox with an Ubuntu 11.10 image (kernel version
+3.0.0-12) supplied by the
+Mininet developers. This image comes with the Mininet dependencies pre-installed and configured. Further, this allowed us to emulate 
+splitting Mininet across two machines by using one of Virtualbox's low 
+latency local interfaces. Therefore, in this context, a \emph{machine} is
+actually a virtual machine running on a MacBook Pro with a 2GHz Intel
+Core i7 and 4GB of 1333MHz DDR3 memory. 
+
+We evaluated latency on two different topologies: linear and tree. Figure~\ref{lineartopo} shows how the linear topology is set up. There is one split in the line of switches that crosses the machine boundary via a GRE link, and exactly 50\% of the switches and virtual hosts are on each side. Each switch connects to one host. In the actual experiment, there are 20 switches and 20 hosts, 10 of each residing on each machine.
+
+\begin{figure}[tb]
+ \centering
+ \includegraphics[width=\columnwidth]{linecolor.pdf}
+ \caption{The representative linear topology split across two machines: blue and red. Nodes beginning with \emph{s} are switches and those beginning with \emph{h} are hosts.} 
+ \label{lineartopo}
+\end{figure}
+
+\begin{figure}[tb]
+ \centering
+ \includegraphics[width=\columnwidth]{line.pdf}
+ \caption{The experimental results on the linear topology. The green line is for when the topology is all on one machine, and the blue line is when it's split across two.} 
+ \label{lineargraph}
+\end{figure}
+
+The results of the experiment on the linear topology are shown in
+Figure~\ref{lineargraph}. The maximum latency in the graph is 6.0ms. The
+results reveal that distributing the topology across machines does not
+significantly affect latency. The gap in performance occurs as
+some normally ``short" paths traverse the remote link. The
+distributed version exhibits a similar tail behavior as the local
+version, because the longest requests, which traverse 20 switches, are
+not hugely affected by an additional remote hop.
+
+Figure~\ref{treetopo} shows how the partitioning algorithm divided the nodes for the tree topology. In this diagram, each node represents a switch. Every leaf switch is connected to 3 virtual hosts. As before, the color represents which machine the switch/host is on, and the virtual hosts are on the same machine as the switch to which they connect. Unlike the last topology diagram, however, Figure~\ref{treetopo} shows exactly what the topology was like when the experiment ran. There were 13 switches and 9 leaf switches * 3 virtual hosts each = 27 virtual hosts. In total, 40 nodes.
+
+It is also worthwhile to note that in the split shown in the figure,
+red hosts cannot talk to a host on other switch without first going
+through a blue switch. This occurs because the partitioning algorithm
+attempts to balance the number of nodes between the two machines, and
+because of the odd numbered fan-out, it is not easy to partition the
+graph cleanly. 
+
+\begin{figure}[tb]
+ \centering
+ \includegraphics[width=\columnwidth]{treecolor.pdf}
+ \caption{The tree topology used in the experiment. Each node represents a switch, split across a ``blue machine'' and ``red machine''.} 
+ \label{treetopo}
+\end{figure}
+
+\begin{figure}[tb]
+ \centering
+ \includegraphics[width=\columnwidth]{tree.pdf}
+ \caption{The components and their connections in a simple two-host Mininet network.} 
+ \label{treegraph}
+\end{figure}
+
+The results of the experiment on the tree topology are shown in
+\ref{treegraph}. The maximum latency in the graph is 2.4ms. In this experiment,
+unlike in the linear topology, there is a clear flat region in the CDF of ping
+latencies. This occurs because for any request from a red virtual host to
+another virtual host outside of its router, it needs to cross the machine
+boundary twice. This creates a region of latencies where very few requests are
+serviced. This suggests, that a more complex partitioning scheme may be
+required if this latency effect is too costly for experiments. Our partitioning
+scheme optimizes for the minimum edges between the graphs. A better algorithm
+may optimize for average number of crossings across the population of paths in
+the network. It could also allow for ``slack" in the number of nodes running
+on each machine, allowing a machine to run more nodes if it would significantly
+improve average latency.

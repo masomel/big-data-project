@@ -1,0 +1,30 @@
+\section{Related Work}
+
+Trellis \cite{trellis} is similar to MiniNet \cite{lantz} in that it use
+container-based virtualization. It does not, however, use processes as the
+abstraction for virtual hosts. It is similar to our work because it uses GRE
+tunneling to connect multiple physical machines, except with a custom
+implementation the authors call Ethernet GRE. It is likely they implemented
+ethernet over GRE themselves because the equivalent gretap mechanism we use in
+the Linux kernel was not available to them at the time. Mininet with our code
+offers similar functionality as Trellis except that Trellis is a bit more
+heavyweight, not geared for OpenFlow, and doesn't provide as easy a path to
+deployment.
+
+Emulab \cite{emulab} offers a virtualized topology on which experiments can be
+run. The authors implement their own version of virtual Ethernet interfaces
+(veth). The paper does not discuss GRE tunneling and uses FreeBSD jails instead
+of Linux containers to give each host its own network namespace. Emulab's
+design goals are substantially different than Mininet's, but use similar
+techniques to accomplish them.
+
+IMUNES \cite{imunes} modifies FreeBSD to allow for multiple, simultaneous
+network stacks to exist within the kernel. Processes are isolated from others
+on their own network stacks. IMUNES's functionality is also similar to Mininet,
+but it does not offer the ability to hook up virtual hosts to those on other
+physical machines like we do with GRE tunneling.
+
+Crossbow Virtual Wire \cite{crossbow} is not an emulator, but is somewhat
+similar to Mininet because it is another framework that uses lightweight
+virtualization.  Crossbow uses OpenSolaris Zones which are similar to Linux
+containers and FreeBSD jails to isolate its network entities.

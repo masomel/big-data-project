@@ -1,0 +1,32 @@
+\section{Introduction}
+
+One problem network researchers often face is how to test new network
+topologies and protocols in a quick, inexpensive, and realistic manner. As many
+researchers can attest, building testbeds costs valuable time and money, with
+the added issue that testbeds are limited in size and thereby do not represent
+realistic networks. On the other hand, while simulators are a common
+alternative to testbeds, they lack realism for two reasons: the simulation code
+is not the same as the code that would be deployed in a real network, and they
+are not interactive. Mininet \cite{lantz} was developed to solve these issues.
+Mininet is a network emulator which runs on a single computer and leverages
+Linux features such as virtual Ethernet pairs and separate network namespaces
+to emulate many-host networks.
+
+However, Mininet has a significant limitation due to only running on one
+computer: a single computer can only emulate a fixed number of network
+entities. What network researchers really want to emulate, though, are data
+center sized network, probably containing thousands of virtual hosts. Further,
+even if researchers have access to many machines, they are unable to use them
+to emulate more hosts because Mininet currently cannot hook them up. To resolve
+this issue, we have extended Mininet to support execution in a cluster.  What
+this means is that Mininet now has the ability to split network topologies
+among two or more machines while maintaining its original emulation
+functionalities. The distributed hosts and switches tunnel their communication
+using Generic Routing Encapsulation (GRE). All the while, the emulated network
+is agnostic to this distribution.
+
+The rest of this paper is organized as follows: we describe the design changes
+we made to Mininet to create Mininet Clustering in Section 2, followed by the
+implementation details in Section 3. Section 4 is dedicated to evaluating
+Mininet Clustering's performance. In Section 5, related work is discussed. We
+conclude and touch on future work in Section 6.

@@ -1,0 +1,184 @@
+@online{linkedin,
+author={{L}inked{I}n {C}orporation},
+title = {{P}rivacy {P}olicy},
+month = {Jun},
+year = {2011},
+url = {http://www.linkedin.com/static?key=privacy_policy&trk=hb_ft_priv},
+}
+
+@online{amazon,
+author={{A}mazon.com {I}nc.},
+title = {{A}mazon.com {P}rivacy {N}otice},
+month = {Apr},
+year = {2012},
+url = {http://www.amazon.com/gp/help/customer/display.html/ref=footer_privacy/182-7982545-8598631?ie=UTF8&nodeId=468496},
+}
+
+@online{cnn,
+author={{T}urner {B}roadcasting {S}ystem {I}nc.},author = {Soltani, Ashkan and Canty, Shannon and Mayo, Quentin and Thomas, Lauren and Hoofnagle, Chris Jay},
+title = {{C}{N}{N} {P}rivacy {S}tatement},
+month = {Feb},
+year = {2011},
+url = {http://www.cnn.com/privacy.html},
+}
+
+@ARTICLE{ayenson,
+    author = {Ayenson, M. and Wambach, D. J. and Soltani, A. and Good, N. and Hoofnagle, C. J.},
+     month = jul,
+     title = {Flash Cookies and Privacy II: Now with HTML5 and ETag Respawning},
+      year = {2011},
+       url = {http://ssrn.com/abstract=1898390}
+}
+
+@article{soltani,
+author = {Soltani, Ashkan and Canty, Shannon and Mayo, Quentin and Thomas, Lauren and Hoofnagle, Chris Jay},
+title ={Flash Cookies and Privacy},
+month = {Aug},
+year = {2009},
+url = {http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1446862},
+}
+
+@online{announcing_sdk,
+author={Dave Mason},
+title = {Announcing Add-on SDK 1.5!},
+month = {Feb},
+year = {2012},
+url = {http://blog.mozilla.org/addons/2012/02/21/announcing-add-on-sdk-1-5/},
+}
+
+@rfc{rfc2616,
+ author = {Fielding, R. and Gettys, J. and Mogul, J. and Frystyk, H. and Masinter, L. and Leach, P. and Berners-Lee, T.},
+ title = {Hypertext Transfer Protocol -- HTTP/1.1},
+ year = {1999},
+ publisher = {RFC Editor},
+ address = {United States},
+} 
+
+@INPROCEEDINGS{timmins,
+author={Timmins, P.J. and McCormick, S. and Agu, E. and Wills, C.E.},
+booktitle={Hot Topics in Web Systems and Technologies, 2006. HOTWEB '06. 1st IEEE Workshop on}, title={Characteristics of Mobile Web Content},
+year={2006},
+month={nov.},
+volume={},
+number={},
+pages={1 -10},
+keywords={Cellular phones;Computer science;HTML;Markup languages;Mobile computing;Personal digital assistants;Portable computers;Web pages;Web server;Web sites;Internet;XML;information retrieval;mobile computing;HTML content;PDA;World Wide Web;XHTML mobile profile;information access;mobile Web content format;mobile phones;specialized markup languages;},
+doi={10.1109/HOTWEB.2006.355263},
+ISSN={},
+}
+
+@inproceedings{mayer,
+ author = {Mayer, Jonathan R. and Mitchell, John C.},
+ title = {Third-Party Web Tracking: Policy and Technology},
+ booktitle = {Proceedings of the 2012 IEEE Symposium on Security and Privacy},
+ series = {SP '12},
+ year = {2012},
+ isbn = {978-0-7695-4681-0},
+ pages = {413--427},
+ numpages = {15},
+ url = {http://dx.doi.org/10.1109/SP.2012.47},
+ doi = {10.1109/SP.2012.47},
+ acmid = {2310703},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {Do Not Track, Web privacy, third-party tracking},
+} 
+
+@inproceedings{balebako,
+  title={Measuring the effectiveness of privacy tools for limiting behavioral advertising},
+  author={Balebako, Rebecca and Leon, Pedro and Shay, Richard and Ur, Blase and Wang, Yang and Cranor, L},
+  booktitle={Web 2.0 Security and Privacy Workshop},
+  year={2012}
+}
+
+@inproceedings{spain,
+  title={Detecting price and search discrimination on the Internet},
+  author={Mikians, Jakub and Gyarmati, L{\'a}szl{\'o} and Erramilli, Vijay and Laoutaris, Nikolaos},
+  booktitle={Proceedings of the 11th ACM Workshop on Hot Topics in Networks},
+  pages={79--84},
+  year={2012},
+  organization={ACM}
+}
+
+@inproceedings{roesner,
+  title={Detecting and Defending Against Third--Party Tracking on the Web},
+  author={Roesner, Franziska and Kohno, Tadayoshi and Wetherall, David},
+  booktitle={NSDI},
+  year={2012}
+}
+
+@misc{selfhelp,
+	title={TRACKING THE TRACKERS: SELF-HELP TOOLS},
+	author={Mayer, Jonathan R.},
+	howpublished={\url{https://cyberlaw.stanford.edu/blog/2011/09/tracking-trackers-self-help-tools}}
+}
+
+@misc{earlyresults,
+	title={TRACKING THE TRACKERS: EARLY RESULTS},
+	author={Mayer, Jonathan R.},
+	howpublished={\url{https://cyberlaw.stanford.edu/blog/2011/07/tracking-trackers-early-results}}
+}
+
+@inproceedings{acquisti,
+  title={Privacy in electronic commerce and the economics of immediate gratification},
+  author={Acquisti, Alessandro},
+  booktitle={Proceedings of the 5th ACM conference on Electronic commerce},
+  pages={21--29},
+  year={2004},
+  organization={ACM}
+}
+
+@article{mcdonald,
+  title={Cost of Reading Privacy Policies, The},
+  author={McDonald, Aleecia M and Cranor, Lorrie Faith},
+  journal={ISJLP},
+  volume={4},
+  pages={543},
+  year={2008},
+  publisher={HeinOnline}
+}
+
+@inproceedings{bala,
+  title={On the leakage of personally identifiable information via online social networks},
+  author={Krishnamurthy, Balachander and Wills, Craig E},
+  booktitle={Proceedings of the 2nd ACM workshop on Online social networks},
+  pages={7--12},
+  year={2009},
+  organization={ACM}
+}
+
+@misc{safaritracking,
+	title="{Google's iPhone tracking}",
+	author={Angwin, Julia and Valentino-Devries, Jennifer},
+	howpublished={Wall Street Journal. \url{http://online.wsj.com/article/SB10001424052970204880404577225380456599176.html}}
+}
+
+@misc{bau,
+	title={A Promising Direction for Web Tracking Countermeasures},
+	author={Bau, Jason and Mayer, Jonathan and Paskov, Hristo and Mitchell, John.},
+	howpublished={Personal Communication}
+}
+
+
+@inproceedings{ncstate,
+  title={Unsafe exposure analysis of mobile in-app advertisements},
+  author={Grace, Michael C and Zhou, Wu and Jiang, Xuxian and Sadeghi, Ahmad-Reza},
+  booktitle={Proceedings of the fifth ACM conference on Security and Privacy in Wireless and Mobile Networks},
+  pages={101--112},
+  year={2012},
+  organization={ACM}
+}
+
+@inproceedings{msr,
+  title={Privacy revelations for web and mobile apps},
+  author={Wetherall, David and Choffnes, David and Greenstein, B and Han, Seungyeop and Hornyack, Peter and Jung, Jaeyeon and Schechter, Stuart and Wang, Xiao}
+}
+
+@inproceedings{tupni,
+  title={Tupni: Automatic reverse engineering of input formats},
+  author={Cui, Weidong and Peinado, Marcus and Chen, Karl and Wang, Helen J and Irun-Briz, Luis},
+  booktitle={Proceedings of the 15th ACM conference on Computer and communications security},
+  pages={391--402},
+  year={2008},
+  organization={ACM}
+}
