@@ -1,0 +1,46 @@
+Minimizing Required Bandwidth for mobile web browsing
+
+Abstract
+
+Introduction
+- problem addressed
+- motivation
+- our contributions
+- section summary
+
+Related Work: Review of Literature
+- Mobile Browsing patterns
+- Deduplication, Delta Compression, Chunking
+
+System Design
+- 3 components: chunking, fingerprinting, caching
+- assumptions
+- mobile phone
+- proxy server
+- protocol
+
+Implementation
+- 2 simulators: offline, networked
+- Chunking
+- Fingerprinting
+- Caching
+
+Experimental Evaluation
+- Experimental setup
+- Results:
+Graphs:
+1. Redundancy within the same webpage
+2. Different chunk sizes
+3. Different eviction methods 
+
+Discussion and Future Work
+- what went well
+- drawbacks
+- Better caching (take expiration into account in proxy cache, more realistic cache data structure, better implementations of eviction algorithms) --> only difference having expiration makes is in the amount of data that is sent between the proxy server and the actual web server.
+- Actual implementation of this system: using publicly available server for proxy, use browser on mobile phones to make requests, proxy can handle are sorts of web server responses, mobile phone can reconstruct chunked data to actual browser-readable data and/or store it in mobile phone's web cache.
+- Run overhead and latency measurements: was not realistic to do so with our simulator.
+- Look at mobile app http traffic besides browsing http traffic.
+
+Conclusion
+- summary of results
+- Who did what in this project
