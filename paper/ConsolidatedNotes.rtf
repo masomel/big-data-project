@@ -1,12 +1,18 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Cambria;\f2\froman\fcharset0 TimesNewRomanPSMT;
+}
 {\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0\b\fs24 \cf0 Consolidated Notes\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b0 \
+\b0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \b \cf0 To Do:\
@@ -20,31 +26,94 @@
 \b \
 
 \b0 - find actual cache size for mobile phone\
+- add eviction strategies\
+- collect data from existing simulator\
+-update readme\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 \
 
-\b Experiments
-\b0 \
+\b \cf0 Older ToDo
+\f1 \
+\pard\pardeftab720\ri720
+\cf0 461:
+\b0  How do we redirect our browser to go through the proxy?\
+
+\b Simulation2:
+\b0  Set user agent. Gzip. Check expiration time. Advantages: improves latency. Tradeoff: space vs. network.\
+	Morning, evening, afternoon.\
+	Take advantage of additional information.\
+
+\b Check
+\b0  general cache sizes for mobile and proxy\
+
+\b For each file:
+\b0  include url, expiration. \
+
+\b Tradeoff: 
+\b0 # of bytes vs FP size
+\f2\b \
+\pard\pardeftab720\li720\fi-360\ri720
+\ls1\ilvl0
+\f1\b0 \cf0 1.	Mobile checks cache for url and expiration date\
+2.	Mobile gives proxy the header\
+3.	Proxy checks cache for url and expiration date\
+4.	Proxy saves info in file and calls networked client. \
+5.	Client makes a request to networked server and gets response and stores as file. \
+6.	Proxy then sends uses the information in the response file. \
+7.	Proxy takes the response and chunks and stores it in the cache.\
+8.	Proxy responds to mobile.\
+\pard\pardeftab720\ri720
+
+\f2 \cf0 \
+\pard\pardeftab720\li720\fi-360\ri720
+\ls2\ilvl0
+\f1 \cf0 1.	Get offline data with amazon with client and server proxy and see how it compares to current data.\
+2.	Get offline data with browser and server proxy and see how it compares to current data.
+\f2 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 1. chunking vs non chunking\
+
+\f0 \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Experiments
+\b0 \
+1. chunking vs non chunking\
 2. webpage vs no webpage\
 3. different types of caches\
 4. Different chunk sizes\
 5. fps misrate vs chunk/byte missrate\
 6. Bytes transferred\
 7. multiple mobiles\
-8. collected data
+8. collected data\
+9. different cache types\
+10. different chunk sizes
 \b \
 \
+presentation\
 demo:
 \b0 \
 networked\
 	cnn links\
 	figure out how to film screem\
+
+\b Slides:
+\b0 \
+Screenshot of mobile cnn.com on different days\
+
+\b \
+Notes For Paper\
+\
+Strengths:
+\f2 \
+\pard\pardeftab720\ri720
+
+\f1\b0 \cf0 Mobile doesn\'92t have to compute FPs \'96 limited computational capacity \'96 tradeoff\
+\pard\pardeftab720\li720\fi-360\ri720
+\ls3\ilvl0\cf0 -	Doesn\'92t affect browser functionality and independent of web browser and web server.\
+-	What we need: a control simulator.\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b \cf0 \
-Notes For Paper\
+\f0\b \cf0 \
 \
 Weaknesses\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
@@ -52,10 +121,15 @@ Weaknesses\
 \b0 \cf0 - Ensuring freshness\
 - serve correct HTTP alternates\
 - objects that should not be cached\
-\
+\pard\pardeftab720\ri720
+
+\f1 \cf0 overlap inbetween different chunks.\
+we don\'92t do a \'93check\'94 for freshness.\
+Assumptions decreasing performance: expiration, Most recently used.\
+-are we caching compressed data?\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b \cf0 \
+\f0\b \cf0 \
 \
 Assumptions\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
@@ -65,7 +139,9 @@ Assumptions\
 - cache - use of hashtable accurate?\
 - cache size\
 - chunking headers\
-- proxy should check its cache for "freshness" first.
+- cacheability\
+- proxy should check its cache for "freshness" first.\
+- how are we dealing with headers?
 \b \
 \
 Future Work\
