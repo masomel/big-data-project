@@ -1,4 +1,0 @@
-related work
-
-http://www.owlnet.rice.edu/~zw3/files/RICE/MobileBrowser/s3-wang.pdf
-https://web.eecs.umich.edu/~zmao/Papers/caching_mobisys2012.pdf
