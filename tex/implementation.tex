@@ -1,5 +1,10 @@
 \section{Simulator Implementation}
-\subsection{Offline Simulator}
-\subsection{Networked Simulator}
-\subsection{Using Different Caching Algorithms}
-
+We implemented two versions of a simulator of our system: 
+\begin{enumerate}
+\item An offline simulator, which uses data collected and stored during a mobile browsing session, and input into the simulator offline, and
+\item A networked simulator, which simulates a basic incarnation of our system in real-time.
+\end{enumerate}
+Both simulators are written in Java, and use four helper interfaces and classes each one representing a component of the system, in addition to the proxy server and mobile device classes. In particular, we use two helper interfaces: ICache and IProcessor, which allow for different implementations of caches supporting various eviction algorithms, and of what we call cache processors, respectively. A cache processor is an entity which acts as an interface between a device and its web cache, with its most important task to process incoming web content based on the device's cache contents. While both of our simulators use a simple implementation of IProcessor called SimpleProcessor, which manages web content caching, and measures the cache hitrate and missrate, we have multiple implementations of ICache, which we address later in this section. However, our networked simulator has only been implemented using the MRUCache.
+\input{offline_sim}
+\input{networked_sim}
+\input{impl_caching}
