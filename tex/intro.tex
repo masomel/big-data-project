@@ -1,1 +1,22 @@
 \section{Introduction}
+As of the beginning of 2013, global mobile traffic represented roughly 13\% of internet traffic.
+In 2009, this number was just 1\% and in 2010 it moved up to 4\%.
+This number is expected to grow exponentially. Of the 5 billion mobile phones in the world, only a fifth are smartphones. The user base of smartphone is expected to expand by about 42\% a year, and with that grows the mobile web traffic. 
+The issue we face is that mobile networks in North America are already running at 80\% of capacity and 36\% of base stations are facing capacity constraints. Globally, the ubiquitous appearance of mobile devices with the rise of cheap smartphones and tablets in developing countries like Africa and India is creating a need for ensuring available and affortable bandwidth. The growth in demand for mobile network in conjunction with the limited spectrum of bandwidth motivates new and innovative techniques to reduce network traffic and mobile bandwidth. 
+
+%Intro to Previous Work
+Previous work in this area has analyzed redundant desktop browser data. However, most web servers now structure their pages differently according to the requesting user agent, and there has been minimal study in the area of redundant data with mobile browsers.
+
+%Our Method
+HTTP requests often cause responses that are only a slightly modified version of the content stored in cache. These modifications are typically much smaller than the full size of the data.  We use data reduplication techniques to transfer only the data that is different and avoid transferring redundant data. This reduces the number of bytes sent across the network, thereby reducing the required bandwidth for http transfers. We do this by identifying and storing unique chunks of data and replacing redundant chunks with a smaller reference that identifies it as a redundant chunk. Each redundant chunks is identified by its own unique rabin fingerprint and the client can replace the fingerprint with the referenced data chunk. 
+
+%Other Methods
+Other techniques that have been used to reduce bandwidth are data compression and partial responses. Both techniques have their benefits and drawbacks. For our purposes, we used data deduplication because it has better efficiency with small data chunks whereas compression is better with larger data sizes. Partial responses reduce bandwidth by allowing the client to specify only the data it needs; this was not relevant for us since we want to load the entire webpage requested by the browser.
+
+% Purpose
+We analyze redundancies across websites and calculate the potential amount of bandwidth savings that can be obtained through data reduplication. To do this we used two different traces in our study. One of the traces was obtained by capturing raw network packets through wireshark and the other was obtained through telnet requests. 
+
+
+
+
+

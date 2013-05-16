@@ -2,14 +2,55 @@
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Georgia;\f2\froman\fcharset0 Times-Roman;
 }
 {\colortbl;\red255\green255\blue255;\red0\green0\blue111;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\margl1440\margr1440\vieww10900\viewh12840\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\f0\b\fs24 \cf0 Notes:
+\f0\fs24 \cf0 http://www.forbes.com/sites/parmyolson/2012/12/04/5-eye-opening-stats-that-show-the-world-is-going-mobile/\
+"Global mobile traffic now represents roughly 13% of internet traffic. just three years ago, in 2009, that statistic was at a measly 1%. It edged up to 4% in 2010, and it hit 13% in November 2012, according to StatCounter Global Stats"\
+\
+"There are 5 billion mobile mobile phone users in the world, but only 1 billion smartphone users\'85 its only getting started. The number of smartphone users is growing by 42% a year, globally, according to research from Morgan Stanley". \
+\
+Other Techniques that have been explored:\
+Why not just use compression?:\
+"Deduplication achieves better efficiency against smaller data chunks, whereas compression achieves better efficiency against larger chunks." \
+Why not use partial responses?:\
+Partial response allows your o specify only the fields you really want included, thereby reducing bandwidth\
+\
+computer world.\
+Mobile networks in North America is running at 80% of capacity, with 36% of base stations facing capacity constraints. \
+\
+AT&T wants to acquire T-Mobile not for its customers but for its AWS spectrum.\
+\
+The world is becoming more connected by the minute with cheap smartphones and tablets taking off in developing countries like Africa and India, while bandwidth remains the same. \
+\
+\
+industry watchers say the laws of supply and demand indicate that wireless plan prices can only go up.\
+\pard\pardeftab720\sl380
+\cf0 \
+\
+Previous work in this area has analyzed redundant desktop browser data. However, most web servers now structure their pages differently according to the requesting user agent, and there has been minimal study in the area of redundant data with mobile browsers.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+HTTP requests often cause responses that are only a slightly modified version of the content stored in cache. These modifications are typically much smaller than the full size of the data.  We use data reduplication techniques to transfer only the data that is different and avoid transferring redundant data. This reduces the number of bytes sent across the network, thereby reducing the required bandwidth for http transfers. We do this by identifying and storing unique chunks of data and replacing redundant chunks with a smaller reference that identifies it as a redundant chunk. Each redundant chunks is identified by its own unique rabin fingerprint and the client can replace the fingerprint with the referenced data chunk. \
+
+\b \
+
+\b0 We analyze redundancies across websites and calculate the potential amount of bandwidth savings that can be obtained through data reduplication. To do this we used two different traces in our study. One of the traces was obtained by capturing raw network packets through wireshark and the other was obtained through telnet requests. 
+\b \
+\
+\
+\pard\pardeftab720\ri720
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+\
+\
+Notes:
 \b0 \
 
 \b Data deduplication
-\b0  is a data compression technique that eliminates duplicate copies of repeating data; it can be applied to network data transfers to reduce the number of bytes that must be sent. This is done by identifying and storing unique chunks of data, and replacing a redundant chunk with a small reference that identifies the redundant chunk.\
+\b0  is a data compression technique that eliminates duplicate copies of repeating data; it can be applied to network data transfers to reduce the number of bytes that must be sent. This is done by identifying and storing unique chunks of data, and replacing a redundant chunk with a small reference that identifies the redundant chunk. \
 \pard\pardeftab720\sl380
 
 \fs26 \cf0 -For that to happen, each chunk of data is assigned an identification, calculated by the software, typically using cryptographic hash functions.\
@@ -19,36 +60,13 @@
 \fs26 upon read back of the file, wherever a link is found, the system simply replaces that link with the referenced data chunk\
 \
 \
-
-\b Weakness: 
-\b0 \
-The most intelligent (but CPU intensive) method to chunking is generally considered to be sliding-block. In sliding block, a window is passed along the file stream to seek out more naturally occurring internal file boundaries.
-\fs24 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 \
-\pard\pardeftab720\sl380\sa100
-
-\b\fs34 \cf0 Source versus target deduplication \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-
-\b0\fs24 \cf0 we decided on target reduplication:\
-1. computationally heavy load on mobile phone\
-\
-\
-weakness:\
-\pard\pardeftab720\sl380
-
-\fs26 \cf0  1. First, data deduplication requires overhead to discover and remove the duplicate data. In primary storage systems, this overhead may impact performance.\
-2. integrity of data - collision\
-\
 Deduplication achieves better efficiency against smaller data chunks, whereas compression achieves better efficiency against larger chunks. The goal of encryption is to eliminate any discernible patterns in the data. Thus encrypted data cannot be deduplicated, even though the underlying data may be redundant.\
 
 \fs24 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b \cf0 Wan Optimization 
+\b Wan Optimization 
 \b0 \
 \pard\pardeftab720\sl380
 
@@ -60,28 +78,16 @@ hroughput, bandwidth requirements, latency, protocol optimization, and congestio
 \
 Delta Encoding:\
 Many HTTP (Hypertext Transport Protocol) requests cause the retrieval of slightly modified instances of resources for which the client already has a cache entry. Research has shown that such modifying updates are frequent, and that the modifications are typically much smaller than the actual entity. In such cases, HTTP would make more efficient use of network bandwidth if it could transfer a minimal description of the changes, rather than the entire new instance of the resource\
+\
+forbes\
+"Global mobile traffic now represents roughly 13% of internet traffic. just three years ago, in 2009, that statistic was at a measly 1%. It edged up to 4% in 2010, and it hit 13% in November 2012, according to StatCounter Global Stats"\
 
 \fs24 \
-\
-forbes:\
-\pard\pardeftab720\sl480\sa300
-
-\f1\b\fs36 \cf0 2) Global mobile traffic now represents roughly 13% of Internet traffic.
-\b0 \
-Just three years ago, in 2009, that statistic was at a measly 1%. It edged up to 4% in 2010, and it hit 13% in November 2012, according to StatCounter Global Stats.\
-\pard\pardeftab720\sl380
-
-\f0\fs24 \cf0 \
+"There are 5 billion mobile mobile phone users in the world, but only 1 billion smartphone users\'85 its only getting started. The number of smartphone users is growing by 42% a year, globally, according to research from Morgan Stanley". 
+\fs26 \
 \pard\pardeftab720\sl480
 
-\f1\b\fs36 \cf0 There are 5 billion mobile phone users in the world, but only 1 billion 
-\i smartphone
-\i0  users.. its only getting started\
-\pard\pardeftab720\sl480
-
-\b0 \cf0 The number smartphone users is growing by 42% a year, globally, according to research from Morgan Stanley,\
-\
-\
+\f1\fs36 \cf0 \
 \pard\pardeftab720\sa240
 
 \f2\fs26 \cf0 We used two different traces in our study, made at busy Internet connection points for two large corporations. One of the traces was obtained by instrumenting a proxy; the other was made by capturing raw network packets and reconstruct- ing the data stream.

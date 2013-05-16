@@ -1,0 +1,15 @@
+telnet> Trying 204.245.63.16...
+Connected to a1983.g2.akamai.net.
+Escape character is '^]'.
+HTTP/1.0 302 Moved Temporarily
+Server: Varnish
+Location: http://m.weather.com
+Accept-Ranges: bytes
+X-Varnish: 1053782452
+dclass: mw4
+Expires: Wed, 15 May 2013 16:27:46 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Wed, 15 May 2013 16:27:46 GMT
+Connection: close
+

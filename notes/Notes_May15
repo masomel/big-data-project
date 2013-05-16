@@ -1,0 +1,24 @@
+Presentation:
+Nayden: Intro
+Marcela: Design and Demo
+Madhu: Results
+
+Paper:
+Nayden: related works, introduction, caching, chunking, some results
+me: results: different section for each experiment, conclusion, future work, stats
+
+Need: Diagram of class structure and simulator
+Need: Details about fingerprinting
+Need: Equation explaining bytes transferred
+
+News Sites (possibly web crawl?)
+tech - cnet, mittechreview, arstechnica, computer magazine, pcWorld
+finance - forbes, yahoo finance, wsj, economist
+politics - economist, cnn, fox, nbc, cbs
+sports - 
+celebrities - people omgyahoo
+criminal - cnn
+
+automated web crawling:
+selenium
+moz mil

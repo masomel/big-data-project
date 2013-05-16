@@ -1,0 +1,10 @@
+Trying 165.160.15.20...
+Connected to finance.com.
+Escape character is '^]'.
+HTTP/1.1 200 OK
+Connection: close
+Date: Sat, 11 May 2013 14:21:09 GMT
+Content-Length: 94
+X-Powered-By: Servlet/2.4 JSP/2.0
+
+<html><head><title></title><meta name="revised" content="1.1.7" /></head><body></body></html>
