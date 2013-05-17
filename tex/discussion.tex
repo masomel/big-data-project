@@ -1,2 +1,3 @@
 \section{Discussion}
+\label{sec:discussion}
 Other techniques that have been used to reduce bandwidth are data compression \cite{?} and partial responses \cite{?}. For our purposes, we use data deduplication because it has better efficiency with smaller data chunks whereas compression is better with larger data sizes. Partial responses reduce bandwidth by allowing the client to specify only the data it ; this was not relevant for us since we want to load the entire webpage requested by the browser. [But aren't our responses essentially partial? After all, the proxy does only send back the data our client specified as needing. Really need to point out the difference here]
