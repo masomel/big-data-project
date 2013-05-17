@@ -1,0 +1,1434 @@
+telnet> Trying 170.149.168.130...
+Connected to www.nytimes.com.
+Escape character is '^]'.
+HTTP/1.1 200 OK
+Date: Sun, 12 May 2013 00:16:50 GMT
+Server: Apache
+expires: Thu, 01 Dec 1994 16:00:00 GMT
+cache-control: no-cache
+pragma: no-cache
+Set-Cookie: RMID=007f01003e7e518edf72004c; Expires=Mon, 12 May 2014 00:16:50 GMT; Path=/; Domain=.nytimes.com;
+Set-cookie: adxcs=-; path=/; domain=.nytimes.com
+Content-Length: 171382
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<!--[if IE]><![endif]--> 
+<html lang="en">
+<head>
+<title>The New York Times - Breaking News, World News &amp; Multimedia</title>
+<meta name="robots" content="noarchive,noodp,noydir">
+<meta name="description" content="Find breaking news, multimedia, reviews &amp; opinion on Washington, business, sports, movies, travel, books, jobs, education, real estate, cars &amp; more.">
+<meta name="keywords" content="Khan, Imran,Sharif, Nawaz,Elections,Gilani, Yousaf Raza,Taliban,Pakistan,Erdogan, Recep Tayyip,Turkey,Middle East and North Africa Unrest (2010- ),Bombs and Explosives,Kurdistan Workers' Party,Assad, Bashar al-,Free Syrian Army,Refugees and Displaced Persons,Syria,Police Department (NYC),False Arrests, Convictions and Imprisonments,Brooklyn (NYC),Murders and Attempted Murders,Hynes, Charles J,Scarcella, Louis,United States International Relations,Terrorism,Diplomatic Service, Embassies and Consulates,Egypt,Al Qaeda,International Space Station,Space,Space Stations,National Aeronautics and Space Administration,Recalls and Bans of Products,Automobile Safety Features and Defects,Jeep Division of Chrysler,Las Vegas (Nev),Thorson, Scott,Liberace,Prisons and Prisoners,Deaths (Fatalities),Police,Trenton (NJ),Hostages,Education (K-12),New York City,Moskowitz, Eva S,Mulgrew, Michael,de Blasio, Bill,Bloomberg, Michael R,Elections, Mayors,Albanese, Sal F,Organized Labor,Thompson, William C Jr,Reform and Reorganization,Teachers and School Employees,Quinn, Christine C,Guardian Council (Iran),Elections,Mashaei, Esfandiar Rahim,Rafsanjani, Ali Akbar Hashemi,Ahmadinejad, Mahmoud,Iran,Islamic Revolutionary Guards Corps,Muslims and Islam">
+<meta name="CG" content="Homepage">
+<meta name="SCG" content="">
+<meta name="PT" content="Homepage">
+<meta name="PST" content="">
+<meta name="HOMEPAGE_TEMPLATE_VERSION" content="300">
+<meta name="application-name" content="The New York Times" />
+<meta name="msapplication-starturl" content="http://www.nytimes.com/" />
+<meta name="msapplication-task" content="name=Search;action-uri=http://query.nytimes.com/search/sitesearch?src=iepin;icon-uri=http://css.nyt.com/images/icons/search.ico" />
+<meta name="msapplication-task" content="name=Most Popular;action-uri=http://www.nytimes.com/gst/mostpopular.html?src=iepin;icon-uri=http://css.nyt.com/images/icons/mostpopular.ico" />
+<meta name="msapplication-task" content="name=Video;action-uri=http://video.nytimes.com/?src=iepin;icon-uri=http://css.nyt.com/images/icons/video.ico" />
+<meta name="msapplication-task" content="name=Homepage;action-uri=http://www.nytimes.com?src=iepin&amp;adxnnl=1;icon-uri=http://css.nyt.com/images/icons/homepage.ico" />
+<link rel="shortcut icon" href="http://css.nyt.com/images/icons/nyt.ico" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml">
+<link rel="alternate" media="handheld" href="http://mobile.nytimes.com">    
+<link rel="stylesheet" type="text/css" href="http://css.nyt.com/css/0.1/screen/build/homepage/styles.css">
+<link rel="stylesheet" type="text/css" media="print" href="http://css.nyt.com/css/0.1/print/styles.css">  
+<!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="http://css.nyt.com/css/0.1/screen/build/homepage/ie.css?v=012611">
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://css.nyt.com/css/0.1/screen/build/homepage/ie6.css">
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="http://js.nyt.com/js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://js.nyt.com/js2/build/sitewide/sitewide.js"></script>
+<script type="text/javascript" src="http://js.nyt.com/js2/build/homepage/top.js"></script>
+<!-- ADXINFO classification="Big_Ad_-_Standard" campaign="Test_NYT5_ABtest_mlr" priority="9200" width="300" height="250" --><script type="text/javascript">
+var NYTD = NYTD || {};
+NYTD.reskinABTestThrottle = 0.03;
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://graphics8.nytimes.com/css/test/reskin/styles.css" />
+<script type="text/javascript" src="http://graphics8.nytimes.com/js/test/reskin/test.js?201305081530"></script>
+</head>
+<body id="home">
+<a name="top"></a>
+<div id="shell">
+
+<ul id="memberTools">
+
+<!-- ADXINFO classification="Share_of_Voice_Tile_-_Left" campaign="nyt2013_bar1_hp_digi_hd_3F4YQ_3F4YL" priority="1000" width="184" height="90" --><!-- start text link -->
+<li class="cColumn-TextAdsHeader">Subscribe:
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Bar1&sn2=5b35bc29/49f095e7&sn1=76a23e51/37862598&camp=nyt2013_bar1_hp_digi_hd_3F4YQ_3F4YL&ad=043012-HP_bar1_3F4YQ_3F4YK&goto=http%3A%2F%2Fwww%2Enytimes%2Ecom%2Fsubscriptions%2FMultiproduct%2Flp5558%2Ehtml%3Fadxc%3D210068%26adxa%3D300150%26page%3Dhomepage.nytimes.com/index.html%26pos%3DBar1%26campaignId%3D3F4YQ" target="_blank">
+Digital</a> / <a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Bar1&sn2=5b35bc29/49f095e7&sn1=7d8d321f/f1a9d222&camp=nyt2013_bar1_hp_digi_hd_3F4YQ_3F4YL&ad=043012-HP_bar1_3F4YQ_3F4YK&goto=http%3A%2F%2Fnytimesathome%2Ecom%2Fhd%2F142%3FMediaCode%3DW39AA%26CMP%3D3F4YL%26adxc%3D210068%26adxa%3D300150%26page%3Dhomepage.nytimes.com/index.html%26pos%3DBar1%26campaignId%3D3F4YL" target="_blank">Home Delivery</a>
+</li>
+<!-- end text link -->
+
+
+                <li><a href="/auth/login?URI=http://">Log In</a></li> 
+        <li><a href="/gst/regi.html" onClick="dcsMultiTrack('WT.z_ract', 'Regnow', 'WT.z_rprod', 'Masthead','WT.z_dcsm','1');">Register Now</a></li>
+            
+
+</ul>
+<div class="mainTabsContainer tabsContainer">
+<ul id="mainTabs" class="mainTabs tabs">
+<li class="first selected"><a href="http://www.nytimes.com">Home Page</a></li>
+<li><a href="http://www.nytimes.com/pages/todayspaper/index.html">Today's Paper</a></li>
+<li><a href="http://video.nytimes.com/">Video</a></li>
+<li><a href="http://www.nytimes.com/mostpopular">Most Popular</a></li>
+</ul>
+</div><!--close .tabsContainer -->
+<div id="editionToggle" class="editionToggle">
+Edition: <span id="editionToggleUS"><a href="http://www.nytimes.com" onmousedown="dcsMultiTrack('DCS.dcssip','www.nytimes.com','DCS.dcsuri','/toggleIHTtoNYT.html','WT.ti','toggleIHTtoNYT','WT.z_dcsm','1');" onclick="NYTD.EditionPref.setUS();">U.S.</a></span> / <span id="editionToggleGlobal"><a href="http://global.nytimes.com" onmousedown="dcsMultiTrack('DCS.dcssip','www.nytimes.com','DCS.dcsuri','/toggleNYTtoIHT.html','WT.ti','toggleNYTtoIHT','WT.z_dcsm','1');" onclick="NYTD.EditionPref.setGlobal();">Global</a></span>
+</div><!--close editionToggle -->
+<script type="text/javascript"> NYTD.loadEditionToggle(); </script>
+<div id="page" class="tabContent active">
+<div id="masthead">
+
+<div class="singleAd" id="TopLeft">
+<!-- ADXINFO classification="Share_of_Voice_Tile_-_Left" campaign="Marc_Jacobs_2013_1862596-nyt8" priority="8000" width="184" height="90" --><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=TopLeft&sn2=ab8a95f5/87622a3f&sn1=8fdfd0fc/fa58e96a&camp=Marc_Jacobs_2013_1862596-nyt8&ad=NYT_CROC_ISOBEL_left_MAY-7&goto=http%3A%2F%2Fwww%2Emarcjacobs%2Ecom%2Fmarc%2Djacobs%2Fwomens%2Fbags%2Dand%2Daccessories%2F%3Futm%5Fsource%3Dnyt13%26utm%5Fmedium%3Dnytleft%26utm%5Fcampaign%3Dcrocisobel" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/33/76/ad.337614/NYT_CROC_ISOBEL_left.jpg" width="184" height="90" border="0">
+</a>
+</div>
+
+
+<div class="singleAd" id="TopRight">
+<!-- ADXINFO classification="Share_of_Voice_Tile_-_Right" campaign="Marc_Jacobs_2013_1862596-nyt8" priority="8000" width="184" height="90" --><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=TopRight&sn2=361d9a2f/d5c54928&sn1=18c56766/db351d1a&camp=Marc_Jacobs_2013_1862596-nyt8&ad=NYT_CROC_ISOBEL_right_May-7&goto=http%3A%2F%2Fwww%2Emarcjacobs%2Ecom%2Fmarc%2Djacobs%2Fwomens%2Fbags%2Dand%2Daccessories%2Fc3131026%2Fthe%2Disobel%3Fsort%3D%26utm%5Fsource%3Dnyt13%26utm%5Fmedium%3Dnytright%26utm%5Fcampaign%3Dcrocisobel" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/33/76/ad.337615/NYT_CROC_ISOBEL_right.jpg" width="184" height="90" border="0">
+</a>
+</div>
+
+
+<script type="text/javascript">
+              if (/iPad|iPod|iPhone/.test(navigator.userAgent)){
+                document.write('<img id="mastheadLogo" width="379" height="64" alt="The New York Times" src="http://i1.nyt.com/svg/nytlogo_379x64.svg">');
+              } else {
+                document.write('<img id="mastheadLogo" width="379" height="64" alt="The New York Times" src="http://i1.nyt.com/images/misc/nytlogo379x64.gif">');
+              }
+            </script>
+<noscript>
+<img id="mastheadLogo" width="379" height="64" alt="The New York Times" src="http://i1.nyt.com/images/misc/nytlogo379x64.gif"/>
+</noscript>
+
+<div id="date"><p>Saturday, May 11, 2013 <span id="lastUpdate">Last Update: </span><span class="timestamp">8:10 PM ET</span></p></div>
+</div><!--end #masthead -->
+
+<div class="singleAd" id="HPTopNav">
+<!-- ADXINFO classification="Pencil_Ad" campaign="nyt2013_970x44_digi_hp_3F696" priority="1000" width="336" height="46" --><div class="PayModelPromoBanner"> <style type="text/css" media="screen"> 
+#HPTopNav { background: #ffffff !important; padding: 0 0; }
+#HPTopNav .PayModelPromoBanner span { position: relative; } 
+#HPTopNav .PayModelPromoBanner div.icon_PayModelFrontPromo { width: 42px; height: 41px; position: relative; } 
+</style>
+
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPTopNav&sn2=2b74eb92/5dc5ec0&sn1=47cde535/3a4df517&camp=nyt2013_970x44_digi_hp_3F696&ad=pencil_digi_hp_3F696&goto=http%3A%2F%2Fwww%2Enytimes%2Ecom%2Fsubscriptions%2FMultiproduct%2Flp5558%2Ehtml%3Fadxc%3D209338%26adxa%3D301138%26page%3Dhomepage.nytimes.com/index.html%26pos%3DHPTopNav%26campaignId%3D3F696" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/30/11/ad.301138/12-2398_DigitalAcquisition_970x44.jpg" width="970" height="44" border="0">
+</a>
+</div>
+</div>
+
+<div id="toolbar">
+
+<div id="toolbarSearchContainer" class="toolbarSearchContainer-withad">
+
+
+<div id="toolbarSearch">
+<div class="inlineSearchControl">
+<form id="searchForm" name="searchForm" method="get" action="http://query.nytimes.com/gst/sitesearch_selector.html" enctype="application/x-www-form-urlencoded">
+<input id="hpSearchQuery" name="query" class="text"/>
+<input type="hidden" name="type" value="nyt"/>
+<input id="searchSubmit" title="Search" width="40" height="19" alt="Search" type="image" src="http://graphics8.nytimes.com/images/global/global_search/search_button40x19.gif">
+</form>
+</div>
+
+<div id="Middle1C" class="singleAd">
+<!-- ADXINFO classification="Button_Ad_88x31_" campaign="ING_DirectSiteSearch13-1850637-nyt1" priority="9000" width="88" height="31" --><A HREF="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Middle1C&sn2=ead05e9b/336cb178&sn1=a0841e58/f829d125&camp=ING_DirectSiteSearch13-1850637-nyt1&ad=DirectSiteSearch12.ROS.FEB.dart88x31&goto=http://ad.doubleclick.net/jump/N3282.nytimes.comSD6440/B7326326.2;sz=88x31;pc=nyt202539A325775;ord=2013.05.12.00.16.50?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/N3282.nytimes.comSD6440/B7326326.2;sz=88x31;pc=nyt202539A325775;ord=2013.05.12.00.16.50?"
+ BORDER=0 WIDTH=88 HEIGHT=31
+ ALT="Click Here"></A>
+</div>
+
+<div id="HPSiteSearch" style="display:none;"></div>
+</div>
+</div>
+<div id="toolsHome">
+<!-- ADXINFO classification="Text_Link" campaign="nyt2013_bar2_hp_hd_3847K" priority="1000" width="0" height="0" --><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Bar2&sn2=5b35bc2a/499095e7&sn1=b2ff9000/e74c34c&camp=nyt2013_bar2_hp_hd_3847K&ad=052711-bar2-hd-digi-target-3847K&goto=https%3A%2F%2Fwww%2Enytimesathome%2Ecom%2Fhd%2F142%3FMediaCode%3DW37AA%26CMP%3D3847K%26adxc%3D210077%26adxa%3D267721%26page%3Dhomepage.nytimes.com/index.html%26pos%3DBar2%26campaignId%3D3847K" target="_blank"><img src="http://graphics8.nytimes.com/ads/circulation/icon-newspaper.jpg" height="27" width="40" 
+
+alt="Subscribe to Home
+Delivery" align="middle" border="0"/>Subscribe to Home Delivery</a> <span class="pipe">|</span>
+<a href="http://www.nytimes.com/weather">Personalize Your Weather</a>
+</div>
+<div class="socialMediaModule">
+<p class="listLabel">Follow Us</p>
+<ul class="socialMediaTools flush"><li class="facebook"><a href="http://facebook.com/nytimes"><img class="facebookIcon" src="http://graphics8.nytimes.com/images/article/functions/facebook.gif" alt="Facebook"></a></li><li class="twitter"><a href="http://twitter.com/nytimes"><img class="twitterIcon" src="http://graphics8.nytimes.com/images/article/functions/twitter.gif" alt="Twitter"></a></li></ul>
+<span class="pipe">|</span>
+</div>
+</div><!--end #toolbar -->
+
+
+<div id="main">
+<div id="spanWholePageRegion">
+<div class="columnGroup first">				
+<style> #home .baseLayoutBelowFold { background-color: #FFF } </style>	<style type="text/css"><!--
+
+#TopLeft img[height="1"],
+  #TopRight img[height="1"] {
+    display: none;
+  }
+
+
+#TopLeft .prWrap,
+#TopRight .prWrap {
+width: auto !important;
+}
+
+--></style>	</div>
+</div><!--close spanWholePageRegion -->
+<div class="baseLayout wrap"> 
+<div class="nav column">
+<div class="hpLeftnav" id="HPLeftNav">
+<div class="columnGroup fullWidth">
+<div class="navigationHomeLede">
+<ul class="flush featured">
+<li id="navWorld"><a href="http://www.nytimes.com/pages/world/index.html">World</a></li>
+<li id="navUS"><a href="http://www.nytimes.com/pages/national/index.html">U.S.</a></li>
+<li id="navPolitics"><a href="http://www.nytimes.com/pages/politics/index.html">Politics</a></li>
+<li id="navNYRegion"><a href="http://www.nytimes.com/pages/nyregion/index.html">New York</a></li>
+<li id="navBusiness"><a href="http://www.nytimes.com/pages/business/index.html">Business</a></li>
+<li id="navDealbook"><a href="http://dealbook.nytimes.com">Dealbook</a></li>
+<li id="navTechnology"><a href="http://www.nytimes.com/pages/technology/index.html">Technology</a></li>
+<li id="navSports"><a href="http://www.nytimes.com/pages/sports/index.html">Sports</a></li>
+<li id="navScience"><a href="http://www.nytimes.com/pages/science/index.html">Science</a></li>
+<li id="navHealth"><a href="http://www.nytimes.com/pages/health/index.html">Health</a></li>
+<li id="navArts"><a href="http://www.nytimes.com/pages/arts/index.html">Arts</a></li>
+<li id="navStyle"><a href="http://www.nytimes.com/pages/style/index.html">Style</a></li>
+<li id="navOpinion"><a href="http://www.nytimes.com/pages/opinion/index.html">Opinion</a></li>
+</ul>
+</div>
+</div>
+<div class="columnGroup">
+<div class="navigationHome">
+<ul class="flush primary">
+<li class="firstItem singleRule">
+<ul class="secondary">
+<li><a href="http://www.nytimes.com/pages/automobiles/index.html">Autos</a></li>
+<li><a href="http://www.nytimes.com/ref/topnews/blog-index.html">Blogs</a></li>
+<li><a href="http://www.nytimes.com/pages/books/index.html">Books</a></li>
+<li><a href="http://wordplay.blogs.nytimes.com/cartoons/">Cartoons</a></li>
+<li><a href="http://www.nytimes.com/ref/classifieds/?incamp=hpclassifiedsnav">Classifieds</a></li>
+<li><a href="http://www.nytimes.com/crosswords/index.html">Crosswords</a></li>
+<li><a href="http://www.nytimes.com/pages/dining/index.html">Dining &amp; Wine</a></li>
+<li><a href="http://www.nytimes.com/pages/education/index.html">Education</a></li>
+<li><a href="http://www.nytimes.com/events/">Event Guide</a></li>
+<li><a href="http://www.nytimes.com/pages/fashion/index.html">Fashion &amp; Style</a></li>
+<li><a href="http://www.nytimes.com/pages/garden/index.html">Home &amp; Garden</a></li>
+<li><a href="http://jobmarket.nytimes.com/pages/jobs/">Jobs</a></li>
+<li><a href="http://www.nytimes.com/pages/magazine/index.html">Magazine</a></li>
+<li><a href="http://www.nytimes.com/pages/business/media/index.html">Media</a></li>
+<li><a href="http://www.nytimes.com/pages/movies/index.html">Movies</a></li>
+<li><a href="http://www.nytimes.com/pages/arts/music/index.html">Music</a></li>
+<li><a href="http://www.nytimes.com/pages/obituaries/index.html">Obituaries</a></li>
+<li><a href="http://www.nytimes.com/top/opinion/thepubliceditor/index.html">Public Editor</a></li>
+<li><a href="http://www.nytimes.com/pages/realestate/index.html">Real Estate</a></li>
+<li><a href="http://www.nytimes.com/pages/opinion/index.html#sundayreview">Sunday Review</a></li>
+<li><a href="http://www.nytimes.com/pages/t-magazine/index.html">T Magazine</a></li>
+<li><a href="http://www.nytimes.com/pages/arts/television/index.html">Television</a></li>
+<li><a href="http://www.nytimes.com/pages/theater/index.html">Theater</a></li>
+<li><a href="http://travel.nytimes.com">Travel</a></li>
+<li><a href="http://www.nytimes.com/pages/fashion/weddings/index.html">Weddings / Celebrations</a></li>
+</ul>
+</li>
+<li class="singleRule">
+<h6 class="kickerBd">Multimedia</h6>
+<ul class="secondary">
+<li><a href="http://www.nytimes.com/pages/multimedia/index.html">Interactives</a></li>
+<li><a href="http://lens.blogs.nytimes.com/">Photography</a></li>
+<li><a href="http://video.nytimes.com/">Video</a></li>
+</ul>
+</li>
+<li class="singleRule">
+<h6 class="kickerBd">Tools &amp; more</h6>
+<ul class="secondary">
+<li><a href="https://myaccount.nytimes.com/mem/tnt.html">Alerts</a></li>
+<li><a href="http://beta620.nytimes.com/">Beta 620</a></li>
+<li><a href="http://www.nytimes.com/pages/corrections/index.html">Corrections</a></li>
+<li><a href="http://www.nytimes.com/nytmobile/">Mobile</a></li>
+<li><a href="http://movies.nytimes.com/movies/showtimes.html">Movie Tickets</a></li>
+<li><a href="http://www.nytimes.com/learning/index.html">Learning Network</a></li>
+<li><a href="http://www.nytimes.com/marketing/newsletters/">Newsletters</a></li>
+<li><a href="http://nytimes.whsites.net/timestalks/">NYT Events</a></li>
+<li><a href="http://www.nytimes.com/nytstore/?utm_source=nytimes&utm_medium=HPB&utm_content=services_blk&utm_campaign=NYT-HP">NYT Store</a></li>
+<li><a href="http://theater.nytimes.com/gst/theater/tabclist.html">Theater Tickets</a></li>
+<li><a href="http://timesmachine.nytimes.com/">Times Machine</a></li>
+<li><a href="http://timeslimited.nytimes.com/">TimesLimited</a></li>
+<li><a href="http://www.nytimes.com/timesskimmer/">Times Skimmer</a></li>
+<li><a href="http://www.nytimes.com/pages/topics/">Times Topics</a></li>
+<li><a href="http://www.nytimes.com/timeswire">Times Wire</a></li>
+</ul>
+</li>
+<li class="singleRule">
+<h6 class="kickerBd">Subscriptions</h6>
+<ul class="flush secondary multiline">
+<li><a href="http://www.nytimes.com/hdleftnav">Home Delivery</a></li>
+<li><a href="http://www.nytimes.com/digitalleftnav">Digital Subscriptions</a></li>
+<li><a href="http://www.nytimes.com/giftleftnav">Gift Subscriptions</a></li>
+<li><a href="http://www.nytimes.com/corporateleftnav">Corporate Subscriptions</a></li>
+<li><a href="http://www.nytimes.com/educationleftnav">Education Rate</a></li>
+<li><a href="http://www.nytimes.com/crosswordsleftnav">Crosswords</a></li>
+<li><a href="http://homedelivery.nytimes.com/HDS/HDSHome.do?mode=HDSHome">Home Delivery Customer Care</a></li>
+<li><a href="http://eedition.nytimes.com/cgi-bin/signup.cgi?cc=37FYY">Replica Edition</a></li>
+<li><a href="http://subs.iht.com">International Herald Tribune</a></li>
+</ul>
+</li>
+<li class="lastItem singleRule">
+<h6 class="kickerBd">Company info</h6>
+<ul class="secondary multiline">
+<li><a href="http://www.nytco.com/">About NYT Co.</a></li>
+<li><a href="http://www.ihtinfo.com/">About IHT</a></li>
+<li><a href="http://www.nytimes.whsites.net/mediakit/">Advertise</a></li>
+</ul>
+</li>
+</ul>
+</div><!--close navigationHome -->
+</div><!--close columnGroup -->
+</div>	<div class="columnGroup singleRule">				
+
+
+</div>  
+&nbsp;
+</div><!--close nav -->    
+
+
+
+
+<div class="column last">
+<div class="spanAB">
+<div class="abColumn">
+
+<!--start lede package -->        
+<div class="wideB module">
+<div class="aColumn opening">
+<div class="columnGroup first">				
+<div class="story">
+<h2><a href="http://www.nytimes.com/2013/05/12/world/asia/pakistan-election.html?hp">
+Ex-Premier Is Set to Regain Power in Pakistan Vote</a></h2>
+<h6 class="byline">
+By DECLAN WALSH        <span class="timestamp" data-eastern-timestamp=" 7:54 PM" data-utc-timestamp="1368316450000"></span>
+</h6>
+<p class="summary">
+The party led by former Prime Minister Nawaz Sharif, once a political exile, appeared to have enough seats to form a government easily.    </p>
+<ul class="refer">
+<li><a href="http://www.nytimes.com/video/2013/05/09/world/asia/100000002216269/pakistans-historic-elections.html"><img src="http://graphics8.nytimes.com/images/multimedia/icons/video_icon.gif" alt="Video" width="12" height="9" border="0"> Pakistan's Pivotal Elections</a></li>
+<li><a href="http://www.nytimes.com/2013/05/11/world/asia/pakistan-orders-new-york-times-reporter-declan-walsh-to-leave.html">Times Reporter Told to Leave</a></li>
+<li style="background-image: none; padding-left: 0pt;"><img src="http://i1.nyt.com/images/icons/multimedia/comment_icon.gif" alt="comment icon" style="margin-right: 3px; padding-top: 3px;" border="0"><span class="commentCountLink" articleid="http://www.nytimes.com/2013/05/12/world/asia/pakistan-election.html" overflowurl="http://community.nytimes.com/comments/www.nytimes.com/2013/05/12/world/asia/pakistan-election.html?hp&target=comments" articletitle="Ex-Premier Is Set to Regain Power in Pakistan Vote"></span></li>
+</ul>
+</div>
+<div class="story">
+<h6 class="kicker">The Lede</h6>
+<h3><a href="http://thelede.blogs.nytimes.com/2013/05/11/latest-updates-on-pakistans-election/?hp">
+Latest Updates on Pakistan’s Election</a></h3>
+<h6 class="byline">
+By ROBERT MACKEY        <span class="timestamp" data-eastern-timestamp=" 7:56 PM" data-utc-timestamp="1368316570000"></span>
+</h6>
+<p class="summary">
+The Pakistan Peoples Party appears to have suffered a collapse in support in Punjab Province, home to more than half of Pakistan’s population.    </p>
+<ul class="refer">
+<li><a href="http://thelede.blogs.nytimes.com/2013/05/11/pakistanis-share-their-views-on-election-day/">Views on the Election</a></li>
+</ul>
+</div>
+<script language="javascript" type="text/javascript" src="http://graphics8.nytimes.com/packages/js/multimedia/bundles/FadingSlideShow.js"></script>
+<script language="javascript" type="text/javascript" src="http://graphics8.nytimes.com/packages/js/multimedia/data/FadingSlideShow/20130511_Pakistan_163.js"></script>
+<link type="text/css" rel="stylesheet" href="http://graphics8.nytimes.com/packages/css/multimedia/bundles/FadingSlideShow.css" />
+<div id="nytmm_embed543" class="nytmm_embed">
+</div>
+<script> var _obj = new NYTMM.FadingSlideShow($("nytmm_embed543"),163,109,chameleonData); _obj.setPhotoData(chameleonData.photos); </script>	</div>
+<div class="columnGroup last">				
+<div class="singleRuleDivider"></div>	<div class="story">
+<h3><a href="http://www.nytimes.com/2013/05/12/world/middleeast/bombings-in-turkish-border-town.html?hp">
+Bombings Kill Dozens in Turkish Border Town</a></h3>
+<h6 class="byline">
+By KAREEM FAHIM and SEBNEM ARSU        <span class="timestamp" data-eastern-timestamp=" 7:54 PM" data-utc-timestamp="1368316477000"></span>
+</h6>
+<p class="summary">
+Turkish officials suggested that two car bombs that killed at least 40 people near the Syrian border might be an attempt to derail peace talks with Kurdish rebels.    </p>
+</div>
+</div>
+</div><!--close aColumn -->
+<div class="bColumn opening">
+<div id="photoSpotRegion">
+<div class="columnGroup first">				
+<div class="story">
+<div class="ledePhoto" id="ledePhoto">
+<div class="image">
+<a href="http://www.nytimes.com/2013/05/12/nyregion/doubts-about-detective-haunt-50-murder-cases.html?hp"><img src="http://i1.nyt.com/images/2013/05/12/nyregion/detective/detective-hpMedium.jpg" width="337" height="253" alt="Louis Scarcella, a retired Brooklyn detective, relied on a crack cocaine addict as a crucial witness in several homicide cases." /></a>
+</div>
+<h6 class="credit">Suzanne DeChillo/The New York Times</h6>
+</div>
+<h3><a href="http://www.nytimes.com/2013/05/12/nyregion/doubts-about-detective-haunt-50-murder-cases.html?hp">
+Doubts About Officer Haunt Murder Cases</a></h3>
+<h6 class="byline">
+By FRANCES ROBLES and N. R. KLEINFIELD        <span class="timestamp" data-eastern-timestamp=" 5:35 PM" data-utc-timestamp="1368308106000"></span>
+</h6>
+<p class="summary">
+The Brooklyn district attorney’s office has ordered a review of  50 murder cases assigned to Louis Scarcella, an acclaimed homicide detective.        </p>
+</div>
+</div>
+</div>
+<div class="doubleRuleDivider insetH"></div>   
+<div class="columnGroup first">				
+<div class="story">
+<h5><a href="http://www.nytimes.com/2013/05/12/world/middleeast/egypt-arrests-3-in-plot-to-attack-cities-and-an-embassy.html?hp">
+3 Held in Plot to Bomb Egyptian Cities and Embassy</a></h5>
+<h6 class="byline">
+By BEN HUBBARD        <span class="timestamp" data-eastern-timestamp=" 6:59 PM" data-utc-timestamp="1368313141000"></span>
+</h6>
+<p class="summary">
+Three militants were planning to attack cities and, according to a diplomat, the United States Embassy.    </p>
+</div>
+</div>
+<div class="columnGroup ">				
+<div class = "story">
+<h5><a href = "http://www.nytimes.com/2013/05/12/science/space/astronauts-replace-a-pump-hoping-to-stop-leak.html?hp">
+Hoping to Stop Leak, Astronauts Replace Pump</a></h5>
+<div class = "thumbnail runaroundRight" style = "margin-top: 4px">
+<a href = "http://www.nytimes.com/2013/05/12/science/space/astronauts-replace-a-pump-hoping-to-stop-leak.html?hp">
+<img src = "http://i1.nyt.com/images/2013/05/12/us/SPACEWALK/SPACEWALK-thumbStandard.jpg" width = "75" 
+            height = "75" 
+            alt = "In an image from NASA TV, two astronauts work outside the International Space Station, fixing a cooling loop on a solar array." border = "0" />
+</a>
+</div>
+<h6 class = "byline">
+By KENNETH CHANG        <span class="timestamp" data-eastern-timestamp=" 7:44 PM" data-utc-timestamp="1368315862000"></span>
+</h6>
+<p class="summary">
+In a hastily planned spacewalk, astronauts at the International Space Station replaced a pump. Mission Control said an ammonia leak might have been plugged.    </p>
+</div>	</div>
+<div class="columnGroup ">				
+<div class="story">
+<h5><a href="http://www.nytimes.com/2013/05/12/business/recall-of-nearly-500000-jeeps-announced-by-chrysler.html?hp">
+Big Recall for Jeeps Announced by Chrysler</a></h5>
+<h6 class="byline">
+By CHRISTOPHER JENSEN        <span class="timestamp" data-eastern-timestamp=" 2:39 PM" data-utc-timestamp="1368297579000"></span>
+</h6>
+<p class="summary">
+The transmission on nearly 500,000 Jeeps could shift by itself from park into neutral, according to a safety report.    </p>
+</div>
+</div>
+<div class="columnGroup ">				
+<div class = "story">
+<h5><a href = "http://www.nytimes.com/2013/05/12/fashion/scott-thorson-the-boy-toys-story.html?hp">
+Life With Liberace, Not All High Notes</a></h5>
+<div class = "thumbnail runaroundRight" style = "margin-top: 4px">
+<a href = "http://www.nytimes.com/2013/05/12/fashion/scott-thorson-the-boy-toys-story.html?hp">
+<img src = "http://i1.nyt.com/images/2013/05/12/fashion/12THORSEN1_SPAN/12THORSEN1-thumbStandard.jpg" width = "75" 
+            height = "75" 
+            alt = "Scott Thorson, right, boarding a bus with Liberace in Las Vegas in 1982." border = "0" />
+</a>
+</div>
+<h6 class = "byline">
+By DAVID SEGAL            </h6>
+<p class="summary">
+Scott Thorson knew the high life as Liberace’s lover and the low life as his ex. Now, an HBO movie is about to revisit the days of wine and sequins.    </p>
+</div>	</div>
+<div class="columnGroup last">				
+<h6 class="kicker">More News</h6>
+<div class="story">
+<ul class="headlinesOnly">
+<li>
+<h5><a href="http://www.nytimes.com/2013/05/12/nyregion/standoff-in-trenton-enters-second-day.html?hp">
+Man Takes Hostages in Trenton</a>
+<span class="timestamp" data-eastern-timestamp=" 6:29 PM" data-utc-timestamp="1368311370000"></span>
+</h5>
+</li>
+<li>
+<h5><a href="http://www.nytimes.com/2013/05/12/nyregion/seeking-teachers-support-mayoral-candidates-pledge-education-reform.html?hp">
+Mayoral Candidates Court Teachers</a>
+<span class="timestamp" data-eastern-timestamp=" 3:51 PM" data-utc-timestamp="1368301876000"></span>
+</h5>
+</li>
+<li>
+<h5><a href="http://www.nytimes.com/2013/05/12/world/middleeast/two-candidates-shake-up-irans-presidential-race-as-last-minute-entries.html?hp">
+Late Entries Shake Up Iran’s Election</a>
+<span class="timestamp" data-eastern-timestamp=" 3:02 PM" data-utc-timestamp="1368298972000"></span>
+</h5>
+</li>
+</ul>
+</div>
+</div>
+</div><!--close bColumn -->
+</div><!--close wideB -->  
+<div class="wideA">
+<div class="aColumn">
+<div class="columnGroup doubleRule">
+<div id="extendedVideoPlayerModule" class="extendedVideoPlayerModule extendedVideoPlayerLegacyModule">
+<div class="extVidPlayerHeader clearfix">
+<a href="http://www.nytimes.com/video/" class="extVidPlayerMainHeaderLink">Video &raquo;</a>
+<a href="http://www.nytimes.com/video?src=vidm" class="extVidPlayerSectionHeaderLink" target="_blank"> More Video &raquo;</a>
+</div>
+<div class="videoContainer">
+<div class="extendedVideoPocketPlayerContainer"></div>
+<div class="videoShare shareTools shareToolsThemeClassic shareToolsThemeClassicHorizontal slideshowShareTools" 
+            data-shares="showall|Share,email|E-mail,twitter|Twitter,facebook|Facebook" 
+            data-url="" 
+            data-title="" 
+            data-description="">
+</div>
+<div class="videoDetails">
+<p class="kicker"></p>
+<a href="#" class="shortDescription" target="_blank"></a>
+<p class="longDescription"></p>
+</div>
+</div>
+<div class="extVidPlayerThumbsContainer">
+<div class="extVidPlayerThumbsContainerShadow"></div>
+<div class="extVidPlayerNav clearfix">
+<div class="extVidPlayerNavContent clearfix">
+<a href="#" class="previousVideo previousVideoInactive">previous</a>
+<a href="#" class="nextVideo">next</a>
+</div>
+</div>
+<div id="extVidPlayerThumbsWrapper" class="extVidPlayerThumbsWrapper">
+<ul id="extVidPlayerThumbs" class="videoThumbs clearfix"></ul>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="http://js.nyt.com/js2/build/video/2.0/videofactory.js"></script>
+<script type="text/javascript" src="http://js.nyt.com/js2/build/video/players/extended/1.0/app.js"></script>
+<script type="text/javascript">
+    var player = new NYTD.video.players.Extended({
+        container: "extendedVideoPlayerModule",
+        referenceId: "1194811622188",
+        thumbWidth: 90,
+        videoWidth: 336,
+        videoHeight: 189
+    });
+</script>                                    </div>
+</div><!--close aColumn -->
+<div class="bColumn">
+<div class="columnGroup doubleRule">
+<div id="pocketRegion" class="module">
+<div class="columnGroup first">				
+<div class="story">
+<a href="http://www.nytimes.com/indexes/2013/05/12/t-magazine/travel-issue/index.html?hp"><img src="http://graphics8.nytimes.com/images/blogs/tmagazine/headers/HPheader.jpg" alt="T Magazine"/></a>
+<h5><a href="http://tmagazine.blogs.nytimes.com/2013/05/10/rupert-everett-is-so-not-an-american-movie-star?hp">
+Rupert Everett Is So Not an American Movie Star
+</a></h5>
+<div class="runaroundRight">
+<a href="http://tmagazine.blogs.nytimes.com/2013/05/10/rupert-everett-is-so-not-an-american-movie-star?hp">
+<img src="http://graphics8.nytimes.com/images/2013/05/12/t-magazine/12well-everett1/12well-everett1-thumbStandard.jpg" alt="Rupert Everett Is So Not an American Movie Star" width="75" height="75" />
+</a></div>
+<p class="summary">
+What’s kept him from becoming a mainstream leading man is precisely what makes him so attractive.
+</p>
+<ul class="refer">
+<li><a href="http://www.nytimes.com/indexes/2013/05/12/t-magazine/travel-issue/index.html?hp">Go to T Summer Travel Issue »</a></li>
+</ul>
+</div>	</div>
+<div class="columnGroup ">				
+<div class="doubleRuleDivider"></div>	</div>
+<div class="columnGroup last">				
+<h6 class="kicker"><a href="http://www.nytimes.com/pages/aponline/index.html">News from A.P.</a> & <a href="http://www.nytimes.com/pages/reuters/index.html">Reuters</a> »</h6>
+<div class="story">
+<h6><a href="http://www.nytimes.com/reuters/2013/05/11/world/europe/11reuters-georgia-presidency.html?hp">
+<!---->
+Georgian PM Names Pro-Western Ally Presidential Candidate</a>
+</h6>
+<span class="timestamp" data-eastern-timestamp=" 8:01 PM" data-utc-timestamp="1368316897000"></span>
+</div>
+<div class="story">
+<h6><a href="http://www.nytimes.com/aponline/2013/05/11/sports/basketball/ap-bkn-thunder-grizzlies.html?hp">
+<!---->
+Grizzlies Take 2-1 Lead Beating Thunder 87-81</a>
+</h6>
+<span class="timestamp" data-eastern-timestamp=" 7:58 PM" data-utc-timestamp="1368316731000"></span>
+</div>
+<div class="story">
+<h6><a href="http://www.nytimes.com/reuters/2013/05/11/sports/soccer/11reuters-soccer-spain-real.html?hp">
+<!---->
+Real Draw at Espanyol to Hand Barca the Title</a>
+</h6>
+<span class="timestamp" data-eastern-timestamp=" 7:40 PM" data-utc-timestamp="1368315637000"></span>
+</div>
+<div class="story">
+<h6><a href="http://www.nytimes.com/aponline/2013/05/11/sports/baseball/ap-bbn-brewers-reds.html?hp">
+<!---->
+Bruce Homers, Doubles Twice as Reds Batter Brewers</a>
+</h6>
+<span class="timestamp" data-eastern-timestamp=" 7:58 PM" data-utc-timestamp="1368316726000"></span>
+</div>
+</div>
+</div><!--close pocketRegion -->
+</div>
+</div><!--close bColumn -->
+</div><!--close wideA -->
+<!--end lede package -->       
+</div><!--close abColumn -->
+<div class="cColumn">
+
+
+<div id="cColumnTopSpanRegion">
+<div class="columnGroup first">				
+<div class="opinionModule">
+<h4 class="sectionHeaderHome"><a href="http://www.nytimes.com/pages/opinion/index.html"><img src="http://graphics8.nytimes.com/images/opinion/homepage/opinionPagesHpC337.png" /></a>
+</h4>
+<div class="subColumn-2 wrap layout ">
+<div class="column">
+<div class="insetH">
+<div class="story">
+<h6 class="kicker">Measure for Measure</h6>
+<h5><a href="http://opinionator.blogs.nytimes.com/2013/05/10/the-hitless-songwriter/?hp">The Hitless Songwriter</a>
+</h5>
+<div class="thumbnail runaroundRight"><a href="http://opinionator.blogs.nytimes.com/2013/05/10/the-hitless-songwriter/?hp"><img src="http://graphics8.nytimes.com/images/blogs_v3/opinionator/pogs/measureformeasure75.png" height="50" width="50" /></a>
+</div>
+<p class="summary flushBottom">The series on songwriting resumes with some perspective — and a new track — from
+Terre Roche.</p>
+</div>
+</div>
+</div>
+<div class="column lastColumn">
+<div class="insetH">
+<ul class="headlinesOnly">
+<li><a href="http://www.nytimes.com/2013/05/11/opinion/beyond-basketball-and-bigotry-workplace-discrimination-based-on-sexual-orientation.html?hp">Editorial: Beyond Basketball and Bigotry</a>
+</li>
+<li><a href="http://www.nytimes.com/2013/05/11/opinion/nocera-the-man-at-the-piano.html?hp">Nocera: Man at the Piano</a>
+</li>
+<li><a href="http://opinionator.blogs.nytimes.com/2013/05/10/europes-careless-dithering/?hp">Rattner: Europe Dithers</a>
+</li>
+<li><a href="http://opinionator.blogs.nytimes.com/2013/05/10/missing-jonathan-winters-badly/?hp">Cavett: Missing Jonathan Winters</a>
+</li>
+<li><a href="http://takingnote.blogs.nytimes.com/2013/05/10/the-family-unfriendly-act/?hp">Taking Note: The Family Unfriendly Act</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>	<div class="singleRuleDivider"></div>	</div>
+</div><!--close cColumnTopSpanRegion -->
+
+
+<div class="columnGroup first">				
+<div class="columnGroup fullWidth flushBottom">
+<div class="subColumn-2 wrap noBackground layout">
+<div class="column">
+<div class="columnGroup flushBottom">	<h4 class="sectionHeaderHome"><a href="http://www.nytimes.com/business">Business Day »</a></h4>
+<div class="story">
+<h6 class="kicker">Common Sense</h6>
+<h5><a href="http://www.nytimes.com/2013/05/11/business/how-cooper-unions-endowment-failed-in-its-mission.html">
+How Cooper Union’s Endowment Failed
+</a></h5>
+<p class="summary">
+Cooper Union’s decision to charge tuition was made after years of bad financial choices, James B. Stewart says.
+</p>
+</div>	</div>
+</div>
+<div class="column lastColumn">
+<div class="columnGroup flushBottom">
+<div id="Middle4"><!-- ADXINFO classification="Home_Page_Markets_Module_Tile" campaign="CIT_1HSpring2013-1857518-nyt1" priority="8000" width="163" height="90" --><a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=brd&FlightID=6407642&Page=&PluID=0&Pos=2132" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=bsr&FlightID=6407642&Page=&PluID=0&Pos=2132" border=0 width=163 height=90></a></div>
+</div>
+</div>
+</div>
+</div>	</div>
+<div id="cColumnAboveMothRegion">
+<div class="columnGroup first">				
+
+<div class="singleAd" id="HPMiddle">
+<!-- ADXINFO classification="Big_Ad_-_Standard" campaign="nyt2013_300x250_video_dom_cunningham_ros" priority="1000" width="300" height="250" --><div align ="center" style="border: 0px #000000 solid; width:300px; height:250px; margin: 0 auto">
+<script type="text/javascript">
+ var movieWidth = 300;
+ var movieHeight = 250;
+ var altSrc = "http://graphics8.nytimes.com/adx/images/ADS/33/57/ad.335710/13-0695_FreeVideo_BillCunningham_300x250_DM.jpg";
+ var swfFile = "http://graphics8.nytimes.com/adx/images/ADS/33/57/ad.335710/13-0695_FreeVideo_BillCunningham_300x250_DM.swf";
+ var altClickThru = "http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPMiddle&sn2=3c2d9ccb/93cc59e&sn1=ceb86013/77a0065&camp=nyt2013_300x250_video_dom_cunningham_ros&ad=VI-D-I-NYT-AD-BIG-Cunn-ROS-0413-0513&goto=http%3A%2F%2Fwww%2Enytimes%2Ecom%2Fvideo%3FWT%2Emc%5Fid%3DVI%2DD%2DI%2DNYT%2DAD%2DBIG%2DCunn%2DROS%2D0413%2D0513%26WT%2Emc%5Fev%3Dclick%26WT%2Emc%5Fc%3D214487";
+ var swfSrc = swfFile + "?clicktag=" + escape(altClickThru);
+</script>
+<script type="text/javascript" src="http://www.nytimes.com/ads/common/embed3.js">
+</script>
+</div>
+</div>
+
+</div>
+<div class="columnGroup first">				
+<div class="singleRuleDivider"></div>
+<div class="columnGroup fullWidth flushBottom">
+<div class="subColumn-2 wrap noBackground layout">
+<div class="column">
+<div class="columnGroup flushBottom">	<h4 class="sectionHeaderHome"><a href="http://www.nytimes.com/pages/magazine/index.html?src=dayp">Magazine »</a></h4>
+<div class="story">
+<h5><a href="http://www.nytimes.com/2013/05/12/magazine/omds-plot-against-rock.html?src=dayp">
+The Plot Against Rock
+</a></h5>
+<div class="runaroundRight">
+<a href="http://www.nytimes.com/2013/05/12/magazine/omds-plot-against-rock.html?src=dayp">
+<img src="http://graphics8.nytimes.com/images/2013/05/12/magazine/12omd/mag-12OMD-t_CA0-thumbStandard.jpg" alt="
+The Plot Against Rock" width="75" height="75" />
+</a></div>
+<p class="summary">
+Thirty-five years ago, O.M.D. was certain that the overthrow of the electric guitar was imminent. They still haven’t given up hope.
+</p>
+<!--ul class="refer">
+<li><a href="http://video.nytimes.com/video/2013/05/09/magazine/100000002216681/exclusive-preview-omds-dresden.html?src=dayp"><span class="icon video">Video</span>: Exclusive Premiere: O.M.D.'s 'Dresden'</a></li>
+<li style="background-image: none; padding-left: 0pt;"><img src="http://graphics8.nytimes.com/images/icons/multimedia/comment_icon.gif" alt="comment icon" style="margin-right: 3px; padding-top: 3px;" border="0"><span class="commentCountLink" articleid="http://www.nytimes.com/2013/05/12/magazine/omds-plot-against-rock.html" overflowurl="http://community.nytimes.com/comments/www.nytimes.com/2013/05/12/magazine/omds-plot-against-rock.html?ref=magazine&target=comments" articletitle="The Plot Against Rock"></span></li>
+
+</ul-->
+</div>
+<!--end of first daypart promo code, don't touch the column code below -->
+</div></div><div class="column lastColumn"><div class="columnGroup flushBottom">
+<!--- insert second daypart promo below -->
+<h4 class="sectionHeaderHome"><a href="http://www.nytimes.com/pages/books/review/index.html?src=dayp">Book Review »</a></h4>
+<div class="story">
+<h5><a href="http://www.nytimes.com/2013/05/12/books/review/the-sleepwalkers-and-july-1914.html?src=dayp">
+On the Brink
+</a></h5>
+<p class="summary">
+Two new books explore the complicated web of events leading up to World War I.
+</p>
+</div>	<div id="Middle5"><!-- ADXINFO classification="Share_of_Voice_Tile_-_Right" campaign="Adelphi_University_Home_Page_1873115-nyt3" priority="8000" width="184" height="90" --><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Middle5&sn2=1523368c/d15e58cc&sn1=b445cb8/77971cd3&camp=Adelphi_University_Home_Page_1873115-nyt3&ad=5.8.13_9844_Graduate_recruitment_163x90_ADX&goto=http%3A%2F%2Fadmissions%2Eadelphi%2Eedu%2Fgraduate%2Fgraduate%2Dprograms%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dbanner%26utm%5Fcampaign%3Dgraduate%5Fgeneral%26utm%5Fcontent%3Dexpand" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/33/78/ad.337820/9844_Graduate_recruitment_163x90.jpeg" width="163" height="90" border="0">
+</a></div>
+</div>
+</div>
+</div>
+</div>
+	<div style="margin-top: 12px;"></div>	</div>
+
+
+<div class="singleRuleDivider insetH"></div>
+<!--Start CColumnAboveMoth region -->
+<div class="columnGroup first">				
+<div id="classifiedsWidget">
+<div id="tabsContainer">
+<ul class="tabs">
+<li class="" style="border-left:1px solid #CCCCCC"><a href="http://www.nytimes.com/pages/realestate/index.html">Real Estate</a></li>
+<li class="selected"><a href="http://www.nytimes.com/autos/">Autos</a></li>
+<li class=""><a href="http://jobmarket.nytimes.com/pages/jobs/">Jobs</a></li>
+<li class=""><a href="http://www.nytimes.com/ref/classifieds/">All Classifieds</a></li>
+</ul> 
+</div>
+<style type="text/css">
+#autos.tabContent{display:block;}
+
+    /* use one of these three
+#autos.tabContent{display:block;}
+#realEstate.tabContent{display:block;}
+#jobMarket.tabContent{display:block;} 
+
+  */
+</style>
+<div class="tabContent" id="realEstate">
+<div class="editColumn">	<h6 class="kicker">Property Values</h6>
+<h5><a href="http://www.nytimes.com/2013/05/09/greathomesanddestinations/real-estate-for-875000.html?hp">
+What You Get for ... $870,000
+</a></h5>
+<div class="runaroundRight">
+<a href="http://www.nytimes.com/2013/05/09/greathomesanddestinations/real-estate-for-875000.html?hp">
+<img src="http://graphics8.nytimes.com/images/2013/05/08/greathomesanddestinations/08-GH-WYG-SPAN/08-GH-WYG-SPAN-thumbStandard.jpg" alt="
+What You Get for ... $870,000" width="75" height="75" />
+</a></div>
+<p class="summary">
+A 1905 cottage in Louisiana, a Cape in Vermont and mountain views in Montana.
+</p>
+<ul class="refer">
+<li><a href="http://www.nytimes.com/slideshow/2013/05/08/greathomesanddestinations/20130508-GH-WYG.html?hp"><span class="icon slideshow">Slide Show</span></a>
+</li>
+</ul>	</div>
+<div class="searchColumn">
+<h6 class="kicker">Find Properties</h6>
+<ul class="refer">
+<li><a href="http://www.nytimes.com/pages/realestate/index.html">Go to Real Estate Section</a></li>
+<li><a href="http://realestate.nytimes.com/search/advanced.aspx">Search for Properties</a></li>
+<li><a href="http://itunes.apple.com/us/app/nytimesrealestate/id337316535?hp">Download the Real Estate App</a></li>
+<li><a href="http://www.nytimes.com/pages/realestate/commercial/index.html">Commercial Real Estate</a></li>
+<li><a href="http://www.nytimes.com/marketing/realestate/videoshowcase/">Video Showcase: Real Estate</a></li>
+<li><a href="http://realestateads.nytimes.com/">Post an Ad</a></li>
+</ul>
+</div>
+<!-- ADXINFO classification="Home_Page_Markets_Module_Tile" campaign="hpmod_NYBG_Display_1875331-cla" priority="8000" width="163" height="90" --><!--Ad Template Begins Here -->
+<div class="story advertisement">
+<div class="callout">
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/33/19/ad.331945/NYbG_kids_NYT_Web_130314-1.jpg" width="173" height="98" border="0" alt="Click for Details"></a>
+</div>
+<h5>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank"></a>
+</h5>
+<p class="summary"><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">2 & 3 bedroom &nbsp; rentals <br>available &nbsp; immediately<br>PS 397&nbsp;located&nbsp; in&nbsp; the&nbsp; building<br></a>
+</p>
+<div class="adCreative">
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">
+</a>
+</div>
+</div>
+<!--Ad Template Ends Here -->
+<div class="tabFoot story advertisement refer">
+<a href="http://listings.nytimes.com/classifiedsmarketplace/?DTab=2&incamp=hpclassifiedsmodule">Place a Classified Ad »</a>
+</div>
+</div>
+<div class="tabContent" id="autos">
+<div class="editColumn">	<h6 class="kicker">Behind the Wheel | 2013 Toyota Avalon</h6>
+<h5><a href="http://www.nytimes.com/2013/05/12/automobiles/autoreviews/straying-a-bit-beyond-its-own-comfort-zone.html?hp">
+Straying a Bit Beyond Its Own Comfort Zone
+</a></h5>
+<div class="runaroundRight">
+<a href="http://www.nytimes.com/2013/05/12/automobiles/autoreviews/straying-a-bit-beyond-its-own-comfort-zone.html?hp">
+<img src="http://graphics8.nytimes.com/images/2013/05/12/automobiles/Wheel/Wheel-thumbStandard.jpg" alt="Straying a Bit Beyond Its Own Comfort Zone" width="75" height="75" />
+</a></div>
+<p class="summary">
+By auto industry standards, the new Avalon is hardly revolutionary, but by Toyota’s staid standards, the car represents an advance on modern territory.
+</p>
+<ul class="refer">
+<li><a href="http://www.nytimes.com/slideshow/2013/05/12/automobiles/autoreviews/12avalon-slides.html?hp"><span class="icon slideshow">Slide Show</span>: Toyota’s Once-Sleepy Sedan Gives a Wake-Up Call</a></li>
+</ul>	</div>
+<div class="searchColumn"><style type="text/css">
+      #searchUsedCompact select,
+      #searchNewCompact select {
+        width:106px;
+        vertical-align:top;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:11px;
+        color:#333;
+      }
+
+    #searchUsedCompact .gabrielsImageButton,
+    #searchNewCompact .gabrielsImageButton {
+    vertical-align:top;
+    }
+  
+    #classifiedsWidget .autosStory,
+    #classifiedsWidget .autosStory {
+    vertical-align:top;
+    border-bottom:1px solid #ccc;
+    padding:0 0 7px;
+    margin:0 0 7px !important;
+    }
+  
+    #classifiedsWidget #zipCode {
+    width:99px;
+    height:15px;
+    }
+
+    #makesUsed {
+    margin-bottom:5px;
+    }
+    </style><script type="text/javascript">
+      AutosSearch = {};
+      AutosSearch.setNameFromSelect = function(el,select) {
+        document.getElementById(el).value = select.options[select.selectedIndex].text;
+      }
+    </script><div class="story autosStory"><h6 class="kicker">New Cars Search</h6><form method="post" action="http://autos.nytimes.com/researchSelect.aspx" id="searchNewCompact"><select id="makesNew" name="makes" onchange="AutosSearch.setNameFromSelect('makeNamesNew',this)"><option value="0">Select Make </option><option value="227">Acura</option><option value="231">Aston Martin</option><option value="232">Audi</option><option value="233">Bentley</option><option value="235">BMW</option><option value="236">Buick</option><option value="237">Cadillac</option><option value="238">Chevrolet</option><option value="239">Chrysler</option><option value="242">Dodge</option><option value="244">Ferrari</option><option value="245">Ford</option><option value="247">GMC</option><option value="248">Honda</option><option value="249">Hummer</option><option value="250">Hyundai</option><option value="251">Infiniti</option><option value="252">Isuzu</option><option value="253">Jaguar</option><option value="254">Jeep</option><option value="255">Kia</option><option value="256">Lamborghini</option><option value="257">Land Rover</option><option value="258">Lexus</option><option value="259">Lincoln</option><option value="261">Maserati</option><option value="262">Maybach</option><option value="263">Mazda</option><option value="264">Mercedes-Benz</option><option value="265">Mercury</option><option value="267">MINI</option><option value="268">Mitsubishi</option><option value="269">Nissan</option><option value="270">Oldsmobile</option><option value="272">Panoz</option><option value="275">Plymouth</option><option value="276">Pontiac</option><option value="277">Porsche</option><option value="280">Saab</option><option value="281">Saturn</option><option value="282">Scion</option><option value="284">Subaru</option><option value="285">Suzuki</option><option value="286">Toyota</option><option value="287">Volkswagen</option><option value="288">Volvo</option><option value="290">MG</option><option value="291">Rolls-Royce</option><option value="999">Other</option></select><input type="hidden" name="makeNames" id="makeNamesNew" value="" /> <input class="gabrielsImageButton" alt="Go" type="image" src="http://graphics8.nytimes.com/images/global/buttons/go.gif"></form></div><div class="story autosStory"><h6 class="kicker">Used Cars Search</h6><form method="post" action="http://autos.nytimes.com/search.aspx" id="searchUsedCompact"><select id="makesUsed" name="makeId" onchange="AutosSearch.setNameFromSelect('makeNamesUsed',this)"><option value="0">Select Make </option><option value="227">Acura</option><option value="231">Aston Martin</option><option value="232">Audi</option><option value="233">Bentley</option><option value="235">BMW</option><option value="236">Buick</option><option value="237">Cadillac</option><option value="238">Chevrolet</option><option value="239">Chrysler</option><option value="242">Dodge</option><option value="244">Ferrari</option><option value="245">Ford</option><option value="247">GMC</option><option value="248">Honda</option><option value="249">Hummer</option><option value="250">Hyundai</option><option value="251">Infiniti</option><option value="252">Isuzu</option><option value="253">Jaguar</option><option value="254">Jeep</option><option value="255">Kia</option><option value="256">Lamborghini</option><option value="257">Land Rover</option><option value="258">Lexus</option><option value="259">Lincoln</option><option value="261">Maserati</option><option value="262">Maybach</option><option value="263">Mazda</option><option value="264">Mercedes-Benz</option><option value="265">Mercury</option><option value="267">MINI</option><option value="268">Mitsubishi</option><option value="269">Nissan</option><option value="270">Oldsmobile</option><option value="272">Panoz</option><option value="275">Plymouth</option><option value="276">Pontiac</option><option value="277">Porsche</option><option value="280">Saab</option><option value="281">Saturn</option><option value="282">Scion</option><option value="284">Subaru</option><option value="285">Suzuki</option><option value="286">Toyota</option><option value="287">Volkswagen</option><option value="288">Volvo</option><option value="290">MG</option><option value="291">Rolls-Royce</option><option value="999">Other</option></select><br>
+<input type="hidden" name="makeNames" id="makeNamesUsed" value="" />
+<input type="text" name="zipCode" id="zipCode" value="Enter ZIP code"
+  onfocus="if(this.value=='Enter ZIP code') { this.value=''; }"
+  onblur="if(this.value==null || this.value=='') { this.value='Enter ZIP code'; }"> <input class="gabrielsImageButton" alt="Go" type="image" src="http://graphics8.nytimes.com/images/global/buttons/go.gif"></form></div><h6 class="kicker">More in Automobiles</h6><ul class="refer"><li><a href="http://www.nytimes.com/pages/automobiles/reviews/index.html">New Car Reviews</a></li><li><a href="http://autos.nytimes.com/used.aspx">Used Car Information</a></li><li><a href="http://www.nytimes.com/pages/automobiles/collectiblecars/index.html">Collectible Cars</a></li><li><a href="https://placead.nytimes.com/default.asp?CategoryID=NYTCAR">Sell Your Car</a></li></ul>
+</div>
+<!-- ADXINFO classification="Home_Page_Markets_Module_Tile" campaign="hpmod_NYBG_Display_1875331-cla" priority="8000" width="163" height="90" --><!--Ad Template Begins Here -->
+<div class="story advertisement">
+<div class="callout">
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/33/19/ad.331945/NYbG_kids_NYT_Web_130314-1.jpg" width="173" height="98" border="0" alt="Click for Details"></a>
+</div>
+<h5>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank"></a>
+</h5>
+<p class="summary"><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">2 & 3 bedroom &nbsp; rentals <br>available &nbsp; immediately<br>PS 397&nbsp;located&nbsp; in&nbsp; the&nbsp; building<br></a>
+</p>
+<div class="adCreative">
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">
+</a>
+</div>
+</div>
+<!--Ad Template Ends Here -->
+<div class="tabFoot story advertisement refer"><a href="http://listings.nytimes.com/classifiedsmarketplace/?DTab=2&incamp=hpclassifiedsmodule">Place a Classified Ad »</a></div>
+</div>
+<div class="tabContent" id="jobMarket">
+<h3 class="sectionHeader"><a href="http://www.nytimes.com/monster"><img src="http://graphics8.nytimes.com/images/section/jobs/200703/cobrandHeader_315x20.gif" width="315" height="20" alt="NYTimes.com / Monster" /></a></h3>
+<div class="editColumn">	<h6 class="kicker">Corner Office</h6>
+<h5><a href="http://www.nytimes.com/2013/05/12/business/brooke-denihan-barrett-on-family-and-business.html">
+We’re Family, Yes, but We’re Still Accountable
+</a></h5>
+<div class="runaroundRight">
+<a href="http://www.nytimes.com/2013/05/12/business/brooke-denihan-barrett-on-family-and-business.html">
+<img src="http://graphics8.nytimes.com/images/2013/05/12/business/12-CORNER/12-CORNER-thumbStandard.jpg" alt="
+We’re Family, Yes, but We’re Still Accountable" width="75" height="75" />
+</a></div>
+<p class="summary">
+Brooke Barrett, a co-chief executive of the Denihan Hospitality Group, says standards are still important for a family-owned business.
+</p>	</div>
+<div class="searchColumn">
+<p style="font:bold 1.1em Arial; margin:0 0 10px 0">Find the best job in the New York metro area and beyond.</p>
+<form class="searchForm" action="http://nytimes.monster.com/Search.aspx" method="get" name="advJobsearchForm">
+<input type="hidden" name="cy" value="us" />
+<input id="searchQuery" name="q" value="" />    
+<input id="searchSubmit" title="Search" alt="Search" type="image" src="http://graphics8.nytimes.com/images/global/global_search/search_button40x19.gif">  <a class="refer" href="http://jobmarket.nytimes.com/jobs/search-jobs/">Advanced Search »</a> 
+</form>
+</div>
+<div class="toolsCol">
+<h6 class="kicker">Tools</h6>
+<ul class="refer">
+<li><a href="http://www.nytimes.com/marketing/jobmarket/postresume.html">Post Your Resumé to NYTimes.com/monster</a></li>
+<li><a href="http://jobmarket.nytimes.com/jobs/category/">Find a Job by Industry</a></li>
+</ul>
+</div>
+<div class="employersCol">
+<h6 class="kicker">Employers</h6>
+<ul class="refer">
+<li><a href="http://www.nytimes.com/marketing/jobmarket/employercentral/postjob.html">Post a Job Online and in Print</a></li>
+<li><a href="http://hiring.nytimes.monster.com/products/resumeproducts.aspx">Search Résumés</a></li>
+<li><a href="http://www.nytimes.com/marketing/jobmarket/employercentral/index.html">See All Recruitment Options</a></li>
+</ul>
+</div>
+<!-- ADXINFO classification="Home_Page_Markets_Module_Tile" campaign="hpmod_NYBG_Display_1875331-cla" priority="8000" width="163" height="90" --><!--Ad Template Begins Here -->
+<div class="story advertisement">
+<div class="callout">
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/33/19/ad.331945/NYbG_kids_NYT_Web_130314-1.jpg" width="173" height="98" border="0" alt="Click for Details"></a>
+</div>
+<h5>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank"></a>
+</h5>
+<p class="summary"><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">2 & 3 bedroom &nbsp; rentals <br>available &nbsp; immediately<br>PS 397&nbsp;located&nbsp; in&nbsp; the&nbsp; building<br></a>
+</p>
+<div class="adCreative">
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPmodule-RE2&sn2=d1cdc681/5274a2cb&sn1=1a34ca53/fb46d875&camp=hpmod_NYBG_Display_1875331-cla&ad=03.19.13-NYbG_kids_NYT&goto=http%3A%2F%2Fnewyorkbygehry%2Ecom%2F%3Futm%5Fsource%3Dnytimes%26utm%5Fmedium%3Dhomepage%5Fmodule%26utm%5Fcontent%3Dschool%26utm%5Fcampaign%3Dmarch" target="_blank">
+</a>
+</div>
+</div>
+<!--Ad Template Ends Here -->
+<div class="tabFoot story advertisement refer"><a href="http://listings.nytimes.com/classifiedsmarketplace/?DTab=2&incamp=hpclassifiedsmodule">Place a Classified Ad »</a></div>
+</div>
+<style type="text/css" media="screen">
+#classifiedsWidget .tabContent .subColumns{background:transparent;}
+#classifiedsWidget .tabContent .subColumnA li,#classifiedsWidget .tabContent .subColumnB li{font-size:1.1em;}
+</style>
+<div class="tabContent" id="allClassifieds">
+<h6 class="kicker">Find a Classifieds Listing</h6>
+<div class="subColumns">
+<div class="subColumnA">
+<ul>
+<li><a href="http://www.nytimes.com/autos/">Autos</a></li>
+<li><a href="http://listings.nytimes.com/BusinessDirectory/searchindex.asp">Business Directory</a></li>
+<li><a href="http://listings.nytimes.com/campsandschools/searchindex.asp">Camps & Schools</a></li>
+<li><a href="http://www.nytimes.com/pages/realestate/commercial/">Commercial Real Estate</a></li>
+<li><a href="http://listings.nytimes.com/HomeandGarden/searchindex.asp">Home & Garden Directory</a></li>
+<li><a href="http://jobmarket.nytimes.com/pages/jobs/">Jobs</a></li>
+</ul>
+</div>
+<div class="subColumnB">
+<ul>
+<!--<li><a href="http://query.nytimes.com/gst/personals.html">Personals</a></li>
+-->
+<li><a href="http://www.legacy.com/nytimes/celebrations.asp?Page=SearchResults">Social Announcements</a></li>
+<li><a href="http://www.nytimes.com/pages/realestate/">Residental Real Estate</a></li>
+<li><a href="http://listings.nytimes.com/SmallInnsAndLodges/searchindex.asp">Small Inns & Lodges</a></li>
+<li><a href="http://listings.nytimes.com/Weddings/searchindex.asp">Weddings Directory</a></li>
+</ul>
+</div>
+</div>
+<ul class="refer">
+<li><a href="http://listings.nytimes.com/ClassifiedsMarketplace/default.asp?DTab=2">Post a Classified Ad Online</a> | <a href="http://www.nytadvertising.com/was/ATWWeb/public/index.jsp">In Print</a></li>
+</ul>
+<div class="tabFoot story advertisement refer"><a href="http://listings.nytimes.com/classifiedsmarketplace/?DTab=2&incamp=hpclassifiedsmodule">Place a Classified Ad »</a></div>
+</div></div>
+<!--close allClassifieds -->
+<script type="text/javascript">new Accordian("classifiedsWidget");</script>
+
+
+
+<div class="singleAd" id="HPMiddle3">
+
+<script language="JavaScript" type="text/javascript">
+// rev6_GoogleHP.html.new
+<!--
+function cs(){window.status='';}function ha(a){  pha=document.getElementById(a); nhi=pha.href.indexOf("&nh=");if(nhi < 1) {phb=pha.href+"&nh=1";} pha.href=phb;}function ca(a) {  pha=document.getElementById(a); nci=pha.href.indexOf("&nc=");if(nci < 1) {phb=pha.href+"&nc=1";} pha.href=phb;window.open(document.getElementById(a).href);}function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}} else {h = e.srcElement;f = h.parentNode;if (f)p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;pha=document.getElementById(a); nbi=pha.href.indexOf("&nb=");if(nbi < 1) {phb=pha.href+"&nb=1";} pha.href=phb;window.open(document.getElementById(a).href);}}
+
+
+
+function google_ad_request_done(ads) {
+	var s = "";
+
+	if (ads.length == 0) {
+		return;
+	} else if (ads.length == 1 && ads[0].type != 'image') {
+		google_ad_section_line_height = "22px";
+		google_ad_section_padding_left = "12px";
+		google_title_link_font_size = "18px";
+		google_ad_text_font_size = "14px";
+		google_visible_url_font_size = "14px";
+		google_target_div = 'HPMiddle3';
+	} else if (ads[0].type != 'image') {
+		google_ad_section_line_height = "14px";
+		google_ad_section_padding_left = "7px";
+		google_title_link_font_size = "12px";
+		google_ad_text_font_size = "11px";
+		google_visible_url_font_size = "10px";
+		google_target_div = 'HPMiddle3';
+	}
+	s += '<table width="100%" height="" border="0" cellspacing="0" cellpadding="0" style="width:100%; border-style: solid; border-width: 1px; border-color: #9da3ad" >\n<tr>\n<td style="font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333;" valign="top"><table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; height:100%;">\n<tr>\n <td style="background-color:#9da3ad; width:70%; height:20px; padding-top:2px; padding-left:11px; padding-bottom:2px; font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333;" width="70%" height="20" bgcolor="#9da3ad" ><span style="font-size: 12px; font-weight: normal; color:#ffffff;" >Ads by Google</span></td>\n<td style="padding-top:2px; padding-bottom:2px; width:30%; height:20px; align:right; background-color:#9da3ad; font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333;" width="30%" height="20" align="right" bgcolor="#9da3ad" ><span><a style="font-family:Arial,Helvetica,sans-serif; color: white; font-size:12px; padding-right:7px;" href="http://www.nytimes.com/ref/membercenter/faq/linkingqa16.html" onclick="window.open(\'\',\'popupad\',\'left=100,top=100,width=390,height=390,resizable,scrollbars=no\')" target="popupad">what\'s this?</a></span></td>\n</tr>\n</table>\n</td>\n</tr>\n<tr>\n<td style="height:110px; font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333;" valign="top" height="110"><table height="100%" width="100%" cellpadding="4" cellspacing="0" border="0" bgcolor="#f8f8f9" style="height:100%; width:100%; padding:4px; background-color:#f8f8f9;">\n';
+	for (i = 0; i < ads.length; ++i) {
+	   s += '<tr>\n<td style="font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333; background-color:#f8f8f9;" valign="middle" >\n<div style="line-height:' + google_ad_section_line_height + '; padding-left:' + google_ad_section_padding_left + '; padding-bottom:5px;" >\n<a href="' + ads[i].url + '" target="_blank" style="font-size:' + google_title_link_font_size + '; color:#000066; font-weight:bold; text-decoration:underline;"> ' + ads[i].line1 + '</a><br>\n' + ads[i].line2 + ' ' + ads[i].line3 + '<br>\n<a href="' + ads[i].url + '" target="_blank" style="font-size:' + google_visible_url_font_size + '; color:#000066; font-weight:normal; text-decoration:none;">' + ads[i].visible_url + '</a>\n</div>\n </td>\n</tr>\n';
+	}
+	s += '</table>\n</td>\n</tr>\n</table>';
+	document.getElementById(google_target_div).innerHTML = s;
+	return;
+}
+google_ad_output = 'js';
+google_max_num_ads = '3';
+google_ad_client = 'ca-nytimes_homepage_js';
+google_safe = 'high';
+google_ad_channel = 'test1';
+google_targeting = 'content';
+if (window.nyt_google_count) { google_skip = nyt_google_count; }
+google_ad_section = 'default';
+google_hints = 'business news online,us news online,online us news,top online news,business international news,online latest news';
+// -->
+</script>
+
+<script type="text/javascript" language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+</div>
+
+
+
+<script type="text/javascript">
+/* Generated at 2013-05-11T20:11:41-04:00 */
+renditionMapping = {"images/2013/05/12/world/asia/pakistan/pakistan-hpSmall.jpg":{"path":"images/2013/05/12/world/asia/pakistan/pakistan-mediumFlexible177.jpg","w":"177","h":"116"},"images/2013/05/12/world/asia/pakistan/pakistan-hpMedium.jpg":{"path":"images/2013/05/12/world/asia/pakistan/pakistan-largeHorizontal375.jpg","w":"375","h":"250"},"images/2013/05/12/world/asia/pakistan/pakistan-hpLarge.jpg":{"path":"images/2013/05/12/world/asia/pakistan/pakistan-largeWidescreen573.jpg","w":"573","h":"286"},"images/2013/05/12/world/europe/alt-turkey-span/alt-turkey-span-hpSmall-v2.jpg":{"path":"images/2013/05/12/world/europe/alt-turkey-span/alt-turkey-span-mediumFlexible177-v2.jpg","w":"177","h":"118"},"images/2013/05/12/world/europe/alt-turkey-span/alt-turkey-span-hpMedium-v2.jpg":{"path":"images/2013/05/12/world/europe/alt-turkey-span/alt-turkey-span-largeHorizontal375-v2.jpg","w":"375","h":"250"},"images/2013/05/12/world/europe/alt-turkey-span/alt-turkey-span-hpLarge-v2.jpg":{"path":"images/2013/05/12/world/europe/alt-turkey-span/alt-turkey-span-largeWidescreen573-v2.jpg","w":"573","h":"287"},"images/2013/05/12/nyregion/detective/detective-hpSmall.jpg":{"path":"images/2013/05/12/nyregion/detective/detective-mediumFlexible177.jpg","w":"177","h":"130"},"images/2013/05/12/nyregion/detective/detective-hpMedium.jpg":{"path":"images/2013/05/12/nyregion/detective/detective-largeHorizontal375-v2.jpg","w":"375","h":"250"},"images/2013/05/12/nyregion/detective/detective-hpLarge.jpg":{"path":"images/2013/05/12/nyregion/detective/detective-largeWidescreen573.jpg","w":"573","h":"287"},"images/2013/05/12/us/SPACEWALK/SPACEWALK-hpSmall.jpg":{"path":"images/2013/05/12/us/SPACEWALK/SPACEWALK-mediumFlexible177.jpg","w":"177","h":"103"},"images/2013/05/12/us/SPACEWALK/SPACEWALK-hpMedium.jpg":{"path":"images/2013/05/12/us/SPACEWALK/SPACEWALK-largeHorizontal375.jpg","w":"375","h":"250"},"images/2013/05/12/us/SPACEWALK/SPACEWALK-hpLarge.jpg":{"path":"images/2013/05/12/us/SPACEWALK/SPACEWALK-largeWidescreen573.jpg","w":"573","h":"287"},"images/2013/05/12/fashion/12THORSEN1_SPAN/12THORSEN1-hpSmall.jpg":{"path":"images/2013/05/12/fashion/12THORSEN1_SPAN/12THORSEN1-mediumFlexible177.jpg","w":"177","h":"117"},"images/2013/05/12/fashion/12THORSEN1_SPAN/12THORSEN1-hpMedium.jpg":{"path":"images/2013/05/12/fashion/12THORSEN1_SPAN/12THORSEN1_SPAN-largeHorizontal375-v2.jpg","w":"375","h":"250"},"images/2013/05/12/fashion/12THORSEN1_SPAN/12THORSEN1_SPAN-hpLarge-v2.jpg":{"path":"images/2013/05/12/fashion/12THORSEN1_SPAN/12THORSEN1_SPAN-largeWidescreen573-v2.jpg","w":"573","h":"287"},"images/2013/05/12/nyregion/mayors/mayors-hpSmall.jpg":{"path":"images/2013/05/12/nyregion/mayors/mayors-mediumFlexible177.jpg","w":"177","h":"118"},"images/2013/05/12/nyregion/mayors/mayors-hpMedium.jpg":{"path":"images/2013/05/12/nyregion/mayors/mayors-largeHorizontal375.jpg","w":"375","h":"250"},"images/2013/05/12/nyregion/mayors/mayors-hpLarge.jpg":{"path":"images/2013/05/12/nyregion/mayors/mayors-largeWidescreen573.jpg","w":"573","h":"287"},"images/2013/05/12/world/iran1/iran1-hpSmall.jpg":{"path":"images/2013/05/12/world/iran1/iran1-mediumFlexible177.jpg","w":"177","h":"115"},"images/2013/05/12/world/iran1/iran1-hpMedium.jpg":{"path":"images/2013/05/12/world/iran1/iran1-largeHorizontal375.jpg","w":"375","h":"250"},"images/2013/05/12/world/iran1/iran1-hpLarge.jpg":{"path":"images/2013/05/12/world/iran1/iran1-largeWidescreen573.jpg","w":"573","h":"286"},"images/2013/05/11/style/11MOTH_Table/11MOTH_Table-hpSmall.jpg":{"path":"images/2013/05/11/style/11MOTH_Table/11MOTH_Table-mediumFlexible177.jpg","w":"177","h":"124"},"images/2013/05/11/style/11MOTH_Table/11MOTH_Table-hpMedium.jpg":{"path":"images/2013/05/11/style/11MOTH_Table/11MOTH_Table-largeHorizontal375.jpg","w":"375","h":"250"},"images/2013/05/11/style/11MOTH_Table/11MOTH_Table-hpLarge.jpg":{"path":"images/2013/05/11/style/11MOTH_Table/11MOTH_Table-largeWidescreen573.jpg","w":"573","h":"287"}};
+</script>	</div>
+<!--End CColumnAboveMoth region -->
+<!--Start CColumnAboveMothBottom -->
+<div class="columnGroup">
+</div><!--end .columnGroup -->
+<!--End CColumnAboveMothBottom -->
+
+
+</div>
+</div><!--close cColumn -->
+</div><!--close spanAB -->
+</div><!--close column -->
+</div><!--close baseLayout -->
+<!--start MOTH -->
+<div id="insideNYTimes" class="doubleRule">
+<div id="insideNYTimesHeader">
+<div class="navigation"><span id="leftArrow"><img id="mothReverse" src="http://i1.nyt.com/images/global/buttons/moth_reverse.gif" /></span>&nbsp;<span id="rightArrow"><img id="mothForward" src="http://i1.nyt.com/images/global/buttons/moth_forward.gif" /></span></div>
+<h4>
+Inside NYTimes.com        </h4>
+</div>
+<div id="insideNYTimesScrollWrapper">
+<table id="insideNYTimesBrowser" cellspacing="0">
+<tbody>
+<tr>
+<td class="first">
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/national/index.html">U.S. &raquo;</a>
+</h6>
+<div class="mothImage">
+<a href="http://www.nytimes.com/2013/05/11/us/in-west-texas-a-gathering-to-consider-the-universe.html"><img src="http://i1.nyt.com/images/2013/05/11/us/11MOTH_Stars/11MOTH_Stars-moth.jpg" alt="Considering the Universe From Deep in West Texas" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://www.nytimes.com/2013/05/11/us/in-west-texas-a-gathering-to-consider-the-universe.html">Considering the Universe From Deep in West Texas</a></h6>
+</div>
+</td>
+<td>
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/world/index.html">World &raquo;</a>
+</h6>
+<div class="mothImage">
+<a href="http://www.nytimes.com/2013/05/11/world/asia/feng-shui-grows-in-china-as-officials-seek-success.html"><img src="http://i1.nyt.com/images/2013/05/11/world/11MOTH_Fengshui/11MOTH_Fengshui-moth.jpg" alt="China Officials Seek Shortcut With Feng Shui" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://www.nytimes.com/2013/05/11/world/asia/feng-shui-grows-in-china-as-officials-seek-success.html">China Officials Seek Shortcut With Feng Shui</a></h6>
+</div>
+</td>
+<td>
+<div class="story">
+<h6 class="kicker"><a href="http://www.nytimes.com/pages/opinion/index.html">Opinion »</a></h6>
+<h3><a href="http://www.nytimes.com/2013/05/11/opinion/pay-people-to-cook-at-home.html">Op-Ed: Pay People to Cook at Home</a></h3>
+<p class="summary">Give families the time and money they need for better eating.</p>
+</div>
+</td>
+<td>
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/arts/index.html">Arts &raquo;</a>
+</h6>
+<div class="mothImage">
+<a href="http://www.nytimes.com/2013/05/11/arts/design/frieze-new-york-at-randalls-island.html"><img src="http://i1.nyt.com/images/2013/05/11/arts/11MOTH_Frieze/11MOTH_Frieze-moth.jpg" alt="40 Nations, 1,000 Artists and One Island" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://www.nytimes.com/2013/05/11/arts/design/frieze-new-york-at-randalls-island.html">40 Nations, 1,000 Artists and One Island</a></h6>
+</div>
+</td>
+<td>
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/opinion/index.html">Opinion »</a>                            </h6>
+<div class="mothImage">
+<a href="http://www.nytimes.com/2013/05/11/opinion/pakistans-tyrannical-majority.html"><img src="http://i1.nyt.com/images/2013/05/11/opinion/11MOTH_Opart/11MOTH_Opart-moth.jpg" alt="Op-Ed: Pakistan&rsquo;s Tyrannical Majority" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://www.nytimes.com/2013/05/11/opinion/pakistans-tyrannical-majority.html">Op-Ed: Pakistan&rsquo;s Tyrannical Majority</a></h6>
+</div>
+</td>
+<td>
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/style/index.html">Style &raquo;</a>
+</h6>
+<div class="mothImage">
+<a href="http://www.nytimes.com/2013/05/12/fashion/a-lunch-with-holland-taylor-and-christine-quinn.html"><img src="http://i1.nyt.com/images/2013/05/11/style/11MOTH_Table/11MOTH_Table-moth-v4.jpg" alt="A Lunch With Quinn and Taylor" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://www.nytimes.com/2013/05/12/fashion/a-lunch-with-holland-taylor-and-christine-quinn.html">A Lunch With Quinn and Taylor</a></h6>
+</div>
+</td>
+<td class="hidden">
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/nyregion/index.html">N.Y. / Region &raquo;</a>
+</h6>
+<div class="mothImage">
+<a href="http://www.nytimes.com/2013/05/12/nyregion/lucy-mann-keeps-american-composers-spirits-alive.html"><span class="img" src="http://i1.nyt.com/images/2013/05/11/nyregion/11MOTH_Character/11MOTH_Character-moth.jpg" alt="A Composer&rsquo;s Best Friend" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://www.nytimes.com/2013/05/12/nyregion/lucy-mann-keeps-american-composers-spirits-alive.html">A Composer&rsquo;s Best Friend</a></h6>
+</div>
+</td>
+<td class="hidden">
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/arts/television/index.html">Television &raquo;</a>
+</h6>
+<div class="mothImage">
+<a href="http://tv.nytimes.com/2013/05/11/arts/television/family-tree-on-hbo-directed-by-christopher-guest.html"><span class="img" src="http://i1.nyt.com/images/2013/05/11/arts/television/11MOTH_FamilyTree/11MOTH_FamilyTree-moth.jpg" alt="Searching for Roots, Finding Characters" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://tv.nytimes.com/2013/05/11/arts/television/family-tree-on-hbo-directed-by-christopher-guest.html">Searching for Roots, Finding Characters</a></h6>
+</div>
+</td>
+<td class="hidden">
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/realestate/index.html">Real Estate &raquo;</a>
+</h6>
+<div class="mothImage">
+<a href="http://www.nytimes.com/2013/05/12/realestate/a-bangladeshi-immigrant-restores-brownstone-facades.html"><span class="img" src="http://i1.nyt.com/images/2013/05/11/realestate/11MOTH_Debrief/11MOTH_Debrief-moth.jpg" alt="Using a Trowel to Erase Time" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://www.nytimes.com/2013/05/12/realestate/a-bangladeshi-immigrant-restores-brownstone-facades.html">Using a Trowel to Erase Time</a></h6>
+</div>
+</td>
+<td class="hidden">
+<div class="story">
+<h6 class="kicker"><a href="http://www.nytimes.com/pages/opinion/index.html">Opinion »</a></h6>
+<h3><a href="http://takingnote.blogs.nytimes.com/2013/05/10/the-family-unfriendly-act/">Taking Note: The Family Unfriendly Act</a></h3>
+<p class="summary">A recent bill from the House of Representatives is a fraud.</p>
+</div>
+</td>
+<td class="hidden">
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/nyregion/index.html">N.Y. / Region &raquo;</a>
+</h6>
+<div class="mothImage">
+<a href="http://cityroom.blogs.nytimes.com/2013/05/10/a-parade-of-vintage-trains-unnoticed-in-the-harlem-night/"><span class="img" src="http://i1.nyt.com/images/2013/05/11/nyregion/11MOTH_Trains/11MOTH_Trains-moth.jpg" alt="Parade of Vintage Trains in the Harlem Night" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://cityroom.blogs.nytimes.com/2013/05/10/a-parade-of-vintage-trains-unnoticed-in-the-harlem-night/">Parade of Vintage Trains in the Harlem Night</a></h6>
+</div>
+</td>
+<td class="hidden">
+<div class="story">
+<h6 class="kicker">
+<a href="http://www.nytimes.com/pages/opinion/index.html">Sunday Review »</a>                            </h6>
+<div class="mothImage">
+<a href="http://www.nytimes.com/2013/05/12/opinion/sunday/too-much-helicopter-parenting.html"><span class="img" src="http://i1.nyt.com/images/2013/05/11/opinion/11MOTH_Gray/11MOTH_Gray-moth.jpg" alt="Gray Matter: When Helping Hurts" width="151" height="151" /></a>
+</div>
+<h6 class="headline"><a href="http://www.nytimes.com/2013/05/12/opinion/sunday/too-much-helicopter-parenting.html">Gray Matter: When Helping Hurts</a></h6>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><!--end #insideNYTimes -->
+<!--end MOTH -->
+<div class="baseLayoutBelowFold wrap spanABWell">
+<div class="doubleRule">
+<div class="column last">
+<div class="spanABBelowFold wrap">
+<div class="abColumn">
+<div id="wellRegion"><div class="module wrap"><div class="column firstColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/world/index.html">World  &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/world/asia/pakistan-election.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/world/asia/pakistan/pakistan-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/world/asia/pakistan-election.html?hpw">Ex-Premier Is Set to Regain Power in Pakistan Vote</a></h6></li><li class=""><h6><a  href="http://thelede.blogs.nytimes.com/2013/05/11/pakistanis-share-their-views-on-election-day/?hpw">The Lede: Pakistanis Explain What the Election Means to Them</a></h6></li><li class="lastItem"><h6><a  href="http://thelede.blogs.nytimes.com/2013/05/11/latest-updates-on-pakistans-election/?hpw">The Lede: Latest Updates on Pakistan&rsquo;s Election</a></h6></li></ul></div><div class="column"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/business/index.html">Business Day &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/business/in-house-maxine-waters-takes-new-tack-on-banks.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/business/12-WATERS/12-WATERS-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/business/in-house-maxine-waters-takes-new-tack-on-banks.html?hpw">The Mellowing of Maxine Waters</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/business/global/financial-leaders-avoid-public-rift-with-japan-over-yen.html?hpw">Global Financial Leaders Avoid Public Rift With Japan </a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/business/employers-pull-applicants-credit-reports.html?hpw">The Long Shadow of Bad Credit in a Job Search</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/opinion/index.html">Opinion &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/opinion/sunday/a-people-without-a-story.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/sunday-review/12TAMIL/12TAMIL-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/opinion/sunday/a-people-without-a-story.html?hpw">Opinion: A People Without a Story</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/opinion/sunday/first-steps-to-a-better-immigration-bill.html?hpw">Editorial: First Steps to a Better Immigration Bill</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/opinion/sunday/collins-is-yours-more-corrupt-than-mine.html?hpw">Op-Ed Columnist: Is Yours More Corrupt Than Mine?</a></h6></li></ul></div></div><div class="module wrap"><div class="column firstColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/national/index.html">U.S. &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/science/space/astronauts-replace-a-pump-hoping-to-stop-leak.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/us/SPACEWALK/SPACEWALK-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/science/space/astronauts-replace-a-pump-hoping-to-stop-leak.html?hpw">Astronauts Replace Pump, Hoping to Stop a Leak</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/us/politics/tucked-in-immigration-bill-special-deals-for-some.html?hpw">Some Countries Lobby for More in Race for Visas</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/11/us/safe-drinking-water-elusive-for-many-in-california.html?hpw">Why Federal Efforts to Ensure Clean Tap Water Fail to Reach Faucets Nationwide</a></h6></li></ul></div><div class="column"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/technology/index.html">Technology &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/business/soothing-back-pain-by-learning-how-to-sit-again.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/business/12-POSTURE1/12-POSTURE1-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/business/soothing-back-pain-by-learning-how-to-sit-again.html?hpw">The Posture Guru of Silicon Valley</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/world/asia/quake-response.html?hpw">Social Media in China Fuel Citizen Response to Quake</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/your-money/a-voucher-deal-that-wasnt-so-sweet.html?hpw">The Haggler: A Voucher Deal That Wasn&rsquo;t So Sweet</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/arts/index.html">Arts &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/11/arts/design/frieze-new-york-at-randalls-island.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/11/arts/11FRIEZE1/11FRIEZE1-thumbStandard-v2.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/11/arts/design/frieze-new-york-at-randalls-island.html?hpw">Art Review: 40 Nations, 1,000 Artists and One Island</a></h6></li><li class=""><h6><a  href="http://theater.nytimes.com/2013/05/11/theater/reviews/death-of-walt-disney-at-soho-rep.html?hpw">Theater Review | &#039;Death of Walt Disney&#039;: A Dream Is a Wish Your Id Makes </a></h6></li><li class="lastItem"><h6><a  href="http://tv.nytimes.com/2013/05/11/arts/television/family-tree-on-hbo-directed-by-christopher-guest.html?hpw">Television Review | &lsquo;Family Tree&rsquo;: Searching for Roots, Finding Characters</a></h6></li></ul></div></div><div class="module wrap"><div class="column firstColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/politics/index.html">Politics  &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/us/politics/tucked-in-immigration-bill-special-deals-for-some.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/us/JP-LOBBY-1/JP-LOBBY-1-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/us/politics/tucked-in-immigration-bill-special-deals-for-some.html?hpw">Some Countries Lobby for More in Race for Visas</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/11/us/politics/benghazi-e-mails-put-white-house-on-the-defensive.html?hpw">Benghazi E-Mails Put White House on the Defensive</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/11/us/politics/irs-apologizes-to-conservative-groups-over-application-audits.html?hpw">I.R.S. Apologizes to Tea Party Groups Over Audits of Applications for Tax Exemption</a></h6></li></ul></div><div class="column"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/sports/index.html">Sports &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/sports/baseball/pirates-jump-on-niese-early-and-rout-mets.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/sports/sub-METS-1/sub-METS-1-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/sports/baseball/pirates-jump-on-niese-early-and-rout-mets.html?hpw">Pirates 11, Mets 2: Niese Stays Consistent, Just Not in the Way The Mets Had Hoped </a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/sports/safety-advocates-focus-on-hidden-threats-to-young-athletes.html?hpw">Hidden Threats to Young Athletes</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/sports/baseball/a-younger-yastrzemski-makes-his-way-at-vanderbilt.html?hpw">In the Name of a Legacy</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/movies/index.html">Movies &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/movies/greta-gerwig-in-noah-baumbachs-frances-ha.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/arts/12FRANCES-HA1_SPAN/12FRANCES-HA1_SPAN-thumbStandard-v2.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/movies/greta-gerwig-in-noah-baumbachs-frances-ha.html?hpw">Romantic Triangle: Star, Director, City</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/movies/stories-we-tell-by-sarah-polley.html?hpw">A Messy Look at the Family Mystery</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/movies/oscilloscope-laboratories-a-year-after-adam-yauchs-death.html?hpw">Still Licensed to Be Indie</a></h6></li></ul></div></div><div class="module wrap"><div class="column firstColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/nyregion/index.html">N.Y. / Region  &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><h6><a  href="http://www.nytimes.com/2013/05/12/nyregion/standoff-in-trenton-enters-second-day.html?hpw">Man Takes Hostages in Trenton </a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/nyregion/doubts-about-detective-haunt-50-murder-cases.html?hpw">Review Ordered of 50 Brooklyn Murder Cases </a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/nyregion/seeking-teachers-support-mayoral-candidates-pledge-education-reform.html?hpw">Seeking Teachers&rsquo; Support, Mayoral Candidates Pledge Education Reform</a></h6></li></ul></div><div class="column"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/obituaries/index.html">Obituaries &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/automobiles/dean-jeffries-car-customizer-and-painter-dies-at-80.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/us/dog-JEFFRIES1-obit/dog-JEFFRIES1-obit-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/automobiles/dean-jeffries-car-customizer-and-painter-dies-at-80.html?hpw">Dean Jeffries, Car Customizer and Painter, Dies at 80</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/11/sports/football/george-sauer-jets-receiver-and-rebel-is-dead-at-69.html?hpw">George Sauer, Jets Receiver and Rebel, Is Dead at 69</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/11/business/media/alan-abelson-barrons-columnist-and-editor-dies-at-87.html?hpw">Alan Abelson, Who at Barron&rsquo;s Was a Thorn in Wall Street&rsquo;s Side, Dies at 87</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://theater.nytimes.com/">Theater &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/theater/theaterspecial/cinderella-and-kinky-boots-previews-to-opening-night.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/arts/12PREVIEWS1_SPAN/12PREVIEWS1-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/theater/theaterspecial/cinderella-and-kinky-boots-previews-to-opening-night.html?hpw">Helping Glass Slippers and Kinky Boots Shine</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/theater/theaterspecial/matilda-the-musical-offers-good-advice.html?hpw">... And a Child Should Lead Them</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/theater/theaterspecial/charles-isherwood-on-off-broadway-playwriting.html?hpw">This Year, Off Broadway Dug Deeper</a></h6></li></ul></div></div><div class="module wrap"><div class="column firstColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/science/index.html">Science  &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/11/science/earth/carbon-dioxide-level-passes-long-feared-milestone.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/11/us/SUB-CLIMATE/SUB-CLIMATE-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/11/science/earth/carbon-dioxide-level-passes-long-feared-milestone.html?hpw">Heat-Trapping Gas Passes Milestone, Raising Fears </a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/science/space/astronauts-replace-a-pump-hoping-to-stop-leak.html?hpw">Astronauts Replace Pump, Hoping to Stop a Leak</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/10/science/bat-species-evolves-to-suck-nectar-mid-flight.html?hpw">Optics: Tongue Like a Mop</a></h6></li></ul></div><div class="column"><h6 class="moduleHeaderLg"><a href="http://travel.nytimes.com/">Travel &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://travel.nytimes.com/2013/05/12/travel/a-midsummer-days-dream-in-sweden.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/travel/12SWEDEN_SPAN-sf/12SWEDEN_SPAN-sf-thumbStandard-v4.jpg" /></a><h6><a href="http://travel.nytimes.com/2013/05/12/travel/a-midsummer-days-dream-in-sweden.html?hpw">A Midsummer Day&rsquo;s Dream in Sweden</a></h6></li><li class=""><h6><a  href="http://travel.nytimes.com/2013/05/12/travel/36-hours-in-las-vegas.html?hpw">36 Hours in Las Vegas</a></h6></li><li class="lastItem"><h6><a  href="http://travel.nytimes.com/2013/05/12/travel/an-indiana-town-where-big-names-built.html?hpw">Cultured Traveler: An Indiana Town Where Big Names Built</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/arts/television/index.html">Television &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://tv.nytimes.com/2013/05/11/arts/television/family-tree-on-hbo-directed-by-christopher-guest.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/11/arts/11FAMILYjp/11FAMILYjp-thumbStandard.jpg" /></a><h6><a href="http://tv.nytimes.com/2013/05/11/arts/television/family-tree-on-hbo-directed-by-christopher-guest.html?hpw">Television Review | &lsquo;Family Tree&rsquo;: Searching for Roots, Finding Characters</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/11/arts/television/ultimate-survival-alaska-and-ice-cold-gold.html?hpw">Critic&rsquo;s Notebook: Braving Frostbite in Search of Ratings</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/11/business/media/nbc-adds-3-more-shows-including-an-updated-ironside.html?hpw">NBC Adds 3 More Shows, Including an Updated &lsquo;Ironside&rsquo;</a></h6></li></ul></div></div><div class="module wrap"><div class="column firstColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/health/index.html">Health &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><h6><a  href="http://www.nytimes.com/2013/05/11/health/judge-refuses-to-drop-order-on-contraceptive-pill-without-regard-to-age.html?hpw">Judge Refuses to Drop His Order Allowing Morning-After Pill for All Ages</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/sports/safety-advocates-focus-on-hidden-threats-to-young-athletes.html?hpw">Hidden Threats to Young Athletes</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/11/health/study-finds-an-increase-in-arsenic-levels-in-chicken.html?hpw">Study Finds an Increase in Arsenic Levels in Chicken</a></h6></li></ul></div><div class="column"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/dining/index.html">Dining & Wine &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/interactive/2013/05/10/dining/2013-spring-veggies.html?hpw"><img src="http://graphics8.nytimes.com/images/2012/05/02/dining/02KITCH_SPAN/02KITCH_SPAN-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/interactive/2013/05/10/dining/2013-spring-veggies.html?hpw">Putting Spring Vegetables to Work</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/15/dining/pulled-pork-doesnt-have-to-be-the-work-of-a-day.html?hpw">A Good Appetite: Smaller Forkfuls of Pulled Pork</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/15/dining/torta-pascualina-has-stepped-up-in-class.html?hpw">City Kitchen: A Pie That Has Stepped Up in Class</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/books/index.html">Books &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/books/review/the-sleepwalkers-and-july-1914.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/books/review/0512-bks-EVANS/0512-bks-EVANS-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/books/review/the-sleepwalkers-and-july-1914.html?hpw">On the Brink</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/books/review/amanda-knox-by-the-book.html?hpw">Amanda Knox: By the Book</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/books/review/seussian-software.html?hpw">Applied Reading: Seussian Software</a></h6></li></ul></div></div><div class="module wrap"><div class="column firstColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/education/index.html">Education &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/education/on-the-waiting-list-some-college-applicants-try-a-little-dazzle.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/nyregion/sub-12waitlist1/sub-12waitlist1-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/education/on-the-waiting-list-some-college-applicants-try-a-little-dazzle.html?hpw">On a College Waiting List? Sending Cookies Isn&rsquo;t Going to Help</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/us/professor-ex-addict-confronts-perils-american-indians-face.html?hpw">Overcoming Addiction, Professor Tackles Perils American Indians Face</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/nyregion/seeking-teachers-support-mayoral-candidates-pledge-education-reform.html?hpw">Seeking Teachers&rsquo; Support, Mayoral Candidates Pledge Education Reform</a></h6></li></ul></div><div class="column"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/garden/index.html">Home & Garden &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/09/booming/the-700-doll-question.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/09/garden/09DOMESTIC_SPAN/09DOMESTIC-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/09/booming/the-700-doll-question.html?hpw">Domestic Lives: The 700-Doll Question</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/09/garden/the-kips-bay-decorator-show-house-goes-to-extremes.html?hpw">House of Your (Vivid) Dreams</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/booming/taking-care-of-my-baby-my-miata.html?hpw">I Was Misinformed: App-Armed and YouTube-Educated, Taking Care of My Baby</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/opinion/index.html#sundayreview">Sunday Review &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/opinion/sunday/dowd-when-myths-collide-in-the-capital.html?hpw"><img src="http://graphics8.nytimes.com/images/2010/09/16/opinion/Dowd_New/Dowd_New-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/opinion/sunday/dowd-when-myths-collide-in-the-capital.html?hpw">Op-Ed Columnist: When Myths Collide in the Capital</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/sunday-review/alice-e-kober-43-lost-to-history-no-more.html?hpw">Dispatch: Alice E. Kober, 43; Lost to History No More</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/opinion/sunday/chinas-evolving-core-interests.html?hpw">Editorial: China&rsquo;s Evolving &lsquo;Core Interests&rsquo;</a></h6></li></ul></div></div><div class="module wrap"><div class="column firstColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/realestate/index.html">Real Estate &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/realestate/paying-a-premium-for-sky-high-apartments.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/realestate/12COVER_SPAN/12COVER_SPAN-thumbStandard-v2.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/realestate/paying-a-premium-for-sky-high-apartments.html?hpw">The Stratospherians</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/realestate/when-stairs-are-an-amenity.html?hpw">The Hunt: Think of It This Way: Stairs Are an Amenity</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/realestate/nascar-superstar-selling-15-central-park-west-condo.html?hpw">Exclusive | 15 Central Park West: Nascar Superstar Selling Central Park West Condo</a></h6></li></ul></div><div class="column"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/fashion/index.html">Fashion & Style &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/fashion/scott-thorson-the-boy-toys-story.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/fashion/12THORSEN1_SPAN/12THORSEN1-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/fashion/scott-thorson-the-boy-toys-story.html?hpw">The Boy Toy&rsquo;s Story</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/fashion/clothing-straddles-the-line-between-sweet-and-skimpy.html?hpw">This Life: A Line Between Sweet and Skimpy</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/fashion/a-lunch-with-holland-taylor-and-christine-quinn.html?hpw">Table for Three: Leave a Place Setting for Ann</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/magazine/index.html">Magazine &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/magazine/who-would-kill-a-monk-seal.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/magazine/12seals1/12seals1-thumbStandard-v2.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/magazine/who-would-kill-a-monk-seal.html?hpw">Who Would Kill a Monk Seal?</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/magazine/paul-mccarthy-the-demented-imagineer.html?hpw">The Demented Imagineer</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/magazine/omds-plot-against-rock.html?hpw">The Plot Against Rock</a></h6></li></ul></div></div><div class="module wrap"><div class="column"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/automobiles/index.html">Automobiles &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://www.nytimes.com/2013/05/12/automobiles/autoreviews/straying-a-bit-beyond-its-own-comfort-zone.html?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/automobiles/Wheel/Wheel-thumbStandard.jpg" /></a><h6><a href="http://www.nytimes.com/2013/05/12/automobiles/autoreviews/straying-a-bit-beyond-its-own-comfort-zone.html?hpw">Behind the Wheel | 2013 Toyota Avalon: Straying a Bit Beyond Its Own Comfort Zone</a></h6></li><li class=""><h6><a  href="http://www.nytimes.com/2013/05/12/automobiles/bumpy-road-for-trophy-cars-in-india.html?hpw">Bumpy Road for Trophy Cars</a></h6></li><li class="lastItem"><h6><a  href="http://www.nytimes.com/2013/05/12/booming/taking-care-of-my-baby-my-miata.html?hpw">I Was Misinformed: App-Armed and YouTube-Educated, Taking Care of My Baby</a></h6></li></ul></div><div class="column lastColumn"><h6 class="moduleHeaderLg"><a href="http://www.nytimes.com/pages/t-magazine/index.html">T Magazine  &raquo;</a></h6><ul class="headlinesOnly"><li class="firstItem wrap"><a class="thumb runaroundRight" href="http://tmagazine.blogs.nytimes.com/2013/05/10/now-online-t-summer-travel-2013/?hpw"><img src="http://graphics8.nytimes.com/images/2013/05/12/t-magazine/12tmag-SummerTravelCover/12tmag-SummerTravelCover-thumbStandard.jpg" /></a><h6><a href="http://tmagazine.blogs.nytimes.com/2013/05/10/now-online-t-summer-travel-2013/?hpw">T Magazine: Now Online | T Summer Travel 2013</a></h6></li><li class=""><h6><a  href="http://tmagazine.blogs.nytimes.com/2013/05/10/editors-letter-away-we-go/?hpw">T Magazine: Editor&rsquo;s Letter | Away We Go</a></h6></li><li class="lastItem"><h6><a  href="http://tmagazine.blogs.nytimes.com/2013/05/10/on-view-an-artist-recreates-a-smoking-room-with-flowers-and-perfume/?hpw">T Magazine: On View | An Artist Recreates a Smoking Room With Flowers and Perfume</a></h6></li></ul></div></div></div>
+&nbsp;
+</div><!--close abColumn -->
+<div class="cColumn">
+
+<div class="columnGroup first">
+
+    <a name="timeswire"></a>
+    <div class="timeswireModule">
+        <h4 class="sectionHeaderHome"><a href="http://www.nytimes.com/timeswire/?src=twrhp">Times Wire &raquo;</a></h4>
+        <p class="refer">Most recent updates on NYTimes.com. <a href="http://www.nytimes.com/timeswire/?src=twr" title="Go to Times Wire">See More &raquo;</a></p>
+        <ol id="wireContent" class="singleRule">
+            <li class='wrap'><span class='timestamp' title='2013-05-11 19:56:36' data-gmt='1368316596'>7:56 PM ET</span> <a href='http://www.nytimes.com/2013/05/12/sports/tennis/to-the-winner-of-the-madrid-open-the-no-1-ranking.html?src=twrhp'>To the Winner of the Madrid Open, the No. 1 Ranking</a></li>
+            <li class='wrap'><span class='timestamp' title='2013-05-11 19:53:28' data-gmt='1368316408'>7:53 PM ET</span> <a href='http://www.nytimes.com/2013/05/12/sports/kenyan-wins-10k-in-central-park.html?src=twrhp'>Kenyan Wins 10K in Central Park</a></li>
+            <li class='wrap last'><span class='timestamp' title='2013-05-11 19:43:52' data-gmt='1368315832'>7:43 PM ET</span> <a href='http://www.nytimes.com/2013/05/12/sports/baseball/red-sox-closer-joel-hanrahan-will-miss-season.html?src=twrhp'>Red Sox Closer Will Miss Season</a></li>
+        </ol>
+    </div>
+    <div class="singleRuleDivider"></div>
+    </div>
+<div class="columnGroup ">
+<div id="mostPopWidget" class="doubleRule"></div>
+<script src="http://js.nyt.com/js/app/recommendations/recommendationsModule.js" type="text/javascript" charset="utf-8"></script>
+</div>
+<div class="columnGroup ">
+
+<div class="singleAd" id="Box1">
+<!-- ADXINFO classification="Marketing_Module" campaign="nyt2013_300X250_module_tonys_hp_ros_db_th" priority="1000" width="336" height="280" --><div style="border:solid #999;border-width:1px;font-family:Arial,sans-serif;text-align:left; width:334px;background:#fff;" class="clearfix wrap">
+  <a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Box1&sn2=5b35dc29/56a295e7&sn1=850f5cb6/f3c6e811&camp=nyt2013_300X250_module_tonys_hp_ros_db_th&ad=AR-D-I-NYT-MOD-MOD-M305-ROS-0513&goto=http://artsbeat.blogs.nytimes.com/2013/05/09/neil-patrick-harris-to-host-tony-awards-for-a-fourth-time/%3FWT.mc_id=AR-D-I-NYT-MOD-MOD-M305-ROS-0513-PH%26WT.mc_ev=click%26WT.mc_c=216387" target="_blank"><img src="http://graphics8.nytimes.com/ads/marketing/mm13/arts/1368206473092_us.jpg" alt="" border="0" height="154" width="334"></a> 
+  <div style="padding:7px 9px 0;background:#fff">
+    <h2 style="font-size:22px;line-height:24px; margin:0;padding:0 0 4px;"><a style="color:#004276;" target="_blank" href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Box1&sn2=5b35dc29/56a295e7&sn1=850f5cb6/f3c6e811&camp=nyt2013_300X250_module_tonys_hp_ros_db_th&ad=AR-D-I-NYT-MOD-MOD-M305-ROS-0513&goto=http://artsbeat.blogs.nytimes.com/2013/05/09/neil-patrick-harris-to-host-tony-awards-for-a-fourth-time/%3FWT.mc_id=AR-D-I-NYT-MOD-MOD-M305-ROS-0513-HDR%26WT.mc_ev=click%26WT.mc_c=216387">Neil Patrick Harris to host Tony Awards for a fourth time</a></h2>
+    <p style="margin:0 0 3px; padding:0;font-size: 11px;">
+      <a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Box1&sn2=5b35dc29/56a295e7&sn1=283b9e1d/b746d0bb&camp=nyt2013_300X250_module_tonys_hp_ros_db_th&ad=AR-D-I-NYT-MOD-MOD-M305-ROS-0513&goto=http://www.nytimes.com/pages/arts/index.html%3FWT.mc_id=AR-D-I-NYT-MOD-MOD-M305-ROS-0513-URL%26WT.mc_ev=click%26WT.mc_c=216387" target="_blank" style="font-size:11px;margin:3px 0;padding:0;font-family:Arial,sans-serif;  color:#000; text-transform:uppercase;">
+      Also in Arts &raquo;
+      </a>
+    </p>
+    <ul style="font-size:12px;margin:0; padding-bottom: 10px; border-bottom: 1px solid #ccc;" class="refer">
+      <li style="font-size:12px"><a target="_blank" href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Box1&sn2=5b35dc29/56a295e7&sn1=850f5cb6/f3c6e811&camp=nyt2013_300X250_module_tonys_hp_ros_db_th&ad=AR-D-I-NYT-MOD-MOD-M305-ROS-0513&goto=http://artsbeat.blogs.nytimes.com/2013/05/02/brantley-isherwood-answer-readers-questions-about-the-theater-season/%3FWT.mc_id=AR-D-I-NYT-MOD-MOD-M305-ROS-0513-L1%26WT.mc_ev=click%26WT.mc_c=216387" style="color: #004276">Theater critics for The New York Times answer readers' questions about the Broadway season</a></li>
+      <li style="font-size:12px"><a target="_blank" href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Box1&sn2=5b35dc29/56a295e7&sn1=5a8d93c2/ca01a099&camp=nyt2013_300X250_module_tonys_hp_ros_db_th&ad=AR-D-I-NYT-MOD-MOD-M305-ROS-0513&goto=http://projects.nytimes.com/tonys/2013/ballot/2n57i49x%3FWT.mc_id=AR-D-I-NYT-MOD-MOD-M305-ROS-0513-L2%26WT.mc_ev=click%26WT.mc_c=216387" style="color: #004276">Fill in your Tony Awards ballot</a></li>
+    </ul>
+  </div>
+  
+  
+  <div style="padding:5px 9px; float:left; width:316px; background:#fff">
+    <a style="float:left" href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Box1&sn2=5b35dc29/56a295e7&sn1=d355d5d4/a884a20e&camp=nyt2013_300X250_module_tonys_hp_ros_db_th&ad=AR-D-I-NYT-MOD-MOD-M305-ROS-0513&goto=http://nytimes.com/%3FWT.mc_id=AR-D-I-NYT-MOD-MOD-M305-ROS-0513-LOGO%26WT.mc_ev=click%26WT.mc_c=216387" target="_blank"><img src="http://graphics8.nytimes.com/ads/marketing/mm09/verticalst/nytimes.gif" alt="nytimes.com" border="0" height="18" width="116"></a>
+    
+    <a style="float:right" href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Box1&sn2=5b35dc29/56a295e7&sn1=d355d5d4/a884a20e&camp=nyt2013_300X250_module_tonys_hp_ros_db_th&ad=AR-D-I-NYT-MOD-MOD-M305-ROS-0513&goto=http://nytimes.com/pages/arts/index.html%3FWT.mc_id=AR-D-I-NYT-MOD-MOD-M305-ROS-0513-VRT%26WT.mc_ev=click%26WT.mc_c=216387" target="_blank"><img src="http://graphics8.nytimes.com/ads/marketing/mm09/verticalst/verticals_arts.gif" alt="Arts" border="0" height="18" width="120"></a>
+    
+  </div>
+  
+  <br clear="all">
+</div>
+</div>
+
+</div>
+<div class="singleRuleDivider insetH"></div>
+<div class="columnGroup">
+<div id="blogModule" class="tabbedBlogModule">
+<h4>Recent Blog Posts</h4>
+<div class="tabsContainer"><ul class="tabs">
+<li class="first selected" title="News"><a href="http://www.nytimes.com/">News</a></li>
+<li title="Opinion"><a href="http://www.nytimes.com/pages/opinion/index.html">Opinion</a></li>
+</ul></div>
+<div class="tabContent active">
+<ul>
+<li>
+<span class="kicker">The Caucus: </span><a href="http://thecaucus.blogs.nytimes.com/2013/05/11/sunday-breakfast-menu-may-12/">Sunday Breakfast Menu, May 12</a><p class="date">May 11, 2013,  6:15 PM</p>
+</li>
+<li>
+<span class="kicker">Wordplay: </span><a href="http://wordplay.blogs.nytimes.com/2013/05/11/simply-put/">Simply Put</a><p class="date">May 11, 2013,  6:00 PM</p>
+</li>
+<li>
+<span class="kicker">Slap Shot: </span><a href="http://slapshot.blogs.nytimes.com/2013/05/11/for-penguins-a-timely-or-long-overdue-change-in-goal/">For Penguins, a Timely, or Long Overdue, Change in Goal</a><p class="date">May 11, 2013,  4:26 PM</p>
+</li>
+<li>
+<span class="kicker">Off the Dribble: </span><a href="http://offthedribble.blogs.nytimes.com/2013/05/11/j-r-smith-may-miss-game-3/">J.R. Smith May Miss Game 3</a><p class="date">May 11, 2013,  3:09 PM</p>
+</li>
+<li>
+<span class="kicker">The Rail: </span><a href="http://therail.blogs.nytimes.com/2013/05/11/an-old-school-touch-and-a-dash-of-superstition/">An Old-School Touch and a Dash of Superstition</a><p class="date">May 11, 2013,  2:48 PM</p>
+</li>
+<li>
+<span class="kicker">The Lede: </span><a href="http://thelede.blogs.nytimes.com/2013/05/11/latest-updates-on-pakistans-election/">Latest Updates on Pakistan&rsquo;s Election</a><p class="date">May 11, 2013,  1:56 PM</p>
+</li>
+</ul>
+<p class="refer"><a href="http://www.nytimes.com/ref/topnews/blog-index.html">More New York Times Blogs &#187;</a></p>
+</div>
+<div class="tabContent">
+<ul>
+<li>
+<span class="kicker">Paul Krugman: </span><a href="http://krugman.blogs.nytimes.com/2013/05/11/more-science-fiction-for-economists-seriously-time-wasting/">More Science Fiction for Economists (Seriously Time-Wasting)</a><p class="date">May 11, 2013,  6:05 PM</p>
+</li>
+<li>
+<span class="kicker">Opinionator: </span><a href="http://opinionator.blogs.nytimes.com/2013/05/11/in-syria-and-beyond-the-tyrant-as-target/">In Syria and Beyond, the Tyrant as Target</a><p class="date">May 11, 2013,  3:05 PM</p>
+</li>
+<li>
+<span class="kicker">Opinionator: </span><a href="http://opinionator.blogs.nytimes.com/2013/05/10/europes-careless-dithering/">Europe&#8217;s Careless Dithering</a><p class="date">May 10, 2013, 10:16 PM</p>
+</li>
+<li>
+<span class="kicker">Opinionator: </span><a href="http://opinionator.blogs.nytimes.com/2013/05/10/samuel-noyes-mountaineer/">Samuel Noyes, Mountaineer</a><p class="date">May 10, 2013,  9:00 PM</p>
+</li>
+<li>
+<span class="kicker">Taking Note: </span><a href="http://takingnote.blogs.nytimes.com/2013/05/10/the-family-unfriendly-act/">The Family Unfriendly Act</a><p class="date">May 10, 2013,  9:00 PM</p>
+</li>
+<li>
+<span class="kicker">Joe Nocera: </span><a href="http://nocera.blogs.nytimes.com/2013/05/10/the-gun-report-may-10-2013/">The Gun Report: May 10, 2013</a><p class="date">May 10, 2013, 12:24 PM</p>
+</li>
+</ul>
+<p class="refer"><a href="http://www.nytimes.com/ref/topnews/blog-index.html">More New York Times Blogs &#187;</a></p>
+</div>
+</div><script type="text/javascript" language="JavaScript" src="http://graphics8.nytimes.com/js/app/lib/NYTD/0.0.1/tabset.js"></script><script type="text/javascript" language="JavaScript">
+        
+        (function(){
+            var tabbedModule = NYTD.TabSet("blogModule");
+            var date         = new Date();
+
+            if(date.getMinutes() > 30) {
+                $$("#blogModule ul.tabs li.selected").invoke("removeClassName", "selected");
+                $$("#blogModule div.active").invoke("removeClassName", "active");
+                tabbedModule.activateTab(tabbedModule.getTabs()[1], tabbedModule.getTabContent()[1]);
+            }
+        })()
+        
+    </script>
+    </div>
+<div class="columnGroup ">
+
+<div class="singleAd" id="HPBottom1">
+<!-- ADXINFO classification="Text_Link" campaign="nyt2013_footer_digi_hp_ros_39Y4U" priority="1000" width="0" height="0" --><table width="100%" border="0">
+<tr>
+<td width="300"><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=HPBottom1&sn2=ba5a7590/f9c69a68&sn1=be704ee7/3e3a50a0&camp=nyt2013_footer_digi_hp_ros_39Y4U&ad=digi-testC2_original-try_unlimited_footer-39Y4U&goto=http%3A%2F%2Fwww%2Enytimes%2Ecom%2Fsubscriptions%2FMultiproduct%2Flp39YYF%2Ehtml%3Fadxc%3D209250%26adxa%3D306644%26page%3Dhomepage.nytimes.com/index.html%26pos%3DHPBottom1%26campaignId%3D39Y4U"><img src="http://graphics8.nytimes.com/adx/images/ADS/30/66/ad.306644/12-0999-Footer_Icon.jpg" height="27" width="40" style="float: left; margin-right: 5px;" alt="Get Home Delivery" align="middle" border="0"/>Try unlimited access to NYTimes.com for just 99&cent;.&nbsp; SEE OPTIONS &raquo;</a>
+
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+<div class="columnGroup ">
+
+<div class="columnGroup fullWidth">
+<div class="singleRuleDivider insetH"></div>
+<div class="subColumn-2 wrap">
+<div class="column">
+<div class="columnGroup centeredAd">
+
+<div id="Right1"><!-- ADXINFO classification="Home_Product_Marketplace_Button" campaign="nyt2013_120x90_tapclickswipe_hp_3JF3U" priority="1000" width="160" height="60" --><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Right1&sn2=b20a74cb/423db008&sn1=263378c7/abed5ee1&camp=nyt2013_120x90_tapclickswipe_hp_3JF3U&ad=120x90_tapclickswipe_hp_3JF3U&goto=https%3A%2F%2Fwww%2Enytimesathome%2Ecom%2Fhd%2F205%3FMediaCode%3DWB7AA%26CMP%3D3JF3U%26adxc%3D211376%26adxa%3D331622%26page%3Dhomepage.nytimes.com/index.html%26pos%3DRight1%26campaignId%3D3JF3U" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/33/16/ad.331622/12-2415_HD_Banner_120x90.jpg" width="120" height="90" border="0">
+</a></div>
+
+</div>
+</div>
+<div class="column last">
+<div class="columnGroup centeredAd">
+
+<div id="Box2"><!-- ADXINFO classification="Home_Product_Marketplace_Button" campaign="nyt2013_120x90_mothersday_hp" priority="1000" width="160" height="60" --><a href="http://www.nytimes.com/adx/bin/adx_click.html?type=goto&opzn&page=homepage.nytimes.com/index.html&pos=Box2&sn2=5b35dc2a/56c295e7&sn1=e102b9fb/af50ec8c&camp=nyt2013_120x90_mothersday_hp&ad=nyt2013_120x90_mothersday&goto=http%3A%2F%2Fnytimesathome%2Ecom%2Fhd%2F212%3FMediaCode%3DGSIEBL%26CMP%3D3JUHH%26adxc%3D215010%26adxa%3D336157%26page%3Dhomepage.nytimes.com/index.html%26pos%3DBox2%26campaignId%3D3JUHH" target="_blank">
+<img src="http://graphics8.nytimes.com/adx/images/ADS/33/61/ad.336157/13-0540_MothersDay_GiftSub_120x90_adv2.jpg" width="120" height="90" border="0">
+</a></div>
+
+</div>
+</div>
+</div><!--end .subColumn-2 wrap -->
+</div><!--end .columnGroup fullWidth -->
+
+</div>
+<div class="columnGroup last">
+
+<div class="singleAd" id="SponLinkHP">
+<script language="JavaScript" type="text/javascript">
+// rev6_GoogleHP.html.new
+<!--
+function cs(){window.status='';}function ha(a){  pha=document.getElementById(a); nhi=pha.href.indexOf("&nh=");if(nhi < 1) {phb=pha.href+"&nh=1";} pha.href=phb;}function ca(a) {  pha=document.getElementById(a); nci=pha.href.indexOf("&nc=");if(nci < 1) {phb=pha.href+"&nc=1";} pha.href=phb;window.open(document.getElementById(a).href);}function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}} else {h = e.srcElement;f = h.parentNode;if (f)p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;pha=document.getElementById(a); nbi=pha.href.indexOf("&nb=");if(nbi < 1) {phb=pha.href+"&nb=1";} pha.href=phb;window.open(document.getElementById(a).href);}}
+
+function randHPWell() {
+	var wells = new Array("hpwell_travel","hpwell_automobiles");
+	var ar_id = wells[Math.floor(Math.random()*wells.length)]+parseInt(1+Math.floor(Math.random()*3));
+	if (document.getElementById(ar_id)) { return document.getElementById(ar_id).href; } else { return "http://www.nytimes.com";}
+}
+
+function google_ad_request_done(ads) {
+	var s = "";
+
+	if (ads.length == 0) {
+		return;
+	} else if (ads.length == 1 && ads[0].type != 'image') {
+		google_ad_section_line_height = "22px";
+		google_ad_section_padding_left = "12px";
+		google_title_link_font_size = "18px";
+		google_ad_text_font_size = "14px";
+		google_visible_url_font_size = "14px";
+		google_target_div = 'SponLinkHP';
+	} else if (ads[0].type != 'image') {
+		google_ad_section_line_height = "14px";
+		google_ad_section_padding_left = "7px";
+		google_title_link_font_size = "12px";
+		google_ad_text_font_size = "11px";
+		google_visible_url_font_size = "10px";
+		google_target_div = 'SponLinkHP';
+	}
+	s += '<table width="100%" height="" border="0" cellspacing="0" cellpadding="0" style="width:100%; border-style: solid; border-width: 1px; border-color: #9da3ad" >\n<tr>\n<td style="font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333;" valign="top"><table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; height:100%;">\n<tr>\n <td style="background-color:#9da3ad; width:70%; height:20px; padding-top:2px; padding-left:11px; padding-bottom:2px; font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333;" width="70%" height="20" bgcolor="#9da3ad" ><span style="font-size: 12px; font-weight: normal; color:#ffffff;" >Ads by Google</span></td>\n<td style="padding-top:2px; padding-bottom:2px; width:30%; height:20px; align:right; background-color:#9da3ad; font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333;" width="30%" height="20" align="right" bgcolor="#9da3ad" ><span><a style="font-family:Arial,Helvetica,sans-serif; color: white; font-size:12px; padding-right:7px;" href="http://www.nytimes.com/ref/membercenter/faq/linkingqa16.html" onclick="window.open(\'\',\'popupad\',\'left=100,top=100,width=390,height=390,resizable,scrollbars=no\')" target="popupad">what\'s this?</a></span></td>\n</tr>\n</table>\n</td>\n</tr>\n<tr>\n<td style="height:110px; font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333;" valign="top" height="110"><table height="100%" width="100%" cellpadding="4" cellspacing="0" border="0" bgcolor="#f8f8f9" style="height:100%; width:100%; padding:4px; background-color:#f8f8f9;">\n';
+	for (i = 0; i < ads.length; ++i) {
+	   s += '<tr>\n<td style="font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333333; background-color:#f8f8f9;" valign="middle" >\n<div style="line-height:' + google_ad_section_line_height + '; padding-left:' + google_ad_section_padding_left + '; padding-bottom:5px;" >\n<a href="' + ads[i].url + '" target="_blank" style="font-size:' + google_title_link_font_size + '; color:#000066; font-weight:bold; text-decoration:underline;"> ' + ads[i].line1 + '</a><br>\n' + ads[i].line2 + ' ' + ads[i].line3 + '<br>\n<a href="' + ads[i].url + '" target="_blank" style="font-size:' + google_visible_url_font_size + '; color:#000066; font-weight:normal; text-decoration:none;">' + ads[i].visible_url + '</a>\n</div>\n </td>\n</tr>\n';
+	}
+	s += '</table>\n</td>\n</tr>\n</table>';
+	document.getElementById(google_target_div).innerHTML = s;
+	return;
+}
+google_ad_output = 'js';
+google_max_num_ads = '3';
+google_ad_client = 'ca-nytimes_homepage_js';
+google_safe = 'high';
+google_ad_channel = 'pg_url_test';
+google_targeting = 'content';
+if (window.nyt_google_count) { google_skip = nyt_google_count; }
+google_ad_section = 'default';
+google_hints = 'business news online,us news online,online us news,top online news,business international news,online latest news';
+// -->
+</script>
+
+<script type="text/javascript" language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+</div>
+
+</div>
+</div><!--close cColumn -->    
+</div><!--close spanAB --> 
+</div><!--close column --> 
+</div><!--close doubleRule -->
+</div><!--close baseLayout -->
+</div><!--close main -->
+<footer class="pageFooter">
+<div class="inset">
+<nav class="pageFooterNav">
+<ul class="pageFooterNavList wrap">
+<li class="firstItem"><a href="http://www.nytco.com/">&copy; 2013 The New York Times Company</a></li>
+<li><a href="http://spiderbites.nytimes.com/">Site Map</a></li>
+<li><a href="http://www.nytimes.com/privacy">Privacy</a></li>
+<li><a href="http://www.nytimes.com/ref/membercenter/help/privacy.html#pp">Your Ad Choices</a></li>
+<li><a href="http://www.nytimes.whsites.net/mediakit/">Advertise</a></li>
+<li><a href="http://www.nytimes.com/content/help/rights/sale/terms-of-sale.html ">Terms of Sale</a></li>
+<li><a href="http://www.nytimes.com/ref/membercenter/help/agree.html">Terms of Service</a></li>
+<li><a href="http://www.nytco.com/careers">Work With Us</a></li>
+<li><a href="http://www.nytimes.com/rss">RSS</a></li>
+<li><a href="http://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+<li><a href="http://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+<li class="lastItem"><a href="/membercenter/feedback.html">Site Feedback</a></li>
+</ul>
+</nav>
+</div><!--close inset -->
+</footer><!--close pageFooter -->
+</div><!--close page -->
+</div><!--close shell -->
+<script type = "text/javascript" language = "JavaScript">
+    var NYTArticleCommentCounts = {"http:\/\/www.nytimes.com\/2013\/05\/12\/education\/on-the-waiting-list-some-college-applicants-try-a-little-dazzle.html":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/education\/on-the-waiting-list-some-college-applicants-try-a-little-dazzle.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/friedman-the-yemeni-way.html":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/friedman-the-yemeni-way.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/one-scene-42-takes-and-2-hours-in-a-bathroom-stall.html":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/one-scene-42-takes-and-2-hours-in-a-bathroom-stall.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/nyregion\/doubts-about-detective-haunt-50-murder-cases.html":{"count":57,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/nyregion\/doubts-about-detective-haunt-50-murder-cases.html"},"http:\/\/theater.nytimes.com\/show\/119555\/Mariquitas\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/theater.nytimes.com\/show\/119555\/Mariquitas\/overview"},"http:\/\/movies.nytimes.com\/movie\/289678\/Mimic-Sentinel\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/289678\/Mimic-Sentinel\/overview"},"http:\/\/movies.nytimes.com\/movie\/240991\/Mimic-2-Hardshell\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/240991\/Mimic-2-Hardshell\/overview"},"http:\/\/www.nytimes.com\/restaurants\/1118393389492\/sarabeths\/details.html":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/restaurants\/1118393389492\/sarabeths\/details.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/douthat-the-taxman-vs-the-tea-party.html":{"count":4,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/douthat-the-taxman-vs-the-tea-party.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/first-steps-to-a-better-immigration-bill.html":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/first-steps-to-a-better-immigration-bill.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/dowd-when-myths-collide-in-the-capital.html":{"count":2,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/dowd-when-myths-collide-in-the-capital.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/collins-is-yours-more-corrupt-than-mine.html":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/collins-is-yours-more-corrupt-than-mine.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/bruni-america-the-clueless.html":{"count":4,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/opinion\/sunday\/bruni-america-the-clueless.html"},"http:\/\/movies.nytimes.com\/movie\/1513\/Alien-Prey\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/1513\/Alien-Prey\/overview"},"http:\/\/movies.nytimes.com\/movie\/470718\/Venus-and-Serena\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/470718\/Venus-and-Serena\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/12\/nyregion\/do-they-really-tawk-like-that-not-now.html":{"count":3,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/nyregion\/do-they-really-tawk-like-that-not-now.html"},"http:\/\/movies.nytimes.com\/movie\/470989\/Released\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/470989\/Released\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/12\/world\/asia\/pakistan-election.html":{"count":65,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/world\/asia\/pakistan-election.html"},"http:\/\/movies.nytimes.com\/movie\/462750\/Peeples\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/462750\/Peeples\/overview"},"http:\/\/movies.nytimes.com\/movie\/41573\/The-Road-to-Hong-Kong\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/41573\/The-Road-to-Hong-Kong\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/11\/opinion\/nocera-the-man-at-the-piano.html":{"count":50,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/opinion\/nocera-the-man-at-the-piano.html"},"http:\/\/www.nytimes.com\/2013\/05\/11\/opinion\/beyond-basketball-and-bigotry-workplace-discrimination-based-on-sexual-orientation.html":{"count":94,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/opinion\/beyond-basketball-and-bigotry-workplace-discrimination-based-on-sexual-orientation.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/gin-doesnt-make-you-sad.html":{"count":3,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/gin-doesnt-make-you-sad.html"},"http:\/\/www.nytimes.com\/interactive\/2013\/05\/12\/nyregion\/brooklyn-hip-hop-tour.html":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/interactive\/2013\/05\/12\/nyregion\/brooklyn-hip-hop-tour.html"},"http:\/\/www.nytimes.com\/2013\/05\/11\/us\/politics\/benghazi-e-mails-put-white-house-on-the-defensive.html":{"count":463,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/us\/politics\/benghazi-e-mails-put-white-house-on-the-defensive.html"},"http:\/\/www.nytimes.com\/2013\/05\/11\/business\/media\/privacy-breach-on-bloombergs-data-terminals.html":{"count":80,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/business\/media\/privacy-breach-on-bloombergs-data-terminals.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/what-cecile-richards-has-learned-from-todd-akin.html":{"count":8,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/what-cecile-richards-has-learned-from-todd-akin.html"},"http:\/\/www.nytimes.com\/restaurants\/1248069043410\/cherry\/details.html":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/restaurants\/1248069043410\/cherry\/details.html"},"http:\/\/www.nytimes.com\/2013\/05\/11\/health\/judge-refuses-to-drop-order-on-contraceptive-pill-without-regard-to-age.html":{"count":214,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/health\/judge-refuses-to-drop-order-on-contraceptive-pill-without-regard-to-age.html"},"http:\/\/travel.nytimes.com\/2013\/05\/12\/travel\/a-midsummer-days-dream-in-sweden.html":{"count":10,"commentsEnabled":true,"assetUrl":"http:\/\/travel.nytimes.com\/2013\/05\/12\/travel\/a-midsummer-days-dream-in-sweden.html"},"http:\/\/movies.nytimes.com\/movie\/467750\/The-Girls-in-the-Band\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/467750\/The-Girls-in-the-Band\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/11\/sports\/blind-athletes-treat-pole-vault-like-any-other-hurdle.html":{"count":13,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/sports\/blind-athletes-treat-pole-vault-like-any-other-hurdle.html"},"http:\/\/movies.nytimes.com\/movie\/470992\/The-Second-Meeting\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/470992\/The-Second-Meeting\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/paul-mccarthy-the-demented-imagineer.html":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/paul-mccarthy-the-demented-imagineer.html"},"http:\/\/www.nytimes.com\/2013\/05\/11\/science\/earth\/carbon-dioxide-level-passes-long-feared-milestone.html":{"count":700,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/science\/earth\/carbon-dioxide-level-passes-long-feared-milestone.html"},"http:\/\/theater.nytimes.com\/show\/123216\/A-Public-Reading-Of-An-Unproduced-Screenplay-About-The-Death-Of-Walt-Disney\/overview":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/theater.nytimes.com\/show\/123216\/A-Public-Reading-Of-An-Unproduced-Screenplay-About-The-Death-Of-Walt-Disney\/overview"},"http:\/\/theater.nytimes.com\/show\/119244\/Cooking-to-me-is-Poetry\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/theater.nytimes.com\/show\/119244\/Cooking-to-me-is-Poetry\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/12\/realestate\/paying-a-premium-for-sky-high-apartments.html":{"count":110,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/realestate\/paying-a-premium-for-sky-high-apartments.html"},"http:\/\/www.nytimes.com\/2013\/05\/11\/business\/economy\/student-loan-debt-weighing-down-younger-us-workers.html":{"count":577,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/business\/economy\/student-loan-debt-weighing-down-younger-us-workers.html"},"":{"count":0,"commentsEnabled":true,"assetUrl":""},"http:\/\/www.nytimes.com\/2013\/05\/10\/booming\/married-with-children-a-dedication-that-held-it-all-together.html":{"count":37,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/booming\/married-with-children-a-dedication-that-held-it-all-together.html"},"http:\/\/movies.nytimes.com\/movie\/79912\/How-to-Commit-Marriage\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/79912\/How-to-Commit-Marriage\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/omds-plot-against-rock.html":{"count":18,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/omds-plot-against-rock.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/booming\/taking-care-of-my-baby-my-miata.html":{"count":50,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/booming\/taking-care-of-my-baby-my-miata.html"},"http:\/\/www.nytimes.com\/2013\/05\/11\/world\/middleeast\/3-ultra-orthodox-men-arrested-in-western-wall-standoff.html":{"count":954,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/11\/world\/middleeast\/3-ultra-orthodox-men-arrested-in-western-wall-standoff.html"},"http:\/\/movies.nytimes.com\/movie\/465230\/Love-is-All-You-Need\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/465230\/Love-is-All-You-Need\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/confessions-of-an-art-conservators-sidekick.html":{"count":4,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/confessions-of-an-art-conservators-sidekick.html"},"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/after-plant-explosion-texas-remains-wary-of-regulation.html":{"count":191,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/after-plant-explosion-texas-remains-wary-of-regulation.html"},"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/disease-threatens-floridas-citrus-industry.html":{"count":80,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/disease-threatens-floridas-citrus-industry.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/should-i-protect-a-patient-at-the-expense-of-an-innocent-stranger.html":{"count":25,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/should-i-protect-a-patient-at-the-expense-of-an-innocent-stranger.html"},"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/politics\/in-bombings-a-bitter-bookend-for-robert-mueller.html":{"count":69,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/politics\/in-bombings-a-bitter-bookend-for-robert-mueller.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/who-made-that-digital-camouflage.html":{"count":9,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/who-made-that-digital-camouflage.html"},"http:\/\/movies.nytimes.com\/movie\/466666\/Sightseers\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/466666\/Sightseers\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/10\/sports\/alex-ferguson-is-among-historys-greatest-coaches.html":{"count":171,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/sports\/alex-ferguson-is-among-historys-greatest-coaches.html"},"http:\/\/theater.nytimes.com\/show\/116370\/Encores-Rodgers-Harts-On-Your-Toes\/overview":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/theater.nytimes.com\/show\/116370\/Encores-Rodgers-Harts-On-Your-Toes\/overview"},"http:\/\/movies.nytimes.com\/movie\/461669\/No-One-Lives\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/461669\/No-One-Lives\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/10\/opinion\/the-next-pandemic-is-closer-than-you-think.html":{"count":164,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/opinion\/the-next-pandemic-is-closer-than-you-think.html"},"http:\/\/www.nytimes.com\/2013\/05\/10\/opinion\/brooks-started-at-the-bottom.html":{"count":202,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/opinion\/brooks-started-at-the-bottom.html"},"http:\/\/www.nytimes.com\/2013\/05\/10\/opinion\/krugman-bernanke-blower-of-bubbles.html":{"count":529,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/opinion\/krugman-bernanke-blower-of-bubbles.html"},"http:\/\/www.nytimes.com\/2013\/05\/10\/opinion\/the-republicans-benghazi-obsession.html":{"count":625,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/opinion\/the-republicans-benghazi-obsession.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/realestate\/new-bells-and-whistles-for-an-old-firehouse.html":{"count":3,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/realestate\/new-bells-and-whistles-for-an-old-firehouse.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/fashion\/moms-cooking-comes-between-a-husband-and-wife.html":{"count":89,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/fashion\/moms-cooking-comes-between-a-husband-and-wife.html"},"http:\/\/movies.nytimes.com\/movie\/470019\/Scatter-My-Ashes-at-Bergdorf-s\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/470019\/Scatter-My-Ashes-at-Bergdorf-s\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/10\/arts\/design\/moma-reconsiders-plan-to-raze-folk-art-museum.html":{"count":130,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/arts\/design\/moma-reconsiders-plan-to-raze-folk-art-museum.html"},"http:\/\/movies.nytimes.com\/movie\/461367\/Salinger\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/461367\/Salinger\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/politics\/senate-panel-considers-amendments-on-immigration-bill.html":{"count":144,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/politics\/senate-panel-considers-amendments-on-immigration-bill.html"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/shonda-rhimes.html":{"count":82,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/shonda-rhimes.html"},"http:\/\/www.nytimes.com\/2013\/05\/14\/science\/marvels-and-a-few-mysteries-in-cicadas-17-years.html":{"count":164,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/14\/science\/marvels-and-a-few-mysteries-in-cicadas-17-years.html"},"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/cleveland-kidnapping.html":{"count":301,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/us\/cleveland-kidnapping.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/booming\/baby-boomer-restaurant-visits-are-up.html":{"count":32,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/booming\/baby-boomer-restaurant-visits-are-up.html"},"http:\/\/www.nytimes.com\/2013\/05\/10\/health\/prices-cut-for-hpv-cervical-cancer-vaccines-for-neediest.html":{"count":146,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/10\/health\/prices-cut-for-hpv-cervical-cancer-vaccines-for-neediest.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/fashion\/for-office-workers-lunchtime-dance-parties.html":{"count":58,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/fashion\/for-office-workers-lunchtime-dance-parties.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/world\/middleeast\/syrian-refugees-in-jordan-struggle-to-survive.html":{"count":38,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/world\/middleeast\/syrian-refugees-in-jordan-struggle-to-survive.html"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/both-parties-are-guilty-of-using-hearings-for-political-gain":{"count":12,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/both-parties-are-guilty-of-using-hearings-for-political-gain"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/congress-acts-when-media-and-others-fail":{"count":14,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/congress-acts-when-media-and-others-fail"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/grandstanding-and-hype":{"count":21,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/grandstanding-and-hype"},"http:\/\/www.nytimes.com\/2013\/05\/09\/world\/former-top-lawyer-in-state-dept-criticizes-drone-secrecy.html":{"count":11,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/world\/former-top-lawyer-in-state-dept-criticizes-drone-secrecy.html"},"http:\/\/theater.nytimes.com\/show\/123215\/The-Notebook-of-Trigorin\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/theater.nytimes.com\/show\/123215\/The-Notebook-of-Trigorin\/overview"},"http:\/\/movies.nytimes.com\/movie\/123885\/Bates-Motel\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/123885\/Bates-Motel\/overview"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/new-details-often-come-out-of-congressional-hearings":{"count":43,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/new-details-often-come-out-of-congressional-hearings"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/congress-is-attracted-to-scandal-and-attack-mode":{"count":80,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/congress-is-attracted-to-scandal-and-attack-mode"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/even-with-the-politics-hearings-can-provide-answers":{"count":6,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/08\/are-congressional-hearings-serious-investigations-or-just-party-politics\/even-with-the-politics-hearings-can-provide-answers"},"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/the-jamie-dimon-witch-hunt.html":{"count":167,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/the-jamie-dimon-witch-hunt.html"},"http:\/\/tv.nytimes.com\/show\/5317722\/Song-of-Lunch\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/tv.nytimes.com\/show\/5317722\/Song-of-Lunch\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/diplomatic-stirrings-on-syria.html":{"count":79,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/diplomatic-stirrings-on-syria.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/collins-guess-whos-back.html":{"count":630,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/collins-guess-whos-back.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/yu-in-china-power-is-arrogant.html":{"count":88,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/yu-in-china-power-is-arrogant.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/blow-terms-of-art.html":{"count":516,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/opinion\/blow-terms-of-art.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/world\/europe\/boston-bombing-inquiry-looks-closely-at-russia-trip.html":{"count":169,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/world\/europe\/boston-bombing-inquiry-looks-closely-at-russia-trip.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/booming\/the-700-doll-question.html":{"count":50,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/booming\/the-700-doll-question.html"},"http:\/\/theater.nytimes.com\/show\/105295\/bunty-berman-presents-\/overview":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/theater.nytimes.com\/show\/105295\/bunty-berman-presents-\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/09\/us\/a-bid-to-thwart-los-angeles-times-sale-to-kochs.html":{"count":173,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/us\/a-bid-to-thwart-los-angeles-times-sale-to-kochs.html"},"http:\/\/travel.nytimes.com\/2013\/05\/12\/travel\/cruise-mishaps-how-normal-are-they.html":{"count":76,"commentsEnabled":true,"assetUrl":"http:\/\/travel.nytimes.com\/2013\/05\/12\/travel\/cruise-mishaps-how-normal-are-they.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/sports\/battle-of-the-nations-a-holy-grail-of-battle-re-enactments.html":{"count":94,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/sports\/battle-of-the-nations-a-holy-grail-of-battle-re-enactments.html"},"http:\/\/movies.nytimes.com\/movie\/470968\/The-Happy-House\/overview":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/470968\/The-Happy-House\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/09\/us\/politics\/in-immigration-bill-deportees-see-hope-for-second-chance.html":{"count":154,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/us\/politics\/in-immigration-bill-deportees-see-hope-for-second-chance.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/nyregion\/court-to-name-officials-recorded-in-corruption-inquiry.html":{"count":139,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/nyregion\/court-to-name-officials-recorded-in-corruption-inquiry.html"},"http:\/\/www.nytimes.com\/interactive\/2013\/05\/12\/magazine\/bittman-spring-rolls.html":{"count":7,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/interactive\/2013\/05\/12\/magazine\/bittman-spring-rolls.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/business\/global\/fair-trade-movement-extends-to-clothing.html":{"count":247,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/business\/global\/fair-trade-movement-extends-to-clothing.html"},"http:\/\/www.nytimes.com\/2013\/05\/09\/business\/energy-environment\/a-call-for-quid-pro-quo-on-keystone-pipeline-approval.html":{"count":338,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/09\/business\/energy-environment\/a-call-for-quid-pro-quo-on-keystone-pipeline-approval.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/booming\/advice-on-practicing-yoga-in-middle-age-part-1.html":{"count":56,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/booming\/advice-on-practicing-yoga-in-middle-age-part-1.html"},"http:\/\/movies.nytimes.com\/movie\/4460\/The-Beast-from-20-000-Fathoms\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/4460\/The-Beast-from-20-000-Fathoms\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/who-would-kill-a-monk-seal.html":{"count":151,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/who-would-kill-a-monk-seal.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/business\/hospital-billing-varies-wildly-us-data-shows.html":{"count":708,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/business\/hospital-billing-varies-wildly-us-data-shows.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/education\/in-california-diversity-in-college-starts-earlier.html":{"count":228,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/education\/in-california-diversity-in-college-starts-earlier.html"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/07\/at-what-age-should-sex-education-begin\/schools-should-start-sex-education-in-kindergarten":{"count":19,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/07\/at-what-age-should-sex-education-begin\/schools-should-start-sex-education-in-kindergarten"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/07\/at-what-age-should-sex-education-begin\/parents-are-always-teaching-about-sex-sometimes-accidentally":{"count":37,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/07\/at-what-age-should-sex-education-begin\/parents-are-always-teaching-about-sex-sometimes-accidentally"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/07\/at-what-age-should-sex-education-begin\/start-sex-education-early-definitely-before-puberty":{"count":44,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/07\/at-what-age-should-sex-education-begin\/start-sex-education-early-definitely-before-puberty"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/07\/at-what-age-should-sex-education-begin\/sex-education-for-kindergarten-and-beyond":{"count":80,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/07\/at-what-age-should-sex-education-begin\/sex-education-for-kindergarten-and-beyond"},"http:\/\/www.nytimes.com\/2013\/05\/08\/opinion\/an-economic-statecraft-model.html":{"count":48,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/opinion\/an-economic-statecraft-model.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/opinion\/dowd-americas-military-injustice.html":{"count":464,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/opinion\/dowd-americas-military-injustice.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/us\/politics\/obama-may-back-fbi-plan-to-wiretap-web-users.html":{"count":483,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/us\/politics\/obama-may-back-fbi-plan-to-wiretap-web-users.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/opinion\/friedman-postcard-from-yemen.html":{"count":131,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/opinion\/friedman-postcard-from-yemen.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/opinion\/the-pentagons-sexual-assault-crisis.html":{"count":239,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/opinion\/the-pentagons-sexual-assault-crisis.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/dining\/replanting-the-rust-belt.html":{"count":83,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/dining\/replanting-the-rust-belt.html"},"http:\/\/movies.nytimes.com\/movie\/101293\/Man-of-Iron\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/101293\/Man-of-Iron\/overview"},"http:\/\/movies.nytimes.com\/movie\/470861\/One-Track-Heart-The-Story-of-Krishna-Das\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/470861\/One-Track-Heart-The-Story-of-Krishna-Das\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/08\/world\/middleeast\/syria-golan-heights-united-nations.html":{"count":91,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/world\/middleeast\/syria-golan-heights-united-nations.html"},"http:\/\/movies.nytimes.com\/movie\/339226\/The-Ballad-of-Louie-the-Louse\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/339226\/The-Ballad-of-Louie-the-Louse\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/08\/us\/politics\/pentagon-study-sees-sharp-rise-in-sexual-assaults.html":{"count":625,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/us\/politics\/pentagon-study-sees-sharp-rise-in-sexual-assaults.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/booming\/from-sex-pistols-to-gaslight-anthem-and-green-day.html":{"count":9,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/booming\/from-sex-pistols-to-gaslight-anthem-and-green-day.html"},"http:\/\/www.nytimes.com\/roomfordebate\/2012\/10\/10\/does-the-law-support-inventors-or-investors\/copyright-law-and-the-art-it-inspires":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2012\/10\/10\/does-the-law-support-inventors-or-investors\/copyright-law-and-the-art-it-inspires"},"http:\/\/www.nytimes.com\/2013\/05\/08\/us\/south-carolina-election-a-referendum-on-sanford.html":{"count":832,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/us\/south-carolina-election-a-referendum-on-sanford.html"},"http:\/\/www.nytimes.com\/2013\/05\/08\/nyregion\/chris-christie-secretly-had-weight-loss-surgery.html":{"count":468,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/08\/nyregion\/chris-christie-secretly-had-weight-loss-surgery.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/sports\/baseball\/the-worst-salary-contracts-in-new-york-sports-history.html":{"count":16,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/sports\/baseball\/the-worst-salary-contracts-in-new-york-sports-history.html"},"http:\/\/theater.nytimes.com\/show\/117293\/Blood-Brothers\/overview":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/theater.nytimes.com\/show\/117293\/Blood-Brothers\/overview"},"http:\/\/movies.nytimes.com\/movie\/309926\/The-President-s-Barber\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/309926\/The-President-s-Barber\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/07\/us\/politics\/gop-is-readying-a-new-offensive-over-health-law.html":{"count":580,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/us\/politics\/gop-is-readying-a-new-offensive-over-health-law.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/business\/pfizer-begins-selling-viagra-online.html":{"count":65,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/business\/pfizer-begins-selling-viagra-online.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/world\/asia\/us-accuses-chinas-military-in-cyberattacks.html":{"count":264,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/world\/asia\/us-accuses-chinas-military-in-cyberattacks.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/technology\/personaltech\/google-glass-picks-up-early-signal-keep-out.html":{"count":619,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/technology\/personaltech\/google-glass-picks-up-early-signal-keep-out.html"},"http:\/\/movies.nytimes.com\/movie\/457425\/The-Great-Gatsby\/overview":{"count":42,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/457425\/The-Great-Gatsby\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/the-food-truck-business-stinks.html":{"count":99,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/12\/magazine\/the-food-truck-business-stinks.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/booming\/a-night-of-karaoke-and-moms-in-the-lead.html":{"count":13,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/booming\/a-night-of-karaoke-and-moms-in-the-lead.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/the-best-little-boy-in-the-world-thats-me.html":{"count":159,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/the-best-little-boy-in-the-world-thats-me.html"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/poor-people-have-the-same-health-insurance-needs-as-others":{"count":16,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/poor-people-have-the-same-health-insurance-needs-as-others"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/routine-illness-can-be-devastating":{"count":25,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/routine-illness-can-be-devastating"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/almost-any-cost-is-catastrophic-if-youre-poor":{"count":59,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/almost-any-cost-is-catastrophic-if-youre-poor"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/oregon-study-shows-why-adding-more-people-to-medicaid-is-a-bad-idea":{"count":74,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/oregon-study-shows-why-adding-more-people-to-medicaid-is-a-bad-idea"},"http:\/\/theater.nytimes.com\/show\/102587\/Pinkolandia\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/theater.nytimes.com\/show\/102587\/Pinkolandia\/overview"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/why-expand-health-care-with-no-proven-benefits":{"count":100,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/06\/more-medicaid-more-health\/why-expand-health-care-with-no-proven-benefits"},"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/nocera-the-chancellors-lament.html":{"count":141,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/nocera-the-chancellors-lament.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/in-manhattan-real-estate-wealth-and-power-are-relatives.html":{"count":116,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/in-manhattan-real-estate-wealth-and-power-are-relatives.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/corruption-in-albany.html":{"count":94,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/corruption-in-albany.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/vigilante-copy-editor.html":{"count":287,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/vigilante-copy-editor.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/nyregion\/a-sheiks-vision-could-trump-plan-for-a-queens-park.html":{"count":25,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/nyregion\/a-sheiks-vision-could-trump-plan-for-a-queens-park.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/brooks-beyond-the-fence.html":{"count":378,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/brooks-beyond-the-fence.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/bruni-religion-beyond-the-right.html":{"count":407,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/opinion\/bruni-religion-beyond-the-right.html"},"http:\/\/movies.nytimes.com\/movie\/91730\/Flight-for-Freedom\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/91730\/Flight-for-Freedom\/overview"},"http:\/\/movies.nytimes.com\/movie\/470970\/Occupy-Love\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/470970\/Occupy-Love\/overview"},"http:\/\/movies.nytimes.com\/movie\/307741\/Calvaire-The-Ordeal-\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/307741\/Calvaire-The-Ordeal-\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/07\/us\/suit-cites-race-bias-in-farms-use-of-immigrants.html":{"count":559,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/us\/suit-cites-race-bias-in-farms-use-of-immigrants.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/science\/blaschka-glass-menagerie-inspires-marine-expedition.html":{"count":45,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/science\/blaschka-glass-menagerie-inspires-marine-expedition.html"},"http:\/\/www.nytimes.com\/2013\/05\/07\/business\/media\/youtube-said-to-be-planning-a-subscription-option.html":{"count":106,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/07\/business\/media\/youtube-said-to-be-planning-a-subscription-option.html"},"http:\/\/movies.nytimes.com\/movie\/445443\/Syrup\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/445443\/Syrup\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/06\/world\/middleeast\/attacks-on-syria-fuel-debate-over-us-led-airstrikes.html":{"count":88,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/world\/middleeast\/attacks-on-syria-fuel-debate-over-us-led-airstrikes.html"},"http:\/\/www.nytimes.com\/2013\/05\/06\/booming\/new-video-series-re-examines-garbage-barge-fiasco.html":{"count":49,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/booming\/new-video-series-re-examines-garbage-barge-fiasco.html"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/in-denmark-generous-vacation-is-an-investment-in-creativity":{"count":16,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/in-denmark-generous-vacation-is-an-investment-in-creativity"},"http:\/\/www.nytimes.com\/2013\/05\/06\/business\/port-chester-ny-is-transformed-by-immigration.html":{"count":329,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/business\/port-chester-ny-is-transformed-by-immigration.html"},"http:\/\/www.nytimes.com\/2013\/05\/06\/us\/politics\/in-penny-pritzkers-08-answers-on-finances-hints-at-road-ahead.html":{"count":195,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/us\/politics\/in-penny-pritzkers-08-answers-on-finances-hints-at-road-ahead.html"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/in-france-cut-spending-to-preserve-social-protection":{"count":12,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/in-france-cut-spending-to-preserve-social-protection"},"http:\/\/www.nytimes.com\/2013\/05\/06\/business\/media\/solving-equation-of-a-hit-film-script-with-data.html":{"count":334,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/business\/media\/solving-equation-of-a-hit-film-script-with-data.html"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/scandanavian-countries-benefit-from-high-wages":{"count":25,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/scandanavian-countries-benefit-from-high-wages"},"http:\/\/www.nytimes.com\/2013\/05\/06\/us\/terrorists-find-online-education-for-attacks.html":{"count":489,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/us\/terrorists-find-online-education-for-attacks.html"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/the-sozialstaat-keeps-germans-engaged":{"count":25,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/the-sozialstaat-keeps-germans-engaged"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/welfare-state-reform-is-mostly-about-getting-older":{"count":20,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/welfare-state-reform-is-mostly-about-getting-older"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/denmarks-welfare-state-works":{"count":129,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/denmarks-welfare-state-works"},"http:\/\/tv.nytimes.com\/show\/5121536\/Veep\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/tv.nytimes.com\/show\/5121536\/Veep\/overview"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/reforms-are-tactical-in-denmark":{"count":15,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/reforms-are-tactical-in-denmark"},"http:\/\/movies.nytimes.com\/movie\/470959\/Fragments-of-Kubelka\/overview":{"count":1,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/470959\/Fragments-of-Kubelka\/overview"},"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/when-welfare-undermines-work-ethic":{"count":134,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/roomfordebate\/2013\/05\/05\/denmarks-work-life-balance\/when-welfare-undermines-work-ethic"},"http:\/\/www.nytimes.com\/2013\/05\/06\/opinion\/a-disappointing-debut-at-the-sec.html":{"count":192,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/opinion\/a-disappointing-debut-at-the-sec.html"},"http:\/\/www.nytimes.com\/2013\/05\/06\/opinion\/keller-syria-is-not-iraq.html":{"count":367,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/opinion\/keller-syria-is-not-iraq.html"},"http:\/\/www.nytimes.com\/2013\/05\/06\/opinion\/krugman-the-chutzpah-caucus.html":{"count":530,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/opinion\/krugman-the-chutzpah-caucus.html"},"http:\/\/www.nytimes.com\/2013\/05\/06\/us\/wrongfully-convicted-find-their-record-haunts-them.html":{"count":104,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/us\/wrongfully-convicted-find-their-record-haunts-them.html"},"http:\/\/www.nytimes.com\/2013\/05\/06\/world\/middleeast\/after-strikes-in-syria-concerns-about-an-escalation-of-fighting.html":{"count":327,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/world\/middleeast\/after-strikes-in-syria-concerns-about-an-escalation-of-fighting.html"},"http:\/\/www.nytimes.com\/2013\/05\/06\/sports\/concussion-fears-lead-to-growth-in-specialized-clinics-for-young-athletes.html":{"count":85,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/06\/sports\/concussion-fears-lead-to-growth-in-specialized-clinics-for-young-athletes.html"},"http:\/\/www.nytimes.com\/2013\/05\/05\/fashion\/urban-gardening-an-appleseed-with-attitude.html":{"count":19,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/05\/fashion\/urban-gardening-an-appleseed-with-attitude.html"},"http:\/\/www.nytimes.com\/2013\/05\/05\/travel\/practicing-yoga-at-30000-feet.html":{"count":4,"commentsEnabled":true,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/05\/travel\/practicing-yoga-at-30000-feet.html"},"http:\/\/www.nytimes.com\/2013\/05\/05\/world\/middleeast\/obamas-vow-on-chemical-weapons-puts-him-in-tough-spot.html":{"count":471,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/05\/world\/middleeast\/obamas-vow-on-chemical-weapons-puts-him-in-tough-spot.html"},"http:\/\/movies.nytimes.com\/movie\/463780\/1-000-White-Women\/overview":{"count":0,"commentsEnabled":true,"assetUrl":"http:\/\/movies.nytimes.com\/movie\/463780\/1-000-White-Women\/overview"},"http:\/\/www.nytimes.com\/2013\/05\/05\/opinion\/sunday\/a-childs-wild-kingdom.html":{"count":58,"commentsEnabled":false,"assetUrl":"http:\/\/www.nytimes.com\/2013\/05\/05\/opinion\/sunday\/a-childs-wild-kingdom.html"}}</script>		
+<IMG CLASS="hidden" SRC="/adx/bin/clientside/fb9724dQ2FQ23Q23Q23Q2A.-nQ51Q5B-XQ23Q51Q60-@Q20l1dXm-Nsd7rQ60Q5EQ5BNoQ60oQ60Q2AQ2AQ22Q60v7xQ2A" height="1" width="3">
+
+
+
+
+
+
+<script type="text/javascript" src="http://js.nyt.com/js2/build/homepage/bottom.js"></script>
+
+			
+		<!-- Start UPT call -->
+		<img height="1" width="3" border=0 src="http://up.nytimes.com/?d=0/1/&t=1&s=0&ui=&r=&u=%2f%3f">
+		<!-- End UPT call -->
+	
+		
+        <script language="JavaScript"><!--
+          var dcsvid="";
+          var regstatus="non-registered";
+        //--></script>
+        <script src="http://graphics8.nytimes.com/js/app/analytics/trackingTags_v1.1.js" type="text/javascript"></script>
+        <noscript>
+          <div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://wt.o.nytimes.com/dcsym57yw10000s1s8g0boozt_9t1x/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=1.0.7"/></div>
+        </noscript>
+   
+</body>
+</html>
+
+

@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "telnet www.economist.com 80" 
+echo "telnet www.finance.yahoo.com 80" 
 sleep 2 
-echo "GET http://www.economist.com/ HTTP/1.0"
+echo "GET http://www.finance.yahoo.com/ HTTP/1.0"
 echo "User-Agent: Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; GT-I9100 Build/GRH78) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
 echo
 echo 
