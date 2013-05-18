@@ -13,7 +13,7 @@ import fingerprinting.Fingerprinting;
 
 public class ProxyServer{
     
-	private IProcessor proc;
+    private IProcessor proc;
     private ICache cache;
     private ArrayList<Chunk> allChunks;
     private ArrayList<Integer> allFps;
@@ -69,6 +69,13 @@ public class ProxyServer{
 	    	}
 	    }
 	    return chunks;
+    }
+
+    public ArrayList<Chunk> chunkWebDataSliding(String path, int windowSize) throws IOException{
+	Chunking.setFile(path);
+	Chunking.setWindowSize(windowSize);
+    	ArrayList<Chunk> chunks = Chunking.getAllChunksSliding();
+	return chunks;
     }
     
     

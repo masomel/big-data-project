@@ -114,6 +114,50 @@ public class Mobile{
 	proc.processWebContent(neededChunks, cache);
 	return webcontent;
     } //ends reconstructData()
+
+    /** Given an Arraylist of Chunk objects, and a list of all fingerprints, for the webpage
+     *reconstruct the full web content in the form of a byte array using the data from the chunks
+     */
+    public byte[] reconstructDataSliding() throws FileNotFoundException{
+	
+	// the length of the entire webpage
+	int len = Chunking.getContentLength(); 
+
+	webcontent = new byte[len]; // array to hold the reconstructed web data
+
+	byte[] chunkData = new byte[1];
+
+	int offset = 0; // offset in web content array
+
+	for(int i = 0; i < neededChunks.size(); i++){
+
+	    Chunk c = neededChunks.get(i);
+
+	    if(c == null){
+		int fp = allFps.get(i);
+		Chunk cacheChunk = cache.get(fp);
+
+		if(cacheChunk == null){
+		    System.out.println("Something went wrong when mapping.");
+		}
+		
+		chunkData = cacheChunk.getData();
+	    }
+	    else{
+		chunkData = c.getData();
+	    }
+	    
+	    for(int j = 0; j < chunkData.length; j++){
+		webcontent[offset+j] = chunkData[j];
+	    }
+
+	    offset += chunkData.length;
+
+	}
+
+	proc.processWebContent(neededChunks, cache);
+	return webcontent;
+    } //ends reconstructDataSliding()
     
     public IProcessor getProcessor() {
     	return proc;
