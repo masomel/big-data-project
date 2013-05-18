@@ -14,7 +14,7 @@ import chunking.Chunking;
 
 public class Mobile{
     
-	private IProcessor proc;
+    private IProcessor proc;
     private ICache cache;
     private ArrayList<Integer> allFps;
     private ArrayList<Integer> neededFps;
@@ -123,11 +123,15 @@ public class Mobile{
 	// the length of the entire webpage
 	int len = Chunking.getContentLength(); 
 
+	System.out.println(len);
+
 	webcontent = new byte[len]; // array to hold the reconstructed web data
 
 	byte[] chunkData = new byte[1];
 
 	int offset = 0; // offset in web content array
+
+	System.out.println(neededChunks.size());
 
 	for(int i = 0; i < neededChunks.size(); i++){
 
@@ -146,12 +150,23 @@ public class Mobile{
 	    else{
 		chunkData = c.getData();
 	    }
+
+	    //System.out.println(chunkData.length);
 	    
-	    for(int j = 0; j < chunkData.length; j++){
-		webcontent[offset+j] = chunkData[j];
+	    int j = 0;
+	    try{
+		for(j = 0; j < chunkData.length; j++){
+		    webcontent[offset+j] = chunkData[j];
+		}
+	    }
+	    catch(IndexOutOfBoundsException e){
+		System.out.println(chunkData.length);
+		System.out.println(offset);
+		System.out.println(j);
 	    }
 
 	    offset += chunkData.length;
+	    //System.out.println(i);
 
 	}
 

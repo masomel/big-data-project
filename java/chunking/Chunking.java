@@ -133,6 +133,7 @@ public class Chunking {
 	    }
 	    catch(NumberFormatException e){
 		System.out.println("Oops");
+		return null;
 	    }
 	}
 
@@ -143,25 +144,33 @@ public class Chunking {
 	int lastbp = 0; // the last breakpoint in the file
 
 	// slide the window across the file bytes until reaching the end
-	for(int offset = 0; offset <= contentLen-window_size;){
+	for(int offset = 0; offset < contentLen-window_size;){
 
 	    byte[] window = new byte[window_size];
-	    for(int i = offset; i < window_size; i++){
-		window[offset-i] = fileBytes.get(i);
+	    for(int i = offset; i < offset+window_size; i++){
+		window[i-offset] = fileBytes.get(i);
 	    }
 	    
 	    int fp = Fingerprinting.fingerprint(window);
 	    byte[] data = new byte[MIN_CHUNK_SIZE];
 
-	    int isBp = fp | gamma;
+	    int isBp = fp & gamma;
+
+	    //System.out.println(fp +" & "+gamma+" = "+isBp);
 	    
 	    chunk_size = offset + window_size - lastbp;
 
 	    if(chunk_size == MAX_CHUNK_SIZE){
-		data = (byte[]) fileBytes.subList(lastbp, lastbp+chunk_size-1).toArray();
+		ArrayList<Byte> sublist = new ArrayList<Byte>(fileBytes.subList(lastbp, lastbp+chunk_size));
+		data = ArrayListToPrimByteArr(sublist);
+		
 		chunks.add(new Chunk(chunk_size, data));
 		lastbp = offset + window_size;
 		offset = lastbp;
+
+		
+		//System.out.println("chunk size: "+chunk_size);
+		//System.out.println("last bp: "+lastbp);
 	    }
 	    // if this is true, we have found our chunk boundary
 	    else if(isBp == 0){
@@ -171,12 +180,19 @@ public class Chunking {
 		    int rem = contentLen - (offset+window_size);
 		    if(rem < MIN_CHUNK_SIZE){
 			chunk_size = chunk_size + rem;
+			offset = offset + rem;
 		    }
 
-		    data = fileBytes.subList(lastbp, lastbp+chunk_size-1).toArray();
+		    ArrayList<Byte> sublist = new ArrayList<Byte>(fileBytes.subList(lastbp, lastbp+chunk_size));
+		    data = ArrayListToPrimByteArr(sublist);		    
+
 		    chunks.add(new Chunk(chunk_size, data));
 		    lastbp = offset + window_size;
 		    offset = lastbp;
+
+		    
+		    //System.out.println("chunk size: "+chunk_size);
+		    //System.out.println("last bp: "+lastbp);
 		}
 		else{
 		    offset++;
@@ -185,15 +201,27 @@ public class Chunking {
 	    else{
 		offset++;
 	    }
-
-	    System.out.println("chunk size: "+chunk_size);
-	    System.out.println("last bp: "+lastbp);
-	    System.out.println("offset: "+offset);
+	    
+	    //System.out.println("offset: "+offset);
 
 	}
 
+	System.out.println(chunks.size());
+
 	return chunks;
 
-    } //ends getNextChunkRolling()    
+    } //ends getNextChunkRolling()
+
+    private static byte[] ArrayListToPrimByteArr(ArrayList<Byte> arr){
+
+	byte[] out = new byte[arr.size()];
+
+	for(int i = 0; i < out.length; i++){
+	    out[i] = arr.get(i);
+	}
+
+	return out;
+
+    }
 
 }

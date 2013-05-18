@@ -72,9 +72,10 @@ public class ProxyServer{
     }
 
     public ArrayList<Chunk> chunkWebDataSliding(String path, int windowSize) throws IOException{
+	ArrayList<Chunk> chunks = new ArrayList<Chunk>();
 	Chunking.setFile(path);
 	Chunking.setWindowSize(windowSize);
-    	ArrayList<Chunk> chunks = Chunking.getAllChunksSliding();
+    	chunks = Chunking.getAllChunksSliding();
 	return chunks;
     }
     

@@ -51,8 +51,15 @@ public class SimulatorV2 implements ISimulator {
 		for(int i = 1; i <= numIters; i++) { // Caution: Hardcoded!
 			
 		    ArrayList<Chunk> chunks = new ArrayList<Chunk>();
-		    chunks = proxy.chunkWebDataSliding(path +"/packet_bytes/" + website + i + ".txt", window_size);
-		    
+
+		    try{
+			chunks = proxy.chunkWebDataSliding(path +"/packet_bytes/" + website + i + ".txt", window_size);
+		    }
+		    catch(IOException e){
+			System.out.println("An error occurred when trying to chunk data");
+			return;
+		    }
+
 		    System.out.println("Processing file: " + Chunking.getFilename());
 
 		    // System.out.println("Proxy server grabs all the web data for a requested webpage");		    
@@ -106,12 +113,13 @@ public class SimulatorV2 implements ISimulator {
 
 		    proxySum += proxy.getProcessor().getMissRate();
 		    mobSum += mobile.getProcessor().getMissRate();		
-			// Hardcoded number of sites!
-			System.out.print("Avg proxy missrate over all inspected sites: ");
-			customFormat("##.####", proxySum/numIters);
-			System.out.print("Avg mobile missrate over all inspected sites: ");
-			customFormat("##.####", mobSum/numIters);
 		} 
+
+		// Hardcoded number of sites!
+		System.out.print("Avg proxy missrate over all inspected sites: ");
+		customFormat("##.####", proxySum/numIters);
+		System.out.print("Avg mobile missrate over all inspected sites: ");
+		customFormat("##.####", mobSum/numIters);
 	}
         
     private static Chunk[] FPArrayListToChunkArray(ArrayList<Integer> fp, ICache cache){
