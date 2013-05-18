@@ -68,7 +68,7 @@ public class Data2 {
 					//Mob vs reg
 		int weblen = websites.length;
 		int timlen = timeofday.length;
-		for(int a=0; a<weblen; a++){
+		for(int a=1; a<4; a++){
 		  for(int d=0; d<2; d++){
 			for(int b=11; b<15; b++){
 				for(int c=0; c<timlen; c++){
@@ -168,7 +168,7 @@ public class Data2 {
 		sim.setOutputFile();
 		int weblen = websites.length;
 		int timlen = timeofday.length;
-		for(int a=0; a<weblen; a++){
+		for(int a=1; a<4; a++){
 		  for(int d=0; d<2; d++){
 			for(int b=11; b<15; b++){
 				for(int c=0; c<timlen; c++){

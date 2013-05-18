@@ -1,0 +1,691 @@
+telnet> Trying 64.14.173.20...
+Connected to www.economist.com.
+Escape character is '^]'.
+HTTP/1.1 200 OK
+Last-Modified: Sat, 11 May 2013 18:25:47 +0000
+Expires: Sun, 11 Mar 1984 12:00:00 GMT
+Vary: Cookie, Accept-Encoding
+Set-Cookie: ec_device=false; expires=Sun, 12-May-2013 18:25:47 GMT; path=/
+X-EC-Cache-Node: Hit
+Access-Control-Allow-Origin: *
+Set-Cookie: ec_community=0; path=/; domain=.64.14.173.3
+X-Backend-Server: D=1703069
+X-ws: 9
+Content-Type: text/html; charset=utf-8
+Server: Economist Web Server
+Cache-Control: public, max-age = 10800
+Date: Sat, 11 May 2013 18:25:49 GMT
+X-Varnish: 235882202
+Age: 0
+Via: 1.1 varnish
+Connection: close
+X-Varnish-Cache: MISS
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en" dir="ltr"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>The Economist - World News, Politics, Economics, Business & Finance</title>
+  <link rel="shortcut icon" href="http://media.economist.com/sites/default/files/econfinal_favicon.ico" type="image/x-icon" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<link rel="canonical" href="http://www.economist.com/" />
+<meta name="description" content="Authoritative weekly newspaper focusing on international politics and business news and opinion." />
+<meta name="revisit-after" content="1 day" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@TheEconomist" />
+<meta property="fb:app_id" content="173277756049645" />
+<meta property="og:image" content="http://media.economist.com/sites/all/themes/econfinal/images/the-economist-logo.gif" />
+<meta property="og:site_name" content="The Economist" />
+  <link type="text/css" rel="stylesheet" media="all" href="http://media.economist.com/sites/default/files/css/css_f173699571fd05c22a68b224a7c192d5.css" />
+  <!--[if IE 9]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/econfinal/styles/ie9.css?x" />
+<![endif]-->
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/econfinal/styles/ie8.css?x" />
+<![endif]-->
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/econfinal/styles/ie7.css?x" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/econfinal/styles/ie6.css?x" />
+<![endif]-->  <link rel="publisher" href="https://plus.google.com/100470681032489535736" />
+  <script type="text/javascript" src="http://media.economist.com/sites/default/files/js/js_f2802d056149a39603049c00245eb74f.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","offline":{"now":1368296748},"googleanalytics":{"trackOutgoing":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"insert":{"widgets":{"imagefield_widget":{"fields":{"use_original_size":"input:checked[name$=\"[use_original_size]\"]","image_link":"input:textfield[name$=\"[image_link]\"]"}}}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false},"ec_user_settings":{"auto_select_country":true},"omniture":{"edge_server":"economistcomprod","click_tracking":[{"name":"hp_cover_share_facebook","selector":"data-ec-omniture","link_track_vars":"events","events":"event32","event":"click","edge_server":"economistcomprod","link_track_events":"event32"},{"name":"hp_cover_share_twitter","selector":"data-ec-omniture","link_track_vars":"events","events":"event31","event":"click","edge_server":"economistcomprod","link_track_events":"event31"},{"name":"hp_cover_share_linkedin","selector":"data-ec-omniture","link_track_vars":"events","events":"event34","event":"click","edge_server":"economistcomprod","link_track_events":"event34"},{"name":"hp_cover_share_plusone","selector":"data-ec-omniture","link_track_vars":"events","events":"event35","event":"click","edge_server":"economistcomprod","link_track_events":"event35"},{"name":"hp_cover_share_pinterest","selector":"data-ec-omniture","link_track_vars":"events","events":"event37","event":"click","edge_server":"economistcomprod","link_track_events":"event37"},{"name":"home|minimap","selector":"#footer p a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|1","selector":"#homepage-highlight-1 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|2","selector":"#homepage-highlight-2 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|3","selector":"#homepage-highlight-3 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|4","selector":"#homepage-highlight-4 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|5","selector":"#homepage-highlight-5 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|6","selector":"#homepage-highlight-6 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|7","selector":"#homepage-highlight-7 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|8","selector":"#homepage-highlight-8 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|9","selector":"#homepage-highlight-9 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|10","selector":"#homepage-highlight-10 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|11","selector":"#homepage-highlight-11 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|highlight|12","selector":"#homepage-highlight-12 a","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title1|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title1","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink1|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink1","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink2|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink2","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more0","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title2|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title2","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink3|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink3","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more1","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title3|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title3","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink4|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink4","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink5|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink5","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more2","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title4|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title4","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink6|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink6","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink7|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink7","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more3","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title5|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title5","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink8|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink8","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink9|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink9","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more4","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title6|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title6","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink10|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink10","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more5","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title7|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title7","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink11|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink11","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink12|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink12","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink13|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink13","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more6","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title8|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title8","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink14|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink14","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more7","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title9|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title9","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink15|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink15","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink16|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink16","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more8","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title10|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title10","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink17|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink17","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more9","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title11|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title11","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink18|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink18","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink19|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink19","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more10","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title12|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title12","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink20|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink20","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more11","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title13|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|title13","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink21|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|sublink21","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|newspackage|more12","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"rightrail|social_share|linked-in","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"rightrail|social_share|tumblr","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"rightrail|social_share|pinterest","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"rightrail|social_share|youtube","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"rightrail|social_share|rss","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"rightrail|social_share|newsletters","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|0|genocidal_general","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-1","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|1|in_the_long_run_well_live_to_300_and_work","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-2","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|2|trouble_in_paradise","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-3","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|3|consumption_and_growth","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-4","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|4|standing_on_its_own_","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-5","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|5|matters_of_conscience","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-6","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|6|the_peterborough_principles","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-7","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|7|barack_obamas_brigadoon_problem","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-8","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|8|tesla_recharges_the_battery_car_market","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-9","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|9|losing_their_valence","selector":"#column-right div#block-ec_blogs-ec_blogs_block_recent .views-row-10","event":"click","edge_server":"economistcomprod"},{"name":"homepage|latestblogs|more","selector":"#block-ec_blogs-ec_blogs_block_recent .more-from-blogs","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_commented|head0","selector":"a#track-commented-21577075","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_commented|head1","selector":"a#track-commented-21577084","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_commented|head2","selector":"a#track-commented-21577366","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_commented|head3","selector":"a#track-commented-21577070","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_commented|head4","selector":"a#track-commented-21577342","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_recommended|head0","selector":"a#track-recommended-21577070","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_recommended|head1","selector":"a#track-recommended-21577113","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_recommended|head2","selector":"a#track-recommended-21569009","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_recommended|head3","selector":"a#track-recommended-21577063","event":"click","edge_server":"economistcomprod"},{"name":"homepage|rightrail|most_recommended|head4","selector":"a#track-recommended-21577121","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|image1","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|headline1","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|headline1|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|image2","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|headline2","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|headline2|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|image3","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|headline3","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|headline3|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|image4","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|headline4","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|hero|headline4|comments","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"home|touts|issue|cover","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|touts|issue|subscribe","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"home|touts|issue|printedition","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"print_content","selector":"data-ec-omniture","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event12","event":"click","edge_server":"economistcomprod","link_track_events":"event12"},{"name":"permalink","selector":"data-ec-omniture","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event39","event":"click","edge_server":"economistcomprod","link_track_events":"event39"},{"name":"reprints_permissions","selector":"data-ec-omniture","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event38","event":"click","edge_server":"economistcomprod","link_track_events":"event38"},{"name":"recommend_article","selector":"data-ec-omniture","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event36","event":"click","edge_server":"economistcomprod","link_track_events":"event36"},{"name":"footer_reddit","selector":"data-ec-omniture","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event33","event":"click","edge_server":"economistcomprod","link_track_events":"event33"},{"name":"masthead|act_prod|cookie","selector":"data-ec-omniture","event":"click","edge_server":"economistcomprod"},{"name":"recommend_comment","selector":"data-ec-omniture","events":"event36","eVar31":"comment","link_track_events":"event36","prop18":null,"link_track_vars":"prop18,eVar31,events","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|united_states","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|britain","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|europe","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|china","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|asia","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|americas","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|middle_east_africa","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|world_politics","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|all_business_finance","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|which_mba_","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|business_books_quarterly","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|business_finance","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|all_economics","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|economics_by_invitation","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|economics_a_z","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|markets_data","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|economics","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|all_science_technology","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|technology_quarterly","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|science_technology","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|all_culture","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|more_intelligent_life","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|style_guide","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|the_economist_quiz","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|book_reviews","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|culture","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|latest_blog_posts","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|feast_and_famine","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|analects","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|free_exchange","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|americas_view","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|game_theory","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|babbage","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|graphic_detail","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|banyan","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|gulliver","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|baobab","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|johnson","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|blighty","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|lexingtons_notebook","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|buttonwoods_notebook","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|newsbook","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|charlemagne","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|pomegranate","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|democracy_in_america","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|prospero","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|eastern_approaches","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|schumpeter","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|erasmus","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|the_economist_explains","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|blogs","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|economist_debates","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|what_the_world_thinks","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|economics_by_invitation","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|letters_to_the_editor","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|debate_discuss","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|world","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|business_economics","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|science_technology","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|culture","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|events","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|the_economist_in_audio","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|audio_video","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|current_issue","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|previous_issues","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|special_reports","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|politics_this_week","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|business_this_week","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|leaders","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|kals_cartoon","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|sec_level|obituaries","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|first_level|print_edition","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|login","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|logout","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|my_account","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|subscribe","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|newsletters","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|events","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|topics","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|digital_mobile","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|rss","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|jobs","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|facebook","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|twitter","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|extra-shares","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|google-plus","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|linked-in","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"},{"name":"masthead|act_prod|tumblr","selector":"data-ec-omniture","link_track_vars":"prop15","event":"click","edge_server":"economistcomprod"}],"click_tracking_follow_fb":[{"name":"follow_fb","selector":"data-ec-omniture-frame","event":"click","edge_server":"economistcomprod"}],"click_tracking_follow_twitter":[{"name":"follow_twitter","selector":"data-ec-omniture-frame","event":"click","edge_server":"economistcomprod"}],"click_tracking_top_twitter":[{"name":"top_twitter","selector":"data-ec-omniture-frame","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event31","event":"click","edge_server":"economistcomprod","link_track_events":"event31"}],"click_tracking_footer_twitter":[{"name":"footer_twitter","selector":"data-ec-omniture-frame","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event31","event":"click","edge_server":"economistcomprod","link_track_events":"event31"}],"click_tracking_footer_linkedin":[{"name":"footer_linkedin","selector":"data-ec-omniture-frame","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event34","event":"click","edge_server":"economistcomprod","link_track_events":"event34"}],"click_tracking_footer_plusone":[{"name":"footer_plusone","selector":"data-ec-omniture-frame","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event35","event":"click","edge_server":"economistcomprod","link_track_events":"event35"}],"click_tracking_top_fb":[{"name":"top_fb","selector":"data-ec-omniture-frame","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event32","event":"click","edge_server":"economistcomprod","link_track_events":"event32"}],"click_tracking_footer_fb":[{"name":"footer_fb","selector":"data-ec-omniture-frame","link_track_vars":"prop18,prop5,eVar24,eVar31,events","prop18":null,"prop5":"Published May 11, 2013 17:34:41","eVar24":"Published May 11, 2013 17:34:41","eVar31":"homepage","events":"event32","event":"click","edge_server":"economistcomprod","link_track_events":"event32"}]},"socialShare":{"shareCoverLink":"\u003cdiv class=\"link-social\" title=\"Share\"\u003eShare\u003c\/div\u003e","issueNID":"21577178","shareHTML":"  \u003cdiv class=\"qtip-click-content\"\u003e\n    \u003cul class=\"share-icons\"\u003e\n      \u003cli class=\"share-icon-facebook\"\u003e\u003ca href=\"http:\/\/www.facebook.com\/dialog\/feed?redirect_uri=http%3A%2F%2Fwww.economist.com%2Fclose-me.html\u0026amp;app_id=173277756049645\u0026amp;link=http%3A%2F%2Fwww.economist.com%2Fprintedition%2F2013-05-11%3Ffsrc%3Dscn%252Ffb_ec%252FThe%2520Economist%2520-%2520May%252011th%25202013\u0026amp;name=The%20Economist%20-%20May%2011th%202013\u0026amp;description=This%20week%20in%20The%20Economist%3A%20Investment%20banks%20%7C%20Angry%20young%20Indians%20%7C%20Malaysia%E2%80%99s%20election%20%7C%20Environmental%20monitoring%20%7C%20A%20memo%20to%20the%20world%E2%80%99s%20dictators\" target=\"_blank\" data-ec-omniture=\"hp_cover_share_facebook\"\u003eFacebook\u003c\/a\u003e\u003c\/li\u003e\n      \u003cli class=\"share-icon-twitter\"\u003e\u003ca href=\"https:\/\/twitter.com\/intent\/tweet?status=This%20week%20in%20The%20Economist%3A%20Investment%20banks%20%7C%20Angry%20young%20Indians%20%7C%20Malaysia%E2%80%99s%20election%20http%3A%2F%2Fecon.st%2F10v7HAC\" target=\"_blank\" data-ec-omniture=\"hp_cover_share_twitter\"\u003eTwitter\u003c\/a\u003e\u003c\/li\u003e \u003c!-- 550 pixels wide and 450 pixels high --\u003e\n      \u003cli class=\"share-icon-linkedin\"\u003e\u003ca href=\"http:\/\/www.linkedin.com\/shareArticle?mini=true\u0026amp;ro=false\u0026amp;summary=This%20week%20in%20The%20Economist%3A%20Investment%20banks%20%7C%20Angry%20young%20Indians%20%7C%20Malaysia%E2%80%99s%20election%20%7C%20Environmental%20monitoring%20%7C%20A%20memo%20to%20the%20world%E2%80%99s%20dictators\u0026amp;source=The%20Economist\u0026amp;url=http%3A%2F%2Fwww.economist.com%2Fprintedition%2F2013-05-11%3Ffsrc%3Dscn%252Fln_ec%252FThe%2520Economist%2520-%2520May%252011th%25202013\u0026amp;title=The%20Economist%20-%20May%2011th%202013\u0026amp;description=This%20week%20in%20The%20Economist%3A%20Investment%20banks%20%7C%20Angry%20young%20Indians%20%7C%20Malaysia%E2%80%99s%20election%20%7C%20Environmental%20monitoring%20%7C%20A%20memo%20to%20the%20world%E2%80%99s%20dictators\" target=\"_blank\" data-ec-omniture=\"hp_cover_share_linkedin\"\u003eLinkedin\u003c\/a\u003e\u003c\/li\u003e\n      \u003cli class=\"share-icon-google\"\u003e\u003ca href=\"https:\/\/plus.google.com\/share?url=http%3A%2F%2Fwww.economist.com%2Fprintedition%2F2013-05-11%3Ffsrc%3Dscn%252Fgn_ec%252FThe%2520Economist%2520-%2520May%252011th%25202013\u0026amp;t=The%20Economist%20-%20May%2011th%202013\u0026amp;description=This%20week%20in%20The%20Economist%3A%20Investment%20banks%20%7C%20Angry%20young%20Indians%20%7C%20Malaysia%E2%80%99s%20election%20%7C%20Environmental%20monitoring%20%7C%20A%20memo%20to%20the%20world%E2%80%99s%20dictators\" target=\"_blank\" data-ec-omniture=\"hp_cover_share_plusone\"\u003eGoogle+\u003c\/a\u003e\u003c\/li\u003e\n      \u003cli class=\"share-icon-pinterest\"\u003e\u003ca href=\"http:\/\/pinterest.com\/pin\/create\/button\/?url=http%3A%2F%2Fwww.economist.com%2Fprintedition%2F2013-05-11%3Ffsrc%3Dscn%252Fpn_ec%252FThe%2520Economist%2520-%2520May%252011th%25202013\u0026amp;description=The%20Economist%20-%20May%2011th%202013\" target=\"_blank\" data-ec-omniture=\"hp_cover_share_pinterest\"\u003ePinterest\u003c\/a\u003e\u003c\/li\u003e\n    \u003c\/ul\u003e\n  \u003c\/div\u003e"},"cdn":{"cdnPath":"http:\/\/media.economist.com","cdnPathPNG":"http:\/\/media.economist.com"},"ecAds":{"ad_site":"teg","ad_zone":"j2ek","sitecode":"fmsq","ad_call_type":"adj","subs":"n","wsub":"n","sdn":"n"},"ec_mostx_active_tab":"recommended","ecHomepage":{"rotato_initial_delay":5,"rotato_interval":4},"omnitureOverride":{"overriddenVars":{"s.pageName":"homepage","s.channel":"home","s.prop1":"homepage","s.prop2":""},"defaultVars":{"s.pageName":"homepage","s.channel":"home","s.prop1":"","s.prop2":""},"end":"1-01-1970"},"q":"node\/21555491","alias":"node\/21555491","nid":"21555491","uid":0,"regional_covers":{"A":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg","AP":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg","E":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg","EU":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg","LA":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg","ME":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg","NA":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg","UK":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg","default":"http:\/\/media.economist.com\/sites\/default\/files\/imagecache\/print-cover-thumbnail\/print-covers\/20130511_cna400.jpg"},"loginform":{"action":"https:\/\/64.14.173.3\/user\/login?destination=node%2F21555491"},"formvalidation":{"formname":"#user-login"},"popups":{"originalCSS":{"\/modules\/node\/node.css":1,"\/modules\/poll\/poll.css":1,"\/modules\/system\/defaults.css":1,"\/modules\/system\/system.css":1,"\/modules\/system\/system-menus.css":1,"\/modules\/user\/user.css":1,"\/sites\/all\/modules\/cck\/theme\/content-module.css":1,"\/sites\/all\/modules\/ctools\/css\/ctools.css":1,"\/sites\/all\/modules\/custom\/ec_messaging\/css\/ec_messaging.css":1,"\/sites\/all\/modules\/date\/date.css":1,"\/sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"\/sites\/all\/modules\/date\/date_popup\/themes\/jquery.timeentry.css":1,"\/sites\/all\/modules\/ec_components\/css\/ec_tip.css":1,"\/sites\/all\/modules\/ec_offline\/styles\/ec_offline_online.css":1,"\/sites\/all\/modules\/ec_vote\/css\/ec_vote.css":1,"\/sites\/all\/modules\/filefield\/filefield.css":1,"\/sites\/all\/modules\/google_cse\/google_cse.css":1,"\/sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"\/sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"\/sites\/all\/modules\/mollom\/mollom.css":1,"\/sites\/all\/modules\/og\/theme\/og.css":1,"\/sites\/all\/modules\/video_filter\/video_filter.css":1,"\/sites\/all\/modules\/wysiwyg_fontcolor\/tinymce\/fontcolor\/css\/fontcolor.css":1,"\/sites\/all\/modules\/ec_comments\/css\/ec_comments.css":1,"\/sites\/all\/modules\/cck\/modules\/fieldgroup\/fieldgroup.css":1,"\/sites\/all\/modules\/views\/css\/views.css":1,"\/sites\/all\/modules\/ec_omniture\/ec_omniture_link_tracking.css":1,"\/sites\/all\/modules\/ec_opinionlab\/css\/oo_style.css":1,"\/sites\/all\/modules\/custom\/ec_social\/ec_social.css":1,"\/sites\/all\/modules\/cck\/modules\/content_multigroup\/content_multigroup.css":1,"\/sites\/all\/modules\/ec_components\/css\/ec_components.css":1,"\/sites\/all\/modules\/ec_facebook\/css\/ec_facebook.css":1,"\/sites\/all\/modules\/ec_ads\/css\/ec_ads_topic_ribbon.css":1,"\/sites\/all\/modules\/custom\/ec_social\/ec-social-share-follow.css":1,"\/sites\/all\/modules\/ec_ads\/css\/ec_ads_slider.css":1,"\/sites\/all\/modules\/ec_ads\/css\/ec_ads_overlay.css":1,"\/sites\/all\/modules\/ec_offers\/css\/ec-offers.css":1,"\/sites\/all\/modules\/wysiwyg_fontcolor\/tinymce\/fontcolor\/css\/fontcolor_editor.css":1,"\/sites\/all\/themes\/econfinal\/styles\/reset.css":1,"\/sites\/all\/themes\/econfinal\/styles\/grid.css":1,"\/sites\/all\/themes\/econfinal\/styles\/style.css":1,"\/sites\/all\/themes\/econfinal\/styles\/components.css":1,"\/sites\/all\/themes\/econfinal\/styles\/typography.css":1,"\/sites\/all\/themes\/econfinal\/styles\/skins.css":1,"\/sites\/all\/themes\/econfinal\/styles\/user-profile-comments.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-guest_contribution-tpl.css":1,"\/sites\/all\/themes\/econfinal\/styles\/page-header.css":1,"\/sites\/all\/themes\/econfinal\/styles\/page-navigation.css":1,"\/sites\/all\/themes\/econfinal\/styles\/page-ads.css":1,"\/sites\/all\/themes\/econfinal\/styles\/page-footer.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-homepage.css":1,"\/sites\/all\/themes\/econfinal\/styles\/page-taxonomy-term.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-issue.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-page-tools.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-print-cover.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-print-sub-ad.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-poll-article.css":1,"\/sites\/all\/themes\/econfinal\/styles\/captcha.css":1,"\/sites\/all\/themes\/econfinal\/styles\/site-index.css":1,"\/sites\/all\/themes\/econfinal\/styles\/inform-component.css":1,"\/sites\/all\/themes\/econfinal\/styles\/pager.css":1,"\/sites\/all\/themes\/econfinal\/styles\/block-blogs.css":1,"\/sites\/all\/themes\/econfinal\/styles\/block-products-events.css":1,"\/sites\/all\/themes\/econfinal\/styles\/block-radio.css":1,"\/sites\/all\/themes\/econfinal\/styles\/block-most-popular.css":1,"\/sites\/all\/themes\/econfinal\/styles\/block-daily-question.css":1,"\/sites\/all\/themes\/econfinal\/styles\/block-brightcove_player-playlist.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-daily-question.css":1,"\/sites\/all\/themes\/econfinal\/styles\/topic-page.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-rss-page.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-page-tpl.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-promotions-page-tpl.css":1,"\/sites\/all\/themes\/econfinal\/styles\/media-directory.css":1,"\/sites\/all\/themes\/econfinal\/styles\/ec-user.css":1,"\/sites\/all\/themes\/econfinal\/styles\/ec-user-block.css":1,"\/sites\/all\/themes\/econfinal\/styles\/ec-highlight-block.css":1,"\/sites\/all\/themes\/econfinal\/styles\/ec-glossary.css":1,"\/sites\/all\/themes\/econfinal\/styles\/ec-charts.css":1,"\/sites\/all\/themes\/econfinal\/styles\/node-event.css":1,"\/sites\/all\/themes\/econfinal\/styles\/interactive-map.css":1,"\/sites\/all\/themes\/econfinal\/styles\/vendor-prexifed.css":1},"originalJS":{"\/sites\/all\/modules\/brightcove_player\/js\/brightcove.js":1,"\/sites\/all\/modules\/ec_ajax_form\/js\/ec_ajax_form.js":1,"\/sites\/all\/modules\/ec_base\/js\/ec_base.js":1,"\/sites\/all\/modules\/ec_base\/js\/plugins\/jquery.ec_timeago.js":1,"\/sites\/all\/modules\/ec_base\/js\/plugins\/jquery.cookie.js":1,"\/sites\/all\/modules\/ec_base\/js\/plugins\/jquery.json.js":1,"\/sites\/all\/libraries\/qtip\/jquery.qtip-1.0.0-rc3.min.js":1,"\/sites\/all\/modules\/ec_components\/js\/ec_tip.js":1,"\/sites\/all\/modules\/ec_vote\/js\/ec_vote.js":1,"\/sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"\/sites\/all\/modules\/jquery_aop\/misc\/jquery.aop.js":1,"\/sites\/all\/modules\/jsonify\/jsonify.js":1,"\/sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"\/sites\/all\/modules\/mollom\/mollom.js":1,"\/sites\/all\/modules\/og\/og.js":1,"\/sites\/all\/modules\/swftools\/shared\/swfobject2\/swfobject.js":1,"\/sites\/all\/modules\/ec_user\/js\/ec_user.js":1,"\/sites\/all\/libraries\/simplemodal\/jquery.simplemodal.1.4.1.min.js":1,"\/sites\/all\/libraries\/jquery_expander\/jquery.expander.min.js":1,"\/sites\/all\/modules\/ec_comments\/js\/ec_comments.js":1,"\/sites\/all\/modules\/custom\/ec_social\/ec_social.js":1,"\/sites\/all\/modules\/ec_homepage\/ec_homepage.js":1,"\/sites\/all\/modules\/ec_ads\/js\/stepcarousel.js":1,"\/sites\/all\/modules\/ec_mostx\/js\/ec_mostx.js":1,"\/sites\/all\/modules\/ec_ads\/js\/ec_ads_slider.js":1,"\/sites\/all\/libraries\/jquery.ui\/ui\/minified\/jquery.ui.core.min.js":1,"\/sites\/all\/libraries\/jquery.ui\/ui\/minified\/jquery.ui.datepicker.min.js":1,"\/sites\/all\/modules\/custom\/ec_ab_tests\/js\/ec_ab_tests.js":1,"\/sites\/all\/modules\/ec_ads\/js\/ec_ads.js":1,"\/sites\/all\/modules\/ajax\/jquery\/jquery.a_form.packed.js":1,"\/sites\/all\/modules\/ajax\/ajax.js":1,"\/sites\/all\/modules\/custom\/ec_messaging\/js\/ec_messaging.js":1,"\/sites\/all\/modules\/ec_components\/js\/ec_components_plugins.js":1,"\/sites\/all\/modules\/ec_offline\/js\/ec_offline_redirect.js":1,"\/sites\/all\/modules\/ec_offline\/js\/ec_offline.js":1,"\/sites\/all\/modules\/google_cse\/google_cse.js":1,"\/sites\/all\/modules\/ec_omniture\/ec_omniture_link_tracking.js":1,"\/sites\/all\/modules\/ec_opinionlab\/js\/oo_engine.min.js":1,"\/sites\/all\/modules\/ec_opinionlab\/js\/oo_conf.js":1,"\/sites\/all\/modules\/ec_ads\/js\/ec_ads_banner.js":1,"\/sites\/all\/themes\/econfinal\/js\/page-header.js":1,"\/sites\/all\/themes\/econfinal\/js\/node-page-tools.js":1,"\/sites\/all\/themes\/econfinal\/js\/node-poll-article.js":1,"\/sites\/all\/themes\/econfinal\/js\/site-index.js":1,"\/sites\/all\/themes\/econfinal\/js\/node-guest_contribution.js":1,"\/sites\/all\/themes\/econfinal\/js\/AC_OETags.js":1,"\/sites\/all\/themes\/econfinal\/js\/ec-blogs.js":1,"\/sites\/all\/themes\/econfinal\/js\/ec-messages.js":1,"\/sites\/all\/themes\/econfinal\/js\/interactive-map.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/drag.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/jquery.color.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/jquery.form.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/jquery.autogrow.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/jquery.timer.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/jquery.hoverIntent.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/modernizr-2.6.2.min.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/jquery.flash.min.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/jcarousellite_1.0.1.min.js":1,"\/sites\/all\/themes\/econfinal\/js\/plugins\/jquery-ui.min.js":1}}});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+      function homepagePlayerLoaded(id) {
+        player = brightcove.getExperience(id);
+        if (player) {
+          experienceModule = player.getModule(APIModules.EXPERIENCE);
+          menuModule = player.getModule(APIModules.MENU);
+          experienceModule.addEventListener(BCExperienceEvent.TEMPLATE_READY, function(result) {
+            var video = player.getModule(APIModules.VIDEO_PLAYER);
+            video.addEventListener(BCMediaEvent.PLAY, function(e) {
+              menuModule.closeMenuPage();
+            });
+          });
+        }
+      }
+  
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _vis_opt_account_id = 13424;
+var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+document.write('<s' + 'cript src="' + _vis_opt_protocol + 'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a=' + _vis_opt_account_id + '&url=' + encodeURIComponent(document.URL) + '&random=' + Math.random() + '" type="text/javascript">' + '<\/s' + 'cript>');
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol + 'd5phz18u4wuww.cloudfront.net/vis_opt.js" type="text/javascript">' + '<\/s' + 'cript>'); }
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") { _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); }); }
+//--><!]]>
+</script>
+    <script type="text/javascript">
+    $('html').addClass('js');
+  </script>
+</head>
+
+<body class="front not-logged-in page-node node-type-homepage one-sidebar sidebar-right path-node-21555491 world-menu business-menu economics-menu printedition-menu science-technology-menu culture-menu">
+      <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      status: true,
+      cookie: true,
+      xfbml: true,
+      appId: '173277756049645',
+      oauth: true,
+      channelUrl: 'http://64.14.173.3/fb/fb_channel.html'
+    });
+  };
+
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>    <script type="text/javascript" src="http://media.economist.com/sites/default/files/external/advu/6.23c/advu.js">
+</script>  <script type='text/javascript'>
+var ebSession = '28c5b67c1adf75676d3a7cc4128b9bba';
+var ebRand = Math.random()+'';
+ebRand = ebRand * 1000000;
+document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&ActivityID=162708&rnd=' + ebRand + '&Session='+ebSession+'"></scr' + 'ipt>');
+</script>
+<noscript>
+<img width='1' height='1' style='border:0' src='HTTP://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&ActivityID=162708&Session=28c5b67c1adf75676d3a7cc4128b9bba&ns=1'/>
+</noscript>  <div id="page" class="container">
+    <a name="top" id="navigation-top"></a>
+
+      <div id="leaderboard" class="clearfix">
+    <div id="block-ec_ads-leaderboard_ad" class="block block-ec_ads">
+    <div class="content clearfix">
+    <div id="leaderboard-ad"><!-- Site: Web.  Zone: Home |  --> <script language="JavaScript" type="text/javascript">document.write('<script language="JavaScript" src="//ad.doubleclick.net/adj/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;dcopt=ist;pos=ldr_top;sz=728x90,970x90,970x250;tile=1;ord=' + random_ad_nr + '?" type="text/javascript"><\/script>')</script><noscript><a href="//ad.doubleclick.net/jump/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;dcopt=ist;pos=ldr_top;sz=728x90,970x90,970x250;tile=1;ord=608707107?" target="_blank"><img src="//ad.doubleclick.net/ad/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;dcopt=ist;pos=ldr_top;sz=728x90,970x90,970x250;tile=1;ord=608707107?" width="728" height="90" border="0" alt=""></a></noscript></div>  </div>
+</div><div id="block-ec_ads-subscription_ad" class="block block-ec_ads">
+    <div class="content clearfix">
+    <div id="subslug-ad"><!-- Site: Web.  Zone: Home |  --> <script language="JavaScript" type="text/javascript">document.write('<script language="JavaScript" src="//ad.doubleclick.net/adj/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=sub_top;sz=223x90;tile=2;ord=' + random_ad_nr + '?" type="text/javascript"><\/script>')</script><noscript><a href="//ad.doubleclick.net/jump/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=sub_top;sz=223x90;tile=2;ord=608707107?"><img src="//ad.doubleclick.net/ad/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=sub_top;sz=223x90;tile=2;ord=608707107?" width="223" height="90" border="0" alt=""></a></noscript></div>  </div>
+</div>  </div>
+
+
+<div id="header" class="clearfix">
+
+  <div id="header-topstripe" class="clearfix">
+          <div id="header-logo">
+                  <h1><a href="/" class="active"><img width="183" height="89" src="//media.economist.com/sites/all/themes/econfinal/images/the-economist-logo.gif" alt="The Economist" /></a></h1>
+              </div>
+    
+    <div id="header-main">
+
+          <div id="header-links" class="clearfix">
+          <div id="header-links-user">
+            <div id="header-login">
+  <div class="item-list"><ul><li class="first"><a href="/user/login?destination=node%2F21555491" class="show-login" data-ec-omniture="masthead|act_prod|login">Log in</a></li>
+<li class="even"><a href="/user/register?destination=node%2F21555491&amp;rp=masthead" data-ec-omniture="masthead|act_prod|register">Register</a></li>
+<li class="last"><a href="/products/subscribe" data-ec-omniture="masthead|act_prod|subscribe">Subscribe</a></li>
+</ul></div>  </div> <!-- /#header-login -->
+          </div><!-- /#header-links-user -->
+
+          <div id="header-links-general">
+            <ul>
+              <li><a data-ec-omniture="masthead|act_prod|digital_mobile" href="/digital" title="Digital &amp; mobile">Digital &amp; mobile</a></li>
+              <li class="pipe"><a data-ec-omniture="masthead|act_prod|events" href="/events" title="Events">Events</a></li>
+              <li class="pipe"><a data-ec-omniture="masthead|act_prod|topics" href="/topics" title="Topics A-Z">Topics A-Z</a></li>
+              <li class="pipe"><a data-ec-omniture="masthead|act_prod|newsletters" href="/newsletters" title="Newsletters">Newsletters</a></li>
+              <li class="pipe"><a data-ec-omniture="masthead|act_prod|jobs" href="http://jobs.economist.com" title="Jobs">Jobs</a></li>
+              <li class="pipe icon"><a data-ec-omniture="masthead|act_prod|rss" class="rss-link" href="/rss" title="RSS"><span>RSS feed</span></a></li>
+              <li class="icon"><a data-ec-omniture="masthead|act_prod|facebook" class="facebook-link" href="http://www.facebook.com/TheEconomist" title="Facebook" target="_blank"><span>Facebook</span></a></li>
+              <li class="icon"><a data-ec-omniture="masthead|act_prod|twitter" class="twitter-link" href="http://twitter.com/TheEconomist" title="Twitter" target="_blank"><span>Twitter</span></a></li>
+              <li class="icon last"><a data-ec-omniture="masthead|act_prod|extra-shares" class="show-extra-shares share-link" href="#" title="Share The Economist."><span>More social links</span></a></li>
+            </ul>
+          </div><!-- /#header-links-general -->
+          <div id="header-social-links-extras">
+            <ul>
+              <li class="icon"><a data-ec-omniture="masthead|act_prod|google-plus" class="google-plus-link" href="https://plus.google.com/100470681032489535736/posts" title="Google plus" target="_blank"><span>Google plus</span></a></li>
+              <li class="icon"><a data-ec-omniture="masthead|act_prod|linked-in" class="linked-in-link" href="http://www.linkedin.com/groups?mostPopular=&gid=3056216" title="Linked in" target="_blank"><span>Linked in</span></a></li>
+              <li class="icon"><a data-ec-omniture="masthead|act_prod|tumblr" class="tumblr-link" href="http://theeconomist.tumblr.com/" title="Tumblr" target="_blank"><span>Tumblr</span></a></li>
+            </ul>
+          </div>
+      </div><!-- /#header-links -->
+              <div id="masthead-offline" class=""><a href="/offline">Offline reading</a></div>            <div id="header-title-search" class="clearfix">
+                  <div id="header-search">
+            <form action="/http://www.economist.com/"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline">
+  <div class="form-item clearfix" id="edit-search-theme-form-1-wrapper">
+ <label for="edit-search-theme-form-1">Search this site:</label>
+<input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text search-field" placeholder="Search" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-97023b8dd03dcf8c886465bec6c62f0d" value="form-97023b8dd03dcf8c886465bec6c62f0d"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+</div>
+
+</div></form>
+          </div><!-- /#header-search -->
+              </div><!-- /#header-title-search -->    
+
+    
+    </div><!-- /#header-main -->
+  </div><!-- /#header-topstripe -->
+
+    <nav id="master" class="clearfix">
+    <ul id="header-navigation-main" class="clearfix"><li class="first"><a href="/content/politics-this-week" title="" data-ec-omniture="masthead|first_level|world_politics">World politics</a><ul class="subnav"><li class="first"><a href="/world/united-states" data-ec-omniture="masthead|sec_level|united_states">United States</a></li>
+<li class="even"><a href="/world/britain" data-ec-omniture="masthead|sec_level|britain">Britain</a></li>
+<li><a href="/world/europe" data-ec-omniture="masthead|sec_level|europe">Europe</a></li>
+<li class="even"><a href="/world/china" data-ec-omniture="masthead|sec_level|china">China</a></li>
+<li><a href="/world/asia" data-ec-omniture="masthead|sec_level|asia">Asia</a></li>
+<li class="even"><a href="/world/americas" data-ec-omniture="masthead|sec_level|americas">Americas</a></li>
+<li class="last"><a href="/world/middle-east-africa" data-ec-omniture="masthead|sec_level|middle_east_africa">Middle East &amp; Africa</a></li>
+</ul></li>
+<li class="even"><a href="/business-finance" data-ec-omniture="masthead|first_level|business_finance">Business &amp; finance</a><ul class="subnav"><li class="first"><a href="/business-finance" title="" data-ec-omniture="masthead|sec_level|all_business_finance">All Business &amp; finance</a></li>
+<li class="even"><a href="/whichmba" data-ec-omniture="masthead|sec_level|which_mba_">Which MBA?</a></li>
+<li class="last"><a href="/business-books-quarterly" data-ec-omniture="masthead|sec_level|business_books_quarterly">Business Books Quarterly</a></li>
+</ul></li>
+<li class=""><a href="/economics" data-ec-omniture="masthead|first_level|economics">Economics</a><ul class="subnav"><li class="first"><a href="/economics" title="" data-ec-omniture="masthead|sec_level|all_economics">All Economics</a></li>
+<li class="even"><a href="/economics/by-invitation" title="" data-ec-omniture="masthead|sec_level|economics_by_invitation">Economics by invitation</a></li>
+<li><a href="/economics-a-to-z" title="" data-ec-omniture="masthead|sec_level|economics_a_z">Economics A-Z</a></li>
+<li class="even last"><a href="/markets-data" data-ec-omniture="masthead|sec_level|markets_data">Markets &amp; data</a></li>
+</ul></li>
+<li class="even"><a href="/science-technology" data-ec-omniture="masthead|first_level|science_technology">Science &amp; technology</a><ul class="subnav"><li class="first"><a href="/science-technology" title="" data-ec-omniture="masthead|sec_level|all_science_technology">All Science &amp; technology</a></li>
+<li class="even last"><a href="/technology-quarterly" title="Technology Quarterly" data-ec-omniture="masthead|sec_level|technology_quarterly">Technology Quarterly</a></li>
+</ul></li>
+<li class=""><a href="/culture" data-ec-omniture="masthead|first_level|culture">Culture</a><ul class="subnav"><li class="first"><a href="/culture" data-ec-omniture="masthead|sec_level|all_culture">All Culture</a></li>
+<li class="even"><a href="http://moreintelligentlife.com/" data-ec-omniture="masthead|sec_level|more_intelligent_life">More Intelligent Life</a></li>
+<li><a href="/styleguide/introduction" data-ec-omniture="masthead|sec_level|style_guide">Style guide</a></li>
+<li class="even"><a href="/economist-quiz" data-ec-omniture="masthead|sec_level|the_economist_quiz">The Economist Quiz</a></li>
+<li class="last"><a href="/topics/book-reviews" data-ec-omniture="masthead|sec_level|book_reviews">Book reviews</a></li>
+</ul></li>
+<li class=" two-col even"><a href="/blogs" data-ec-omniture="masthead|first_level|blogs">Blogs</a><ul class="subnav"><li class="first"><a href="/blogs" title="" data-ec-omniture="masthead|sec_level|latest_blog_posts">Latest blog posts</a></li>
+<li class="even"><a href="/blogs/feastandfamine" title="Demography and development" data-ec-omniture="masthead|sec_level|feast_and_famine">Feast and famine</a></li>
+<li><a href="/blogs/analects" title="China" data-ec-omniture="masthead|sec_level|analects">Analects</a></li>
+<li class="even"><a href="/blogs/freeexchange" title="Economics" data-ec-omniture="masthead|sec_level|free_exchange">Free exchange</a></li>
+<li><a href="/blogs/americasview" title="The Americas" data-ec-omniture="masthead|sec_level|americas_view">Americas view</a></li>
+<li class="even"><a href="/blogs/gametheory" title="Sports" data-ec-omniture="masthead|sec_level|game_theory">Game theory</a></li>
+<li><a href="/blogs/babbage" title="Science and technology" data-ec-omniture="masthead|sec_level|babbage">Babbage</a></li>
+<li class="even"><a href="/blogs/graphicdetail" title="Charts, maps and infographics" data-ec-omniture="masthead|sec_level|graphic_detail">Graphic detail</a></li>
+<li><a href="/blogs/banyan" title="Asia" data-ec-omniture="masthead|sec_level|banyan">Banyan</a></li>
+<li class="even"><a href="/blogs/gulliver" title="Business travel" data-ec-omniture="masthead|sec_level|gulliver">Gulliver</a></li>
+<li><a href="/blogs/baobab" title="Africa" data-ec-omniture="masthead|sec_level|baobab">Baobab</a></li>
+<li class="even"><a href="/blogs/johnson" title="Language" data-ec-omniture="masthead|sec_level|johnson">Johnson</a></li>
+<li><a href="/blogs/blighty" title="Britain" data-ec-omniture="masthead|sec_level|blighty">Blighty</a></li>
+<li class="even"><a href="/blogs/lexington" title="American politics" data-ec-omniture="masthead|sec_level|lexingtons_notebook">Lexington&#039;s notebook</a></li>
+<li><a href="/blogs/buttonwood" title="Financial markets" data-ec-omniture="masthead|sec_level|buttonwoods_notebook">Buttonwood&#039;s notebook</a></li>
+<li class="even"><a href="/blogs/newsbook" title="News analysis" data-ec-omniture="masthead|sec_level|newsbook">Newsbook</a></li>
+<li><a href="/blogs/charlemagne" title="European politics" data-ec-omniture="masthead|sec_level|charlemagne">Charlemagne</a></li>
+<li class="even"><a href="/blogs/pomegranate" title="The Middle East" data-ec-omniture="masthead|sec_level|pomegranate">Pomegranate</a></li>
+<li><a href="/blogs/democracyinamerica" title="American politics" data-ec-omniture="masthead|sec_level|democracy_in_america">Democracy in America</a></li>
+<li class="even"><a href="/blogs/prospero" title="Books, arts and culture" data-ec-omniture="masthead|sec_level|prospero">Prospero</a></li>
+<li><a href="/blogs/easternapproaches" title="Ex-communist Europe" data-ec-omniture="masthead|sec_level|eastern_approaches">Eastern approaches</a></li>
+<li class="even"><a href="/blogs/schumpeter" title="Business and management" data-ec-omniture="masthead|sec_level|schumpeter">Schumpeter</a></li>
+<li><a href="/blogs/erasmus" data-ec-omniture="masthead|sec_level|erasmus">Erasmus</a></li>
+<li class="even last"><a href="/blogs/economist-explains" data-ec-omniture="masthead|sec_level|the_economist_explains">The Economist explains</a></li>
+</ul></li>
+<li class=""><a href="http://www.economist.com/debate" data-ec-omniture="masthead|first_level|debate_discuss">Debate &amp; discuss</a><ul class="subnav"><li class="first"><a href="http://www.economist.com/debate" title="" data-ec-omniture="masthead|sec_level|economist_debates">Economist debates</a></li>
+<li class="even"><a href="/wtwt" data-ec-omniture="masthead|sec_level|what_the_world_thinks">What the world thinks</a></li>
+<li><a href="/economics/by-invitation" data-ec-omniture="masthead|sec_level|economics_by_invitation">Economics by invitation</a></li>
+<li class="even last"><a href="/content/letters-to-the-editor" title="" data-ec-omniture="masthead|sec_level|letters_to_the_editor">Letters to the editor</a></li>
+</ul></li>
+<li class="even"><a href="/multimedia" data-ec-omniture="masthead|first_level|audio_video">Audio &amp; video</a><ul class="subnav"><li class="first"><a href="/multimedia/world" title="" data-ec-omniture="masthead|sec_level|world">World</a></li>
+<li class="even"><a href="/multimedia/businesseconomics" title="" data-ec-omniture="masthead|sec_level|business_economics">Business &amp; economics</a></li>
+<li><a href="/multimedia/sciencetechnology" title="" data-ec-omniture="masthead|sec_level|science_technology">Science &amp; technology</a></li>
+<li class="even"><a href="/multimedia/culture" title="" data-ec-omniture="masthead|sec_level|culture">Culture</a></li>
+<li><a href="http://www.economist.com/multimedia/events" data-ec-omniture="masthead|sec_level|events">Events</a></li>
+<li class="even last"><a href="/audio-edition" title="" data-ec-omniture="masthead|sec_level|the_economist_in_audio">The Economist in audio</a></li>
+</ul></li>
+<li class="last"><a href="/printedition" title="" data-ec-omniture="masthead|first_level|print_edition">Print edition</a><ul class="subnav"><li class="first"><a href="/printedition/" data-ec-omniture="masthead|sec_level|current_issue">Current issue</a></li>
+<li class="even"><a href="/printedition/covers" data-ec-omniture="masthead|sec_level|previous_issues">Previous issues</a></li>
+<li><a href="/printedition/specialreports" data-ec-omniture="masthead|sec_level|special_reports">Special reports</a></li>
+<li class="even"><a href="/content/politics-this-week" data-ec-omniture="masthead|sec_level|politics_this_week">Politics this week</a></li>
+<li><a href="/content/business-this-week" data-ec-omniture="masthead|sec_level|business_this_week">Business this week</a></li>
+<li class="even"><a href="/printedition/leaders" data-ec-omniture="masthead|sec_level|leaders">Leaders</a></li>
+<li><a href="/printedition/kallery" data-ec-omniture="masthead|sec_level|kals_cartoon">KAL&#039;s cartoon</a></li>
+<li class="even last"><a href="/obituaries" data-ec-omniture="masthead|sec_level|obituaries">Obituaries</a></li>
+</ul></li>
+</ul>
+    
+  </nav><!-- /#master -->
+  
+</div> <!-- /#header -->
+
+    <div class="ec-messages messages-warning message-region-A" id="ec-message-3"><a href="/ec-messaging/3" class="dismiss-messages"></a>Our cookies policy has changed. Review our <a href="/cookies-info" target="_blank">cookies information</a> for more details. By continuing to browse this site you are agreeing to our use of cookies. </div><div class="ec-messages messages-warning message-region-AP" id="ec-message-3"><a href="/ec-messaging/3" class="dismiss-messages"></a>Our cookies policy has changed. Review our <a href="/cookies-info" target="_blank">cookies information</a> for more details. By continuing to browse this site you are agreeing to our use of cookies. </div><div class="ec-messages messages-warning message-region-E" id="ec-message-3"><a href="/ec-messaging/3" class="dismiss-messages"></a>Our cookies policy has changed. Review our <a href="/cookies-info" target="_blank">cookies information</a> for more details. By continuing to browse this site you are agreeing to our use of cookies. </div><div class="ec-messages messages-warning message-region-EU" id="ec-message-3"><a href="/ec-messaging/3" class="dismiss-messages"></a>Our cookies policy has changed. Review our <a href="/cookies-info" target="_blank">cookies information</a> for more details. By continuing to browse this site you are agreeing to our use of cookies. </div><div class="ec-messages messages-warning message-region-LA" id="ec-message-3"><a href="/ec-messaging/3" class="dismiss-messages"></a>Our cookies policy has changed. Review our <a href="/cookies-info" target="_blank">cookies information</a> for more details. By continuing to browse this site you are agreeing to our use of cookies. </div><div class="ec-messages messages-warning message-region-ME" id="ec-message-3"><a href="/ec-messaging/3" class="dismiss-messages"></a>Our cookies policy has changed. Review our <a href="/cookies-info" target="_blank">cookies information</a> for more details. By continuing to browse this site you are agreeing to our use of cookies. </div><div class="ec-messages messages-warning message-region-NA" id="ec-message-3"><a href="/ec-messaging/3" class="dismiss-messages"></a>Our cookies policy has changed. Review our <a href="/cookies-info" target="_blank">cookies information</a> for more details. By continuing to browse this site you are agreeing to our use of cookies. </div><div class="ec-messages messages-warning message-region-UK" id="ec-message-3"><a href="/ec-messaging/3" class="dismiss-messages"></a>Our cookies policy has changed. Review our <a href="/cookies-info" target="_blank">cookies information</a> for more details. By continuing to browse this site you are agreeing to our use of cookies. </div>        
+    <div id="columns" class="clearfix">
+                  <div id="leadspot" class="grid-16 clearfix">
+        <div id="block-ec_homepage-ec_homepage_superhero" class="block block-ec_homepage">
+    <div class="content clearfix">
+        <div id="superhero" class="clearfix">
+      <div class="hero-superhero"><ul id="hero" class="hero-multiple"><li class="selected"><div class="hero-item hero-item-1"><div class="hero-comment"><a href="/node/21577374/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="home|hero|headline1|comments"><span>58</span></a></div><a href="/news/middle-east-and-africa/21577374-more-flexible-arab-league-trying-bring-wider-array-mediators-together" class="hero-tab" data-ec-omniture="home|hero|headline1"><h2 class="fly-title">Israel and Palestine</h2><p class="headline">A new effort at peace</p></a></div><div class="hero-media"><a href="/news/middle-east-and-africa/21577374-more-flexible-arab-league-trying-bring-wider-array-mediators-together" class="hero-image" rel="nofollow" data-ec-omniture="home|hero|image1"><img src="http://media.economist.com/sites/default/files/imagecache/superhero/20130511_MAD001_473.jpg" alt="A new effort at peace" title="A new effort at peace"  class="imagecache imagecache-superhero" width="473" height="266" /></a></div></li><li><div class="hero-item hero-item-2"><div class="hero-comment"><a href="/node/21577342/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="home|hero|headline2|comments"><span>212</span></a></div><a href="/news/science-and-technology/21577342-carbon-dioxide-concentrations-hit-their-highest-level-4m-years-measure" class="hero-tab" data-ec-omniture="home|hero|headline2"><h2 class="fly-title">Climate change</h2><p class="headline">Measuring the warming</p></a></div><div class="hero-media" style="visibility:hidden;opacity:0"><a href="/news/science-and-technology/21577342-carbon-dioxide-concentrations-hit-their-highest-level-4m-years-measure" class="hero-image" rel="nofollow" data-ec-omniture="home|hero|image2"><img src="http://media.economist.com/sites/default/files/imagecache/superhero/20130511_STP506_473.jpg" alt="Measuring the warming" title="Measuring the warming"  class="imagecache imagecache-superhero" width="473" height="266" /></a></div></li><li><div class="hero-item hero-item-3"><div class="hero-comment"><a href="/blogs/analects/2013/05/chinas-changing-diplomacy#comments" title="Comments" class="comment-icon" data-ec-omniture="home|hero|headline3|comments"><span>35</span></a></div><a href="/blogs/analects/2013/05/chinas-changing-diplomacy" class="hero-tab" data-ec-omniture="home|hero|headline3"><h2 class="fly-title">Video</h2><p class="headline">China's changing diplomacy</p></a></div><div class="hero-media" style="visibility:hidden;opacity:0"><img src="http://brightcove01.brightcove.com/5/1153191510001/201305/1886/1153191510001_2368671013001_20130509-china-peace-process-raw.jpg?pubId=1153191510001" alt="" title=""  width="473px" height="266px" class="video-still" /><div class="video-overlay video-overlay-loading"></div><object id="ec-homepage-hero-video-1" class="BrightcoveExperience"><param name="bgcolor" value="#FFFFFF" /><param name="isUI" value="true" /><param name="isVid" value="true" /><param name="dynamicStreaming" value="true" /><param name="includeAPI" value="true" /><param name="autoStart" value="false" /><param name="wmode" value="opaque" /><param name="templateLoadHandler" value="homepageHeroEmbededPlayerLoaded" /><param name="templateReadyHandler" value="onTemplateReady" /><param name="linkBaseURL" value="http://64.14.173.3/blogs/analects/2013/05/chinas-changing-diplomacy" /><param name="playerID" value="1785851824001" /><param name="playerKey" value="AQ~~,AAABDH-R__E~,dB4S9tmhdOqRtUzaSp0FvBAQ2-ivGysg" /><param name="@videoPlayer" value="2368589778001" /><param name="width" value="473" /><param name="height" value="266" /></object></div></li><li><div class="hero-item hero-item-4"><div class="hero-comment"><a href="/node/21577400/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="home|hero|headline4|comments"><span>4</span></a></div><a href="/news/world-week/21577400-kals-cartoon" class="hero-tab" data-ec-omniture="home|hero|headline4"><p class="headline">KAL's cartoon</p></a></div><div class="hero-media" style="visibility:hidden;opacity:0"><a href="/news/world-week/21577400-kals-cartoon" class="hero-image" rel="nofollow" data-ec-omniture="home|hero|image4"><img src="http://media.economist.com/sites/default/files/imagecache/superhero/20130511_WWD000_473.jpg" alt="KAL&#039;s cartoon" title="KAL&#039;s cartoon"  class="imagecache imagecache-superhero" width="473" height="266" /></a></div></li></ul></div>
+      <div class="cover-image-container"><a href="/printedition" class="cover-image" data-ec-omniture="home|touts|issue|cover"></a><ul><li><a href="/printedition" data-ec-omniture="home|touts|issue|printedition">Full contents</a></li><li class="last"><a href="/products/subscribe" data-ec-omniture="home|touts|issue|subscribe">Subscribe</a></li></ul></div>
+    </div>  </div>
+</div>      </div>
+      
+      <div id="column-content" class="grid-10 grid-first clearfix">
+                                <!-- Create left column on search pages -->
+                            <!-- Homepage node -->
+<div class="grid-7 grid-first push-3">
+  <div id="homepage-center-inner">
+    <section class="news-package typog-package">
+
+  <h1 class="fly-title">Syria’s crisis</h1>
+
+    <article>
+  <a href="/news/middle-east-and-africa/21577394-things-go-bad-horrendous-big-outside-powers-call-talks" data-ec-omniture="homepage|newspackage|title1">
+          <div> 
+          <h2 class="headline">The bloody stalemate persists</h2>
+      <p class="rubric">
+        As things go from bad to horrendous, the big outside powers call for talks        <span data-ec-omniture="homepage|newspackage|title1|comments" data-href-redirect="/node/21577394/comments#comments" class="comment-icon"><span>30</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first"><div class="">
+  <a href="/blogs/pomegranate/2013/05/syria-s-crisis" class="headline" data-ec-omniture="homepage|newspackage|sublink1">Investigators are still trying to figure out who used what chemical weapons</a>  <a href="/blogs/pomegranate/2013/05/syria-s-crisis#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink1|comments"><span>83</span></a></div>
+</li>
+<li class="even last"><div class="">
+  <a href="/blogs/lexington/2013/05/barack-obama-and-syria" class="headline" data-ec-omniture="homepage|newspackage|sublink2">Lexington: Barack Obama is dithering over Syria</a>  <a href="/blogs/lexington/2013/05/barack-obama-and-syria#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink2|comments"><span>4</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/world/middle-east-africa" title="Middle East &amp;amp; Africa" data-ec-omniture="homepage|newspackage|more0">More in Middle East &amp; Africa &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Special report: International banking</h1>
+
+    <article>
+  <a href="/news/special-report/21577189-investment-banking-faces-leaner-humbler-future-says-jonathan-rosenthal-though" data-ec-omniture="homepage|newspackage|title2">
+          <div> 
+          <h2 class="headline">Twilight of the gods</h2>
+      <p class="rubric">
+        Investment banking faces a leaner, humbler future, though a select few banks will emerge from the financial crisis even larger and more powerful        <span data-ec-omniture="homepage|newspackage|title2|comments" data-href-redirect="/node/21577189/comments#comments" class="comment-icon"><span>5</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first last"><div class="">
+  <a href="/news/leaders/21577370-american-investment-banks-dominate-global-finance-once-more-thats-not-necessarily-good" class="headline" data-ec-omniture="homepage|newspackage|sublink3">American investment banks dominate global finance once more. That’s not necessarily good for America</a>  <a href="/node/21577370/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink3|comments"><span>84</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/business-finance" title="Business &amp;amp; finance" data-ec-omniture="homepage|newspackage|more1">More in Business &amp; finance &raquo;</a></div>
+  </section><section class="ec-homepage-player news-package typog-package">
+      <h1 class="fly-title">Latest audio and video</h1>
+    <div style="height:422px;"><object id="ec-homepage-video" class="BrightcoveExperience"><param name="bgcolor" value="#FFFFFF" /><param name="isUI" value="true" /><param name="isVid" value="true" /><param name="dynamicStreaming" value="true" /><param name="includeAPI" value="true" /><param name="autoStart" value="false" /><param name="wmode" value="opaque" /><param name="templateLoadHandler" value="homepagePlayerLoaded" /><param name="templateReadyHandler" value="onTemplateReady" /><param name="linkBaseURL" value="http://www.economist.com/multimedia" /><param name="playerID" value="1545427201001" /><param name="playerKey" value="AQ~~,AAABDH-R__E~,dB4S9tmhdOrAcjB6eqWZCo1XXp-OU2vB" /><param name="width" value="402" /><param name="height" value="422" /><param name="@videoPlayer" value="" /></object></div>
+  <p class="package-more">
+    <a href="/multimedia">More in Multimedia &raquo;</a>  </p>
+</section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Pakistan’s election</h1>
+
+    <article>
+  <a href="/news/asia/21577420-pakistani-taliban-setting-election-agenda-much-anyone-other-campaigner" data-ec-omniture="homepage|newspackage|title3">
+          <div> 
+          <h2 class="headline">The other campaigner</h2>
+      <p class="rubric">
+        The Pakistani Taliban is setting the election agenda as much as anyone        <span data-ec-omniture="homepage|newspackage|title3|comments" data-href-redirect="/node/21577420/comments#comments" class="comment-icon"><span>40</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first"><div class="">
+  <a href="/blogs/banyan/2013/05/pakistan-s-election" class="headline" data-ec-omniture="homepage|newspackage|sublink4">The most violent election yet</a>  <a href="/blogs/banyan/2013/05/pakistan-s-election#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink4|comments"><span>29</span></a></div>
+</li>
+<li class="even last"><div class="">
+  <a href="/news/asia/21576668-after-14-years-exile-and-opposition-nawaz-sharif-expects-win-third-spell-prime" class="headline" data-ec-omniture="homepage|newspackage|sublink5">Nawaz Sharif expects to win</a>  <a href="/node/21576668/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink5|comments"><span>124</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/world/asia" title="Asia" data-ec-omniture="homepage|newspackage|more2">More in Asia &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Immigration reform in America</h1>
+
+    <article>
+  <a href="/news/united-states/21577395-bill-now-faces-long-gruelling-fight-committee-not-so-fast" data-ec-omniture="homepage|newspackage|title4">
+          <div> 
+          <h2 class="headline">Not so fast</h2>
+      <p class="rubric">
+        The bill now faces a gruelling fight in committee        <span data-ec-omniture="homepage|newspackage|title4|comments" data-href-redirect="/node/21577395/comments#comments" class="comment-icon"><span>45</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first"><div class="">
+  <a href="/blogs/democracyinamerica/2013/05/immigration-reform" class="headline" data-ec-omniture="homepage|newspackage|sublink6">How not to make the economic case against reform</a>  <a href="/blogs/democracyinamerica/2013/05/immigration-reform#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink6|comments"><span>179</span></a></div>
+</li>
+<li class="even last"><div class="">
+  <a href="/news/business/21577106-immigrants-do-who-creates-jobs" class="headline" data-ec-omniture="homepage|newspackage|sublink7">Who creates jobs? Immigrants do</a>  <a href="/node/21577106/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink7|comments"><span>43</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/world/united-states" title="United States" data-ec-omniture="homepage|newspackage|more3">More in United States &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Monitoring the environment</h1>
+
+    <article>
+  <a href="/news/science-and-technology/21577341-worlds-third-largest-area-ice-about-undergo-systematic" data-ec-omniture="homepage|newspackage|title5">
+          <div> 
+          <h2 class="headline">Pole-land</h2>
+      <p class="rubric">
+        The world’s third-largest area of ice is about to undergo a systematic investigation        <span data-ec-omniture="homepage|newspackage|title5|comments" data-href-redirect="/node/21577341/comments#comments" class="comment-icon"><span>4</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first"><div class="">
+  <a href="/news/science-and-technology/21577342-carbon-dioxide-concentrations-hit-their-highest-level-4m-years-measure" class="headline" data-ec-omniture="homepage|newspackage|sublink8">CO2 concentrations hit their highest level in 4m years</a>  <a href="/node/21577342/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink8|comments"><span>193</span></a></div>
+</li>
+<li class="even last"><div class="">
+  <a href="/news/leaders/21577385-only-good-news-about-earths-record-greenhouse-gas-levels-they-have-been-well" class="headline" data-ec-omniture="homepage|newspackage|sublink9">Leader: The only good news about the record greenhouse-gas levels is that they have been well measured</a>  <a href="/node/21577385/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink9|comments"><span>17</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/science-technology" title="Science &amp;amp; technology" data-ec-omniture="homepage|newspackage|more4">More in Science &amp; technology &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Malaysia’s election</h1>
+
+    <article>
+  <a href="/news/asia/21577375-government-scrapes-homeallegedly-aided-vote-rigging-tawdry-victory" data-ec-omniture="homepage|newspackage|title6">
+          <div> 
+          <h2 class="headline">Tawdry victory</h2>
+      <p class="rubric">
+        The government scrapes home—allegedly aided by vote rigging        <span data-ec-omniture="homepage|newspackage|title6|comments" data-href-redirect="/node/21577375/comments#comments" class="comment-icon"><span>18</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first last"><div class="">
+  <a href="/news/leaders/21577390-after-tainted-election-victory-najib-razak-needs-show-his-reformist-mettle-dangerous" class="headline" data-ec-omniture="homepage|newspackage|sublink10">Leader: After a tainted election victory, Najib Razak needs to show his reformist mettle</a>  <a href="/node/21577390/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink10|comments"><span>18</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/world/asia" title="Asia" data-ec-omniture="homepage|newspackage|more5">More in Asia &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Musical theatre</h1>
+
+    <article>
+  <a href="/news/business/21577062-musicals-business-bigger-more-global-and-more-fabulous-ever-tills-are-alive" data-ec-omniture="homepage|newspackage|title7">
+          <div> 
+          <h2 class="headline">The tills are alive</h2>
+      <p class="rubric">
+        The musicals business is bigger, more global and more fabulous than ever        <span data-ec-omniture="homepage|newspackage|title7|comments" data-href-redirect="/node/21577062/comments#comments" class="comment-icon"><span>10</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first"><div class="">
+  <a href="/news/leaders/21577069-answers-almost-all-worlds-problems-can-be-found-broadway-do-it-book" class="headline" data-ec-omniture="homepage|newspackage|sublink11">Leader: Answers to almost all the world’s problems can be found on Broadway</a>  <a href="/node/21577069/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink11|comments"><span>12</span></a></div>
+</li>
+<li class="icon-chart even"><div class="">
+  <a href="/blogs/graphicdetail/2013/05/daily-chart-1" class="headline" data-ec-omniture="homepage|newspackage|sublink12">Chart: Musicals are booming</a>  <a href="/blogs/graphicdetail/2013/05/daily-chart-1#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink12|comments"><span>12</span></a></div>
+</li>
+<li class="icon-video last"><div class="">
+  <a href="/blogs/schumpeter/2013/05/musical-theatre-business" class="headline" data-ec-omniture="homepage|newspackage|sublink13">Our correspondents discuss musicals</a>  <a href="/blogs/schumpeter/2013/05/musical-theatre-business#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink13|comments"><span>1</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/culture" title="Culture" data-ec-omniture="homepage|newspackage|more6">More in Culture &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Dams in the Amazon</h1>
+
+    <article>
+  <a href="/news/americas/21577073-having-spent-heavily-make-worlds-third-biggest-hydroelectric-project-greener-brazil" data-ec-omniture="homepage|newspackage|title8">
+          <div> 
+          <h2 class="headline">The rights and wrongs of Belo Monte</h2>
+      <p class="rubric">
+        Having spent heavily to make the world’s third-biggest hydroelectric project greener, Brazil risks getting a poor return on its $14 billion investment        <span data-ec-omniture="homepage|newspackage|title8|comments" data-href-redirect="/node/21577073/comments#comments" class="comment-icon"><span>77</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first last"><div class="">
+  <a href="/news/americas/21577090-small-dam-big-argument-shrouded-secrecy" class="headline" data-ec-omniture="homepage|newspackage|sublink14">A small dam and a big argument in Guyana</a>  <a href="/node/21577090/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink14|comments"><span>0</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/world/americas" title="Americas" data-ec-omniture="homepage|newspackage|more7">More in Americas &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Xi Jinping’s vision</h1>
+
+    <article>
+  <a href="/news/briefing/21577063-chinas-new-leader-has-been-quick-consolidate-his-power-what-does-he-now-want-his" data-ec-omniture="homepage|newspackage|title9">
+          <div> 
+          <h2 class="headline">Chasing the Chinese dream</h2>
+      <p class="rubric">
+        China’s new leader has been quick to consolidate his power. What does he now want for his country?        <span data-ec-omniture="homepage|newspackage|title9|comments" data-href-redirect="/node/21577063/comments#comments" class="comment-icon"><span>240</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first"><div class="">
+  <a href="/news/leaders/21577070-vision-chinas-new-president-should-serve-his-people-not-nationalist-state-xi-jinping" class="headline" data-ec-omniture="homepage|newspackage|sublink15">Leader: The vision of China’s new president should serve his people, not a nationalist state</a>  <a href="/node/21577070/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink15|comments"><span>852</span></a></div>
+</li>
+<li class="icon-video even last"><div class="">
+  <a href="/blogs/analects/2013/05/what-chinese-dream" class="headline" data-ec-omniture="homepage|newspackage|sublink16">What is the "Chinese dream"</a>  <a href="/blogs/analects/2013/05/what-chinese-dream#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink16|comments"><span>145</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/world/china" title="China" data-ec-omniture="homepage|newspackage|more8">More in China &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Guantánamo Bay</h1>
+
+    <article>
+  <a href="/news/united-states/21577061-desperate-protest-prisoners-guant-namo-has-shamed-barack-obama-oubliette" data-ec-omniture="homepage|newspackage|title10">
+          <div> 
+          <h2 class="headline">The oubliette</h2>
+      <p class="rubric">
+        A desperate protest by prisoners at Guantánamo has shamed Barack Obama        <span data-ec-omniture="homepage|newspackage|title10|comments" data-href-redirect="/node/21577061/comments#comments" class="comment-icon"><span>218</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first last"><div class="">
+  <a href="/news/leaders/21577065-prison-deeply-un-american-disgrace-it-needs-be-closed-rapidly-enough-make-you-gag" class="headline" data-ec-omniture="homepage|newspackage|sublink17">Leader: The prison is a deeply un-American disgrace. It needs to be closed rapidly</a>  <a href="/node/21577065/comments#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink17|comments"><span>406</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/business-finance" title="Business &amp;amp; finance" data-ec-omniture="homepage|newspackage|more9">More in Business &amp; finance &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Gun control</h1>
+
+    <article>
+  <a href="/blogs/democracyinamerica/2013/05/gun-violence-and-gun-control" data-ec-omniture="homepage|newspackage|title11">
+          <div> 
+          <h2 class="headline">Dear life</h2>
+      <p class="rubric">
+        The dramatic decline in gun violence over the past two decades does not make new gun-control laws seem unnecessary        <span data-ec-omniture="homepage|newspackage|title11|comments" data-href-redirect="/blogs/democracyinamerica/2013/05/gun-violence-and-gun-control#comments" class="comment-icon"><span>235</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first"><div class="">
+  <a href="/blogs/democracyinamerica/2013/05/gun-control-and-nullification-0" class="headline" data-ec-omniture="homepage|newspackage|sublink18">Kansas won't stand for new federal gun laws</a>  <a href="/blogs/democracyinamerica/2013/05/gun-control-and-nullification-0#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink18|comments"><span>185</span></a></div>
+</li>
+<li class="even last"><div class="">
+  <a href="/blogs/democracyinamerica/2013/04/gun-control" class="headline" data-ec-omniture="homepage|newspackage|sublink19">Who are the victims of gun control?</a>  <a href="/blogs/democracyinamerica/2013/04/gun-control#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink19|comments"><span>466</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/world/united-states" title="United States" data-ec-omniture="homepage|newspackage|more10">More in United States &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Prosecuting bankers</h1>
+
+    <article>
+  <a href="/news/finance-and-economics/21577064-why-have-so-few-bankers-gone-jail-their-part-crisis-blind-justice" data-ec-omniture="homepage|newspackage|title12">
+          <div> 
+          <h2 class="headline">Blind justice</h2>
+      <p class="rubric">
+        Why have so few bankers gone to jail for their part in the crisis?        <span data-ec-omniture="homepage|newspackage|title12|comments" data-href-redirect="/node/21577064/comments#comments" class="comment-icon"><span>122</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="first last"><div class="">
+  <a href="/blogs/freeexchange/2013/01/prosecuting-financial-crisis" class="headline" data-ec-omniture="homepage|newspackage|sublink20">Just who should we be blaming anyway? (Jan 2013)</a>  <a href="/blogs/freeexchange/2013/01/prosecuting-financial-crisis#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink20|comments"><span>138</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/business-finance" title="Business &amp;amp; finance" data-ec-omniture="homepage|newspackage|more11">More in Business &amp; finance &raquo;</a></div>
+  </section><section class="news-package typog-package">
+
+  <h1 class="fly-title">Technology and the future</h1>
+
+    <article>
+  <a href="/news/books-and-arts/21577039-three-new-books-look-power-digital-age-feel-force" data-ec-omniture="homepage|newspackage|title13">
+          <div> 
+          <h2 class="headline">Feel the force</h2>
+      <p class="rubric">
+        Three new books look at power in the digital age        <span data-ec-omniture="homepage|newspackage|title13|comments" data-href-redirect="/node/21577039/comments#comments" class="comment-icon"><span>28</span></span>      </p>
+    </div>
+      </a>
+</article>  
+    <ul><li class="icon-video first last"><div class="">
+  <a href="/blogs/babbage/2013/05/evgeny-morozov-technology" class="headline" data-ec-omniture="homepage|newspackage|sublink21">Evgeny Morozov explains why the world's complex problems will not be solved by technology alone</a>  <a href="/blogs/babbage/2013/05/evgeny-morozov-technology#comments" title="Comments" class="comment-icon" data-ec-omniture="homepage|newspackage|sublink21|comments"><span>13</span></a></div>
+</li>
+</ul>  
+    <div class="package-more"><a href="/science-technology" title="Science &amp;amp; technology" data-ec-omniture="homepage|newspackage|more12">More in Science &amp; technology &raquo;</a></div>
+  </section>      </div>
+</div>
+
+<div class="side-box multiple-box grey-palette typog-highlights grid-3 pull-7">
+  <div id="homepage-highlight-1"><article >
+  <a href="/blogs/americasview/2013/05/historic-verdict-guatemala">
+    <div>
+                    <h1 class="fly-title">A historic verdict in Guatemala</h1>
+                          <p class="rubric">General José Efraín Ríos Montt, a former dictator, became the first person ever to be convicted of genocide in a court of his own country
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/guat168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="95" />      </a>
+</article></div><div id="homepage-highlight-2"><article >
+  <a href="/blogs/democracyinamerica/2013/05/keynes">
+    <div>
+                    <h1 class="fly-title">In the long run...</h1>
+                          <p class="rubric">John Maynard Keynes mis-predicted our response to abundance because he misunderstood scarcity and the pleasures of the market
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/keynes168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" />      </a>
+</article></div><div id="homepage-highlight-3"><article >
+  <a href="/news/business/21577391-consultancies-supply-young-urban-talent-firms-boondocks-powerpoint-rangers">
+    <div>
+                    <h1 class="fly-title">PowerPoint Rangers</h1>
+                          <p class="rubric">Consultancies supply young urban talent to firms in the boondocks
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/20130511_WBD002_168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="175" />      </a>
+</article></div><div id="homepage-highlight-4"><article >
+  <a href="/blogs/americasview/2013/05/murder-cura-ao">
+    <div>
+                    <h1 class="fly-title">Trouble in paradise</h1>
+                          <p class="rubric">A prominent politician is shot dead in Curaçao
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/20130511_AMP505_168_0.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="95" />      </a>
+</article></div><div id="homepage-highlight-5"><article >
+  <a href="/news/europe/21577419-new-school-breaks-old-rules-bangalore-sur-seine">
+    <div>
+                    <h1 class="fly-title">French education</h1>
+                          <p class="rubric">A new school breaks old rules
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/20130511_EUP002_168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="95" />      </a>
+</article></div><div id="homepage-highlight-6"><article >
+  <a href="/news/obituary/21577350-giulio-andreotti-many-times-prime-minister-italy-died-may-6th-aged-94-giulio-andreotti">
+    <div>
+                    <h1 class="fly-title">Obituary</h1>
+                          <p class="rubric">Giulio Andreotti, many times prime minister of Italy, died on May 6th, aged 94
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/20130511_OBP001_168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="95" />      </a>
+</article></div><div id="homepage-highlight-7"><article >
+  <a href="/blogs/erasmus/2013/05/church-repels">
+    <div>
+                    <h1 class="fly-title">A church that repels</h1>
+                          <p class="rubric">The tiny, noisy Westboro Baptist Church is a product of liberty too
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/20130511_BLP504_168_0.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="95" />      </a>
+</article></div><div id="homepage-highlight-8"><article >
+  <a href="/news/china/21577423-china-hosts-israeli-and-palestinian-leaders-and-touts-its-peacemaking-credentials-playing">
+    <div>
+                    <h1 class="fly-title">China and the Middle East</h1>
+                          <p class="rubric">Playing the peacemaker?
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/20130511_CNP005_168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="247" />      </a>
+</article></div><div id="homepage-highlight-9"><article >
+  <a href="/blogs/economist-explains/2013/05/economist-explains-why-saudi-arabia-might-move-weekend">
+    <div>
+                    <h1 class="fly-title">The Economist explains</h1>
+                          <p class="rubric">Why is Saudi Arabia thinking of moving its weekend?
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/20130504_BLP509_168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="95" />      </a>
+</article></div><div id="homepage-highlight-10"><article >
+  <a href="/blogs/analects/2013/05/disputed-waters">
+    <div>
+                    <h1 class="fly-title">Disputed waters</h1>
+                          <p class="rubric">Tourist cruises begin to the disputed Paracel islands
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/20130511_CNP003_168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="95" />      </a>
+</article></div><div id="homepage-highlight-11"><article >
+  <a href="http://moreintelligentlife.co.uk/content/places/andreas-kluth/stumbling-over-past">
+    <div>
+                    <h1 class="fly-title">Stumbling over the past</h1>
+                          <p class="rubric">In Berlin, victims of the Nazis are remembered with Stolpersteine—brass plates, embedded in concrete, in the streets where they lived
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/berlin168.jpg" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="125" />      </a>
+</article></div><div id="homepage-highlight-12"><article >
+  <a href="http://www.economist.com/digital/apps">
+    <div>
+                    <h1 class="fly-title">Editor&#039;s note</h1>
+                          <p class="rubric">Read The Economist on iPhone, iPad, Android and BlackBerry PlayBook
+</p>
+                </div>
+          <img src="http://media.economist.com/sites/default/files/imagecache/homepage_highlight/apps.png" alt="" title=""  class="imagecache imagecache-homepage_highlight" width="168" height="161" />      </a>
+</article></div></div>
+<!-- End homepage node -->              </div> <!-- /#main-area -->
+
+              <div id="column-right" class="grid-6 clearfix">
+          <div id="homepage-touts">
+  <div class="grid-3 grid-first">
+    <div class="tout tout-1">
+          </div>
+
+    <div class="tout tout-2">
+          </div>
+  </div> <!-- /#homepage-touts -->
+
+  <div class="grid-3">
+    <div class="tout tout-issue">
+      <div class="cover-image-container">
+              </div>
+    </div>
+  </div> <!-- /#homepage-issue -->
+</div>
+          <div id="block-ec_ads-mpu_no_wrapper_top_ad" class="block block-ec_ads">
+    <div class="content clearfix">
+    <div class="ec-ads ec-ads-remove-if-empty ec-ads-remove-wrapper"><!-- Site: Web.  Zone: Home |  --> <script language="JavaScript" type="text/javascript">document.write('<script language="JavaScript" src="//ad.doubleclick.net/adj/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=mpu_no_wrapper_top;sz=20x20;tile=5;ord=' + random_ad_nr + '?" type="text/javascript"><\/script>')</script><noscript><a href="//ad.doubleclick.net/jump/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=mpu_no_wrapper_top;sz=20x20;tile=5;ord=608707107?" target="_blank"><img src="//ad.doubleclick.net/ad/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=mpu_no_wrapper_top;sz=20x20;tile=5;ord=608707107?" width="20" height="20" border="0" alt=""></a></noscript></div>  </div>
+</div><div id="block-ec_ads-top_mpu_ad" class="block block-ec_ads">
+    <div class="content clearfix">
+    <div class="ec-ads ec-ads-remove-if-empty"><p class="ec-ads-label">Advertisement</p><!-- Site: Web.  Zone: Home |  --> <script language="JavaScript" type="text/javascript">document.write('<script language="JavaScript" src="//ad.doubleclick.net/adj/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=mpu_top;sz=300x250,350x900,350x600;tile=6;ord=' + random_ad_nr + '?" type="text/javascript"><\/script>')</script><noscript><a href="//ad.doubleclick.net/jump/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=mpu_top;sz=300x250,350x900,350x600;tile=6;ord=608707107?" target="_blank"><img src="//ad.doubleclick.net/ad/teg.fmsq/j2ek;subs=n;wsub=n;sdn=n;pos=mpu_top;sz=300x250,350x900,350x600;tile=6;ord=608707107?" width="300" height="250" border="0" alt=""></a></noscript></div>  </div>
+</div><div id="block-ec_ads-ribbon_ad" class="block block-ec_ads">
+    <div class="content clearfix">
+    <div class="ec_topic_ribbon ec-ads-remove-if-empty"><!-- Site: Web.  Zone: 
