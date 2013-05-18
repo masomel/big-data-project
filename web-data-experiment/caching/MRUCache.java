@@ -49,7 +49,7 @@ public class MRUCache implements ICache {
         this.cache = new HashMap<Integer,Chunk>();
         this.capacity = capacity;
         this.size = capacity;
-	this.isMiss = false;
+        this.isMiss = false;
     }
     
     @Override
@@ -64,6 +64,7 @@ public class MRUCache implements ICache {
     
     @Override
 	public Chunk get(int fp) {
+    	MRU = fp;
         return cache.get(fp);
     }
     
@@ -74,22 +75,22 @@ public class MRUCache implements ICache {
     
     @Override
 	public void put(int fp, Chunk c) {
-	isMiss = false;
+    	isMiss = false;
 	
         if (!cache.containsKey(fp)) {
-	    if (capacity > 0) {
+        	if (capacity > 0) {
                 cache.put(fp, c);
-		capacity--;  		
-	    }
-	    else {
-		// Evict most recently used item
-		cache.remove(MRU);
-		cache.put(fp, c);
-	    }
-	    isMiss = true;
+                capacity--;  		
+        	}
+        	else {
+        		// Evict most recently used item
+        		cache.remove(MRU);
+        		cache.put(fp, c);
+        	}
+        	isMiss = true;
         }
         else {
-            MRU = fp;        	
+            MRU = fp;
         }	
     }
 }

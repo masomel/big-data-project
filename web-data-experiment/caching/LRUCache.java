@@ -12,7 +12,7 @@ public class LRUCache implements ICache {
 	private int capacity;
 	private long time;
 	private boolean isMiss;
-	
+
 	private Map<Integer, Chunk> cache;
 	private Map<Integer, Long> usage;
 
@@ -27,6 +27,7 @@ public class LRUCache implements ICache {
 
 	@Override
 	public Chunk get(int fingerprint) {
+		adjustUsage(fingerprint);
 		return cache.get(fingerprint);
 	}
 
