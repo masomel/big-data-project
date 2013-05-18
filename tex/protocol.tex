@@ -1,14 +1,14 @@
-\section{Reduction Protocol Design}
+\subsection{Bandwidth Reduction Protocol}
 \label{sec:protocol}
 The second major part of our technique is the reduction protocol between the mobile device and the proxy server. It brings together all the components described in Section \ref{sec:sys_design}. Every time a new page is requested by the mobile browser, the following protocol is performed:
-\begin{enum}
+\begin{enumerate}
 \item Mobile device sends an HTTP request to the proxy server.
 \item Proxy server relays this request to the proper web server.
 \item Proxy server performs chunking and fingerprinting of the chunks for all the received web content. It sends all the fingerprints to the mobile device.
 \item Mobile device checks its cache for the fingerprints, and creates a list of those it needs. It sends this list to the proxy server.
 \item Proxy server creates a list of the needed chunks according to the received needed fingerprints. It sends this list back to the mobile device.
 \item Mobile device reconstructs the entire requested page from its cache contents and the received list of needed chunks.
-\end{enum}
+\end{enumerate}
 
 
 
