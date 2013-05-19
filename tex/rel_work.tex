@@ -1,12 +1,16 @@
 \section{Previous Work}\label{sec:rel_work}
-Some work has been done in trying to reduce bandwidth in wide-area networks. Ihm \textit{et al.}~\cite{wanax} present 
-a system for reducing bandwidth in wide-area networks for efficient Internet usage in developing countries. Their 
-technique is similar to the one used in this work, \textit{e.g.} chunking of the stream of data and Rabin fingerprinting 
-of the resulting chunks. However, they are assuming large and small  
+Two notable works try to reduce the required bandwidth in different contexts. They both introduce similar concepts that have
+inspired our work. Ihm \textit{et al.}~\cite{wanax} use similar techniques as in this work to design an efficient WAN accelerator for developing countries. As in this work, they also leverage chunking, Rabin fingerprinting and caching. 
+The authors propose efficient chunking and caching schemes to handle the challenges brought by the equipment in developing world countries such as limited RAM and poor hard disk performance. Muthitacharoen \textit{et al.}~\cite{lbfs} present 
+network file system designed for low bandwidth networks (LBFS). This system leverages file similarities using variable-
+sized slide-window chunking and Rabin fingerprinting. They experimentally show that this approach uses an order of
+magnitude lower bandwidth - a fact that make this approach promising for the case of mobile Web browsing.
 
-Ihm and Pai~\cite{modern_web_traffic} perform a thorough and deep analysis of Web traffic logs that have been collected 
-over five-years period. They find many interesting facts about connection speed of today's Web users, NAT usage, content type
-of the traffic and the traffic share of different types of Web sites. Moreover, they find that there is a fair amount 
-of redundancy in the Web traffic and discuss different approaches for reducing the amount of this redundancy.
+Different line of works tries to measure the amount of redundancy in today's Web traffic and to identify its cause by
+analyzing Web traffic logs and datasets. Ihm and Pai~\cite{modern_web_traffic} perform a sophisticated analysis of Web traffic data logs that have been collected over a five-years period. Along with proposing a new page analysis algorithm 
+that is better suited for the modern Web, the authors find many interesting facts about connection speed of today's Web users, NAT usage, traffic content type and share of different types of Web sites. They also investigate the amount of redundancy in the collected data and the impact of caching. More specifically, they compare content-based with object-based caching approaches and quantify the major sources of redundancy. Qian \textit{et al.}~\cite{web_caching} measure the 
+amount of redundant data transfers caused by inefficient web caching particularly for smartphones. They conclude that redundant transfers contribute up to 20\% of the total HTTP traffic amount on two different datasets. Moreover, the particular reason for this redundancy is usually developers' faults in cache inplementations, \textit{e.g.} by not fully supporting and following the used network protocol or by not fully utilizing the caching support provided by the libraries. The authors also explore the impact of other factors such as limited cache size and caches whose data does not survive a process restart or a device reboot.
 
-Qian \textit{et al.}~\cite{web_caching}
+Some of the concepts used in our work has been discovered quite long ago. The idea of chunking files to find 
+similarities between them was originally presented by Manber in 1994 \cite{manber}. The notion of ``fingerprinting" 
+files dates back to 1981 when Rabin first presented a novel hashing technique that uses random polynomials \cite{rabin}.
