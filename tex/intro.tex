@@ -36,7 +36,7 @@ The growth in demand of mobile network bandwidth in conjunction with the financi
 % Nayden: edited version
 % Our Method
 We present a technique which leverages these data redundancies to improve the bandwidth utilization efficiency of mobile browsers. We use the standard data deduplication 
-techniques of chunking and Rabin fingerprinting to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
+techniques of chunking \cite{manber,spring,lbfs} and Rabin fingerprinting \cite{rabin} to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
 page content, our mechanism helps reduce the number of bytes sent across the network, thereby reducing the required bandwidth. Our technique allows us to analyze 
 the redundancies across and within websites and to calculate the amount of potential bandwidth savings that can be obtained through data deduplication. This paper 
 makes the following major contributions:
@@ -50,5 +50,6 @@ algorighms and transferred data metrics.
 
 The rest of this paper is organized as follows. We discuss the previous work done on the problem in Section~\ref{sec:rel_work}. We describe the basic design of the 
 system that we built in Section~\ref{sec:sys_design}. Details about our implementation are presented in Section~\ref{sec:implementation} 
-and results of experimental evaluation in Section~\ref{sec:eval}. We discuss the results of the evaluation that we performed in Section~\ref{sec:discussion}, give 
-some directions for potential future work and conclude in Section~\ref{sec:conclusion}.
+and results of experimental evaluation in Section~\ref{sec:eval}. We 
+%discuss the results of the evaluation that we performed in Section~\ref{sec:discussion}, 
+give some directions for potential future work and conclude in Section~\ref{sec:conclusion}.
