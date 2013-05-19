@@ -1,7 +1,12 @@
 \section{System Design}
 \label{sec:sys_design}
-\subsection{Data Chunking}
-\subsection{Data Fingerprinting}
-\subsection{Caching}
-\subsection{Proxy Server}
+Our system is comprised of we add 
+the following three steps: (1) Data Chunking which partitions incoming web content into fixed-size data chunks, (2) Fingerprinting which uses fingerprinting 
+techniques to create a unique encoding of each unique data chunk, and (3) Caching which adds a layer on top of the web cache to only store unique chunks of data. 
+We use a proxy server to perform the computationally intensive steps (1) and (2) to minimize the additional strain on the limited computational resources of mobile 
+devices.
+\input{chunking}
+\input{fingerprinting}
+\input{design_caching}
+\input{protocol}
 

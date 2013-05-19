@@ -19,21 +19,24 @@ desktop browser data \cite{?}, there has been minimal study of data redundancy i
 % Nayden: More motivation needed here
 
 % Our Method 
-% Nayden: This is too long for introduction. I don't think we need so many details. They should go to the design or implementation and here we should
-% mention only basic things.
 We present a technique which leverages these data redundancies to improve the bandwith utilization efficiency of mobile browsers. We use data deduplication 
 techniques to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
 page content, our mechanism helps reduce the number of bytes sent across the network, thereby reducing the required bandwidth. We integrate our technique into 
-the data processing phase of browsing, i.e. the phase between the initial request for a page and the rendering of the requested page. More specifically, we add 
-the following three steps: (1) Data Chunking which partitions incoming web content into fixed-size data chunks, (2) Fingerprinting which uses fingerprinting 
-techniques to create a unique encoding of each unique data chunk, and (3) Caching which adds a layer on top of the web cache to only store unique chunks of data. 
-We use a proxy server to perform the computationally intensive steps (1) and (2) to minimize the additional strain on the limited computational resources of mobile 
-devices.
+the data processing phase of browsing, i.e. the phase between the initial request for a page and the rendering of the requested page. 
 
 %Other Methods --> Moved to discussion
 
 % Purpose
-Our technique allows us to analyze redundancies across and within websites and to calculate the amount of potential bandwidth savings that can be obtained through data deduplication. As part of our analysis, we test various data chunk and cache sizes with the aim of finding the optimal parameter settings for our technique. We have built a simulator to perform these analyses using use two datasets, one obtained by capturing HTTP response packets through the packet analysis tool Wireshark and the other obtained through telnet requests. We also study various implementations of cache eviction algorithms to determine the optimal choice for our technique. Additionally, we have implemented a proof-of-concept networked mobile client simulator and basic proxy server showing that our technique does not require changes to web server configurations, and does not alter the mobile browsing experience, making this a viable enhancement to mobile browsers benefitting mobile users.
+Our technique allows us to analyze redundancies across and within websites and to calculate the amount of potential bandwidth savings that can be obtained through data deduplication. As part of our analysis, we test various data chunk and cache sizes with the aim of finding the optimal parameter settings for our technique. We also study various implementations of cache eviction algorithms to determine the optimal choice for our technique. 
+
+% Marcela: Need to add some discussion about results
+
+In summary, our main contributions are the following:
+\begin{itemize}
+\item The design of a system and protocol which integrate into the current mobile browsing framework.
+\item The implementation of two simulators, one for experimental purposes, one as a proof-of-concept prototype.
+\item The experimental evaluation of our system and protocol, with which we demonstrate significant improvements to current mobile network bandwidth requirements.
+\end{itemize}
 
 The rest of this paper is organized as follows. We discuss the previous work done on the problem in Section~\ref{sec:rel_work}. We describe the basic design of the 
 system that we built in Section~\ref{sec:sys_design} and ~\ref{sec:protocol}. Details about our implementation are presented in Section~\ref{sec:implementation} 
