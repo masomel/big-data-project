@@ -34,21 +34,20 @@ We focus on addressing the bandwidth constraint problem by identifying and signi
 
 % Nayden: edited version
 % Our Method
-In this work, we present a technique which leverages these data redundancies to improve the bandwidth utilization efficiency of mobile browsers. We use data deduplication 
+We present a technique which leverages these data redundancies to improve the bandwidth utilization efficiency of mobile browsers. We use data deduplication 
 techniques to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
 page content, our mechanism helps reduce the number of bytes sent across the network, thereby reducing the required bandwidth. Our technique allows us to analyze 
 the redundancies across and within websites and to calculate the amount of potential bandwidth savings that can be obtained through data deduplication. This paper 
 makes the following major contributions:
 \begin{itemize}
 \item Design of a system and a protocol for effective reduction of required bandwidth for mobile browsing.
-\item Integration of the proposed system and protocol in data processing phase of mobile browsing, \textit{i.e.} the phase between the initial request for a page and
-the rendering of the requested page.
+\item Integration of the proposed system and protocol into the current mobile browsing framework.
 \item Complete implementation of two simulators - one for experimental purposes and another that serves as a proof-of-concept prototype.
 \item Thorough experimental evaluation of our prototype system on a large number of different criteria, including various data chunk sizes, different cache eviction scheme
-algorighms and different metrics of the transered data.
+algorighms and different metrics of the transferred data.
 \end{itemize}
 
 The rest of this paper is organized as follows. We discuss the previous work done on the problem in Section~\ref{sec:rel_work}. We describe the basic design of the 
-system that we built in Section~\ref{sec:sys_design} and ~\ref{sec:protocol}. Details about our implementation are presented in Section~\ref{sec:implementation} 
+system that we built in Section~\ref{sec:sys_design}. Details about our implementation are presented in Section~\ref{sec:implementation} 
 and results of experimental evaluation in Section~\ref{sec:eval}. We discuss the results of the evaluation that we performed in Section~\ref{sec:discussion}, give 
 some directions for potential future work and conclude in Section~\ref{sec:conclusion}.
