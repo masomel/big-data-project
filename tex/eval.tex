@@ -1,6 +1,7 @@
 \section{Experimental Evaluation}
 \label{sec:eval}
 
+\subsection{Obtainining Web Data}
 We obtained results through a process of collecting offline data, and modifying our simulator to output information about the data being processed. 
 Mainly, we observed how changes in parameters affected the miss rate as well as the number of bytes transferred between the proxy and mobile device.
 
@@ -10,7 +11,8 @@ The frequency with which we made these GET requests were for the purpose of refl
 We stored each response in a different file and then processed the data to obtain the byte stream version of the html pages. 
 Using this byte stream, we ran several experiments that gave us insight into data redundancy within webpages.
 
-Figure shows the distinctions between mobile web content and desktop web content. 
+\subsection{Mobile vs. Desktop Browser Content}
+Figure 6 shows the distinctions between mobile web content and desktop web content. 
 Many web servers today structure their webpages differently depending on the user-agent they're serving to increase the speed with which the webpages load, to provide better service with respect to UI and various other reasons. 
 Therefore, mobile pages are inherently different from desktop browsers and thereby require its own analysis. 
 Figure shows that the mobile version of cnn.com is only about a fifth of the size of the desktop version. 
@@ -23,6 +25,7 @@ During the first visit to cnn.com, when there is no base copy of the webpage, th
 However, once there is a base copy in the cache, the overhead decreases substantially. 
 We can see from the graph that by the 12th visit, we are only transferring half the number of bytes as we would need to reload the entire webpage. 
 
+\subsection{Effects of Chunk Size}
 The use of chunk size of 10 bytes means that each redundant chunk saves 6 bytes because of the 4 bytes of fingerprint needed to represent that chunk. 
 This led us to explore different chunksizes to find the ideal chunk size that takes into consideration the tradeoff between having a low cache miss rate and having a fingerprint map to a bigger chunk.  We obtained the data through visits to cnn once a day for four days. Day 1 is not shown since the cache is empty so the contents of the entire webpage needs to be transferred.
 This is innately tied to the size of the content. Figure shows the relationship between \% of web content that is needed (based on cache miss rate) and chunk size based on a series of visits to cnn.com. 
@@ -35,6 +38,7 @@ Figure takes into account the effects of the extra bytes that need to be transfe
 This is because if the chunk size is small it gets expensive for the mobile device to communicate which chunks it needs. 
 At this point, the ideal chunk size depends on the size of content that needs to be transferred as opposed to percentage.
 
+\subsection{Bandwidth Reduction while Web Browsing.}
 The next two graphs show what happens when we visisted three websites three times a day for four days to simulate "mobile browsing". 
 The data was gathered by visiting cnn.com, nytimes.com and economist.com in an alternating basis three times a day over four days. This graph shows that the if the 'base' content of each webpage is in the cache, then less than 20\% of the content is generally new. The first three requests show that there is some, but not a lot of redundancy between webpages.
 Figure shows that on the the first visit, the cache is empty and 100\% of the traffic needs to be transferred. 
