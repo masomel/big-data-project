@@ -9,12 +9,12 @@ For our deduplication mechnism, we borrow several techniques proven useful for i
 \item Chunking: Partition incoming web content into data chunks.
 \item Fingerprinting: Create a unique encoding for each unique data chunk.
 \end{enumerate}
-The idea of chunking files to find similarities between them was first presented by Manber in 1994 \cite{manber}. The notion of ``fingerprinting" files dates back to 1981 when Rabin first presented his hashing technique using random polynomials \cite{rabin}. We explore two chunking techniques and use the implementation for Rabin Fingerprinting given by Broder \cite{broder}. 
+We explore two chunking techniques and use the implementation for Rabin Fingerprinting given by Broder \cite{broder}. 
 
 In addition, our mechanism requires special caches, one on the proxy server, and one on the mobile proxy client to store unique chunks of data. The client cache replaces the built-in browser web cache. We assume multiple mobile devices connecting to the proxy server and making distinct, un-correlated requests such that our mechanism does not attempt to synchronize the proxy server and client caches.
 
 \input{chunking}
 \input{fingerprinting}
 \input{design_caching}
-\input{protocol}
+%\input{protocol}
 
