@@ -47,6 +47,7 @@ We assume that no response is identical to a previous response.
 This means that without chunking, the full webpage has to be reloaded for each request, leading to the linearly increasing number of bytes we see in the graph. 
 With chunking however, we see that past the first few requests in which the effects of the overhead are heavy, the number of total bytes transferred rises gradually, and the gap between the bytes transferred grows with the number of requests.
 
+
 \begin{figure}[h] 
 \centering \includegraphics[scale=0.40]{images/browsing.png}
 \caption{Mobile Web Browsing. The data was gathered by visiting cnn.com, nytimes.com and economist.com in an alternating basis three times a day over four days. This graph shows that the if the 'base' content of each webpage is in the cache, then less than 20\% of the content is generally new. The first three requests show that there is some, but not a lot of redundancy between webpages.}
