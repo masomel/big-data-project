@@ -1,5 +1,25 @@
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
-We have built a simulator to perform these analyses using use two datasets, one obtained by capturing HTTP response packets through the packet analysis tool Wireshark and the other obtained through telnet requests. 
-Additionally, we have implemented a proof-of-concept networked mobile client simulator and basic proxy server showing that our technique does not require changes to web server configurations, and does not alter the mobile browsing experience, making this a viable enhancement to mobile browsers benefitting mobile users.
-\cite{manber}
+Our results show that our simulated system and protocol significantly reduce bandwidth requirements of mobile browsing. The next step would be an actual implementation of our mobile proxy-client to make it compatible with commodity smartphones, as well as to modify a mobile browser back-end to integrate our proxy-client. On the server side, we would like to use a publicly available server for our proxy server so that we can test our technique outside of our departmental boundaries. With an actual implementation in place, it would be possible to make actual latency and computational overhead measurements for our system.
+
+Other enhancements to our current model include using one of our better cache implementations for both the proxy server and mobile proxy-client caches, and allowing the proxy server to support all kinds of HTTP response codes to fully integrate it into the browsing framework. Moreover, we would like to study how the addition of a third deduplication technique, namely delta encoding as used in \cite{shilane}, would affect our bandwidth reduction rates.
+
+Another important area that needs more exploration is data redundancy due to HTTP traffic from mobile apps. Smartphone users are increasingly accessing specific websites and web services via dedicated mobile apps such that the use of mobile browsers is slowly declining. According to the app analytics firm Flurry, the average smartphone user spent 94 minutes using mobile applications and only 72 minutes browsing the web by the end of 2011 \cite{flurry}. Thus, an important future direction motivated by our project is to study mobile app data redundancy and design a similar system to our bandwidth reduction technique for mobile app traffic.
+
+In conclusion, we have developed a technique that leverages data redundancy in mobile web pages viewed through mobile web browsers to more efficiently make use of the limited mobile bandwidth. We built a simulator to analyze these data redundancies and found that our system reduces the number of bytes trasmitted to a mobile device by \textbf{NUMBER HERE} \% in most cases by only sending un-cached data. 
+Furthermore, we have extensively studied various cache eviction algorithms in the context of our system with the hope that our insights will inform future work on mobile bandwidth reduction.
+Lastly, we have implemented a proof-of-concept networked mobile client simulator and dedicated proxy server showing that our technique does not require changes to web server configurations, and would not alter the mobile browsing experience, making our technique a viable enhancement to mobile browsers benefitting mobile users.
+
+
+
+%Future Work
+%- Better caching (take expiration into account in proxy cache, more realistic cache data structure, better implementations of eviction algorithms) --> only difference having expiration makes is in the amount of data that is sent between the proxy server and the actual web server.
+%- Networked simulator --> take away headers of packets, use real-time http traffic instead of static packet bytes collected from wireshark, can better simulate multiple mobile devices, and do better latency measurements.
+%- Actual implementation of this system: using publicly available server, reconstruct chunked data to actual browser-readable data and/or store it in mobile phone's web cache.
+%- Look at mobile app http traffic besides browsing http traffic.
+%- not just browser but also APPS!
+%- delta encoding
+%-future work: effects on latency: getting from proxy will be faster
+%Delta encoding of chunks to achieve higher dedup.
+%Implementation using smartphones.
+%Look at mobile app HTTP traffic.
