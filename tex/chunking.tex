@@ -1,2 +1,6 @@
-\subsection{Data Chunking}
+\subsection{Chunking}
 \label{sec:chunking}
+\subsubsection{Fixed-Size Chunking}
+
+\subsubsection{Sliding Window Chunking}
+The second chunking technique we explore is what we call sliding window chunking. As opposed to partitioning files and streams of data into fixed-size chunks which are inflexible to file and packet content boundaries, this method allows us to adapt chunk sizes based on the actual contents of the file or packet stream. This is done by choosing a fixed-size window which we slide across the entire contents of a web page, setting the chunk boundaries according to the value of the fingerprint of the uses this method to find ``anchors", i.e. locations within files, we follow the similarity detection technique presented by Spring and Wetherall \cite{spring} and LBFS, a network file system which exploits similarities between files or versions of the same file to save bandwidth \cite{lbfs}.

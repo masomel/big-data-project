@@ -1,25 +1,18 @@
 \section{Introduction}
 % Motivation
-As of the beginning of 2013, global mobile traffic represented roughly 13\% of internet traffic \cite{?}. This number was just 1\% in 2009 and moved up 
-to 4\% in 2010. \cite{?}. At present, of the 5 billion mobile phones in the world, only a fifth are 
-smartphones \cite{?}. The user base of smartphone is expected to expand by about 42\% a year, and with that grows the mobile web traffic \cite{?}. The 
-issue we face in North America is that mobile networks are already running at 80\% of capacity and 36\% of base stations are facing capacity constraints \cite{?}. Globally, the ubiquitous appearance of mobile devices with the rise of cheap smartphones and 
-tablets in developing countries such as Africa and India is creating a demand for available and affortable bandwidth as well. In addition to computational 
-barriers, the data limits posed on mobile carrier data plans and data overage charges are an incentive for users to utilize their available data effectively.  The growth in demand of mobile network bandwidth in conjunction with the financial incentives of smartphone users motivates new and innovative techniques 
-to reduce mobile network traffic, and to use mobile bandwidth more efficiently. 
+As of the beginning of 2013, global mobile traffic represented roughly 13\% of internet traffic \cite{?}. This number was just 1\% in 2009 and increased to 4\% in 2010 \cite{?}. At present, of the 5 billion mobile phones in the world, only a fifth are smartphones \cite{?}. The user base of smartphone is expected to expand by about 42\% a year, and with that grows the mobile web traffic \cite{?}. The issue we face in North America is that mobile networks are already running at 80\% of capacity and 36\% of base stations are facing capacity constraints \cite{?}. Globally, the ubiquitous appearance of mobile devices with the rise of cheap smartphones and tablets in developing countries such as Africa and India is creating a demand for available and affortable bandwidth as well. In addition to computational barriers, the data limits posed on mobile carrier data plans and data overage charges are an incentive for users to utilize their available data effectively. The growth in demand of mobile network bandwidth in conjunction with the financial incentives of smartphone users motivates new and innovative techniques to reduce mobile network traffic, and to use mobile bandwidth more efficiently. 
 
 %Intro to Previous Work
-Browsing over mobile wireless networks is still a relatively new area and we currently face four overarching challenges: high cost, high latency, low 
-bandwidth and unreliability. The inherent inefficiencies that cause these issues are connection overhead, redundant transmission and verbose protocol 
-that make communication through mobile networks expesnive in terms of both time and money. In this paper, we focus on addressing the bandwidth constraint 
-problem by identifying and eliminating data redundancy in content viewed through a mobile web browser. Specific pages and sites have the tendency to change 
-little over time. Thus, when making a new request for some specific web content, the response will often contain a small number of modifications, but for the 
-most part will be very similar to a previously requested version of the webpage. There has been some previous work in analyzing redundant desktop browser data 
-\cite{?}, and we find out how thi redundancy compares with mobile browser data. 
 
+%%%% Where did you get this from?
+Browsing over mobile wireless networks is still a relatively new area and we currently face four overarching challenges: high cost, high latency, low bandwidth and unreliability. The inherent inefficiencies that cause these issues are communication overhead, redundant transmission and %which protocol are you referring to here?%
+verbose protocols that make communication through mobile networks expensive in terms of both time and money. 
+%%%%%
+We focus on addressing the bandwidth constraint problem by identifying and significantly reducing data redundancy in content viewed through a mobile web browser. Specific pages and sites have the tendency to change little over time. Thus, when making a new request for some specific web content, the response will often contain a small number of modifications, but for the most part will be very similar to a previously requested version of the webpage. While there has been some previous work in analyzing redundant desktop browser data \cite{?}, data redundancy in the area of mobile browsing has been minimally researched. We thus seek to learn how this redundancy compares with mobile browser data. %Do we actually have enough desktop browser data to make this statement?%
 
 % Nayden: I left the old text here before edit it
 % Our Method 
+
 %We present a technique which leverages these data redundancies to improve the bandwith utilization efficiency of mobile browsers. We use data deduplication 
 %techniques to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
 %page content, our mechanism helps reduce the number of bytes sent across the network, thereby reducing the required bandwidth. We integrate our technique into 
@@ -41,7 +34,7 @@ most part will be very similar to a previously requested version of the webpage.
 
 % Nayden: edited version
 % Our Method
-We present a technique which leverages these data redundancies to improve the bandwith utilization efficiency of mobile browsers. We use data deduplication 
+In this work, we present a technique which leverages these data redundancies to improve the bandwidth utilization efficiency of mobile browsers. We use data deduplication 
 techniques to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
 page content, our mechanism helps reduce the number of bytes sent across the network, thereby reducing the required bandwidth. Our technique allows us to analyze 
 the redundancies across and within websites and to calculate the amount of potential bandwidth savings that can be obtained through data deduplication. This paper 
