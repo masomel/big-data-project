@@ -34,6 +34,23 @@
 \maketitle
 
 \begin{abstract}
+The number of smartphones has been increasing in a very fast pace over the last several 
+years. With this speed, it is quite likely that they will dominate the market in the very 
+near future. As a result, the amount of mobile Web traffic now takes a serious portion of 
+the total amount of Internet traffic. Moreover, it is expected to grow exponentially with 
+every subsequent year. These facts put new challenges in the ways mobile networks are designed 
+and built. New methods for alleviation of the amount of transmitted mobile web traffic data
+should be found. 
+
+In this paper, we propose a novel technique for reducing the needed bandwidth for mobile Web 
+browsing. It automatically identifies redundancies in mobile Web sites data and cuts the number
+of transimitted bytes. We leverage partitioning of website data into chunks and fingerprinting them
+for efficient retrieval from a cache. The only addition to the network that our method requires 
+is a dedicated proxy server which serves as a cache. We implement our techniques in a sophisticated 
+simulator and evaluate their effectiveness on a number of popular websites. Our empirical results 
+show that, with an appropriate tuning of all system components, the needed bandwidth can be reduced 
+to less than 10\% in some cases.
+
 \end{abstract}
 
 %\begin{IEEEkeywords}
@@ -55,6 +72,7 @@
 \input{intro}
 \input{rel_work}
 \input{design}
+\input{protocol}
 \input{implementation}
 \input{eval}
 \input{discussion}
@@ -62,8 +80,7 @@
 
 % use section* for acknowledgement
 \section*{Acknowledgments}
-
-The authors would like to thank...
+We would like to thank.. 
 
 \bibliographystyle{plain}
 \bibliography{bigdata}
