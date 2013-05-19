@@ -10,6 +10,15 @@ Both simulators are written in Java, and use five helper interfaces and classes 
 The three helper functions we use are \texttt{Chunk}, \texttt{Chunking} and \texttt{Fingerprinting}. The \texttt{Chunk} class defines a fixed-size data chunk with a given size in number of bytes and the data. \texttt{Chunking} is the facility which generates all the data chunks for a given input, either an input file containing web page data or a data stream of online web data. The \texttt{Fingerprinting} class is a wrapper for the Java \emph{rabinhash} library written by Sean Owen \cite{rabinhash}, and uses the \texttt{RabinHashFunction32} implementation of Rabin's fingerprinting method creating 32-bit fingerprints of a given data chunk \cite{rabin_api}.
 
 Finally, we created the \texttt{ISimulator} interface to build different kinds of simulators. Our offline version uses one or more \texttt{Mobile} devices and a \texttt{ProxyServer} to implement the simulation of our reduction protocol described in Section \ref{sec:protocol}. The networked simulator uses the networked counterparts of these two components.
+
+Figure \ref{fig:class_diagram} summarizes our entire implementation software architecture.
+
+\begin{figure*}[ht] 
+\centering \includegraphics[scale=0.40]{images/class_diagram.png}
+\caption{Implementation Software Class Hierarchy.}
+\label{fig:class_diagram}
+\end{figure*}
+
 \input{offline_sim}
 \input{networked_sim}
 \input{impl_caching}

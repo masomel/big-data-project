@@ -1,2 +1,7 @@
 \subsection{Caching}
 \label{sec:caching}
+Another main component of our system are two caches - one in the proxy server and one in the 
+mobile client. Each of them maintains a mapping between fingerprints and the chunks that they
+represent. Each chunk is being fingerprinted and then requested from either of the caches. There
+are no specific restrictions to the internal representation of the caches and their size, \textit{i.e.}
+how they work internally is irrelevant to the way the other components of the system work.
