@@ -9,29 +9,50 @@ barriers, the data limits posed on mobile carrier data plans and data overage ch
 to reduce mobile network traffic, and to use mobile bandwidth more efficiently. 
 
 %Intro to Previous Work
-Browsing over mobile wireless networks is still a relatively new area and we currently face four overarching challenges: high cost, high latency, low bandwidth and unreliability. The inherent inefficiencies that cause these issues are connection overhead, redundant transmission and verbose protocol that make communication through mobile networks expesnive in terms of both time and money. In this paper, we focus on addressing the bandwidth constraint problem by identifying and eliminating data redundancy in content viewed through a mobile web browser. Specific pages and sites have the tendency 
-to change little over time. Thus, when making a new request for some specific web content, the response will often contain a small number of modifications, but for the most part will be very similar to a previously requested version of the webpage. There has been some previous work in analyzing redundant desktop browser data \cite{?}, and we find out how thi redundancy compares with mobile browser data. 
+Browsing over mobile wireless networks is still a relatively new area and we currently face four overarching challenges: high cost, high latency, low 
+bandwidth and unreliability. The inherent inefficiencies that cause these issues are connection overhead, redundant transmission and verbose protocol 
+that make communication through mobile networks expesnive in terms of both time and money. In this paper, we focus on addressing the bandwidth constraint 
+problem by identifying and eliminating data redundancy in content viewed through a mobile web browser. Specific pages and sites have the tendency to change 
+little over time. Thus, when making a new request for some specific web content, the response will often contain a small number of modifications, but for the 
+most part will be very similar to a previously requested version of the webpage. There has been some previous work in analyzing redundant desktop browser data 
+\cite{?}, and we find out how thi redundancy compares with mobile browser data. 
 
-% Nayden: More motivation needed here
 
+% Nayden: I left the old text here before edit it
 % Our Method 
-We present a technique which leverages these data redundancies to improve the bandwith utilization efficiency of mobile browsers. We use data deduplication 
-techniques to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
-page content, our mechanism helps reduce the number of bytes sent across the network, thereby reducing the required bandwidth. We integrate our technique into 
-the data processing phase of browsing, i.e. the phase between the initial request for a page and the rendering of the requested page. 
+%We present a technique which leverages these data redundancies to improve the bandwith utilization efficiency of mobile browsers. We use data deduplication 
+%techniques to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
+%page content, our mechanism helps reduce the number of bytes sent across the network, thereby reducing the required bandwidth. We integrate our technique into 
+%the data processing phase of browsing, i.e. the phase between the initial request for a page and the rendering of the requested page. 
 
 %Other Methods --> Moved to discussion
 
 % Purpose
-Our technique allows us to analyze redundancies across and within websites and to calculate the amount of potential bandwidth savings that can be obtained through data deduplication. As part of our analysis, we test various data chunk sizes with the aim of finding the optimal parameter settings for our technique. We also study various implementations of cache eviction algorithms to determine the optimal choice for our technique. 
+%Our technique allows us to analyze redundancies across and within websites and to calculate the amount of potential bandwidth savings that can be obtained through data deduplication. As part of our analysis, we test various data chunk sizes with the aim of finding the optimal parameter settings for our technique. We also study various implementations of cache eviction algorithms to determine the optimal choice for our technique. 
 
 % Marcela: Need to add some discussion about results
 
-In summary, our main contributions are the following:
+%In summary, our main contributions are the following:
+%\begin{itemize}
+%\item The design of a system and protocol which integrate into the current mobile browsing framework.
+%\item The implementation of two simulators, one for experimental purposes, one as a proof-of-concept prototype.
+%\item The experimental evaluation of our system and protocol, with which we demonstrate significant improvements to current mobile network bandwidth requirements.
+%\end{itemize}
+
+% Nayden: edited version
+% Our Method
+We present a technique which leverages these data redundancies to improve the bandwith utilization efficiency of mobile browsers. We use data deduplication 
+techniques to find the content a requesting mobile client actually needs, avoiding the transfer of redundant data. By focusing purely on redundancies in web 
+page content, our mechanism helps reduce the number of bytes sent across the network, thereby reducing the required bandwidth. Our technique allows us to analyze 
+the redundancies across and within websites and to calculate the amount of potential bandwidth savings that can be obtained through data deduplication. This paper 
+makes the following major contributions:
 \begin{itemize}
-\item The design of a system and protocol which integrate into the current mobile browsing framework.
-\item The implementation of two simulators, one for experimental purposes, one as a proof-of-concept prototype.
-\item The experimental evaluation of our system and protocol, with which we demonstrate significant improvements to current mobile network bandwidth requirements.
+\item Design of a system and a protocol for effective reduction of required bandwidth for mobile browsing.
+\item Integration of the proposed system and protocol in data processing phase of mobile browsing, \textit{i.e.} the phase between the initial request for a page and
+the rendering of the requested page.
+\item Complete implementation of two simulators - one for experimental purposes and another that serves as a proof-of-concept prototype.
+\item Thorough experimental evaluation of our prototype system on a large number of different criteria, including various data chunk sizes, different cache eviction scheme
+algorighms and different metrics of the transered data.
 \end{itemize}
 
 The rest of this paper is organized as follows. We discuss the previous work done on the problem in Section~\ref{sec:rel_work}. We describe the basic design of the 
