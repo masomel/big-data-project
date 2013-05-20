@@ -21,21 +21,20 @@ The bytes tranferred with the chunked protocol shows that the amount of redundan
 It also provides insight into exactly where our protocol performs well, and where the overhead of the protocol takes away from the benefits achieved from chunking. 
 We see that on the first visit, the amount of bytes that needs to be transferred is almost twice the size of the actual content. 
 This inefficiency comes from the fact that we're using chunk size of ten bytes. 
-During the first visit to cnn.com, when there is no base copy of the webpage, the fingerprints representing the entire webpage need to be sent back and forth creating an inefficiency. 
+During the first visit to cnn.com, when there is no base copy of the webpage in the cache, the fingerprints representing the entire webpage need to be sent back and forth creating an inefficiency. 
 However, once there is a base copy in the cache, the overhead decreases substantially. 
 We can see from the graph that by the 12th visit, we are only transferring half the number of bytes as we would need to reload the entire webpage. 
 
 \subsection{Effects of Chunk Size}
 The use of chunk size of 10 bytes means that each redundant chunk saves 6 bytes because of the 4 bytes of fingerprint needed to represent that chunk. 
-This led us to explore different chunksizes to find the ideal chunk size that takes into consideration the tradeoff between having a low cache miss rate and having a fingerprint map to a bigger chunk.  Figure 7 shows the relationship between \% of web content that is needed (based on cache miss rate) and chunk size based on a series of visits to cnn.com. We obtained the data through visits to cnn once a day for four days. Day 1 is not shown since the cache is empty so the contents of the entire webpage needs to be transferred. 
-The first visit is not shown since the cache is empty and so 100\% of the content needs to be transferred for all chunk sizes. 
+This led us to explore different chunksizes to find the ideal chunk size that takes into consideration the tradeoff between having a low cache miss rate and having a fingerprint map to a bigger chunk.  Figure 7 shows the relationship between \% of web content that is needed (based on cache miss rate) and chunk size based on a series of visits to cnn.com. We obtained the data through visits to cnn once a day for four days. The first visit is not shown since the cache is empty so 100\% of the contents of the entire webpage needs to be transferred for all chunk sizes. 
 It is clear from this graph that if we use smaller chunk sizes, the percent of content that needs to be sent decreases. 
 The steeper line for chunk 5 when compared to chunk 45 shows that as the number of visits increase, the overlap of smaller chunk sizes increases faster.
 However, it means that each fingerprint maps to a smaller chunk and so more fingerprints are needed to represent the small amount of data that needs to be transferred and fewer fingerprints are needed to represent a large amount of data. 
 
-Figure 8 takes into account the effects of the extra bytes that need to be transferred to account for the fingerprints that needs to be transferred to represent redndant chunks. In this graph we can see that as the chunk size increased, the miss rate also increased as expected, but the bytes transferred actually decreased. 
-This is because if the chunk size is small it gets expensive for the mobile device to communicate which chunks it needs. 
-At this point, the ideal chunk size depends on the size of content that needs to be transferred as opposed to percentage.
+Figure 8 takes into account the effects of the extra bytes that are transferred to account for the fingerprints that needs to be transferred to represent redndant chunks. In this graph we can see that as the chunk size increased, the miss rate also increased as expected, but the bytes transferred actually decreased. 
+This is because if the chunk size is small, it becomes expensive for the mobile device to communicate which chunks it needs. 
+The ideal chunk size therefore depends on the size of content that needs to be transferred as opposed to percentage.
 
 \subsection{Bandwidth Reduction while Web Browsing.}
 The next two graphs show what happens when we visisted three websites three times a day for four days to simulate "mobile browsing". 
