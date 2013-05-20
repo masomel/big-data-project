@@ -1,6 +1,11 @@
 \subsection{Chunking}
 \label{sec:chunking}
 \subsubsection{Fixed-Size Chunking}
+The first way of partitioning the data that we explore use fix-sized chunks. It basically works the following way. Let say
+that the size of the chunk is set to \textit{n} bytes. Then the first chunk is produced by taking the first \textit{n}
+bytes from the stream. The second is constructed from the second portion of \textit{n} bytes and so on, until the end of
+the stream. If there is not a sufficient number of bytes to construct the last chunk, it is filled with zero bytes in order
+to have size \textit{n}.
 
 \subsubsection{Sliding Window Chunking}
 The second chunking technique we explore is what we call sliding window chunking, a technique originally presented by Manber in order to find similarities between different files \cite{manber}. As opposed to partitioning files and streams of data into fixed-size chunks, which are inflexible to file and packet content boundaries, this method allows us to adapt chunk sizes based on the actual contents of the file or packet stream. This is done by choosing a fixed-size window which we slide across the entire contents of a web page, and fingerprinting each region until some number of low-order bits of the fingerprint are all 0. Once this occurs, we have found a breakpoint and the chunk boundary is set to the end of this special window. 
