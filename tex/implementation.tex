@@ -11,10 +11,9 @@ The three helper functions we use are \texttt{Chunk}, \texttt{Chunking} and \tex
 
 Finally, we created the \texttt{ISimulator} interface to build different kinds of simulators. Our offline version uses one or more \texttt{Mobile} devices and a \texttt{ProxyServer} to implement the simulation of our reduction protocol described in Section \ref{sec:protocol}. The networked simulator uses the networked counterparts of these two components.
 
-Figure \ref{fig:class_diagram} summarizes our entire implementation software architecture.
+Figure \ref{fig:class_diagram} summarizes our implementation software in its entirety\footnote{Blue lines denote aggregation with the cache and are merely for legibility purposes.}.
 
-\begin{figure*}[ht] 
-\centering \includegraphics[scale=0.40]{images/class_diagram.png}
+\begin{figure*}[ht] \centering \includegraphics[scale=0.40]{images/class_diagram.png}
 \caption{Implementation Software Class Hierarchy.}
 \label{fig:class_diagram}
 \end{figure*}
