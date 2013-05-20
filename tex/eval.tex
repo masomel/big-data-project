@@ -52,6 +52,38 @@ We assume that no response is identical to a previous response.
 This means that without chunking, the full webpage has to be reloaded for each request, leading to the linearly increasing number of bytes we see in the graph. 
 With chunking however, we see that past the first few requests in which the effects of the overhead are heavy, the number of total bytes transferred rises gradually, and the gap between the bytes transferred grows with the number of requests.
 
+\subsection{Effect of Different Eviction Schemes}
+We evaluated the missrate of  all cache eviction algorithm schemes described in Section~\ref{sec:impl_caching}. We
+simulated mobile web browsing of three webpages, opening them three times a day in four consecutive days. Then we
+measured the missrate the the mobile cache has. The results are shown on Figure~\ref{fig:cache_missrate}.
+
+%Random
+The first thing that we can notice is the poor performance of the random cache eviction scheme. It does not achieve 
+good results because it ``blindly'' evicts items from the cache without any consideration of their importance. Probably
+it could be improved by using a non-uniform distribution for the probability with which each items is evicted. However,
+we have not found any differentiating factor between the chunks that can serve as a basis of such distribution.
+
+%LRU
+The LRU scheme achieves a mediocre performance. There are also many fluctuations in its performance. We explain this
+with 
+
+%LFU
+LFU and LFU-DA scheme does not perform best in our study. We explain this with the fact that recency is more important
+than frequency. Since the data from the most recent visit to a webpage is needed when requesting information from the 
+cache, it is not so relevant how frequent this information is in all the visited websites. Another thing that can be
+notices is that LFU-DA scheme performs even worse than ordinary LFU. The reason for this is that it is unlikely that
+cache pollution appears in a relatively small number of accesses, as in this experiment.We also performed the same experiment with LFU-DA cache with different values of the aging parameter (\textit{e.g.} 2, 10, 50, 250). However, we omitted the results of these experiments from the plot because they are almost the same as for 5 (which is shown). We 
+belief that this eviction scheme will be useful for much longer sequence of web requests where cache pollution actually occurs. It can be seen that it has very good performance at the end of the shown curve. Likely, it will have better performance for longer sequences.
+
+%MRU
+As it can also be seen from the figure, the MRU scheme achieves the lowest missrate. We explain this with the fact that
+the cache size is small and when a new website is visited the data from the previous has been evicted. This in turn
+improves the missrate for the new website and the overall shown on the graph. The same motivation applies for the 
+LRU scheme. LRU is actually the opposite of MRU and it is impossible both of them to perform well. 
+
+Another factor that is in favor of the MRU scheme is implementation complexity and speed. It is one of the easiest to
+implement. It does not have to maintain information in efficient data structures as the LRU or LFU one, for example. 
+It is also quite hard to achieve the same speed for LRU, LFU or LFU-DA as for the MRU.
 
 \begin{figure}[h] 
 \centering \includegraphics[scale=0.40]{images/desktopmobile.png}
@@ -80,8 +112,9 @@ With chunking however, we see that past the first few requests in which the effe
 
 \end{figure}
 
-
 \begin{figure}[h]
 \centering \includegraphics[width=\columnwidth]{images/caches.pdf}
 \caption{Missrate of Different Caches}
+\label{fig:cache_missrate}
 \end{figure}
+
