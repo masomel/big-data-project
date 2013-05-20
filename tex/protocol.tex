@@ -1,6 +1,6 @@
 \subsection{Bandwidth Reduction Protocol}
 \label{sec:protocol}
-The second major part of our technique is the reduction protocol between the mobile device and the proxy server. It brings together all the components described in the previous sections. Each time a new page is requested by the mobile browser, the following protocol is performed (Figure \ref{fig:protocol}):
+The final major part of our technique is the reduction protocol between the mobile device and the proxy server. It brings together all the components described in the previous sections. Each time a new page is requested by the mobile browser, the following protocol is performed (Figure \ref{fig:protocol}):
 
 \begin{enumerate}
 \item Mobile proxy-client sends an HTTP request to the proxy server.
@@ -12,12 +12,12 @@ The second major part of our technique is the reduction protocol between the mob
 \end{enumerate}
 
 \begin{figure}[h] 
-\centering \includegraphics[scale=0.70]{images/protocol_diagram.png}
+\centering \includegraphics[width=\columnwidth]{images/protocol_diagram.png}
 \caption{The Bandwidth Reduction Protocol as Part of the Whole System.}
 \label{fig:protocol}
 \end{figure}
 
-Our protocol uses standard HTTP GET requests and does not require changes to web server configurations. It also does not alter the mobile browser front-end and simply requires the mobile proxy-client as the interface to the proxy server, leaving our technique transparent to users. Furthermore, our protocol does not aim to synchronize the mobile proxy-client caches with the proxy server cache because of we do not make any assumptions about similarity of requests coming from different users' mobile devices.
+Our protocol uses standard HTTP GET requests and does not require changes to web server configurations. It also does not alter the mobile browser front-end and simply requires the mobile proxy-client as the interface to the proxy server, leaving our technique transparent to users. Furthermore, our protocol does not aim to synchronize the mobile proxy-client caches with the proxy server cache because we do not make any assumptions about similarity of requests coming from different users' mobile devices.
 
 
 
