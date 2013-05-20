@@ -14,7 +14,7 @@ Using this byte stream, we ran several experiments that gave us insight into dat
 \subsection{Mobile vs. Desktop Browser Content}
 Figure 6 shows the distinctions between mobile web content and desktop web content. 
 Many web servers today structure their webpages differently depending on the user-agent they're serving to increase the speed with which the webpages load, to provide better service with respect to UI and various other reasons. 
-Therefore, mobile pages are inherently different from desktop browsers and thereby require its own analysis. 
+Therefore, mobile pages are inherently different from desktop browsers and thereby require their own analysis. 
 Figure 6 shows that the mobile version of cnn.com is only about a fifth of the size of the desktop version. 
 The bytes transferred for the unchunked protocol shows that the size of the webpage remains relatively constant, and that the entire webpage has to be reloaded from the server for each request since the content is no longer "fresh". 
 The bytes tranferred with the chunked protocol shows that the amount of redundancy that is eliminated in both mobile and desktop websites is proportional to the size of the web page. 
@@ -27,10 +27,7 @@ We can see from the graph that by the 12th visit, we are only transferring half 
 
 \subsection{Effects of Chunk Size}
 The use of chunk size of 10 bytes means that each redundant chunk saves 6 bytes because of the 4 bytes of fingerprint needed to represent that chunk. 
-This led us to explore different chunksizes to find the ideal chunk size that takes into consideration the tradeoff between having a low cache miss rate and having a fingerprint map to a bigger chunk.  We obtained the data through visits to cnn once a day for four days. Day 1 is not shown since the cache is empty so the contents of the entire webpage needs to be transferred.
-This is innately tied to the size of the content. Figure 7 shows the relationship between \% of web content that is needed (based on cache miss rate) and chunk size based on a series of visits to cnn.com. 
-The first visit is not shown since the cache is empty and so 100\% of the content needs to be transferred for all chunk sizes. 
-The graph shows data from the second day, assuming cache has already been filled with data from the first visit. 
+This led us to explore different chunksizes to find the ideal chunk size that takes into consideration the tradeoff between having a low cache miss rate and having a fingerprint map to a bigger chunk.  We obtained data in Figure 7 through visits to cnn once a day for four days. Day 1 is not shown since the cache is empty and so 100\% the contents needs to be transferred. This graph shows the relationship between percent of web content that is needed (based on cache miss rate) and chunk size.
 It is clear from this graph that if we use smaller chunk sizes, the percent of content that needs to be sent decreases. 
 The steeper line for chunk 5 when compared to chunk 45 shows that as the number of visits increase, the overlap of smaller chunk sizes increases faster.
 However, it means that each fingerprint maps to a smaller chunk and so more fingerprints are needed to represent the small amount of data that needs to be transferred and fewer fingerprints are needed to represent a large amount of data. 
@@ -54,28 +51,28 @@ With chunking however, we see that past the first few requests in which the effe
 
 
 \begin{figure}[h] 
-\centering \includegraphics[scale=0.40]{images/desktopmobile.png}
+\centering \includegraphics[width=\columnwidth]{images/desktopmobile.png}
 \caption{Desktop vs Mobile Browser page differences.}
 \end{figure}
 
 \begin{figure}[h] 
-\centering \includegraphics[scale=0.40]{images/chunksize.png}
+\centering \includegraphics[width=\columnwidth]{images/chunksize.png}
 \caption{Effects of Chunk Size on portion of content needed}
 \end{figure}
 
 \begin{figure}[h] 
-\centering \includegraphics[scale=0.40]{images/chunksize2.png}
+\centering \includegraphics[width=\columnwidth]{images/chunksize2.png}
 \caption{Effects of chunk size on Bytes Transferred. .}
 \end{figure}
 
 \begin{figure}[h] 
-\centering \includegraphics[scale=0.40]{images/browsing.png}
+\centering \includegraphics[width=\columnwidth]{images/browsing.png}
 \caption{Mobile Web Browsing. }
 \end{figure}
 
 \begin{figure}[h] 
 
-\centering \includegraphics[scale=0.40]{images/cumulbrowsing.png}
+\centering \includegraphics[width=\columnwidth]{images/cumulbrowsing.png}
 \caption{Cumulative bytes transferred during browsing. }
 
 \end{figure}
