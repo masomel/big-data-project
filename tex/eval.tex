@@ -51,35 +51,26 @@ We assume that no response is identical to a previous response.
 This means that without chunking, the full webpage has to be reloaded for each request, leading to the linearly increasing number of bytes we see in the graph. 
 With chunking however, we see that past the first few requests in which the effects of the overhead are heavy, the number of total bytes transferred rises gradually, and the gap between the bytes transferred for chunking and not chunking grows with the number of requests.
 
-
 \begin{figure}[h] 
 \centering \includegraphics[width=\columnwidth]{images/desktopmobile.png}
 \caption{Desktop vs Mobile Browser page differences.}
 \end{figure}
-
 \begin{figure}[h] 
 \centering \includegraphics[width=\columnwidth]{images/chunksize.png}
 \caption{Effects of Chunk Size on portion of content needed}
 \end{figure}
-
 \begin{figure}[h] 
 \centering \includegraphics[width=\columnwidth]{images/chunksize2.png}
 \caption{Effects of chunk size on Bytes Transferred. .}
 \end{figure}
-
 \begin{figure}[h] 
 \centering \includegraphics[width=\columnwidth]{images/browsing.png}
 \caption{Mobile Web Browsing. }
 \end{figure}
-
 \begin{figure}[h] 
-
 \centering \includegraphics[width=\columnwidth]{images/cumulbrowsing.png}
 \caption{Cumulative bytes transferred during browsing. }
-
 \end{figure}
-
-
 \begin{figure}[h]
 \centering \includegraphics[width=\columnwidth]{images/caches.pdf}
 \caption{Missrate of Different Caches}
