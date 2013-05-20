@@ -14,7 +14,7 @@ Using this byte stream, we ran several experiments that gave us insight into dat
 \subsection{Mobile vs. Desktop Browser Content}
 Figure 6 shows the distinctions between mobile web content and desktop web content. 
 Many web servers today structure their webpages differently depending on the user-agent they're serving to increase the speed with which the webpages load, to provide better service with respect to UI and various other reasons. 
-Therefore, mobile pages are inherently different from desktop browsers and thereby require their own analysis. 
+Therefore, mobile pages are inherently different from desktop browsers and thereby require its own analysis. 
 Figure 6 shows that the mobile version of cnn.com is only about a fifth of the size of the desktop version. 
 The bytes transferred for the unchunked protocol shows that the size of the webpage remains relatively constant, and that the entire webpage has to be reloaded from the server for each request since the content is no longer "fresh". 
 The bytes tranferred with the chunked protocol shows that the amount of redundancy that is eliminated in both mobile and desktop websites is proportional to the size of the web page. 
@@ -27,29 +27,29 @@ We can see from the graph that by the 12th visit, we are only transferring half 
 
 \subsection{Effects of Chunk Size}
 The use of chunk size of 10 bytes means that each redundant chunk saves 6 bytes because of the 4 bytes of fingerprint needed to represent that chunk. 
-This led us to explore different chunksizes to find the ideal chunk size that takes into consideration the tradeoff between having a low cache miss rate and having a fingerprint map to a bigger chunk.  We obtained data in Figure 7 through visits to cnn once a day for four days. Day 1 is not shown since the cache is empty and so 100\% the contents needs to be transferred. This graph shows the relationship between percent of web content that is needed (based on cache miss rate) and chunk size.
-
+This led us to explore different chunksizes to find the ideal chunk size that takes into consideration the tradeoff between having a low cache miss rate and having a fingerprint map to a bigger chunk.  We obtained the data through visits to cnn once a day for four days. Day 1 is not shown since the cache is empty so the contents of the entire webpage needs to be transferred.
+This is innately tied to the size of the content. Figure 7 shows the relationship between \% of web content that is needed (based on cache miss rate) and chunk size based on a series of visits to cnn.com. 
+The first visit is not shown since the cache is empty and so 100\% of the content needs to be transferred for all chunk sizes. 
+The graph shows data from the second day, assuming cache has already been filled with data from the first visit. 
 It is clear from this graph that if we use smaller chunk sizes, the percent of content that needs to be sent decreases. 
 The steeper line for chunk 5 when compared to chunk 45 shows that as the number of visits increase, the overlap of smaller chunk sizes increases faster.
-However, it means that each fingerprint maps to a smaller chunk and so more fingerprints are needed to represent the small amount of data that needs to be transferred as opposed to larger chunk sizes where proportionally fewer fingerprints are needed to represent a larger amount of data. 
-
-Figure 8 takes into account the effects of the extra bytes that are transferred to account for the fingerprints that are transferred to represent redndant chunks. In this graph we can see that as the chunk size increased, the miss rate also increased as expected, but the bytes transferred actually decreased. 
+However, it means that each fingerprint maps to a smaller chunk and so more fingerprints are needed to represent the small amount of data that needs to be transferred and fewer fingerprints are needed to represent a large amount of data. 
+Figure 8 takes into account the effects of the extra bytes that need to be transferred to account for the fingerprints that needs to be transferred to represent redndant chunks. In this graph we can see that as the chunk size increased, the miss rate also increased as expected, but the bytes transferred actually decreased. 
 This is because if the chunk size is small it gets expensive for the mobile device to communicate which chunks it needs. 
-Analysis of the trends indicate that the ideal chunk size depends on the size of content that needs to be transferred rather than the percentage of content that needs to be transferred.
+At this point, the ideal chunk size depends on the size of content that needs to be transferred as opposed to percentage.
 
 \subsection{Bandwidth Reduction while Web Browsing.}
-The next two graphs show what happens to bandwidth when we simulate "mobile browsing". 
-The data was gathered by visiting cnn.com, nytimes.com and economist.com in an alternating basis three times a day for four days. This graph shows that the if the 'base' content of each webpage is in the cache, then less than 20\% of the content is generally new. The first three requests show that there is some, but not a lot of redundancy between webpages.
+The next two graphs show what happens when we visisted three websites three times a day for four days to simulate "mobile browsing". 
+The data was gathered by visiting cnn.com, nytimes.com and economist.com in an alternating basis three times a day over four days. This graph shows that the if the 'base' content of each webpage is in the cache, then less than 20\% of the content is generally new. The first three requests show that there is some, but not a lot of redundancy between webpages.
 Figure 9 shows that on the the first visit, the cache is empty and 100\% of the traffic needs to be transferred. 
 For the second website, almost all of it needs to be transferred (~90\%) because of lack of overlap with the first website. 
 On the third, the proportion decreases further but a majority of the page still needs to be transferred. 
-After this point, we have the base content for all three websites in our cache and only the differences need to be transferred from the proxy, so the proportion of content that needs to be transferred stays below 20\% after the sixth url request. 
+After this point, we have the base page for all three websites in our cache and only the differences need to be transferred from the proxy, so the proportion of content that needs to be transferred stays below 20\% by the sixth url request. 
 Figure 9 calculates the proportion of content that needs to be transferred based on the cache miss rate but does not take into account the additional bytes that have to be transferred due to fingerprints.
 
-Figure 10 shows the actual bandwidth savings obtained from chunking. This plot takes into account the fingerprint bytes and shows the total number of bytes that were transferred for the 32 requests.
+Figure 10 takes this into account and shows the total number of bytes that were transferred for the 32 requests. This shows the bandwidth savings obtained from chunking.
 We assume that no response is identical to a previous response. 
 This means that without chunking, the full webpage has to be reloaded for each request, leading to the linearly increasing number of bytes we see in the graph. 
-<<<<<<< HEAD
 With chunking however, we see that past the first few requests in which the effects of the overhead are heavy, the number of total bytes transferred rises gradually, and the gap between the bytes transferred grows with the number of requests.
 
 \subsection{Effect of Different Eviction Schemes}
@@ -62,10 +62,6 @@ The first thing that we can notice is the poor performance of the random cache e
 good results because it ``blindly'' evicts items from the cache without any consideration of their importance. Probably
 it could be improved by using a non-uniform distribution for the probability with which each items is evicted. However,
 we have not found any differentiating factor between the chunks that can serve as a basis of such distribution.
-
-%LRU
-The LRU scheme achieves a mediocre performance. There are also many fluctuations in its performance. We explain this
-with 
 
 %LFU
 LFU and LFU-DA scheme does not perform best in our study. We explain this with the fact that recency is more important
@@ -84,34 +80,34 @@ LRU scheme. LRU is actually the opposite of MRU and it is impossible both of the
 Another factor that is in favor of the MRU scheme is implementation complexity and speed. It is one of the easiest to
 implement. It does not have to maintain information in efficient data structures as the LRU or LFU one, for example. 
 It is also quite hard to achieve the same speed for LRU, LFU or LFU-DA as for the MRU.
-=======
-With chunking however, we see that past the first few requests in which the effects of the overhead are heavy, the number of total bytes transferred rises gradually, and the gap between the bytes transferred for chunking and not chunking grows with the number of requests.
->>>>>>> 31590c2c851c9ba72307d03cca35bf817e5e63e4
 
 \begin{figure}[h] 
-\centering \includegraphics[width=\columnwidth]{images/desktopmobile.png}
+\centering \includegraphics[scale=0.40]{images/desktopmobile.png}
 \caption{Desktop vs Mobile Browser page differences.}
 \end{figure}
+
 \begin{figure}[h] 
-\centering \includegraphics[width=\columnwidth]{images/chunksize.png}
+\centering \includegraphics[scale=0.40]{images/chunksize.png}
 \caption{Effects of Chunk Size on portion of content needed}
 \end{figure}
+
 \begin{figure}[h] 
-\centering \includegraphics[width=\columnwidth]{images/chunksize2.png}
+\centering \includegraphics[scale=0.40]{images/chunksize2.png}
 \caption{Effects of chunk size on Bytes Transferred. .}
 \end{figure}
+
 \begin{figure}[h] 
-\centering \includegraphics[width=\columnwidth]{images/browsing.png}
+\centering \includegraphics[scale=0.40]{images/browsing.png}
 \caption{Mobile Web Browsing. }
 \end{figure}
-\begin{figure}[h] 
-\centering \includegraphics[width=\columnwidth]{images/cumulbrowsing.png}
-\caption{Cumulative bytes transferred during browsing. }
-\end{figure}
-<<<<<<< HEAD
 
-=======
->>>>>>> 31590c2c851c9ba72307d03cca35bf817e5e63e4
+\begin{figure}[h] 
+
+\centering \includegraphics[scale=0.40]{images/cumulbrowsing.png}
+\caption{Cumulative bytes transferred during browsing. }
+
+\end{figure}
+
 \begin{figure}[h]
 \centering \includegraphics[width=\columnwidth]{images/caches.pdf}
 \caption{Missrate of Different Caches}
