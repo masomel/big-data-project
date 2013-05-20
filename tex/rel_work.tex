@@ -1,16 +1,18 @@
 \section{Previous Work}\label{sec:rel_work}
 Two notable works try to reduce the required bandwidth in different contexts. They both introduce similar concepts that have
-inspired our work. Ihm \textit{et al.}~\cite{wanax} use similar techniques as in this work to design an efficient WAN accelerator for developing countries. As in this work, they also leverage chunking, Rabin fingerprinting and caching. 
-The authors propose efficient chunking and caching schemes to handle the challenges brought by the equipment in developing world countries such as limited RAM and poor hard disk performance. Muthitacharoen \textit{et al.}~\cite{lbfs} present 
-network file system designed for low bandwidth networks (LBFS). This system leverages file similarities using variable-
+inspired our work. Ihm \textit{et al.}~\cite{wanax} use similar techniques to the ones in this work to design an efficient WAN accelerator for developing countries. They also leverage chunking, Rabin fingerprinting and caching. 
+The authors propose efficient chunking and caching schemes to handle the challenges caused by the equipment in developing countries such as limited RAM and poor hard disk performance. Muthitacharoen \textit{et al.}~\cite{lbfs} present a network file system designed for low bandwidth networks (LBFS). This system leverages file similarities using variable-
 sized slide-window chunking and Rabin fingerprinting. They experimentally show that this approach uses an order of
 magnitude lower bandwidth - a fact that make this approach promising for the case of mobile Web browsing.
 
-Different line of works tries to measure the amount of redundancy in today's Web traffic and to identify its cause by
-analyzing Web traffic logs and datasets. Ihm and Pai~\cite{modern_web_traffic} perform a sophisticated analysis of Web traffic data logs that have been collected over a five-years period. Along with proposing a new page analysis algorithm 
-that is better suited for the modern Web, the authors find many interesting facts about connection speed of today's Web users, NAT usage, traffic content type and share of different types of Web sites. They also investigate the amount of redundancy in the collected data and the impact of caching. More specifically, they compare content-based with object-based caching approaches and quantify the major sources of redundancy. Qian \textit{et al.}~\cite{web_caching} measure the 
-amount of redundant data transfers caused by inefficient web caching particularly for smartphones. They conclude that redundant transfers contribute up to 20\% of the total HTTP traffic amount on two different datasets. Moreover, the particular reason for this redundancy is usually developers' faults in cache inplementations, \textit{e.g.} by not fully supporting and following the used network protocol or by not fully utilizing the caching support provided by the libraries. The authors also explore the impact of other factors such as limited cache size and caches whose data does not survive a process restart or a device reboot.
+A different line of works tries to measure the amount of redundancy in today's web traffic and to identify its cause by
+analyzing web traffic logs and datasets. Ihm and Pai~\cite{modern_web_traffic} perform such an analysis %a sophisticated analysis of Web traffic data logs that have been%
+with data collected over a five-year period. Along with proposing a new page analysis algorithm 
+that is better-suited for the modern web, the authors find many interesting facts about connection speed of today's Web users, NAT usage, traffic content type and share of different types of Web sites. They also investigate the amount of redundancy in the collected data and the impact of caching. 
+%More specifically, they compare content-based with object-based caching approaches and quantify the major sources of redundancy. 
+Qian \textit{et al.}~\cite{web_caching} measure the 
+amount of redundant data transfers caused by inefficient web caching particularly for smartphones. They conclude that redundant transfers contribute up to 20\% of the total HTTP traffic on two different datasets. Moreover, the particular reason for this redundancy is usually developers' faults in cache implementations, \textit{e.g.} by not fully supporting and following the used network protocol or by not fully utilizing the caching support provided by the libraries. The authors also explore the impact of other factors such as limited cache size and caches whose data does not survive a process restart or a device reboot.
 
-Lastly, the standard dedplication techniques used in our work were first developed quite a long time ago. The idea of chunking files to find 
+Lastly, the standard deduplication techniques used in our work were first developed quite a long time ago. The idea of chunking files to find 
 similarities between them was originally presented by Manber in 1994 \cite{manber}. The notion of ``fingerprinting" 
 files dates back to 1981 when Rabin first presented a novel hashing technique that uses random polynomials \cite{rabin}.
