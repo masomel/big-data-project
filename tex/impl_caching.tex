@@ -1,26 +1,24 @@
 \subsection{Different Caching Algorithms}
 \label{sec:impl_caching}
-A substantial number of different web cache eviction schemes have been discussed in the literature~\cite{Wong2006}. Although 
-most of our experiments are done with the MRU scheme, we have implemented several others:
+A substantial number of different cache eviction schemes in the context of web caching have been discussed in the literature~\cite{Wong2006}. We list the various that we have implemented:
 
 \begin{itemize}
-\item \textit{Least Recently Used (LRU)}. This replacement policy could be viewed as the opposite of the \textit{MRU} 
-one. It removes the item that has been got or put in the earliest moment of time compared to all other items in the 
+\item \textit{Most Recently Used (MRU)}. This replacement policy evicts the item that has most recently been accessed or put in the cache. 
+
+\item \textit{Least Recently Used (LRU)}. This replacement policy can be viewed as the opposite of the \textit{MRU} 
+one. It removes the item that has been accessed or put in the earliest moment of time compared to all other items in the 
 cache.
 
 \item \textit{Uniformly Random}. This eviction scheme randomly picks an item to be replaced. All the items have equal 
-probability to be picked, \textit{i.e.} they are uniformly distributed. It could be considered a scheme where a 
-different distribution is used. However, it our case there is no clear distinction between the fingerprints, so we
+probability to be picked. In general, one can imagine a scheme where a 
+different distribution is used. However, in our case there is no clear distinction between the fingerprints, so we
 chose each one to be picked with equal probability.
 
-\item \textit{Least Frequently Used (LFU)}. Here the item that has been got or put the smallest number of times compared
+\item \textit{Least Frequently Used (LFU)}. Here the item that has been retrieved or put the smallest number of times compared
 to the all other items in cache is replaced.
 
 \item \textit{LFU with dynamic aging (LFU-DA)}~\cite{Podlipnig2003}. A well-known issue with the \textit{LFU} scheme is
 the cache pollution problem. That is, when an item has accumulated a very high frequency count and then becomes unpopular,
-it remains for a huge amount of time in the cache before being removed. \textit{LFU-DA} solves this problem by adding a
-constant to the frequency count of an item when it is accessed. This way, the recently popular items have a bigger
-frequency count that the older ones. It prevents, previously popular items to pollute the cache and accelerates their 
-removal.
+it remains for a long time in the cache before being removed. \textit{LFU-DA} solves this problem by adding an increasing constant to the frequency count of an item each time it is accessed. This way, the previously popular items have a greater chance of being evicted. 
 
 \end{itemize}

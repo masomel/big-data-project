@@ -19,14 +19,12 @@ specified port. The mobile proxy-client sends an HTTP request to the proxy serve
 
 We found that, while simulating mobile browsing, for one not using an actual mobile phone, and for 
 another not using a web browser program of any sort, is not realistic, our networked simulator is a 
-good first proof-of-concept prototype showing that our reduction protocol is viable. In our 
-experimental evaluation, we argue that it reduces the required bandwidth compared to the currently 
-required mobile browsing bandwidth.
+good first proof-of-concept prototype showing that our reduction protocol is viable.
 
 In the end, we would like to discuss some caveats of our networked simulator. First, as our mobile 
 client simulator does not have the capabilities of a web browser and it receives preprocessed data 
-from the proxy server, it cannot automatically handle HTTP responses indicating page redirects (i.e. 
-server response code $301$, for example). Thus, our proxy server handles HTTP responses with the 
+from the proxy server, it cannot automatically handle HTTP responses indicating page redirects (\textit{e.g.} 
+server response code $301$). Thus, our proxy server handles HTTP responses with the 
 server response codes $200$ and $40X$\footnote{$200$ means granted normally, $40X$ response codes 
 indicate a form of client-side error such as malformed requests but return HTML-format content with 
 this information.} since the web server returns HTML content with these responses. An additional 
