@@ -11,11 +11,11 @@ There were multiple design decisions that we considered before constructing the 
 We build a secondary protocol implementation to address the following few additional concerns. First, There is an inefficiency that comes from the additional communication that occurs between the device and proxy to send fingerprints. Second, using the MRU eviction algorithm for our tests could have possibly restricted by how much we can reduce bandwidth. To consider tradeoffs in communication protocols and eviction schemes, we implemented the protocol with a url-cache as proof of concept and for testing purposes. The higher level approach is shown in Figures 12 and 13. 
 
 \begin{figure}[h] 
-\centering \includegraphics[scale=0.40]{images/urlcache-protocol.png}
+\centering \includegraphics[width=\columnwidth]{images/urlcache-protocol.png}
 \caption{Protocol. }
 \end{figure} 
 \begin{figure}[h] 
-\centering \includegraphics[scale=0.40]{images/url-cache-hl.png}
+\centering \includegraphics[width=\columnwidth]{images/url-cache-hl.png}
 \caption{Url-Cache. }
 \end{figure} 
 
