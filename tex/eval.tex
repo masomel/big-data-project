@@ -17,6 +17,7 @@ Many web servers today structure their webpages differently depending on the use
 Therefore, mobile pages are inherently different from desktop browsers and thereby require its own analysis. 
 Figure 6 shows that the mobile version of cnn.com is only about a fifth of the size of the desktop version. 
 The bytes transferred for the unchunked protocol shows that the size of the webpage remains relatively constant, and that the entire webpage has to be reloaded from the server for each request since the content is no longer "fresh". 
+
 The bytes tranferred with the chunked protocol shows that the amount of redundancy that is eliminated in both mobile and desktop websites is proportional to the size of the web page. 
 It also provides insight into exactly where our protocol performs well, and where the overhead of the protocol takes away from the benefits achieved from chunking. 
 We see that on the first visit, the amount of bytes that needs to be transferred is almost twice the size of the actual content. 
@@ -39,7 +40,7 @@ At this point, the ideal chunk size depends on the size of content that needs to
 
 \subsection{Bandwidth Reduction while Web Browsing.}
 The next two graphs show what happens when we visisted three websites three times a day for four days to simulate "mobile browsing". 
-The data was gathered by visiting cnn.com, nytimes.com and economist.com in an alternating basis three times a day over four days. This graph shows that the if the 'base' content of each webpage is in the cache, then less than 20\% of the content is generally new. The first three requests show that there is some, but not a lot of redundancy between webpages.
+The data was gathered by visiting cnn.com, nytimes.com and economist.com in an alternating basis three times a day over four days. This graph shows that if the 'base' content of each webpage is in the cache, then less than 20\% of the content is generally new. The first three requests show that there is some, but not a lot of redundancy between webpages.
 Figure 9 shows that on the the first visit, the cache is empty and 100\% of the traffic needs to be transferred. 
 For the second website, almost all of it needs to be transferred (~90\%) because of lack of overlap with the first website. 
 On the third, the proportion decreases further but a majority of the page still needs to be transferred. 
