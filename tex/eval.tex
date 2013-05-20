@@ -12,10 +12,9 @@ We stored each response in a different file and then processed the data to obtai
 Using this byte stream, we ran several experiments that gave us insight into data redundancy within webpages.
 
 \subsection{Mobile vs. Desktop Browser Content}
-Figure 6 shows the distinctions between mobile web content and desktop web content. 
 Many web servers today structure their webpages differently depending on the user-agent they're serving to increase the speed with which the webpages load, to provide better service with respect to UI and various other reasons. 
-Therefore, mobile pages are inherently different from desktop browsers and thereby require its own analysis. 
-Figure 6 shows that the mobile version of cnn.com is only about a fifth of the size of the desktop version. 
+Therefore, mobile pages are inherently different from desktop browsers and thereby require their own analysis. 
+Figure 6 shows the distinctions between mobile web content and desktop web content. It shows that the mobile version of cnn.com is only about a fifth of the size of the desktop version. 
 The bytes transferred for the unchunked protocol shows that the size of the webpage remains relatively constant, and that the entire webpage has to be reloaded from the server for each request since the content is no longer "fresh". 
 
 The bytes tranferred with the chunked protocol shows that the amount of redundancy that is eliminated in both mobile and desktop websites is proportional to the size of the web page. 
